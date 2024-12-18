@@ -4,7 +4,7 @@ Draw 2 cards. Use the following procedure to select one card, then discard the o
 
 - Does bot have initiative?
 	- Yes:
-		- Is bot contending for an undeclared ambition?
+		- Is bot <ins>contending</ins> for an undeclared ambition?
 			- Yes:
 				- Declare (place zero marker)
 				- If multiple options: use General Priorities or select card with more pips
@@ -24,4 +24,4 @@ Draw 2 cards. Use the following procedure to select one card, then discard the o
 		- Then use General Priorities to select card
 
 Go to the flowchart for the suit of selected card and execute the bot's turn.
-Finally, decrement the bot's hand counter.
+<br> Finally, decrement the bot's hand counter.
