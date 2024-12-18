@@ -24,3 +24,5 @@ Defensive strike TODO
 Are there any undeclared ambitions (i.e. could warlord be declared) and can bot <ins>favorable battle</ins> for trophies?
 
 Concentrate task force TODO
+
+<div class="pagebreak"> </div>

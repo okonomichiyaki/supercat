@@ -22,3 +22,5 @@ A battle for trophies is considered favorable if bot can roll any number of dice
 ## Control
 
 A battle for control is favorable is bot can roll at least 1 die per fresh defending ship.
+
+<div class="pagebreak"> </div>

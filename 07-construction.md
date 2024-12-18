@@ -37,3 +37,5 @@ Does bot have starports available to build?
 	- Build starports
 	- Prefer:
 		- With task force
+
+<div class="pagebreak"> </div>
