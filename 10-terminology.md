@@ -1,3 +1,4 @@
+# Terminology
 
 unbuilt city
 : a city on the bot's player board (not a destroyed city in a rival's trophy area)
