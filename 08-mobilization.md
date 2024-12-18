@@ -1,5 +1,11 @@
 # Mobilization - Move | Influence
 
+Are any bot cities threatened?
+- Yes:
+	- Can bot neutralize control by moving?
+		- Yes:
+			- Move to neutralize control
+
 Does bot have unbuilt cities?
 - Yes:
 	- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>, and could bot move to claim any open slots?
@@ -9,9 +15,8 @@ Does bot have unbuilt cities?
 				- unclaimed
 				- two slot planets
 
-Can bot influence a guild card which would <ins>contend</ins> declared ambition OR take captives if secured?
+Can bot influence a card which would <ins>contend</ins> a declared ambition OR take captives if secured?
 - Yes:
-	- Influence the card. Place 2 agents if possible
 	- Prefer:
 		- icons or captives to <ins>contend</ins> declared ambition
 		- captives even if tyrant not declared
@@ -21,3 +26,11 @@ Can bot influence a guild card which would <ins>contend</ins> declared ambition 
 		- Weapon card
 		- Loyal card matching outraged resource
 		- more keys
+
+Can bot take control of a gate adjacent to a bot starport?
+- Yes:
+	- Prefer:
+		- Gate previously controlled by rival
+		- Other gate
+
+<div class="pagebreak"> </div>
