@@ -1,3 +1,5 @@
+# Aggression - Move | Battle
+
 Can bot secure a card to <ins>contend</ins> a declared ambition?
 
 Can bot conduct a <ins>favorable battle</ins> to contend a declared ambition?
