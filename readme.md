@@ -9,6 +9,7 @@ build:
 ```
 pandoc -s --css=pandoc.css \
 00-how\ to\ play\ with\ SUPERCAT.md \
+00-questions.md \
 01-bot\ turn\ start\ here.md \
 02-general\ priorities.md \
 03-prelude.md \

@@ -181,11 +181,9 @@ dl {
 
 dt {
   font-weight: bold;
-  margin-bottom: .8em;
 }
 
 dd {
-  margin: 0 0 .8em 2em;
 }
 
 dd:last-child {

@@ -1,25 +1,23 @@
 # Terminology
 
 unbuilt city
-: a city on the bot's player board (not a destroyed city in a rival's trophy area)
+: a city on bot's player board (not a destroyed city in a rival's trophy area)
 
 new resources
-: either resources of a type that the bot does not currently have OR planets of a type the bot does not have a city on
+: type of resource that bot does not have OR type of planet bot does not have a city on
 
 contend
-: take an action which will cause the bot to win, tie for first place, or get to second place in one of the four ambitions
+: take an action causing bot to win, tie for first place, or get to second place in an ambition
 
 undeclared ambition
 : ambition that has not been declared yet AND there are markers available
 
 declared ambition
-: ambition that has been declared, with one or more marker
-
-normal card
-: a mobilization, administration, or construction card used without spending a weapon
+: ambition that has been declared, with one or more markers
 
 combat card
-: an aggression card or any other card combined with fuel and a weapon to enable move and battle actions together
+: any card combined with fuel and a weapon, or an aggression card.
+use aggression procedures to resolve
 
 unclaimed planet
 : planet with one or more open building slots which is not controlled
@@ -30,8 +28,9 @@ claimed planet
 contested planet
 : planet with open building slots, with bot pieces, controlled by rival
 
-favorable battle
-: see combat doctrine for an explanation of favorable battles
+favorable combat
+: a series of move and battle actions that the bot considers likely to result in a specific goal
+(see Combat Doctrine)
 
 contested card
 : court card with bot agents and rival agents, and more rival agents than bot agents
