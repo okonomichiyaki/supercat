@@ -1,12 +1,12 @@
 # Restrictions
 
 Bot will spend resources and guild cards during its prelude, but only in certain situations.
-If bot is contending for a declared ambition and spending a resource or guild card will take it out of contention, it will not spend that resource or guild card.
+If bot is <ins>contending</ins> for a declared ambition and spending a resource or guild card will take it out of contention, it will not spend that resource or guild card.
 
 Specifically:
-- if tycoon is declared AND bot is contending for tycoon then do not spend fuel or material resources or guild cards
-- if empath is declared AND bot is contending for empath then do not spend psionic resources or guild cards
-- if seeker is declared AND bot is contending for seeker then do not spend relic resources or guild cards, UNLESS doing securing another relic card
+- if tycoon is declared AND bot is <ins>contending</ins> for tycoon then do not spend fuel or material resources or guild cards
+- if empath is declared AND bot is <ins>contending</ins> for empath then do not spend psionic resources or guild cards
+- if seeker is declared AND bot is <ins>contending</ins> for seeker then do not spend relic resources or guild cards, UNLESS doing securing another relic card
 
 # Resources
 
