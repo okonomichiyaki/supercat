@@ -62,7 +62,10 @@ a::selection {
 }
 
 p {
-  margin: 1em 0;
+  margin-top: 1em;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 img {
@@ -81,27 +84,15 @@ h4, h5, h6 {
 }
 
 h1 {
-  font-size: 2.5em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
   font-size: 1.5em;
 }
 
-h4 {
-  font-size: 1.2em;
-}
-
-h5 {
+h2 {
   font-size: 1em;
 }
 
-h6 {
-  font-size: 0.9em;
+h3 {
+  font-size: 0.5em;
 }
 
 blockquote {
@@ -143,9 +134,8 @@ dfn {
 }
 
 ins {
-  background: #ff9;
-  color: #000;
-  text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 mark {
@@ -171,7 +161,7 @@ sub {
 }
 
 ul, ol {
-  margin: 1em 0;
+  margin: 0 0;
   padding: 0 0 0 2em;
 }
 
@@ -180,7 +170,6 @@ li p:last-child {
 }
 
 ul ul, ol ol {
-  margin: .3em 0;
 }
 
 dl {
