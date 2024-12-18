@@ -4,14 +4,14 @@ Does bot have no starport and a loyal piece at planet with an empty slot?
 - Yes:
 	- Build a starport
 	- Prefer:
-		- claimed
+		- <ins>claimed</ins>
 		- most ships
 		- neutral control
 		- least rival ships
 
-Does bot have unbuilt cities and at least one claim?
+Does bot have unbuilt cities and at least one <ins>claim</ins>?
 - Yes:
-	- Build cities at claims
+	- Build cities at <ins>claims</ins>
 
 Are any loyal buildings controlled by rival, and can bot build or repair to neutralize control?
 - Yes:
