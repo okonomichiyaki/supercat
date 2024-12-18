@@ -31,7 +31,7 @@ contested planet
 : planet with open building slots, with bot pieces, controlled by rival
 
 favorable battle
-: TODO
+: see combat doctrine for an explanation of favorable battles
 
 contested card
 : court card with bot agents and rival agents, and more rival agents than bot agents

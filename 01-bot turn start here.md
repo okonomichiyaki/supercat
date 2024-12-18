@@ -17,13 +17,13 @@ Draw 2 cards. Use the following procedure to select one card, then discard the o
 		- Remove seize counter
 	- No:
 		- Check for seize:
-			- If counter is on bot board, increment. otherwise place counter with 1 face up
-			- If counter is on 4, AND this is not the 5th or 6th card in the round, then seize:
+			- If seize counter is on bot board, increment. otherwise place seize counter, with a value of 1
+			- If seize counter is on 4 and bot's hand counter is on 3 or greater, then seize:
 				- Decrement hand counter
 				- Remove seize counter
 		- Then use General Priorities to select card
 
 Go to the flowchart for the suit of selected card and execute the bot's turn.
-<br> Finally, decrement the bot's hand counter.
+<br> Finally, decrement the bot's hand counter (remove from board to indicate zero)
 
 <div class="pagebreak"> </div>

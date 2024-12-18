@@ -1,6 +1,6 @@
 # General Priorities
 
-When directed to by the previous page, use the following priorities to select a card. Either play a card of the indicated suit from the bot's options, or copy the lead card if it is of the indicated suit (place either card face down). When multiple options are available and the bot is leading, play the card with the higher number.
+When directed to by the previous page, use the following priorities to select a card. Either play a card of the indicated suit from the bot's options, or copy the lead card if it is of the indicated suit (place either card face down). When given multiple options, and the bot is leading, play the card with the higher number.
 
 Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
 
@@ -8,7 +8,7 @@ Can bot <ins>favorable battle</ins> to <ins>contend</ins> declared ambition? →
 
 Does bot have no starport?
 
-- Does bot have a claim?
+- Does bot have a <ins>claim</ins>?
 	- Yes: → Construction
 	- No: → Mobilization/Aggression
 
