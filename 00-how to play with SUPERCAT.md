@@ -1,8 +1,8 @@
-## Components
+# Components
 
 You will need some mechanism to track two numeric values per bot, for instance two dice of different colors rotated to show a specific number face up.
 
-## Setup
+# Setup
 
 - Select a setup card depending on the desired player count.
 - Determine player order:
@@ -13,13 +13,13 @@ You will need some mechanism to track two numeric values per bot, for instance t
 - Deal cards to players (not bots) as described below
 - Ignore mulligan rules in a 2 player game (player vs bot)
 
-## Playing a chapter
+# Playing a chapter
 
 SUPERCAT does not have a normal hand of 6 cards. At the beginning of a chapter, shuffle the action deck and deal the player 6 cards. Place the remaining cards in a face down stack. Then place one die on each bot's player board, showing the 6 face. This represents the number of cards in the bot's hand. On the bot's turn, reveal two cards from this stack. The bot will play one of these cards, and discard the other. The procedures on the following pages will instruct you on how to select a card.
 
 After the bot's turn, decrement the hand counter. If at any time the stack runs out, shuffle the discard pile before drawing. If at any time the bot gains a card (e.g. Union cards or Vox card "Call to Action") place the card near the bot's player board, and increment the hand counter. Play the action card gained as the last card of the round. When the bot seizes initiative, decrement the counter to represent the bot discarding an extra card. Continue playing as normal, until the player as no cards (or has passed initiative) and all bot's hand counters are 0.
 
-## Additional advantages
+# Additional advantages
 
 At the beginning of a chapter, check the relative power of the bot(s) and player. If a bot is not winning, during this chapter the bot will gain the following advantages:
 
@@ -40,7 +40,7 @@ For an easier game:
 - do not apply the above advantaged even if the bot is lowing in power
 - randomly assign initiative at the start of the game
 
-## How to follow the procedures
+# How to follow the procedures
 
 Starting with the "Bot Turn" page, read from top to bottom.
 Follow the instructions, executing statements if possible.
