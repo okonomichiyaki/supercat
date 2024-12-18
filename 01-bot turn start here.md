@@ -25,3 +25,5 @@ Draw 2 cards. Use the following procedure to select one card, then discard the o
 
 Go to the flowchart for the suit of selected card and execute the bot's turn.
 <br> Finally, decrement the bot's hand counter.
+
+<div class="pagebreak"> </div>

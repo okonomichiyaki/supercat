@@ -35,3 +35,5 @@ Can bot influence contested card with more agents than rivals? → Mobilization/
 Does bot have ships available to build? → Construction
 
 Does bot have ships available to repair? → Administration
+
+<div class="pagebreak"> </div>
