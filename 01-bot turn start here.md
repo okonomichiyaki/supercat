@@ -4,7 +4,7 @@ Draw 2 cards. Use the following procedure to select one card, then discard the o
 
 - Does bot have initiative?
 	- Yes:
-		- Is bot <ins>contending</ins> for an undeclared ambition?
+		- Is bot currently winning or tied for first place for an undeclared ambition?
 			- Yes:
 				- Declare (place zero marker)
 				- If multiple options: use General Priorities or select card with more pips

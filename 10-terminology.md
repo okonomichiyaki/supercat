@@ -6,7 +6,7 @@ new resources
 : either resources of a type that the bot does not currently have OR planets of a type the bot does not have a city on
 
 contend
-: win or tie for first or second place in one of the four ambitions
+: take an action which will cause the bot to win, tie for first place, or get to second place in one of the four ambitions
 
 undeclared ambition
 : ambition that has not been declared yet AND there are markers available
