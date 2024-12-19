@@ -6,21 +6,21 @@
 	- Yes:
 		- Move to neutralize control
 
-✦ Does bot have unbuilt cities?
+✦ Does bot have <ins>unbuilt cities</ins>?
 
-- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>, and could bot move to claim any open slots?
-	- Move to claim open slots, until bot has as many <ins>claims</ins> as <ins>unbuilt cities</ins>. Prefer:
+- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>, and could bot Move to control any open slots?
+	- Move to control open slots, until bot has as many <ins>claims</ins> as <ins>unbuilt cities</ins>. Prefer:
 		- <ins>new resources</ins>
-		- unclaimed
+		- <ins>unclaimed</ins>
 		- two slot planets
 
-✦ Can bot Influence a card which would <ins>contend</ins> a declared ambition OR take captives if secured?
+✦ Can bot Influence a card which would <ins>contend</ins> a declared ambition OR take captives if Secured?
 
 - Prefer:
 	- icons or captives to <ins>contend</ins> declared ambition
 	- captives even if tyrant not declared
 	- icons to grow a lead in a declared ambition
-	- icons to <ins>contend</ins> an undeclared ambition
+	- icons to <ins>contend</ins> an <ins>undeclared ambition</ins>
 	- Union card
 	- Weapon card
 	- Loyal card matching outraged resource

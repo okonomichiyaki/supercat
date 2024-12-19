@@ -1,23 +1,23 @@
 # Aggression - Move | Battle
 
-✦ Can bot secure a card to <ins>contend</ins> a declared ambition?
+✦ Can bot Secure a card to <ins>contend</ins> a declared ambition?
 
-✦ Can bot <ins>favorable combat</ins> to contend a declared ambition?
+✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
 
 - Use Combat Doctrine to resolve
 
-✦ Can bot secure a card to <ins>contend</ins> an undeclared ambition?
+✦ Can bot Secure a card to <ins>contend</ins> an <ins>undeclared ambition</ins>?
 
-✦ Can bot secure a card to take captives?
+✦ Can bot Secure a card to take captives?
 
-✦ Can bot secure a card to grow a lead in a declared ambition?
+✦ Can bot Secure a card to grow a lead in a declared ambition?
 
-✦ Does bot have unbuilt cities?
+✦ Does bot have <ins>unbuilt cities</ins>?
 
-- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>, and could bot move to claim any open slots?
-	- Spend move actions to claim open slots, until bot has as many <ins>claims</ins> as <ins>unbuilt cities</ins>. Prefer:
+- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>, and could bot Move to <ins>claim</ins> any open slots?
+	- Spend Move actions to gain control of open slots, until bot has as many <ins>claims</ins> as <ins>unbuilt cities</ins>. Prefer:
 		- <ins>new resources</ins>
-		- unclaimed
+		- <ins>unclaimed</ins>
 		- two slot planets
 
 ✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
@@ -26,15 +26,15 @@
 	- Gate previously controlled by rival
 	- Other gate
 
-✦ Can bot secure a card to grow a lead in an undeclared ambition?
+✦ Can bot Secure a card to grow a lead in an <ins>undeclared ambition</ins>?
 
-✦ Can bot <ins>favorable battle</ins> for control in a system with any bot buildings?
+✦ Can bot <ins>favorable combat</ins> for control in a system with any bot buildings?
 
-✦ Are there any undeclared ambitions and can bot <ins>favorable battle</ins> for trophies?
+✦ Are there any <ins>undeclared ambition</ins>s and can bot <ins>favorable combat</ins> for trophies?
 
 ✦ Are there any ships which are not in the <ins>task force</ins>, and not controlling gates or <ins>claims</ins> or rival cities?
 
-- Concentrate ships towards task force
-- Move task force towards loyal starport if not at a starport
+- Concentrate ships towards <ins>task force</ins>
+- Move <ins>task force</ins> towards loyal starport if not already at a starport
 
 <div class="pagebreak"> </div>

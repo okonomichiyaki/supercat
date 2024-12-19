@@ -14,7 +14,7 @@
 	- Loyal card matching outraged resource
 	- more keys
 
-✦ Can bot Tax to <ins>contend</ins> an undeclared ambition?
+✦ Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins>?
 
 ✦ Can bot Tax to grow a lead in a declared ambition?
 
@@ -28,17 +28,16 @@
 
 ✦ Can bot Influence a card which would take captives if Secured?
 
-✦ Can bot Influence a card to <ins>contend</ins> an undeclared ambition?
+✦ Can bot Influence a card to <ins>contend</ins> an <ins>undeclared ambition</ins>?
 
 ✦ Can bot Tax for <ins>new resources</ins>?
 
 ✦ Can bot Repair any ships or buildings?
 
 - Prefer:
-	- ships in <ins>task force</ins>
-	- other ships
+	- ships in <ins>task force</ins>, then other ships
 	- starport, if only one on map
-	- other buildings
+	- cities
 
 ✦ Can bot Tax for other resources?
 

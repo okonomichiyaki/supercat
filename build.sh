@@ -1,8 +1,8 @@
 #!/bin/zsh
 
-pandoc -s --css=pandoc.css \
-       00-how\ to\ play\ with\ SUPERCAT.md \
-       00-questions.md \
+pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
+       00-SUPERCAT.md \
+       00-terminology.md \
        01-bot\ turn\ start\ here.md \
        02-general\ priorities.md \
        03-prelude.md \
@@ -11,5 +11,5 @@ pandoc -s --css=pandoc.css \
        06-combat\ doctrine.md \
        07-construction.md \
        08-mobilization.md \
-       10-terminology.md \
+       99-clarifications.md \
        -o output.html

@@ -1,6 +1,6 @@
 # General Priorities
 
-When directed to by the previous page, use the following priorities to select a card. Either play a card of the indicated suit from bot's options, or copy the lead card if it is of the indicated suit.
+When directed to by the previous page, use the following priorities to select a card. Either lead or pivot with a card of the indicated suit from bot's options or copy the lead card if it is of the indicated suit. If indicated suit is not available, proceed to next question.
 
 ✦ Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
 
@@ -20,20 +20,20 @@ When directed to by the previous page, use the following priorities to select a 
 
 ✦ Are any bot buildings under threat?
 
-- Can bot move to neutralize? → Mobilization/Aggression
-- Can bot build or repair to neutralize? → Construction/Administration
+- Can bot Move to neutralize control? → Mobilization/Aggression
+- Can bot Build or Repair to neutralize control? → Construction/Administration
 
-✦ Can bot Tax/Secure to <ins>contend</ins> undeclared ambition, take captives, or gain a new resource?
+✦ Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins>, take captives, or gain a <ins>new resource</ins>?
 <br>→ Administration/Aggression
 
 ✦ Can bot Secure other card or grow a lead in a declared ambition? → Aggression
 
-✦ Can bot influence uncontested card? → Mobilization/Administration
+✦ Can bot Influence <ins>uncontested card</ins>? → Mobilization/Administration
 
-✦ Can bot influence contested card with more agents than rivals? → Mobilization/Administration
+✦ Can bot Influence <ins>contested card</ins> with more agents than rivals? → Mobilization/Administration
 
-✦ Does bot have ships available to build? → Construction
+✦ Does bot have ships available to Build? → Construction
 
-✦ Does bot have ships available to repair? → Administration
+✦ Does bot have ships available to Repair? → Administration/Construction
 
 <div class="pagebreak"> </div>
