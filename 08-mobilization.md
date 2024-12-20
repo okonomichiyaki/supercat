@@ -14,15 +14,16 @@
 		- <ins>unclaimed</ins>
 		- two slot planets
 
-✦ Can bot Influence a card which would <ins>contend</ins> a declared ambition OR take captives if Secured?
+✦ Can bot Influence a card?
 
 - Prefer:
 	- icons or captives to <ins>contend</ins> declared ambition
 	- captives even if tyrant not declared
 	- icons to grow a lead in a declared ambition
 	- icons to <ins>contend</ins> an <ins>undeclared ambition</ins>
-	- Union card
-	- Weapon card
+	- icons to grow a lead in an undeclared ambition
+	- uncontested Union card
+	- uncontested Weapon card
 	- Loyal card matching outraged resource
 	- more keys
 
