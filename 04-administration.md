@@ -6,13 +6,7 @@
 
 ✦ Can bot Tax a rival city and take captives?
 
-✦ Can bot Influence a card which would <ins>contend</ins> a declared ambition, if Secured?
-
-- Prefer:
-	- Union card
-	- Weapon card
-	- Loyal card matching outraged resource
-	- more keys
+✦ Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> a declared ambition, if Secured?
 
 ✦ Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins>?
 
@@ -26,9 +20,11 @@
 	- No:
 		- Influence to match rival
 
-✦ Can bot Influence a card which would take captives if Secured?
+✦ Can bot Influence an <ins>uncontested card</ins> to <ins>contend</ins> an <ins>undeclared ambition</ins>?
 
-✦ Can bot Influence a card to <ins>contend</ins> an <ins>undeclared ambition</ins>?
+✦ Can bot Influence any other card?
+
+- Prefer: Weapon, Union, Captives, Grow a lead in a declared ambition, Loyal card matching outraged resource
 
 ✦ Can bot Tax for <ins>new resources</ins>?
 
