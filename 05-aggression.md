@@ -14,11 +14,12 @@
 
 ✦ Does bot have <ins>unbuilt cities</ins>?
 
-- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>, and could bot Move to <ins>claim</ins> any open slots?
-	- Spend Move actions to gain control of open slots, until bot has as many <ins>claims</ins> as <ins>unbuilt cities</ins>. Prefer:
-		- <ins>new resources</ins>
-		- <ins>unclaimed</ins>
-		- two slot planets
+- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>?
+	- Could bot Move to get a new <ins>claim</ins>?
+		- Spend Move actions to gain control of open slots, until bot has as many <ins>claims</ins> as <ins>unbuilt cities</ins>. Prefer:
+			- <ins>new resources</ins>
+			- <ins>unclaimed</ins>
+			- two slot planets
 
 ✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
 
