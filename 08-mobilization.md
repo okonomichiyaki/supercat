@@ -1,6 +1,6 @@
 # Mobilization - Move | Influence
 
-✦ Are any bot cities threatened?
+✦ Are any bot cities controlled by a rival?
 
 - Can bot neutralize control by moving?
 	- Yes:

@@ -38,9 +38,6 @@ favorable combat
 : a series of Move and Battle actions that the bot considers likely to result in a specific goal
 (see Combat Doctrine)
 
-threatened
-: bot building controlled by rival
-
 task force
 : group of bot ships with the most fresh ships
 
