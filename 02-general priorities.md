@@ -1,6 +1,6 @@
 # General Priorities
 
-When directed to by the previous page, use the following priorities to select a card. Either lead or pivot with a card of the indicated suit from bot's options or copy the lead card if it is of the indicated suit. If indicated suit is not available, proceed to next question.
+Use these priorities to select a card: lead or pivot with indicated suit from bot's options, or copy the lead card if it is of the indicated suit. If suit not available, proceed to next question
 
 ✦ Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
 
@@ -15,8 +15,10 @@ When directed to by the previous page, use the following priorities to select a 
 ✦ Does bot have <ins>unbuilt cities</ins>?
 
 - Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>?
-	- Yes: → Mobilization/Aggression
-	- No: → Construction
+	- Yes:
+		- Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
+	- No:
+		- Does bot have at least one <ins>claim</ins>? → Construction
 
 ✦ Are any bot buildings in a system controlled by a rival?
 
