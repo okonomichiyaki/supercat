@@ -1,6 +1,6 @@
 # Mobilization - Move | Influence
 
-✦ Are any bot cities controlled by a rival?
+✦ Are any bot buildings controlled by a rival?
 
 - Can bot neutralize control by moving?
 	- Move to neutralize control
@@ -15,21 +15,20 @@
 
 ✦ Can bot Influence a card?
 
+- place 2 agents on <ins>uncontested card</ins> if possible, otherwise 1
+- place one more than most rival agents on <ins>contested card</ins>, if possible, otherwise up to most rival agents
 - Prefer:
-	- icons or captives to <ins>contend</ins> declared ambition
-	- captives even if tyrant not declared
-	- icons to grow a lead in a declared ambition
-	- icons to <ins>contend</ins> an <ins>undeclared ambition</ins>
-	- icons to grow a lead in an undeclared ambition
-	- uncontested Union card
-	- uncontested Weapon card
-	- Loyal card matching outraged resource
-	- more keys
+	- <ins>uncontested card</ins> to <ins>contend</ins> declared ambition
+	- <ins>contested card</ins> to defend agents
+	- <ins>uncontested card</ins> to <ins>contend</ins> undeclared ambition
+	- Weapon, Union, Captives, Grow a lead in a declared ambition, Loyal card matching outraged resource
 
 ✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
 
 - Prefer:
 	- Gate previously controlled by rival
 	- Other gate
+
+✦ Can bot take control of rival city?
 
 <div class="pagebreak"> </div>
