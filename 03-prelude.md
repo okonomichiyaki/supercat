@@ -9,7 +9,7 @@ Specifically:
 
 - if tycoon is declared AND bot is <ins>contending</ins> for tycoon then do not spend fuel or material resources or guild cards
 - if empath is declared AND bot is <ins>contending</ins> for empath then do not spend psionic resources or guild cards
-- if seeker is declared AND bot is <ins>contending</ins> for seeker then do not spend relic resources or guild cards, UNLESS doing securing another relic card
+- if seeker is declared AND bot is <ins>contending</ins> for seeker then do not spend relic resources or guild cards, UNLESS securing another relic card
 
 ## Resources
 
