@@ -22,8 +22,8 @@ use aggression procedures to resolve
 unclaimed
 : system that is not controlled by a rival
 
-claim, claimed planet
-: planet with one or more open building slot controlled by current bot
+claim
+: open building slot controlled by bot
 
 contested planet
 : planet with open building slots, with bot pieces, controlled by rival
