@@ -13,7 +13,7 @@ Specifically:
 
 ## Resources
 
-**Material**: spend according to Construction procedures
+**Material**: spend to Build starport if none on map and able. otherwise Build ships
 
 **Fuel and Weapon**: spend for <ins>Combat card</ins>
 
