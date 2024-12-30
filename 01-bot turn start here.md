@@ -4,17 +4,17 @@
 
 - Pass initiative
 
-✦ Draw 2 cards. Decrement hand counter. Use the following procedures to select one card, then discard the other card. Once a card has been selected, go to the page corresponding to the selected card's suit.
+✦ Draw 2 cards. Decrement hand counter. Use procedures below to select a card. Then go to the page for selected card's suit and discard the other card.
 
 ✦ Does bot have initiative?
 
 - Remove seize counter, if present.
-- Is bot winning or tied for first place for an <ins>undeclared ambition</ins> matching one of these two cards?
+- Is bot winning or tied for first place for a matching <ins>undeclared ambition</ins>?
 	- Yes:
 		- Select matching card (if multiple options, select card with more pips).
 		- Declare the ambition.
 	- No:
-		- Is bot winning a declared ambition matching one of these two cards, and is there an available ambition marker?
+		- Is bot winning a matching declared ambition and is an ambition marker available?
 			- Select matching card (if multiple options, select card with more pips).
 			- Declare the ambition.
 		- If both cards are the same suit, select card with higher number.
