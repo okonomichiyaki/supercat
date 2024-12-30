@@ -3,8 +3,7 @@
 ✦ Are any bot cities controlled by a rival?
 
 - Can bot neutralize control by moving?
-	- Yes:
-		- Move to neutralize control
+	- Move to neutralize control
 
 ✦ Does bot have <ins>unbuilt cities</ins>?
 
