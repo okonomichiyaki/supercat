@@ -18,7 +18,7 @@ When directed to by the previous page, use the following priorities to select a 
 	- Yes: → Mobilization/Aggression
 	- No: → Construction
 
-✦ Are any bot buildings under threat?
+✦ Are any bot buildings in a system controlled by a rival?
 
 - Can bot Move to neutralize control? → Mobilization/Aggression
 - Can bot Build or Repair to neutralize control? → Construction/Administration
