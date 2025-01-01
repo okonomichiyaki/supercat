@@ -32,12 +32,14 @@ Aside from the changes to card play described above, and the additional advantag
 
 ## Difficulty mode (Optional but recommended)
 
-The procedures attempt to simulate good play, but the bot cannot plan multiple cards ahead nor execute combos using guild abilities. To compensate and make for a more challenging game, give the bot additional advantages when the bot does not have more power than the player:
+The procedures attempt to simulate good play, but the bot cannot plan multiple cards ahead nor execute combos using guild abilities. To compensate and make for a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
 
 - **Efficient Logistics**: bot performs 1 extra action per card
 - **Elite Pilots**: bot collects 1 extra die during Battle
 
-When the bot is tied for first place it does not have more power than the player, so these advantages apply at the start of a game to all bots.
+If the bot is tied with the player, it does not have more power, and will gain these advantages. It's intended that this applies at the start of the game when all players have zero power.
+
+Relative power should be evaluated per bot, so in a 3 player game if one bot is ahead of the player, and the other is behind, apply these only to the losing bot. 
 
 For an even harder game:
 
