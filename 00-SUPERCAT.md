@@ -2,15 +2,15 @@
 
 *version 0.1.1*
 
-This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solo, i.e. one player versus one or more bots. It could be used as the 3rd or 4th player in a multiplayer game, but that was not the goal and has not been tested.
+This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solo, i.e. one player versus one or more bots. It could be used as the 3rd or 4th player in a multiplayer game, but that was not the goal and has not been seriously tested.
 
 ## Components
 
-You will need a way to track two numbers per bot, for instance two dice of different colors rotated to show a specific number face up. These are referred to as "counters" in the rules.
+You will need some way to track two numbers per bot, for instance two dice of different colors rotated to show a specific number face up. These are referred to as "counters" in the rules. You will also separately need one six sided die.
 
 ## Setup
 
-Follow the instructions in the Arcs rulebook for your desired player count. If using the optional difficulty mode (see next page) and playing on "normal" or "harder" difficulty, the player will be last in turn order and a bot will start with the initiative; other bots will take the remaining positions in turn order.
+Follow the instructions in the Arcs rulebook for your desired player count. If using the optional difficulty mode (see next page), the player will be last in turn order and one bot will start with the initiative; if playing with other bots, they will take the remaining positions in turn order.
 
 ## Playing a chapter
 
