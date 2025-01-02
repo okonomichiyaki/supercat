@@ -24,7 +24,7 @@ If at any time the stack runs out, shuffle the discard pile before revealing 2 c
 
 The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words which appear like this: <ins>contend</ins>.
 
-Start with the "Bot Turn" page and read from top to bottom. Follow the instructions, executing statements if possible. When posed with a yes or no question, evaluate the situation, and follow the nested steps.
+Start with the "Bot Turn" page and read from top to bottom. Follow the instructions, executing statements if possible. When posed with a yes or no question, evaluate the situation, and follow the nested steps. For more detailed explanation of interpreting nested procedures, see Questions.
 
 When taking actions using multiple pips from a card, follow the procedures to take as many actions as indicated. If action pips remain, restart the procedure from the top, re-evaluating questions from top to bottom.
 
