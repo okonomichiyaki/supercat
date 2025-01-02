@@ -1,6 +1,6 @@
 # General Priorities
 
-Use these priorities to select a card: lead or pivot with indicated suit from bot's options, or copy the lead card if it is of the indicated suit. If suit not available, proceed to next question
+Use these priorities to select a card: lead or pivot with indicated suit from bot's options, or copy the lead card if it is of the indicated suit. If suit not available, proceed to next question. Once a card has been selected, go to the page for the selected card's suit.
 
 ✦ Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
 
@@ -25,7 +25,7 @@ Use these priorities to select a card: lead or pivot with indicated suit from bo
 - Can bot Move to neutralize control? → Mobilization/Aggression
 - Can bot Build or Repair to neutralize control? → Construction/Administration
 
-✦ Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins>, take captives, or gain a <ins>new resource</ins>?
+✦ Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins> or take captives?
 <br>→ Administration/Aggression
 
 ✦ Can bot Secure other card or grow a lead in a declared ambition? → Aggression

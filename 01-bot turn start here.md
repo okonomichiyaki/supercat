@@ -18,7 +18,7 @@
 			- Select matching card (if multiple options, select card with more pips).
 			- Declare the ambition.
 		- If both cards are the same suit, select card with higher number.
-		- Otherwise, use General Priorities (next page) to select card.
+		- Otherwise, use General Priorities to select card.
 
 ✦ Can bot surpass with either card?
 
@@ -29,6 +29,6 @@
 	- If seize counter is on bot's board, increment it, else place seize counter, with a value of 1.
 	- If hand counter is 2 or greater and initiative was not already seized this round, check for seize:
 		- Roll 1d6, and subtract 1 for each <ins>undeclared ambition</ins> that bot is winning. Seize initiative if result is less than seize counter. Decrement hand counter to represent bot discarding an extra card.
-	- Use General Priorities (next page) to select card.
+	- Use General Priorities to select card.
 
 <div class="pagebreak"> </div>

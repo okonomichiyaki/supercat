@@ -8,7 +8,7 @@
 
 ✦ Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> a declared ambition, if Secured?
 
-✦ Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins>?
+✦ Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or take captives?
 
 ✦ Can bot Tax to grow a lead in a declared ambition?
 

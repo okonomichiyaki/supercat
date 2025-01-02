@@ -23,6 +23,8 @@ Specifically:
 
 ## Guild cards
 
+Bot will discard some guild card for their prelude effect at the first opportunity.
+
 Bot will discard a Weapon guild card for effect, if it has 3 ships available. Place ships at starport with most fresh ships, otherwise with <ins>task force</ins>.
 
 Bot will discard a Union card for effect. Place action card in bot's play area, and increment bot's hand counter. Play action card as bot's last card.
