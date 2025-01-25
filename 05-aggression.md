@@ -9,15 +9,15 @@
 
 ✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
 
-- Use Combat Doctrine to resolve
+- Use "Combat Doctrine" to resolve
 
-✦ Can bot <ins>favorable combat</ins> for control in a system with any bot buildings?
+✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings?
 
-- Use Combat Doctrine to resolve
+- Use "Combat Doctrine" to resolve
 
 ✦ Are there any <ins>undeclared ambition</ins>s and can bot <ins>favorable combat</ins> for trophies?
 
-- Use Combat Doctrine to resolve
+- Use "Combat Doctrine" to resolve
 
 ✦ Can bot Secure a card to <ins>contend</ins> an <ins>undeclared ambition</ins>?
 

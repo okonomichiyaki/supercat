@@ -16,11 +16,11 @@
 
 ✦ Can bot Tax to grow a lead in a declared ambition?
 
-✦ Can bot Influence a <ins>contested card</ins>? (Check Influence Doctrine)
+✦ Can bot Influence a <ins>contested card</ins>? (Check "Influence Doctrine")
 
 ✦ Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> an <ins>undeclared ambition</ins>, if Secured?
 
-✦ Can bot Influence any other card? (Check Influence Doctrine)
+✦ Can bot Influence any other card? (Check "Influence Doctrine")
 
 ✦ Can bot Tax for <ins>new resources</ins>?
 

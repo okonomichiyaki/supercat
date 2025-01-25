@@ -3,7 +3,7 @@
 ✦ Are any loyal buildings controlled by a rival?
 
 - Can bot change control by moving?
-	- Move to change control (Check Movement Doctrine)
+	- Move to change control (Check "Movement Doctrine")
 	- Prefer:
 		- Take control if possible
 		- Neutralize control
@@ -22,7 +22,7 @@
 	- <ins>uncontested card</ins> to <ins>contend</ins> declared ambition
 	- <ins>contested card</ins>
 	- <ins>uncontested card</ins> to <ins>contend</ins> undeclared ambition
-	- other cards (Check Influence Doctrine for priorities)
+	- other cards (Check "Influence Doctrine" for priorities)
 
 ✦ Can bot change control of a gate?
 

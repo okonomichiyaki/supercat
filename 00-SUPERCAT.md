@@ -2,7 +2,7 @@
 
 *version 0.3-draft*
 
-This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solo play, i.e. one human player versus one or more bots. It should also work as the 3rd or 4th player in a multiplayer game, but that was not the goal and has not been rigorously tested.
+This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solo play, i.e. one human player versus one or more bots. It should also work as the 3rd or 4th opponent in a multiplayer game, but that was not the goal and has not been rigorously tested.
 
 ## Components
 
@@ -10,13 +10,13 @@ You will need some way to track two numbers per bot, for instance two dice of di
 
 ## Setup
 
-Follow the instructions in the Arcs rulebook for your desired player count. If using the optional difficulty mode (see next page), the player will be last in turn order and one bot will start with the initiative; if playing with other bots, they will take the remaining positions in turn order.
+Choose a difficulty mode (see next page) which will determine turn order. For options to play with Leaders and Lore, see the related page at the end of the rules. Then setup the game normally according to the Arcs rulebook.
 
 ## Playing a chapter
 
 Shuffle the action deck and deal the player 6 cards. Place the remaining cards in a face down stack. Place a counter on each bot's board, with a value of 6. This represents the number of cards in the bot's hand. On the bot's turn, reveal two cards from this stack, and decrement the counter. The bot will play one of these cards, and discard the other. The procedures on the following pages will instruct you on how to select a card, and how to execute the bot's turn.
 
-If at any time the stack runs out, shuffle the discard pile before revealing 2 cards. If at any time the bot gains an action card, place the card near the bot's player board, and increment the hand counter. Play card(s) gained as the last card(s) of the round. When the bot seizes initiative, decrement the counter to represent the bot discarding an extra card. Continue until the player has no cards and each bot's hand counter is at zero.
+If at any time the stack runs out, shuffle the discard pile before revealing 2 cards. If at any time the bot gains an action card, place the card near the bot's board, and increment the hand counter. Play card(s) gained as the last card(s) of the round. When the bot seizes initiative, decrement the counter to represent the bot discarding an extra card. Continue until the player has no cards and each bot's hand counter is at zero.
 
 <div class="pagebreak"> </div>
 
@@ -24,7 +24,7 @@ If at any time the stack runs out, shuffle the discard pile before revealing 2 c
 
 The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words like <ins>contend</ins>.
 
-Start with "Bot Turn" and follow the instructions, executing statements if possible. When posed with a question, evaluate the situation and follow the nested steps. For more detailed explanation of interpreting nested procedures, see "Questions".
+Start with "Bot Turn" and follow the instructions, executing statements if possible. When posed with a question, evaluate the situation and follow the nested steps. For more detailed explanation of interpreting nested procedures, see "Questions" at the end of the rules.
 
 When directed, use "General Priorities" to select a card: Lead, Pivot, or Copy with the indicated suit from bot's options. If suit is not available, proceed to next question. Once a card has been selected, go to the page for the selected card's suit.
 
@@ -39,9 +39,9 @@ The procedures attempt to simulate good play, but the bot cannot plan multiple c
 - **Efficient Logistics**: bot performs 1 extra action per card
 - **Elite Pilots**: bot collects 1 extra die during Battle
 
-If the bot is tied with the player, it does not have more power, and will gain these advantages. It's intended that this applies at the start of the game when all players have zero power.
+If the bot is tied with the player, it does not have more power, and will gain these advantages. It's intended that this applies at the start of the game when all power markers are at zero.
 
-Relative power should be evaluated per bot, so in a game with 2 bots, if one bot is ahead of the player, and the other is behind, apply these only to the losing bot. In a multiplayer game, check power between bots and humans: grant the bot advantages when it is behind all human players.
+Relative power should be evaluated per bot, so in a game with 2 bots, if one bot is ahead of the player, and the other is behind, apply these only to the losing bot. In a multiplayer game, check power between bots and human players: grant the bot advantages when it is behind all human players.
 
 For an even harder game:
 
