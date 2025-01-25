@@ -6,6 +6,8 @@ If possible, influence an <ins>uncontested</ins> card with 2 agents. Otherwise, 
 
 If possible, influence a <ins>contested</ins> card with one more agent than the most rival agents. Otherwise, check if the bot has enough agents: if the bot could influence with agents up to the most rival agents, and still have agents in its supply left over, then influence the card to match rival agents. Otherwise, do not influence the card.
 
+## Priorities
+
 When choosing between cards in the court, use the following priorities to select a card.
 
 - Weapon
@@ -19,3 +21,5 @@ When choosing between cards in the court, use the following priorities to select
 
 If necessary, break ties based on number of keys (choose card with more keys).
 If same number of keys, choose randomly.
+
+<div class="pagebreak"> </div>

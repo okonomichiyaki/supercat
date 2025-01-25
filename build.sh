@@ -12,6 +12,7 @@ pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
        06-combat\ doctrine.md \
        07-construction.md \
        08-mobilization.md \
+       08-movement-doctrine.md \
        96-vox-cards.md \
        97-leaders-and-lore.md \
        98-questions.md \

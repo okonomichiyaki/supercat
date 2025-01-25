@@ -1,9 +1,12 @@
 # Mobilization - Move | Influence
 
-✦ Are any bot buildings controlled by a rival?
+✦ Are any loyal buildings controlled by a rival?
 
-- Can bot neutralize control by moving?
-	- Move to neutralize control
+- Can bot change control by moving?
+	- Move to change control (Check Movement Doctrine)
+	- Prefer:
+		- Take control if possible
+		- Neutralize control
 
 ✦ Does bot have <ins>unbuilt cities</ins>?
 

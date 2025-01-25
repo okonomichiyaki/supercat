@@ -20,10 +20,10 @@ Use these priorities to select a card: lead or pivot with indicated suit from bo
 	- No:
 		- Does bot have at least one <ins>claim</ins>? → Construction
 
-✦ Are any bot buildings in a system controlled by a rival?
+✦ Are any loyal buildings in a system controlled by a rival?
 
-- Can bot Move to neutralize control? → Mobilization/Aggression
-- Can bot Build or Repair to neutralize control? → Construction/Administration
+- Can bot Move to change control? → Mobilization/Aggression
+- Can bot Build or Repair to change control? → Construction/Administration
 
 ✦ Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins> or take captives?
 <br>→ Administration/Aggression

@@ -2,10 +2,10 @@
 
 ✦ Can bot Secure a card to <ins>contend</ins> a declared ambition, or secure an <ins>effective</ins> Vox card?
 
-✦ Are any bot buildings controlled by a rival?
+✦ Are any systems with a loyal building controlled by a rival?
 
-- Can bot neutralize control by moving?
-	- Move to neutralize control
+- Can bot change control by moving?
+	- Move to change control
 
 ✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
 
@@ -39,9 +39,9 @@
 
 ✦ Are there any ships which are not in the <ins>task force</ins>, and not controlling gates or <ins>claims</ins> or rival cities?
 
-- Concentrate ships towards <ins>task force</ins>
-- Move <ins>task force</ins> towards loyal starport if not already at a starport
+- Concentrate ships towards <ins>task force</ins> (use <ins>partial move</ins>)
+- Move <ins>task force</ins> towards loyal starport if not already at a starport (use <ins>partial move</ins>)
 
-✦ Can bot take control of rival city?
+✦ Can bot take control of rival building?
 
 <div class="pagebreak"> </div>

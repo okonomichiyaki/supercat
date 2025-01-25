@@ -26,6 +26,9 @@ favorable combat
 new resources
 : type of resource that bot does not have OR type of planet bot does not have a building on
 
+partial move
+: a bot Move which does not reach a destination on a single card (see Movement Doctrine)
+
 task force
 : group of bot ships with the most fresh ships
 
