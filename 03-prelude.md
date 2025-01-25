@@ -13,11 +13,11 @@ Specifically:
 
 ## Resources
 
-**Material**: spend to Build starport if none on map and able. otherwise Build ships
+**Material**: spend to Build a starport if none on map, otherwise Build ships
 
 **Fuel and Weapon**: spend for <ins>Combat card</ins>
 
-**Relic**: Secure guild card to take captives or <ins>contend</ins> for a declared ambition
+**Relic**: Secure for captives, <ins>contend</ins> a declared ambition, or <ins>effective</ins> Vox card.
 
 **Psionic**: Tax/Secure to <ins>contend</ins> for a declared ambition, or spend for <ins>Combat card</ins>
 
