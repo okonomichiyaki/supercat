@@ -6,6 +6,10 @@ When asked if bot can <ins>favorable combat</ins> to achieve some result, first 
 - Raid for resource(s) or card(s) to <ins>contend</ins> an ambition
 - Control of a system
 
+Bot will spend resources in prelude maximize available actions during combat.
+
+Prior to Battle, check for risk of outrage. Battle is not considered favorable if outrage would cause bot to stop <ins>contending</ins> a declared ambition. Otherwise, Battle which risks outrage is only considered favorable if bot could ransack the court after trigging outrage.
+
 ## Trophies
 
 A Battle for trophies is considered favorable if bot has at least 1:1 ratio of fresh ships.
@@ -23,9 +27,5 @@ If favorable, the bot will first spend actions to roll dice like a trophies Batt
 A Battle for control is favorable is bot can roll at least 1 die per fresh defending ship.
 
 If favorable, bot will select dice like a trophies Battle. Bot will allocate hits to take control, then allocate hits to take trophies.
-
-## Outrage
-
-Prior to Battle, check for risk of outrage. Battle not considered favorable if outrage would cause bot to stop <ins>contending</ins> a declared ambition. Otherwise, Battle which risks outrage is only considered favorable if bot could ransack the court after trigging outrage.
 
 <div class="pagebreak"> </div>
