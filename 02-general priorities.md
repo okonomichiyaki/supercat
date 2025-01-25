@@ -12,6 +12,11 @@ Use these priorities to select a card: lead or pivot with indicated suit from bo
 	- Yes: → Construction
 	- No: → Mobilization/Aggression
 
+✦ Are any loyal buildings in a system controlled by a rival?
+
+- Can bot Move to change control? → Mobilization/Aggression
+- Can bot Build or Repair to change control? → Construction/Administration
+
 ✦ Does bot have <ins>unbuilt cities</ins>?
 
 - Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>?
@@ -19,11 +24,6 @@ Use these priorities to select a card: lead or pivot with indicated suit from bo
 		- Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
 	- No:
 		- Does bot have at least one <ins>claim</ins>? → Construction
-
-✦ Are any loyal buildings in a system controlled by a rival?
-
-- Can bot Move to change control? → Mobilization/Aggression
-- Can bot Build or Repair to change control? → Construction/Administration
 
 ✦ Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins> or take captives?
 <br>→ Administration/Aggression
