@@ -15,13 +15,11 @@
 
 ✦ Can bot Influence a card?
 
-- place 2 agents on <ins>uncontested card</ins> if possible, otherwise 1
-- place one more than most rival agents on <ins>contested card</ins>, if possible, otherwise up to most rival agents
 - Prefer:
 	- <ins>uncontested card</ins> to <ins>contend</ins> declared ambition
-	- <ins>contested card</ins> to defend agents
+	- <ins>contested card</ins>
 	- <ins>uncontested card</ins> to <ins>contend</ins> undeclared ambition
-	- Weapon, Union, Captives, Grow a lead in a declared ambition, Loyal card matching outraged resource
+	- other cards (Check Influence Doctrine for priorities)
 
 ✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
 
@@ -29,6 +27,6 @@
 	- Gate previously controlled by rival
 	- Other gate
 
-✦ Can bot take control of rival city?
+✦ Can bot take control of rival building?
 
 <div class="pagebreak"> </div>

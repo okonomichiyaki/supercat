@@ -2,7 +2,7 @@
 
 ✦ Can bot Tax to <ins>contend</ins> a declared ambition?
 
-✦ Can bot Repair to neutralize control of loyal city or take control of rival city?
+✦ Can bot Repair ships to neutralize control of a loyal building or take control of a rival building?
 
 ✦ Can bot Tax a rival city and take captives?
 
@@ -12,19 +12,11 @@
 
 ✦ Can bot Tax to grow a lead in a declared ambition?
 
-✦ Are there any <ins>contested cards</ins>?
+✦ Can bot Influence a <ins>contested card</ins>? (Check Influence Doctrine)
 
-- Can bot Influence to place more agents than rivals?
-	- Yes:
-		- Influence up to +1 agent vs rival
-	- No:
-		- Influence to match rival
+✦ Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> an <ins>undeclared ambition</ins>, if Secured?
 
-✦ Can bot Influence an <ins>uncontested card</ins> to <ins>contend</ins> an <ins>undeclared ambition</ins>?
-
-✦ Can bot Influence any other card?
-
-- Prefer: Weapon, Union, Captives, Grow a lead in a declared ambition, Loyal card matching outraged resource
+✦ Can bot Influence any other card? (Check Influence Doctrine)
 
 ✦ Can bot Tax for <ins>new resources</ins>?
 

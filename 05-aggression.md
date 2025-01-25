@@ -2,7 +2,7 @@
 
 ✦ Can bot Secure a card to <ins>contend</ins> a declared ambition, or secure an <ins>effective</ins> Vox card?
 
-✦ Are any bot cities controlled by a rival?
+✦ Are any bot buildings controlled by a rival?
 
 - Can bot neutralize control by moving?
 	- Move to neutralize control

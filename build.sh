@@ -7,6 +7,7 @@ pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
        02-general\ priorities.md \
        03-prelude.md \
        04-administration.md \
+       04-influence-doctrine.md \
        05-aggression.md \
        06-combat\ doctrine.md \
        07-construction.md \
