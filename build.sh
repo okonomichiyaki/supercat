@@ -11,6 +11,7 @@ pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
        06-combat\ doctrine.md \
        07-construction.md \
        08-mobilization.md \
+       96-vox-cards.md \
        98-questions.md \
        99-clarifications.md \
        -o output.html

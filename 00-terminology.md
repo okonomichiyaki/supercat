@@ -16,6 +16,9 @@ contested card
 double city
 : a second loyal city on planet that already has a loyal city
 
+effective
+: a Vox card is effective if the bot can fully resolve the event (see Vox Cards)
+
 favorable combat
 : a series of Move and Battle actions that the bot considers likely to result in a specific goal
 (see Combat Doctrine)

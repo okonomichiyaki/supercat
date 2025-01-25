@@ -1,6 +1,6 @@
 # Aggression - Move | Battle
 
-✦ Can bot Secure a card to <ins>contend</ins> a declared ambition?
+✦ Can bot Secure a card to <ins>contend</ins> a declared ambition, or secure an <ins>effective</ins> Vox card?
 
 ✦ Are any bot cities controlled by a rival?
 
