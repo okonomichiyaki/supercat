@@ -1,7 +1,5 @@
 # General Priorities
 
-Use these priorities to select a card: lead or pivot with indicated suit from bot's options, or copy the lead card if it is of the indicated suit. If suit not available, proceed to next question. Once a card has been selected, go to the page for the selected card's suit.
-
 ✦ Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
 
 ✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> declared ambition? → <ins>Combat card</ins>
@@ -33,6 +31,8 @@ Use these priorities to select a card: lead or pivot with indicated suit from bo
 ✦ Can bot Influence <ins>uncontested card</ins>? → Mobilization/Administration
 
 ✦ Can bot Influence <ins>contested card</ins> with more agents than rivals? → Mobilization/Administration
+
+✦ Can bot Move to take control of rival building → Mobilization/Aggression
 
 ✦ Does bot have ships available to Build? → Construction
 

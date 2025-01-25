@@ -22,11 +22,13 @@ If at any time the stack runs out, shuffle the discard pile before revealing 2 c
 
 ## How to follow the procedures
 
-The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words which appear like this: <ins>contend</ins>.
+The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words like <ins>contend</ins>.
 
-Start with the "Bot Turn" page and read from top to bottom. Follow the instructions, executing statements if possible. When posed with a yes or no question, evaluate the situation, and follow the nested steps. For more detailed explanation of interpreting nested procedures, see Questions.
+Start with "Bot Turn" and follow the instructions, executing statements if possible. When posed with a question, evaluate the situation and follow the nested steps. For more detailed explanation of interpreting nested procedures, see "Questions".
 
-When taking actions using multiple pips from a card, follow the procedures to take as many actions as indicated. If action pips remain, restart the procedure from the top, re-evaluating questions from top to bottom.
+When directed, use "General Priorities" to select a card: Lead, Pivot, or Copy with the indicated suit from bot's options. If suit is not available, proceed to next question. Once a card has been selected, go to the page for the selected card's suit.
+
+When multiple actions are available, first spend actions according to highest priority, then if actions remaining, restart the procedure from the top of the page.
 
 Aside from the changes to card play described above, and the additional advantages below, the bot will follow every rule in the game.
 

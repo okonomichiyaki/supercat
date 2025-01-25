@@ -24,11 +24,12 @@
 	- <ins>uncontested card</ins> to <ins>contend</ins> undeclared ambition
 	- other cards (Check Influence Doctrine for priorities)
 
-✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
+✦ Can bot change control of a gate?
 
 - Prefer:
-	- Gate previously controlled by rival
-	- Other gate
+	- Take control if possible
+	- Adjacent to loyal starport
+	- Adjacent to rival starport
 
 ✦ Can bot take control of rival building?
 
