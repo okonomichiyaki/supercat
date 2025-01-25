@@ -30,6 +30,7 @@
 	- ships in <ins>task force</ins>, then other ships
 	- starport, if only one on map
 	- cities
+	- other starports
 
 ✦ Can bot Tax for other resources?
 

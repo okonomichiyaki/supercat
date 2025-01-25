@@ -32,4 +32,9 @@
 
 ✦ Can bot take control of rival building?
 
+✦ Are there any ships which are not in the <ins>task force</ins>, and not controlling gates or <ins>claims</ins> or rival cities?
+
+- Concentrate ships towards <ins>task force</ins> (use <ins>partial move</ins>)
+- Move <ins>task force</ins> towards loyal starport if not already at a starport (use <ins>partial move</ins>)
+
 <div class="pagebreak"> </div>
