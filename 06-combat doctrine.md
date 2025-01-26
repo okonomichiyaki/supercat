@@ -6,7 +6,7 @@ When asked if bot can <ins>favorable combat</ins> to achieve some result, first 
 - Raid for resource(s) or card(s) to <ins>contend</ins> an ambition
 - Control of a system
 
-Bot will spend resources in prelude maximize available actions during combat.
+Bot will spend resources in prelude to maximize available actions during combat.
 
 Prior to Battle, check for risk of outrage. Battle is not considered favorable if outrage would cause bot to stop <ins>contending</ins> a declared ambition. Otherwise, Battle which risks outrage is only considered favorable if bot could ransack the court after trigging outrage.
 
