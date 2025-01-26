@@ -8,7 +8,9 @@ When asked if bot can <ins>favorable combat</ins> to achieve some result, first 
 
 Bot will spend resources in prelude to maximize available actions during combat.
 
-Prior to Battle, check for risk of outrage. Battle is not considered favorable if outrage would cause bot to stop <ins>contending</ins> a declared ambition. Otherwise, Battle which risks outrage is only considered favorable if bot could ransack the court after trigging outrage.
+Battle is not considered favorable if outrage would cause bot to stop <ins>contending</ins> a declared ambition. Otherwise, Battle risking outrage is favorable if bot could ransack the court.
+
+If bot can re-roll, first re-roll any intercepts, then re-roll blanks.
 
 ## Trophies
 
