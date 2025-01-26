@@ -2,7 +2,7 @@
 
 *version 0.3-draft*
 
-This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solo play, i.e. one human player versus one or more bots. It should also work as the 3rd or 4th opponent in a multiplayer game, but that was not the goal and has not been rigorously tested.
+This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solo play, i.e. one player versus one or more bots. It should also work as the 3rd or 4th opponent in a multiplayer game, but that was not the goal and has not been rigorously tested.
 
 ## Components
 
@@ -41,7 +41,7 @@ The procedures attempt to simulate good play, but the bot cannot plan multiple c
 
 If the bot is tied with the player, it does not have more power, and will gain these advantages. It's intended that this applies at the start of the game when all power markers are at zero.
 
-Relative power should be evaluated per bot, so in a game with 2 bots, if one bot is ahead of the player, and the other is behind, apply these only to the losing bot. In a multiplayer game, check power between bots and human players: grant the bot advantages when it is behind all human players.
+Relative power should be evaluated per bot, so in a game with 2 bots, if one bot is ahead of the player, and the other is behind, apply these only to the losing bot. In a multiplayer game, check power between bots and players: grant the bot advantages when it is behind all players.
 
 For an even harder game:
 

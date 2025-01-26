@@ -9,7 +9,7 @@ Populist Demands
 : <ins>Effective</ins> if the bot is winning or tied for first in an <ins>undeclared</ins> ambition. Choose an ambition the bot is winning, if possible. If only Securing for captives, do not choose an ambition.
 
 Outrage Spreads
-: <ins>Effective</ins> if outrage would cause a human player to stop winning a declared ambition. If multiple options, choose whichever resource bot has fewest of. If unable to stop a human player from winning an ambition, do not trigger outrage.
+: <ins>Effective</ins> if outrage would cause a player to stop winning a declared ambition. If multiple options, choose whichever resource bot has fewest of. If unable to stop a player from winning an ambition, do not trigger outrage.
 
 Song of Freedom
 : <ins>Effective</ins> if the bot controls a rival city and it's possible to seize the initiative. If not possible to seize the initiative, secure only for captives.
