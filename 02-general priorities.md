@@ -25,7 +25,7 @@
 
 ✦ <!-- priority=6 --> Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins> or take captives? <br>→ Administration/Aggression
 
-✦ <!-- priority=7 --> Can bot Secure other card or grow a lead in a declared ambition? → Aggression
+✦ <!-- priority=7 --> Can bot Secure a card to grow a lead in a declared ambition? → Aggression
 
 ✦ <!-- priority=8 --> Can bot Influence <ins>uncontested card</ins>? → Mobilization/Administration
 
