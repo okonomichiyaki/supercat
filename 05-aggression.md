@@ -1,4 +1,4 @@
-# Aggression - Move | Battle
+# Aggression - Move | Battle | Secure
 
 ✦ <!-- priority=1 --> Can bot Secure a card to <ins>contend</ins> a declared ambition, or secure an <ins>effective</ins> Vox card?
 
