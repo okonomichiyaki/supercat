@@ -3,21 +3,21 @@
 ✦ <!-- Build starport priority=3 --> Does bot have no starport and a loyal piece at planet with an empty slot?
 
 - Build a starport
-- Prefer:
-	- at <ins>claim</ins>
+- Prefer system with:
+	- bot control
 	- most loyal ships
 	- neutral control
 	- least rival ships
-
-✦ <!-- Build city priority=5 --> Does bot have <ins>unbuilt cities</ins> and at least one <ins>claim</ins>?
-
-- Build cities at <ins>claims</ins>
-- Only Build <ins>double city</ins> if winning a declared ambition and uncovering power bonus
 
 ✦ <!-- priority=4 --> Are any loyal buildings controlled by rival, and can bot Build or Repair to change control?
 
 - Build or Repair ships to change control
 - Take control if possible
+
+✦ <!-- Build city priority=5 --> Does bot have <ins>unbuilt cities</ins> and at least one <ins>claim</ins>?
+
+- Build cities at <ins>claims</ins>
+- Only Build <ins>double city</ins> if winning a declared ambition and uncovering power bonus
 
 ✦ Can bot Build or Repair to take control of rival building?
 
