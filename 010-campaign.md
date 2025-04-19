@@ -5,6 +5,10 @@ After an Event card is played, do not add it to the discard pile. Instead, set p
 
 *(Since the bot may reshuffle the action card deck this is to ensure Event cards do not occur more frequently than in multiplayer games)*
 
+## Edicts
+
+If the bot is the First Regent, check the bot's Fate to determine if it will change the policy. If Fate does not dictate which policy to change to, choose a policy aligned with an ambition the bot is currently contending. While enforcing the policy, if a rival has no pieces for Imperial Demand and has no agent, roll 1d6 and make the rival an Outlaw on 5 or 6.
+
 ## Summits
 
 If bot is given the opportunity to call a Summit, via Event card or the Imperial Council, roll 1d6 and apply DRMs below. Bot will call a Summit on a result of 5-6.
@@ -19,9 +23,7 @@ If bot calls a Summit and has one or more favors, during the "Call to Order" pha
 	- <ins>contend</ins> a declared or undeclared ambition
 	- <ins>contend</ins> advance objective directly or indirectly
 	- cause rival to stop <ins>contending</ins> for a declared ambition
-- **Petition the Council:** Check Fate
-- **Leave the Empire:** Check Fate
-- **Revive the Empire:** Check Fate
+- **Petition the Council, Leave the Empire, Revive the Empire:** Check Fate
 
 ## Negotiations
 
