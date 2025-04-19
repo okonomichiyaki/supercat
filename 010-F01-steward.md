@@ -11,7 +11,6 @@
 ✦ Is the Imperial Council "In Session"?
 
 - Yes: Can bot Secure or Influence the Imperial Council? (check "Influence Doctrine")
-
 - No: Is bot no longer the First Regent?
 	- Can bot Influence or Secure "Council Intrigue"?
 
