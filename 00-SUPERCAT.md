@@ -1,24 +1,42 @@
 ## a procedural non-player system for solo Arcs
 
-*version 0.3.1*
+*version 0.4-DRAFT<!-- TODO -->*
 
-This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solo play, i.e. one player versus one or more bots. It should also work as the 3rd or 4th opponent in a multiplayer game, but that was not the goal and has not been rigorously tested.
+This is a non-player system, or "bot", for playing the board game Arcs. It is intended for solo play, i.e. one player versus one or more bots. It can also work as the 3rd or 4th opponent in a multiplayer game. There are two versions of the this document; this is the <#ifdef base>base game<#endif><#ifdef campaign>campaign<#endif> version. <#ifdef campaign>*(Note: it currently only supports "A" Fates through Act I)*<#endif>
 
 ## Components
 
-You will need some way to track two numbers per bot, for instance two dice of different colors rotated to show a specific number face up. These are referred to as "counters" in the rules. You will also separately need one six sided die.
+You will need some way to track <#ifdef base>two<#endif><#ifdef campaign>several<#endif> numbers per bot, for instance dice of different colors rotated to show a different numbered face. <#ifdef campaign>For a solo game vs 3 bots, you will need 3 dice each of red, blue, yellow, and white, and 3 dice each of two other colors<#endif><#ifdef base>You will also separately need one six sided die.<#endif>
 
+<#ifdef base>
 ## Setup
 
 Choose a difficulty mode (see next page) which will determine turn order. For options to play with Leaders and Lore, see the related page at the end of the rules. Then setup the game normally according to the Arcs rulebook.
+<#endif>
+<#ifdef campaign>
+## Act I Setup
+
+Choose a difficulty mode (see next page) which will determine turn order. Set up the game normally according to the Blighted Reach rulebook, but make changes at the steps listed below.
+
+**1.B.** If playing on "normal" or "harder" difficulty, give the initiative marker to a bot, and seat the player(s) last in turn order.
+
+**2.B.** Assign "A" Fates using any method you like. Suggestion: Each player draws 2 "A" Fate cards and chooses one secretly as in a multiplayer game, then assign each bot an "A" Fate card selected randomly from the remaining cards.
+
+**2.G-H.** *If a bot is the Believer, check that Fate's procedures for special instructions.*
+When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport.
+
+**2.J.** Deal 6 action cards to each player, but do not deal action cards to the bot(s), instead place a counter on each bot board, showing a value of 6.
+
+**2.K.** All action cards not in player hands form a facedown stack near the board.
+<#endif>
 
 ## Playing a chapter
 
-Shuffle the action deck and deal the player 6 cards. Place the remaining cards in a face down stack. Place a counter on each bot's board, with a value of 6. This represents the number of cards in the bot's hand. On the bot's turn, reveal two cards from this stack, and decrement the counter. The bot will play one of these cards, and discard the other. The procedures on the following pages will instruct you on how to select a card, and how to execute the bot's turn.
+<#ifdef base>Shuffle the action deck and deal the player 6 cards. Place the remaining cards in a face down stack. Place a counter on each bot's board, with a value of 6. <#endif>The counter on the bot board represents the number of cards in the bot's hand. On the bot's turn, reveal two cards from this stack, and decrement the counter. The bot will play one of these cards, and discard the other. The procedures on the following pages will instruct you on how to select a card, and how to execute the bot's turn.
 
-If at any time the stack runs out, shuffle the discard pile before revealing 2 cards. If at any time the bot gains an action card, place the card near the bot's board, and increment the hand counter. Play card(s) gained as the last card(s) of the round. When the bot seizes initiative, decrement the counter to represent the bot discarding an extra card. Continue until the player has no cards and each bot's hand counter is at zero.
+If at any time the stack runs out, shuffle the discard pile <#ifdef campaign>(excluding Event cards)<#endif> before revealing 2 cards. If at any time the bot gains an action card, place the card near the bot's board, and increment the hand counter. Include any extra card(s) with those drawn on each bot turn when considering its options. When the bot seizes initiative, decrement the counter to represent the bot discarding an extra card. Continue until the player has no cards and each bot's hand counter is at zero.
 
-<div class="pagebreak"> </div>
+<#ifdef base><div class="pagebreak"> </div><#endif>
 
 ## How to follow the procedures
 
@@ -30,7 +48,9 @@ When directed, use "General Priorities" to select a card: Lead, Pivot, or Copy w
 
 When multiple actions are available, first spend actions according to highest priority, then if actions remaining, restart the procedure from the top of the page.
 
-Aside from the changes to card play described above, and the additional advantages below, the bot will follow every rule in the game.
+Aside from the changes to card play described above, <#ifdef campaign>the negotiation minigame, <#endif>and the additional advantages below, the bot will follow every rule in the game.
+
+<#ifdef campaign><div class="pagebreak"> </div><#endif>
 
 ## Difficulty mode (Optional but recommended)
 

@@ -9,16 +9,17 @@
 ✦ Does bot have initiative?
 
 - Remove seize counter, if present.
-- Is bot winning or tied for first place for a matching <ins>undeclared ambition</ins>?
-	- Yes:
-		- Select matching card (if multiple options, select card with more pips).
-		- Declare the ambition.
-	- No:
-		- Is bot winning a matching declared ambition and is an ambition marker available?
-			- Select matching card (if multiple options, select card with more pips).
-			- Declare the ambition.
-		- If both cards are the same suit, select card with higher number.
-		- Otherwise, use General Priorities to select card.
+
+- Is one or more card an Event?
+	- Draw until there are 2 non-Event cards to choose from, or no more cards.
+	- If all remaining cards are Events, place one on bot's board and pass the initiative.
+	- Otherwise, shuffle drawn Event cards back into stack and continue, selecting from non-Event cards.
+
+- Is bot winning or tied for first place for a matching ambition, and is an ambition marker available?
+	- Select matching card. Prefer: more pips
+	- Declare the ambition (if this ambition was already declared, then only declare if winning)
+	- If both cards are the same suit, select card with higher number.
+	- Otherwise, use General Priorities to select card.
 
 ✦ Can bot surpass with either card?
 

@@ -1,7 +1,11 @@
 #!/bin/zsh
 
+for f in 00-SUPERCAT.md; do
+    gpp -o "/tmp/$f" -H $1 $f
+done
+
 pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
-       00-SUPERCAT.md \
+       /tmp/00-SUPERCAT.md \
        00-terminology.md \
        01-bot\ turn\ start\ here.md \
        02-general\ priorities.md \
