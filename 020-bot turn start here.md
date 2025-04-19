@@ -1,8 +1,6 @@
 # Bot turn (START HERE)
 
-✦ Does bot have no cards left? (check hand counter)
-
-- Pass
+✦ If bot has no cards left (check hand counter) then pass.
 
 ✦ Draw 2 cards. Decrement hand counter. Use procedures below to select a card. Then go to the page for selected card's suit and discard the other card.
 
@@ -12,17 +10,15 @@
 <#ifdef campaign>- Is one or more card an Event?
 	- Draw until there are 2 non-Event cards to choose from, or no more cards.
 	- Shuffle drawn Event cards back into stack and select from drawn non-Event cards.
-<#endif>- Is bot winning or tied for first place for a matching ambition, and is an ambition marker available?
-	- Select matching card. Prefer: more pips
-	- Declare the ambition (if ambition already declared, only declare if winning)
-	- If both cards are the same suit, select card with higher number.
+<#endif>- Is bot winning or tied for first place for a matching ambition?
+	- Is there an ambition marker available?
+		- Select matching card and declare, if bot is winning or ambition not yet declared.
 	- Otherwise, use General Priorities to select card.
 
 ✦ Can bot surpass with either card?
 
 - Yes:
-	- Select card to surpass.
-	- If more than one option, select card with high number.
+	- Select card which surpasses. Prefer: higher number
 - No:
 	- If seize counter is on bot's board, increment it, else place seize counter, with a value of 1.
 	- If hand counter is 2 or greater and initiative was not already seized this round, check for seize:
