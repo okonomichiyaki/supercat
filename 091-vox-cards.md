@@ -1,6 +1,6 @@
 # Vox Cards
 
-The bot will secure a Vox card if it is <ins>effective</ins> or if Securing the card will take captives. In general, a Vox card is <ins>effective</ins> if its **When Secured** text can be fully carried out. The following guidelines explain when a Vox card is <ins>effective</ins> and gives instructions for how to perform the text for the bot.
+The bot will Secure a Vox card if it is <ins>effective</ins> or if Securing the card will take captives. In general, a Vox card is <ins>effective</ins> if its **When Secured** text can be fully carried out. The following clarifies specific Vox cards and gives instructions for how to perform the text for the bot.
 
 Mass Uprising
 : <ins>Effective</ins> if the bot has 4 or more ships in its supply. Choose the cluster with the <ins>task force</ins>. If no <ins>task force</ins>, then choose randomly.
@@ -20,8 +20,8 @@ Guild Struggle
 Call to Action
 : Always <ins>effective</ins>
 
-Council Intrigue <!-- TODO: when is this effective?-->
-: Move agents to other cards in the court according to "Influence Doctrine".
+Council Intrigue
+: Check Fate to determine whether <ins>effective</ins>. When resolving, move agents to other cards in the court according to "Influence Doctrine".
 
 Diplomatic Fiasco
 : <ins>Effective</ins> if at least one rival would be impacted by the Crisis. During the Crisis, select Guild cards for bot to discard which do not match declared ambitions.
