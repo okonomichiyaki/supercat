@@ -68,13 +68,9 @@ To determine bot-bot offers, examine each rival bot in turn order, and identify 
 
 The active bot will offer the target resources and favors such that the final DRM is +2. Bot will not offer resources matching declared ambition bot is currently <ins>contend</ins>.
 
-## Imperial Control
-
-TODO
-
 ## Faithful Cards
 
-TODO
+Since Faithful cards enable any type of action, they are not selected normally via "General Priorities". If the bot needs to use "General Priorities" to select between a Faithful card and any other card, read down the procedures as normal until identifying the bot's priority. If the bot can take the prioritized action using the Faithful card, select that card and turn to the page for the Faithful suit.
 
 ## Fates
 

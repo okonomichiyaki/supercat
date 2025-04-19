@@ -25,6 +25,7 @@ pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
        /tmp/070-construction.md \
        /tmp/080-mobilization.md \
        /tmp/081-movement-doctrine.md \
+       /tmp/031-faithful.md \
        /tmp/091-vox-cards.md \
        /tmp/092-leaders-and-lore.md \
        /tmp/093-questions.md \
