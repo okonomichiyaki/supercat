@@ -13,7 +13,7 @@ Specifically:
 
 ## Resources
 
-**Material**: spend to Build a starport if none on map, otherwise Build ships
+**Material**: spend to Build a starport if none on map, otherwise Build cities, then ships
 
 **Fuel and Weapon**: spend for <ins>Combat card</ins>
 
@@ -27,6 +27,6 @@ Bot will discard some guild card for their prelude effect at the first opportuni
 
 Bot will discard a Weapon guild card for effect, if it has 3 ships available. Place ships at starport with most fresh ships, otherwise with <ins>task force</ins>.
 
-Bot will discard a Union card for effect. Place action card in bot's play area, and increment bot's hand counter. Play action card as bot's last card.
+Bot will discard a Union card for effect. Place action card in bot's play area, and increment bot's hand counter.
 
 <div class="pagebreak"> </div>
