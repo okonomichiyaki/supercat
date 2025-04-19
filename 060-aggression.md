@@ -4,7 +4,7 @@
 
 ✦ <!-- priority=1.5 --> Can bot Secure an <ins>effective</ins> Vox card<#ifdef campaign>, Imperial Council, or an attached Faithful or Guild card<#endif>?
 
-✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition? (Check "Combat Doctrine")
+✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
 
 ✦ <!-- Expand for starport priority=3 -->If bot have no starport and no <ins>claims</ins>, can bot Move to get at least one new <ins>claim</ins>?
 
@@ -20,24 +20,13 @@
 		- <ins>unclaimed</ins>
 		- two slot planets
 
-✦ <!-- priority=6 --> Can bot Secure card to <ins>contend</ins> an <ins>undeclared ambition</ins>?
+✦ <!-- priority=6 --> Can bot Secure a card to <ins>contend</ins> an <ins>undeclared ambition</ins>, <!-- priority=7 --> or Secure a card to grow a lead in a declared ambition?
 
-✦ <!-- priority=7 --> Can bot Secure a card to grow a lead in a declared ambition?
+✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival building?
 
-<#ifdef campaign>
-✦ <!-- priority=9.5 --> Can bot Secure the Imperial Council?
-	- Would bot <ins>contend</ins> a declared ambition with the Imperial Trust?
-<#endif>
-
-✦ <!-- priority=10 --> Can bot take control of rival building?
-
-✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings?
-
-- Check Combat Doctrine
+✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings<#ifdef campaign>, or <ins>favorable combat</ins> vs Blight<#endif>?
 
 ✦ Are there any <ins>undeclared ambition</ins>s and can bot <ins>favorable combat</ins> for trophies?
-
-- Check Combat Doctrine
 
 ✦ Can bot Secure a card to grow a lead in an <ins>undeclared ambition</ins> or Secure another card?
 

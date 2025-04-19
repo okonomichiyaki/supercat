@@ -31,7 +31,7 @@
 <#ifdef campaign>
 ✦ <!-- priority=9.5 --> Would bot <ins>contend</ins> a declared ambition with the Imperial Trust, and can bot Influence the Imperial Council with more agents than rivals? → Mobilization/Administration
 <#endif>
-✦ <!-- priority=10 --> Can bot Move to take control of rival building → Mobilization/Aggression
+✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival building? → Mobilization/Aggression
 
 ✦ <!-- priority=11 --><!-- priority=12 --> Can bot Build or Repair ships? → Construction/Administration
 
