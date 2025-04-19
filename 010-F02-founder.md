@@ -13,5 +13,11 @@
 Parade Fleets
 : Place ships at a Free city where bot would gain control of the system, if possible. If bot is a Regent, always become an Outlaw.
 
+Events
+: If bot is a Regent, Event cards are always <ins>effective</ins>.
+
+Summits
+: If bot is a Regent, when given the opportunity to hold a Summit, it will always hold the Summit. During the "Call to Order" phase bot will leave the Empire.
+
 <div class="pagebreak"> </div>
 <#endif>
