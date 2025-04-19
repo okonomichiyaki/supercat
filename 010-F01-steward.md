@@ -10,10 +10,10 @@
 
 ✦ Is the Imperial Council in session?
 
-- Yes: *(try to control the council)*
+- Yes:
 	- Can bot Secure or Influence the Imperial Council? (check "Influence Doctrine")
 
-- No: *(try to petition the council to re-claim First Regent)*
+- No:
 	- Is bot no longer the First Regent?
 		- Has an Event card been played, and can bot seize the initiative?
 		- Can bot play an Event card, and seize the initiative?
