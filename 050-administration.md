@@ -14,6 +14,10 @@
 
 ✦ <!-- priority=9 --> Can bot Influence a <ins>contested card</ins>? (Check "Influence Doctrine")
 
+<#ifdef campaign>
+✦ <!-- priority=9.5 --> Would bot <ins>contend</ins> a declared ambition with the Imperial Trust, and can bot Influence the Imperial Council with more agents than rivals? → Mobilization/Administration
+<#endif>
+
 ✦ <!-- priority=12 --> Can bot Repair any ships or buildings?
 
 - Prefer:
