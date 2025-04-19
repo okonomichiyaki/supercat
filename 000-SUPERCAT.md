@@ -55,7 +55,7 @@ Aside from the changes to card play described above, <#ifdef campaign>the negoti
 
 ## Difficulty mode (Optional but recommended)
 
-To make for a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
+For a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
 
 - **Efficient Logistics**: bot performs 1 extra action per card
 - **Elite Pilots**: bot collects 1 extra die during Battle
@@ -76,7 +76,7 @@ This should be considered an optional but recommended rule. It will add a little
 
 Each bot will have a grievance counter matching the colors of all other bots and players. For instance, in a game with 1 player and 3 bots, a bot using the red pieces will track grievances in white, blue, and yellow. At the beginning of the game, the value of these is all zero.
 
-Certain actions taken against a bot, by a player or other bot, will result in a grievance. The target of the action will gain one or more grievance matching the source. Each of the following results in a the target gaining one grievance:
+Certain actions taken against a bot, by a player or other bot, will result in a grievance. The target of the action will gain one or more grievance matching the source. Each of the following results in the target gaining one grievance:
 
 * Battle action with bot as the defender
 * destroy one or more bot pieces (limit 1 per action)
