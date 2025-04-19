@@ -22,7 +22,7 @@
 
 ✦ <!-- priority=6 --> Can bot Secure a card to <ins>contend</ins> an <ins>undeclared ambition</ins>, <!-- priority=7 --> or Secure a card to grow a lead in a declared ambition?
 
-✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival building?
+✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival city <#ifdef campaign>or Free city<#endif>?
 
 ✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings<#ifdef campaign>, or <ins>favorable combat</ins> vs Blight<#endif>?
 

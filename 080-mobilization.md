@@ -32,7 +32,7 @@
 	- Adjacent to loyal starport
 	- Adjacent to rival starport
 
-✦ <!-- priority=10 --> Can bot take control of rival building?
+✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival city <#ifdef campaign>or Free city<#endif>?
 
 ✦ Are there any ships which are not in the <ins>task force</ins>, and not controlling gates or <ins>claims</ins> or rival cities?
 
