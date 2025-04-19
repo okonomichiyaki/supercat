@@ -15,7 +15,9 @@
 
 - No:
 	- Is bot no longer the First Regent?
-		- Has an Event card been played, and can bot seize the initiative?
-		- Can bot play an Event card, and seize the initiative?
 		- Can bot Influence or Secure "Council Intrigue"?
+
+Events
+: If bot is no longer the First Regent, and the Imperial Council is "Decided", Events are considered <ins>effective</ins>.
+
 <#endif>
