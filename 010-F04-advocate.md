@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Advocate (Act 1)
 
 ✦ Can bot Influence or Secure a Guild card with a Prelude action that discards itself?
@@ -11,3 +12,4 @@
 ✦ Can bot <ins>favorable combat</ins> to steal a Guild card with a Prelude action that discards itself?
 
 <div class="pagebreak"> </div>
+<#endif>

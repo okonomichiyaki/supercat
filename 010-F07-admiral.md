@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Admiral (Act I)
 
 <!-- TODO: the Admiral wants to remain a Regent, so should prioritize having something for imperial demand -->
@@ -16,5 +17,4 @@
 ✦ Does bot have unbuilt starports and at least one <ins>claim</ins>?
 
 - Build one new starport *(max one new starport per card)*
-
-<div class="pagebreak"> </div>
+<#endif>
