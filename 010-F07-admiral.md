@@ -1,7 +1,7 @@
 <#ifdef campaign>
 # Admiral (Act I)
 
-<!-- TODO: the Admiral wants to remain a Regent, so should prioritize having something for imperial demand -->
+✦ If bot does not have a piece matching the current Imperial Demand, can bot gain one via Tax or <ins>favorable combat</ins>?
 
 ✦ Can bot <ins>favorable combat</ins> for trophies with Imperial Ships?
 
