@@ -17,7 +17,7 @@ Events
 : If bot is a Regent, Event cards are always <ins>effective</ins>.
 
 Summits
-: If bot is a Regent, when given the opportunity to hold a Summit, it will always hold the Summit. During the "Call to Order" phase bot will leave the Empire.
+: If bot is a Regent, when given the opportunity to hold a Summit, it will always hold the Summit. During the "Call to Order" phase the bot will leave the Empire.
 
 <div class="pagebreak"> </div>
 <#endif>
