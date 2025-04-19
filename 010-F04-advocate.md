@@ -5,9 +5,9 @@
 
 - Check "Influence Doctrine" in case of multiple options
 
-✦ Can bot use Guild Investigators' "Recover (Move)" ability?
+✦ Can bot use Guild Investigators' **Recover (Move)** ability?
 
-- Attach recovered to card with loyal agents, if possible
+- Attach the recovered to card with loyal agents, if possible
 
 ✦ Can bot <ins>favorable combat</ins> to steal a Guild card with a Prelude action that discards itself?
 
