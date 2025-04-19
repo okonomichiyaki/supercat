@@ -1,7 +1,7 @@
 # Terminology
 
 claim
-: open building slot controlled by bot
+: open building slot in a system with bot's loyal pieces
 
 combat card
 : any card combined with fuel and a weapon, or an Aggression card.
