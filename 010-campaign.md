@@ -68,6 +68,10 @@ To determine bot-bot offers, examine each rival bot in turn order, and identify 
 
 The active bot will offer the target resources and favors such that the final DRM is +2. Bot will not offer resources matching declared ambition bot is currently <ins>contend</ins>.
 
+## Imperial Control
+
+TODO
+
 ## Fates
 
 Each Fate has its own special procedures and priorities on the following pages. When directed to refer to "General Priorities" note that the first line on that page instructs you to check the bot's Fate for initial priorities. Consult the page for the Fate, which will examine the board state and may direct the bot to a line of play. If the procedures apply, select the card indicated.
