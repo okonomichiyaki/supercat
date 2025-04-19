@@ -16,10 +16,10 @@ If multiple origins and destinations meet above criteria, use these priorities:
 
 - shortest path (i.e. spend fewest action)
 - if goal is not new <ins>claims</ins>, prefer destinations which result in new <ins>claims</ins>
-- if goal is not control, prefer destinations which result in bot control of Rival<#ifdef campaign> or Free <#endif>city.
+- if goal is not control, prefer destinations which result in bot control of rival<#ifdef campaign> or Free <#endif>city.
 
 <#ifdef campaign>
-When destination contains Blight and Imperial ships not present at destination, bring Imperial ships if possible. Otherwise, leave Imperial ships to retain Empire control if including them in the move would give Rival control of Loyal building.
+When destination contains Blight and Imperial ships not present at destination, bring Imperial ships if possible. Otherwise, leave Imperial ships to retain Empire control if including them in the move would give rival control of loyal building.
 <#endif>
 
 <div class="pagebreak"> </div>
