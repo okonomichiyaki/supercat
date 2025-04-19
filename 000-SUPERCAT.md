@@ -49,7 +49,7 @@ When multiple actions are available, first spend actions according to highest pr
 
 The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words like <ins>contend</ins>. When rounding fractions, round down unless otherwise specified.
 
-Aside from the changes to card play described above, <#ifdef campaign>the negotiation mini game, some special handling of certain Fate abilities,<#endif> and the additional advantages below, the bot will follow every rule in the game.
+Aside from the changes to card play described above, <#ifdef campaign>the negotiation minigame, some special handling of certain Fate abilities,<#endif> and the additional advantages below, the bot will follow every rule in the game.
 
 <#ifdef campaign><div class="pagebreak"> </div><#endif>
 
@@ -72,7 +72,7 @@ For an even harder game:
 <#ifdef campaign>
 ## Grievances (Optional but recommended)
 
-This should be considered an optional but recommended rule. It will add a little bit of extra friction for the solo player as well as some texture to the negotiation mini game.
+This should be considered an optional but recommended rule. It will add a little bit of extra friction for the solo player as well as some texture to the negotiation minigame.
 
 Each bot will have a grievance counter matching the colors of all other bots and players. For instance, in a game with 1 player and 3 bots, a bot using the red pieces will track grievances in white, blue, and yellow. At the beginning of the game, the value of these is all zero.
 
