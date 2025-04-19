@@ -16,7 +16,7 @@ Choose a difficulty mode (see next page) which will determine turn order. For op
 <#ifdef campaign>
 ## Setup (Act I)
 
-Choose a difficulty mode (see next page) which will determine turn order. Set up the game according to the Blighted Reach rulebook, but make changes at the steps listed below.
+Choose a difficulty mode (see page 3) which will determine turn order. Set up the game according to the Blighted Reach rulebook, but make changes at the steps listed below.
 
 **1.B.** If playing on "normal" or "harder" difficulty, give the initiative marker to a bot, and seat the player(s) last in turn order.
 
