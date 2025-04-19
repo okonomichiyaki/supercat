@@ -24,7 +24,7 @@ favorable combat
 (see "Combat Doctrine")
 
 new resources
-: type of resource that bot does not have OR type of planet bot does not have a building on
+: type of resource that bot does not have OR type of planet bot does not have a city on
 
 partial move
 : a bot Move which does not reach a destination on a single card (see "Movement Doctrine")
@@ -43,5 +43,3 @@ uncontested card
 
 undeclared ambition
 : ambition that has not been declared yet AND there are markers available
-
-<div class="pagebreak"> </div>
