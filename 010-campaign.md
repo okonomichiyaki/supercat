@@ -74,6 +74,20 @@ The active bot will offer the target resources and favors such that the final DR
 
 Since Faithful cards enable any type of action, they are not selected normally via "General Priorities". If the bot needs to use "General Priorities" to select between a Faithful card and any other card, read down the procedures as normal until identifying the bot's priority. If the bot can take the prioritized action using the Faithful card, select that card and turn to the page for the Faithful suit.
 
+## Golems
+
+Golem Actions - Warrior
+: If any bot has the Warrior Golem, it will use the Prelude ability if the resulting trophies would result in the bot <ins>contending</ins> for warlord (whether declared or not)
+
+Golem Actions - Protector
+: If any bot has the Protector Golem, it will use the Prelude ability if it has any damaged ships.
+
+Golem Actions - Seeker
+: If any bot has the Seeker Golem, it will use the Prelude ability like a Fuel resource (for a <ins>Combat card</ins>)
+
+Golem Actions - Harvester
+: If any bot has the Harvester Golem, it will use the Prelude ability to gain a resource to <ins>contend</ins> a declared ambition
+
 ## Fates
 
 Each Fate has its own special procedures and priorities on the following pages. When directed to refer to "General Priorities" note that the first line on that page instructs you to check the bot's Fate for initial priorities. Consult the page for the Fate, which will examine the board state and may direct the bot to a line of play. If the procedures apply, select the card indicated.
