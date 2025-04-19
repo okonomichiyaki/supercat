@@ -40,8 +40,6 @@ If at any time the stack runs out, shuffle the discard pile <#ifdef campaign>(ex
 
 ## How to follow the procedures
 
-The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words like <ins>contend</ins>.
-
 Start with "Bot Turn" and follow the instructions, executing statements if possible. When posed with a question, evaluate the situation and follow the nested steps. For more detailed explanation of interpreting nested procedures, see "Questions" at the end of the rules.
 
 When directed, use "General Priorities" to select a card: Lead, Pivot, or Copy with the indicated suit from bot's options. If suit is not available, proceed to next question. Once a card has been selected, go to the page for the selected card's suit.
@@ -50,16 +48,18 @@ When multiple actions are available, first spend actions according to highest pr
 
 Aside from the changes to card play described above, <#ifdef campaign>the negotiation minigame, <#endif>and the additional advantages below, the bot will follow every rule in the game.
 
+The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words like <ins>contend</ins>. When rounding fractions, round down unless otherwise specified.
+
 <#ifdef campaign><div class="pagebreak"> </div><#endif>
 
 ## Difficulty mode (Optional but recommended)
 
-The procedures attempt to simulate good play, but the bot cannot plan multiple cards ahead nor execute combos using guild abilities. To compensate and make for a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
+To make for a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
 
 - **Efficient Logistics**: bot performs 1 extra action per card
 - **Elite Pilots**: bot collects 1 extra die during Battle
 
-If the bot is tied with the player, it does not have more power, and will gain these advantages. It's intended that this applies at the start of the game when all power markers are at zero.
+*Note: If the bot is tied with the player, it does not have more power, and will gain these advantages, including at the start of the game when all power markers are tied at zero.*
 
 Relative power should be evaluated per bot, so in a game with 2 bots, if one bot is ahead of the player, and the other is behind, apply these only to the losing bot. In a multiplayer game, check power between bots and players: grant the bot advantages when it is behind all players.
 
