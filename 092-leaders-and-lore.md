@@ -1,3 +1,4 @@
+<#ifdef base>
 # Leaders and Lore
 
 The bot performs better in "vanilla" games. To keep the procedures streamlined there is only limited support for Leaders and Lore. Here are several options for different styles of solo gaming.
@@ -25,3 +26,4 @@ Then randomly assign a Lore to each bot from this list:
 Finally, draw two Leaders and two Lore, and choose one of each for the player.
 
 <div class="pagebreak"> </div>
+<#endif>
