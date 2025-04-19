@@ -1,5 +1,7 @@
 # General Priorities
-
+<#ifdef campaign>
+✦ Check bot's Fate for initial priorities. If no card selected, return to this page.
+<#endif>
 ✦ <!-- priority=1 --> Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
 
 ✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> declared ambition? → <ins>Combat card</ins>
@@ -18,10 +20,8 @@
 ✦ Does bot have <ins>unbuilt cities</ins>?
 
 - Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>?
-	- Yes:
-		- <!-- Expand for city priority=5 --> Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
-	- No:
-		- <!-- Build city priority=5 --> Does bot have at least one <ins>claim</ins>? → Construction
+	- Yes: <!-- Expand for city priority=5 --> Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
+	- No: <!-- Build city priority=5 --> Does bot have at least one <ins>claim</ins>? → Construction
 
 ✦ <!-- priority=6 --> Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins> or take captives? <br>→ Administration/Aggression
 

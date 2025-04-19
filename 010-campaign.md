@@ -39,19 +39,15 @@ During a Summit, the player will have an opportunity offer the bots negotiation 
 	- if successful, must pass to next player or bot in turn order
 	- if 3 consecutive failures, must pass to next player or bot in turn order
 - during a bot's negotiation round, it will attempt one negotiation with another bot, then pass
-- after all negotiation rounds have been completed, players may freely negotiate as normal
+- after each player and bot as had a turn, end mini game *(even if rounds remain)*
 
 Each negotiation round is a single trade attempt:
 
 - player or bot will offer to exchange one or more negotiation actions with a target bot
 - player or bot will commit to an offer, then roll 1d6 to determine if the target bot accepts
 - the target bot will accept on a modified roll of a 5 or 6
-note: bots do not offer trades to the player, only to other bots.
 
-To determine bot-bot offers, examine each rival bot in turn order, and identify what the current bot "wants" from the other bot. use these priorities, and if none apply, skip the exchange but still count the round as having occurred:
-
-- resource, trophy, or captive which would cause bot to <ins>contend</ins> a declared ambition
-- exchanges which would directly or indirectly advance bot's objective
+*(Note: bots do not offer trades to the player, only to other bots.)*
 
 Apply the following DRMs to the roll:
 
@@ -59,11 +55,24 @@ Apply the following DRMs to the roll:
 <li>-1 for each successive failed attempt</li>
 <li>-1 for each matching grievance</li>
 <li>-1 if trade would cause target to <ins>contend</ins> a declared ambition</li>
-<li>-X if bot is contending a declared ambition. X=power bot would gain from the ambition if it was scored right now</li>
+<li>-X if bot is <ins>contending</ins> a declared ambition. X=power bot would gain from the ambition</li>
 <li>+1 for each negotiation action offered above an even trade</li>
 <li>+1 if trade would cause bot to contend a declared ambition</li>
 <li>+1 if trade would cause bot to advance objective</li>
 </ul>
+
+To determine bot-bot offers, examine each rival bot in turn order, and identify what the current bot "wants" from the other bot. use these priorities, and if none apply, skip the exchange but still count the round as having occurred:
+
+- resource, trophy, or captive which would cause bot to <ins>contend</ins> a declared ambition
+- exchanges which would directly or indirectly advance bot's objective
+
+The active bot will offer the target resources and favors such that the final DRM is +2. Bot will not offer resources matching declared ambition bot is currently <ins>contend</ins>.
+
+## Fates
+
+Each Fate has its own special procedures and priorities on the following pages. When directed to refer to "General Priorities" note that the first line on that page instructs you to check the bot's Fate for initial priorities. Consult the page for the Fate, which will examine the board state and may direct the bot to a line of play. If the procedures apply, select the card indicated.
+
+By default, the bot will take a number of actions from its Fate page **equal to half the number of available actions, rounded up.** It will then proceed to the page for the selected suit and spend the remaining actions, if any. Note that some Fates may spend more or fewer actions from their specific procedures if possible.
 
 <div class="pagebreak"> </div>
 <#endif>
