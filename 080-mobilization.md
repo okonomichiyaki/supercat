@@ -8,10 +8,10 @@
 		- Take control if possible
 		- Neutralize control
 
-✦ <!-- Expand for city priority=5 --> Does bot have <ins>unbuilt cities</ins>?
+✦ <!-- Expand for city priority=5 --> Does bot have <ins>unbuilt cities</ins> and fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>?
 
-- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>, and could bot Move to control any open slots?
-	- Move to control open slots, until bot has as many <ins>claims</ins> as <ins>unbuilt cities</ins>. Prefer:
+- Could bot Move to control any open slots?
+	- Move until bot has as many <ins>claims</ins> as <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>. Prefer:
 		- <ins>new resources</ins>
 		- <ins>unclaimed</ins>
 		- two slot planets
@@ -20,8 +20,9 @@
 
 - Prefer:
 	- <!-- priority=8 --> <ins>uncontested card</ins> to <ins>contend</ins> declared ambition
-	- <!-- priority=9 --> <ins>contested card</ins>
-	- <ins>uncontested card</ins> to <ins>contend</ins> undeclared ambition
+	- <!-- priority=9 --> <ins>contested card</ins><#ifdef campaign>
+	- <!-- priority=9.5 --> Imperial Council, if bot would <ins>contend</ins> a declared ambition with the Imperial Trust
+<#endif>	- <ins>uncontested card</ins> to <ins>contend</ins> undeclared ambition
 	- other cards (Check "Influence Doctrine" for priorities)
 
 ✦ Can bot change control of a gate?
