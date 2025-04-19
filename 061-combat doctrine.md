@@ -26,8 +26,6 @@ If favorable, the bot will first spend actions to roll dice like a trophies Batt
 
 ## Control
 
-A Battle for control is favorable is bot can roll at least 1 die per fresh defending ship.
-
-If favorable, bot will select dice like a trophies Battle. Bot will allocate hits to take control, then allocate hits to take trophies.
+A Battle for control is favorable is bot can roll at least 1 die per fresh defending ship. If favorable, bot will select dice like a trophies Battle. Bot will allocate hits to take control, then allocate hits to take trophies.
 
 <div class="pagebreak"> </div>
