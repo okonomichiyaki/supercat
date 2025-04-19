@@ -3,9 +3,9 @@
 ✦ Check bot's Fate for initial priorities. If no card selected, return to this page.
 <#endif>
 ✦ <!-- priority=1 --> Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
-<#ifdef campaign>
-✦ <!-- priority=1.5 --> Can bot Secure an <ins>effective</ins> Vox card, the Imperial Council, or Secure a card with an attached Faithful or Guild card? → Aggression
-<#endif>
+
+✦ <!-- priority=1.5 --> Can bot Secure an <ins>effective</ins> Vox card<#ifdef campaign>, the Imperial Council, or Secure a card with an attached Faithful or Guild card<#endif>? → Aggression
+
 ✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> declared ambition? → <ins>Combat card</ins>
 
 ✦ Does bot have no starport?
@@ -16,7 +16,7 @@
 
 ✦ Are any loyal buildings in a system controlled by a rival?
 
-- <!-- priority=4 --> Can bot Move to change control? → Mobilization/Aggression
+- <!-- priority=4 --> Can bot Move or <ins>favorable combat</ins> to change control? → Mobilization/Aggression
 - <!-- priority=4 --> Can bot Build or Repair to change control? → Construction/Administration
 
 ✦ Does bot have <ins>unbuilt cities</ins>?
