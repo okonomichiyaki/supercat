@@ -3,7 +3,9 @@
 ✦ Check bot's Fate for initial priorities. If no card selected, return to this page.
 <#endif>
 ✦ <!-- priority=1 --> Can bot Tax/Secure to <ins>contend</ins> declared ambition? → Administration/Aggression
-
+<#ifdef campaign>
+✦ <!-- priority=1.5 --> Can bot Secure an <ins>effective</ins> Vox card, the Imperial Council, or Secure a card with an attached Faithful or Guild card? → Aggression
+<#endif>
 ✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> declared ambition? → <ins>Combat card</ins>
 
 ✦ Does bot have no starport?
@@ -19,22 +21,18 @@
 
 ✦ Does bot have <ins>unbuilt cities</ins>?
 
-- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>?
+- Does bot have fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins>, rounded down<#endif>?
 	- Yes: <!-- Expand for city priority=5 --> Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
 	- No: <!-- Build city priority=5 --> Does bot have at least one <ins>claim</ins>? → Construction
 
-✦ <!-- priority=6 --> Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins> or take captives? <br>→ Administration/Aggression
+✦ <!-- priority=6 --><!-- priority=7 --> Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins>, take captives, or grow a lead in a declared ambition? <br>→ Administration/Aggression
 
-✦ <!-- priority=7 --> Can bot Secure a card to grow a lead in a declared ambition? → Aggression
-
-✦ <!-- priority=8 --> Can bot Influence <ins>uncontested card</ins>? → Mobilization/Administration
-
-✦ <!-- priority=9 --> Can bot Influence <ins>contested card</ins> with more agents than rivals? → Mobilization/Administration
-
+✦ <!-- priority=8 --><!-- priority=9 --> Can bot Influence a card with more agents than rivals? → Mobilization/Administration
+<#ifdef campaign>
+✦ <!-- priority=9.5 --> Would bot <ins>contend</ins> a declared ambition with the Imperial Trust, and can bot Influence the Imperial Council with more agents than rivals? → Mobilization/Administration
+<#endif>
 ✦ <!-- priority=10 --> Can bot Move to take control of rival building → Mobilization/Aggression
 
-✦ <!-- priority=11 --> Does bot have ships available to Build? → Construction
-
-✦ <!-- priority=12 --> Does bot have ships available to Repair? → Administration/Construction
+✦ <!-- priority=11 --><!-- priority=12 --> Can bot Build or Repair ships? → Construction/Administration
 
 <div class="pagebreak"> </div>
