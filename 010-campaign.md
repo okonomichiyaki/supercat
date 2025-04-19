@@ -63,12 +63,12 @@ Apply the following DRMs to the roll:
 <li>+1 if trade would cause bot to advance objective</li>
 </ul>
 
-To determine bot-bot offers, examine each rival bot in turn order, and identify what the current bot "wants" from the other bot. use these priorities, and if none apply, skip the exchange but still count the round as having occurred:
+To determine bot-bot offers, examine each rival bot in turn order, and identify what the current bot "wants" from the other bot. Use these priorities, and if none apply, pass next player or bot, but still count the round as having occurred:
 
 - resource, trophy, or captive which would cause bot to <ins>contend</ins> a declared ambition
 - exchanges which would directly or indirectly advance bot's objective
 
-The active bot will offer the target resources and favors such that the final DRM is +2. Bot will not offer resources matching declared ambition bot is currently <ins>contend</ins>.
+The active bot will offer the target resources and favors such that the final DRM is +2. Bot will not offer resources matching declared ambition bot is currently <ins>contending</ins>.
 
 ## Faithful Cards
 

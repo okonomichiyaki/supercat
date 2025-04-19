@@ -24,7 +24,7 @@ Choose a difficulty mode (see page 3) which will determine turn order. Set up th
 
 **2.G-H.** When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport. *If a bot is the Believer, check that Fate's procedures for special instructions.*
 
-**2.J.** Deal 6 action cards to each player, but do not deal action cards to the bot(s), instead place a counter on each bot board, showing a value of 6.
+**2.J.** Deal 6 action cards to each player, but do not deal action cards to the bots, instead place a counter on each bot board, showing a value of 6.
 
 **2.K.** All action cards not in player hands form a single face down stack near the board.
 <#endif>
