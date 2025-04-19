@@ -8,14 +8,12 @@
 	- Protect loyal agents
 	- Check "Influence Doctrine" for additional priorities
 
-✦ Is the Imperial Council in session?
+✦ Is the Imperial Council "In Session"?
 
-- Yes:
-	- Can bot Secure or Influence the Imperial Council? (check "Influence Doctrine")
+- Yes: Can bot Secure or Influence the Imperial Council? (check "Influence Doctrine")
 
-- No:
-	- Is bot no longer the First Regent?
-		- Can bot Influence or Secure "Council Intrigue"?
+- No: Is bot no longer the First Regent?
+	- Can bot Influence or Secure "Council Intrigue"?
 
 Events
 : If bot is no longer the First Regent, and the Imperial Council is "Decided", Events are considered <ins>effective</ins>.
