@@ -72,6 +72,10 @@ The active bot will offer the target resources and favors such that the final DR
 
 TODO
 
+## Faithful Cards
+
+TODO
+
 ## Fates
 
 Each Fate has its own special procedures and priorities on the following pages. When directed to refer to "General Priorities" note that the first line on that page instructs you to check the bot's Fate for initial priorities. Consult the page for the Fate, which will examine the board state and may direct the bot to a line of play. If the procedures apply, select the card indicated.
