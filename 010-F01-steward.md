@@ -4,8 +4,7 @@
 ✦ Can bot use Dealmakers' **Bargain (Secure)** ability?
 
 - Use **Bargain (Secure)**. Use these priorities to select a card for Rival to Secure and subsequent Influence and Secure actions:
-	- Imperial Council and Council Intrigue
-		- Select target which allows bot to Influence and Secure either of these cards, or prevent Rival from Securing
+	- Imperial Council and Council Intrigue *(Select target which allows bot to Influence and Secure either of these cards, or prevent Rival from Securing)*
 	- Protect Loyal agents
 	- Check "Influence Doctrine" for additional priorities
 
@@ -16,9 +15,7 @@
 
 - No: *(try to petition the council to re-claim First Regent)*
 	- Is bot no longer the First Regent?
-		- Has an Event card been played, and could bot seize the initiative?
-			- Seize the initiative
+		- Has an Event card been played, and can bot seize the initiative?
 		- Can bot play an Event card, and seize the initiative?
-			- Play Event and seize the initiative
 		- Can bot Influence or Secure "Council Intrigue"?
 <#endif>

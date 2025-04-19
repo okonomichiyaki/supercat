@@ -11,7 +11,7 @@
 ✦ Can bot <ins>favorable combat</ins> to take control of a system? (use all available actions if needed)
 
 Parade Fleets
-: Place ships at a Free city where bot would gain control of the system, if possible. If bot is a Regent, always become an Outlaw.
+: Place ships where bot would gain control. If bot is a Regent, always become an Outlaw.
 
 Events
 : If bot is a Regent, Event cards are always <ins>effective</ins>.
