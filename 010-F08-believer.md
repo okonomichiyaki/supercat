@@ -1,7 +1,9 @@
 <#ifdef campaign>
 # Believer (Act I)
 
-✦ Can bot use **Teach (Influence)** to attach a Faithful card to a Guild card in the court?
+**Spend as many actions as possible here before turning to selected card's suit.**
+
+✦ Can bot use **Teach (Influence)**? (attach a Faithful card to a Guild card in the court)
 
 - Prefer:
 	- guild card with loyal agents
