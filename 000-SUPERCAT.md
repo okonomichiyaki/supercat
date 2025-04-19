@@ -14,7 +14,7 @@ You will need some way to track <#ifdef base>two<#endif><#ifdef campaign>several
 Choose a difficulty mode (see next page) which will determine turn order. For options to play with Leaders and Lore, see the related page at the end of the rules. Then setup the game normally according to the Arcs rulebook.
 <#endif>
 <#ifdef campaign>
-## Act I Setup
+## Setup (Act I)
 
 Choose a difficulty mode (see next page) which will determine turn order. Set up the game normally according to the Blighted Reach rulebook, but make changes at the steps listed below.
 
@@ -68,4 +68,19 @@ For an even harder game:
 - Apply the above advantages even if the bot is ahead in power.
 - The bot with the most power starts every chapter with initiative.
 
+## Grievances (Optional but recommended)
+
+
+
+Each bot has a grievance counter matching the colors of all other bots and players. For instance, in a game with 1 player and 3 bots, a bot using the red pieces will track grievances in white, blue, and yellow. At the beginning of the game, the value of these is all zero.
+
+Certain actions taken against a bot, by a player or other bot, will result in a grievance. The target of the action will gain one or more grievance matching the source. Each of the following results in a the target gaining one grievance:
+
+* Battle action with bot as the defender
+* destroy one or more bot pieces (limit 1 per action)
+* steal a resource or guild card from the bot (limit 1 per action)
+* target bot city with a Tax action
+* take one or more bot agents captive (limit 1 per action)
+
+**Example:** Red bot has zero grievances associated with the blue player. The blue player takes a Battle action, choosing red bot as the defender, in a system with both red ships and red buildings, using a mix of assault and raid dice. The blue player destroys 2 ships with the assault dice, and gets enough keys on the raid dice to steal 1 resource and 1 guild card. The red bot will gain 3 grievances matching the blue player (one for the Battle action, one for destroying pieces, and one for stealing)
 <div class="pagebreak"> </div>

@@ -1,8 +1,6 @@
 # Bot turn (START HERE)
 
-✦ Does bot have no cards left? (check hand counter)
-
-- Pass initiative
+✦ Pass if the bot has no cards left. *(check hand counter)*
 
 ✦ Draw 2 cards. Decrement hand counter. Use procedures below to select a card. Then go to the page for selected card's suit and discard the other card.
 
