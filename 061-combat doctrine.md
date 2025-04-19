@@ -16,7 +16,7 @@ If bot can re-roll, first re-roll any intercepts, then re-roll blanks.
 
 A Battle for trophies is considered favorable if bot has at least 1:1 ratio of fresh ships.
 
-If bot has multiple actions, first roll skirmish dice until ratio of fresh ships is better than 1:1, or only 1 action left. Then roll all assault dice if ratio is better than 1:1, or select half skirmish dice and half assault dice (round in favor of skirmish dice). Allocate hits prioritizing trophies.
+If bot has multiple actions, first roll skirmish dice until ratio of fresh ships is better than 1:1, or only 1 action left. Then roll all assault dice if ratio is better than 1:1, or select half assault dice and the rest skirmish dice. Allocate hits prioritizing trophies.
 
 ## Raid
 
