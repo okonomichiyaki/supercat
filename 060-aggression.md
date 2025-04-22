@@ -1,6 +1,6 @@
 # Aggression - Move | Battle | Secure
 
-✦ <!-- priority=1 --> Can bot Secure a card to <ins>contend</ins> a declared ambition?
+✦ <!-- priority=1 --> Can bot Secure to <ins>contend</ins> a declared ambition?
 
 ✦ <!-- priority=1.5 --> Can bot Secure an <ins>effective</ins> Vox card<#ifdef campaign>, Imperial Council, or an attached Faithful or Guild card<#endif>?
 
