@@ -36,9 +36,8 @@ def build_statement(row):
     if (row['Priority'] != "" and row['Priority'] != "99"):
         priority = f"<!-- priority={row['Priority']} -->"
     if (row['Condition'] != ""):
-        s = f"✦ {priority} {row['Condition']}\n"
-        i = i + 1
-        s = s + indent(f"- {q}\n", i)
+        s = f"✦ {priority} {row['Condition']}\n\n"
+        s = s + f"- {q}\n"
     else:
         s = f"✦ {priority} {q}\n"
     if (row['Prefer'] != ""):
