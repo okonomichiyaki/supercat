@@ -138,7 +138,7 @@ class Node:
         next = None
         if self.next:
             next = self.next.id
-        return f"Node(id={self.id}, t={self.type}, q={self.question}, next={next})"
+        return f"Node(id={self.id}, t={self.type}, q={self.question}, next={next}, suits={self.suits})"
 
 def build_node(title, row, type="action", letter=None):
     id = row['Id']
@@ -160,7 +160,7 @@ def build_cond_node(title, row, letter=None):
     node.question = row['Condition']
     return node
 
-def nodes_from_file(filename):
+def nodes_from_file(title, filename):
     with open(filename, newline='') as csvfile:
         reader = csv.DictReader(csvfile)
         prev = None
@@ -174,8 +174,8 @@ def nodes_from_file(filename):
                     head = node
                 prev = node
             else:
-                n1 = build_cond_node("GeneralPriorities", row, 'A')
-                n2 = build_node("GeneralPriorities", row, letter='B')
+                n1 = build_cond_node(title, row, 'A')
+                n2 = build_node(title, row, letter='B')
                 n1.next = n2
                 if prev:
                     prev.next = n1
@@ -183,6 +183,22 @@ def nodes_from_file(filename):
                     head = n1
                 prev = n2
         return head
+
+def filter_nodes(head, suit):
+    n = head
+    while n and suit not in n.suits:
+        n = n.next
+    result = n
+    p = n
+    n = n.next
+    while n:
+        if suit not in n.suits:
+            p.next = n.next
+            n = p.next
+        else:
+            p = n
+            n = n.next
+    return result
 
 def print_nodes(head):
     n = head
@@ -220,10 +236,13 @@ def merge_nodes(head):
 def main():
     filename = sys.argv[1]
     passages = []
-    head = nodes_from_file(filename)
-    merge_nodes(head)
-#    print_nodes(head)
-    print(preamble)
-    print_passages(head)
+    head = nodes_from_file('Construction', filename)
+    f = filter_nodes(head, 'Construction')
+    # print_nodes(f)
+    merge_nodes(f)
+    # print_nodes(head)
+    # print(preamble)
+    print_passages(f)
+
 
 main()
