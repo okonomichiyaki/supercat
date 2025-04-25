@@ -18,10 +18,11 @@
 ✦ <!-- priority=9.5 --> Would bot <ins>contend</ins> a declared ambition with the Imperial Trust, and can bot Influence the Imperial Council with more agents than rivals?
 <#endif>
 
-✦ <!-- priority=12 --> Can bot Repair any ships or buildings?
+✦ <!-- priority=12 --> Can bot Repair any other ships or buildings?
 
 - Prefer:
-	- ships in <ins>task force</ins>, then other ships
+	- ships in <ins>task force</ins>
+	- other ships
 	- starport, if only one on map
 	- cities
 	- other starports
