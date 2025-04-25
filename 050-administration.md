@@ -7,8 +7,8 @@
 - Prefer:
 	- Take or neutralize control in a system with a loyal building
 	- Take control in a system with a rival building
+✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or to take captives?
 
-✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or Tax a rival city and captives?
 
 ✦ <!-- priority=8 --> Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> a declared ambition, if Secured?
 
