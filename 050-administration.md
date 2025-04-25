@@ -32,8 +32,8 @@
 
 ✦ Can bot Influence any other card? (Check "Influence Doctrine")
 
-✦ Can bot Tax for <ins>new resources</ins>?
+✦ Can bot Tax to gain resources?
 
-✦ Can bot Tax for other resources?
-
+- Prefer:
+	- <ins>new resources</ins>
 <div class="pagebreak"> </div>
