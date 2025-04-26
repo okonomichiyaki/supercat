@@ -28,7 +28,9 @@
 	- take control adjacent to rival starport
 	- take or neutralize control adjacent to loyal starport
 
-✦ Can bot Move to concentrate ships towards <ins>task force</ins> (use <ins>partial move</ins>)?
+✦ Are there any ships not controlling gates or <ins>claims</ins> or rival buildings?
+
+- Can bot Move to unassigned ships to <ins>task force</ins> (use <ins>partial move</ins>)?
 
 ✦ Can bot Influence any other cards?
 
