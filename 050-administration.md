@@ -5,9 +5,6 @@
 ✦ Are any loyal buildings controlled by a rival?
 
 - <!-- priority=4 --> Can bot Repair to change control?
-- Prefer:
-	- take control if possible
-	- otherwise neutralize control
 
 ✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or to take captives?
 
