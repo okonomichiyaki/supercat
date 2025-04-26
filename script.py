@@ -188,13 +188,14 @@ def main():
     print("done.")
 
     all_rows = get_rows(filename)
-    print(f"got {len(all_rows)} rows from sheet")
+    filtered = [ row for row in all_rows if row['Hide'] != "x" ]
+    print(f"all rows: {len(all_rows)} filtered rows: {len(filtered)}")
     for suit in suits:
         actions = " | ".join(suits[suit]["actions"])
         output = suits[suit]["output"]
         idx = 0
         stmts = []
-        rows = [ row for row in all_rows if row[suit] == '◉' ]
+        rows = [ row for row in filtered if row[suit] == '◉' ]
         print(f"got {len(rows)} rows for {suit}")
         print(f"generating {suit}", end="")
         for row in rows:
