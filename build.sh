@@ -25,6 +25,7 @@ pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
        /tmp/060-aggression.md \
        /tmp/061-combat\ doctrine.md \
        /tmp/070-construction.md \
+       /tmp/071-expansion-doctrine.md \
        /tmp/080-mobilization.md \
        /tmp/081-movement-doctrine.md \
        /tmp/031-faithful.md \
