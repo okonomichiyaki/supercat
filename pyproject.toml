@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "supercat"
+version = "0.4.1"
+description = ""
+authors = ["okonomichiyaki <74801510+okonomichiyaki@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gspread = "^6.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
