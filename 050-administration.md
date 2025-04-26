@@ -2,11 +2,10 @@
 
 ✦ <!-- priority=1 --> Can bot Tax to <ins>contend</ins> a declared ambition?
 
-✦ <!-- priority=4 --> Can bot Repair ships to change control in a system with a loyal building or take control in a system with a rival building?
+✦ Are any loyal buildings controlled by a rival?
 
-- Prefer:
-	- Take or neutralize control in a system with a loyal building
-	- Take control in a system with a rival building
+- <!-- priority=4 --> Can bot Repair to change control?
+
 ✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or to take captives?
 
 
