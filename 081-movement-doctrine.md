@@ -1,6 +1,6 @@
 # Movement Doctrine
 
-When moving ships, the bot will follow these guidelines.
+When moving ships, the bot will follow these guidelines. Note that this page covers movement generally; for specific guidance on bot behavior around staking new <ins>claims</ins> and building cities, see the "Expansion Doctrine".
 
 Each movement has an origin, a destination, and a goal. The procedures will define a specific goal, for example changing control of a system with loyal buildings. The goal will define one or more destinations. The specific destination and origin should be selected according to the priorities below.
 
