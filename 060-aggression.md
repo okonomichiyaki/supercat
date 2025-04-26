@@ -2,10 +2,16 @@
 
 ✦ <!-- priority=1 --> Can bot Secure to <ins>contend</ins> a declared ambition?
 
-✦ <!-- priority=1.5 --> Can bot Secure an <ins>effective</ins> Vox card?
+<#ifdef base>
+✦ <!-- priority=2 --> Can bot Secure an <ins>effective</ins> Vox card?
+<#endif>
 
 <#ifdef campaign>
-✦ <!-- priority=2 --> Can bot Secure the Imperial Council, a Faithful card, or an attached Guild card?
+✦ <!-- priority=2 --> Can bot Secure an <ins>effective</ins> Vox card or the Imperial Council?
+<#endif>
+
+<#ifdef campaign>
+✦ <!-- priority=2.5 --> Can bot Secure a Faithful card or an attached Guild card?
 <#endif>
 
 ✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
@@ -44,7 +50,7 @@
 
 - Can bot <ins>favorable combat</ins> to take trophies?
 
-✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
+✦ Can bot Secure to grow lead in an <ins>undeclared ambition</ins> or to take any other cards?
 
 ✦ Can bot Move to change control of a rival-controlled gate?
 
@@ -52,8 +58,10 @@
 	- take control adjacent to rival starport
 	- take or neutralize control adjacent to loyal starport
 
+<#ifdef base>
 ✦ Are there any ships not controlling gates or <ins>claims</ins> or rival buildings?
 
 - Can bot Move to unassigned ships to <ins>task force</ins> (use <ins>partial move</ins>)?
+<#endif>
 
 <div class="pagebreak"> </div>
