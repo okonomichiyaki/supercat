@@ -22,7 +22,7 @@
 <#ifdef campaign>
 ✦ Would bot <ins>contend</ins> a declared ambition with the Imperial Trust?
 
-- <!-- priority=9.5 --> Can bot Influence the Imperial Council with more agents than rivals? <span style="font-size: 12px;">(22)</span>
+- <!-- priority=9.5 --> Can bot Influence the Imperial Council? <span style="font-size: 12px;">(22)</span>
 <#endif>
 
 <#ifdef campaign>
