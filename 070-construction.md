@@ -37,9 +37,9 @@
 ✦ <!-- priority=12 --> Can bot Repair any other ships or buildings?
 
 - Prefer:
-	- ships in <ins>task force</ins>, then other ships
+	- ships in <ins>task force</ins>
+	- other ships
 	- starport, if only one on map
 	- cities
 	- other starports
-
 <div class="pagebreak"> </div>
