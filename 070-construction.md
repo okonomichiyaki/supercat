@@ -11,20 +11,16 @@
 
 ✦ Are any loyal buildings controlled by a rival?
 
-✦ <!-- Build city priority=5 --> Does bot have <ins>unbuilt cities</ins> and at least one <ins>claim</ins>?
-
-- Build cities at <ins>claims</ins>
-- Only Build <ins>double city</ins> if winning a declared ambition and uncovering power bonus
-
-✦ Can bot Build or Repair to take control of rival building?
 - <!-- priority=4 --> Can bot Build or Repair to change control?
+
+✦ <!-- priority=5 --> Can bot Build cities?
+
 - Prefer:
-	- take control if possible
-	- otherwise neutralize control
+	- only Build <ins>double city</ins> if winning a declared ambition and uncovering power bonus
 
-✦ Can bot Build or Repair to defend any undefended buildings?
+✦ <!-- priority=10 --> Can bot Build or Repair to take control of a rival building?
 
-- Build or Repair until at least 1 fresh ship defending planets with buildings
+✦ <!-- priority=10.5 --> Can bot Build to defend an undefended building?
 
 ✦ <!-- priority=11 --> Can bot Build any ships?
 
