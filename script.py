@@ -85,17 +85,30 @@ def merge_goals(rows):
 
 def merge_actions(rows):
     cond = rows[0]['Condition']
+    pref = rows[0]['Prefer']
     actions = [row['Action'] for row in rows]
     actions = " or ".join(actions)
     pcomment = priority_comment(rows[0]['Priority'])
     thing = f"{rows[0]['GlueWord']} {rows[0]['Goal']}"
     quest = f"Can bot {actions} {thing}?"
+    lines = []
     if cond != "":
-        s = f"✦ {cond}\n\n"
-        s = s + f"- {pcomment} {quest}\n"
-        return s
+        lines.append(f"✦ {cond}")
+        lines.append("")
+        lines.append(f"- {pcomment} {quest}")
     else:
-        return f"✦ {pcomment} {quest}"
+        lines.append(f"✦ {pcomment} {quest}")
+    if pref != "":
+        if lines[-1].startswith("✦"):
+            lines.append("")
+        ctx = ""
+        if row['PreferContext'] != "":
+            ctx = f" {row['PreferContext']}"
+        lines.append(f"- Prefer{ctx}:")
+        ps = [ indent(f"- {p.strip()}", 1) for p in pref.split(";")]
+        lines = lines + ps
+
+    return "\n".join(lines)
 
 def both_blank(a, b, k):
     return a[k] == "" and b[k] == ""
@@ -107,7 +120,7 @@ def same_priority_and_action(a, b):
     return equals(a, b, 'Priority') and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
 
 def same_priority_goal_cond(a, b):
-    return equals(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and both_blank(a, b, 'Prefer')
+    return equals(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
 
 def cleanup(s):
     s = s.replace("  ", " ")
