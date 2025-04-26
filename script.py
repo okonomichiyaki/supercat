@@ -52,24 +52,26 @@ def build_statement(row):
     thing = f"{glue} {goal}"
     i = 0
     quest = f"Can bot {action} {thing}?"
-    s = ""
+    lines = []
     p = row['Priority']
     pcomment = priority_comment(p)
     if cond != "":
-        s = f"✦ {cond}\n\n"
-        s = s + f"- {pcomment} {quest}\n"
+        lines.append(f"✦ {cond}")
+        lines.append("")
+        lines.append(f"- {pcomment} {quest}")
     else:
-        s = f"✦ {pcomment} {quest}\n"
+        lines.append(f"✦ {pcomment} {quest}")
     if pref != "":
-        s = s + "\n"
+        if lines[-1].startswith("✦"):
+            lines.append("")
         ctx = ""
         if row['PreferContext'] != "":
             ctx = f" {row['PreferContext']}"
-        s = s + indent(f"- Prefer{ctx}:\n", i)
+        lines.append(indent(f"- Prefer{ctx}:", i))
         i = i + 1
         ps = [ indent(f"- {p.strip()}", i) for p in pref.split(";")]
-        s = s + "\n".join(ps)
-    return s
+        lines = lines + ps
+    return "\n".join(lines)
 
 def merge_goals(rows):
     action = rows[0]['Action']
