@@ -1,8 +1,8 @@
 # Construction - Build | Repair
 
-✦ <!-- Build starport priority=3 --> Does bot have no starport and a loyal piece at planet with an empty slot?
+✦ Does bot have no starport?
 
-- Build a starport
+- <!-- priority=3 --> Can bot Build a starport?
 - Prefer system with:
 	- bot control
 	- most loyal ships
