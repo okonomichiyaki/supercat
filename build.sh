@@ -4,6 +4,8 @@ for f in *.md; do
     gpp -o "/tmp/$f" -H $1 $f
 done
 
+rm output.html
+
 pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
        /tmp/000-SUPERCAT.md \
        /tmp/010-campaign.md \
@@ -16,7 +18,7 @@ pandoc -s --css=pandoc.css --metadata title=SUPERCAT \
        /tmp/010-F07-admiral.md \
        /tmp/010-F08-believer.md \
        /tmp/020-bot\ turn\ start\ here.md \
-       /tmp/030-general\ priorities.md \
+       /tmp/030-general-priorities.md \
        /tmp/040-prelude.md \
        /tmp/050-administration.md \
        /tmp/051-influence-doctrine.md \
