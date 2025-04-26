@@ -41,4 +41,5 @@
 	- other ships
 	- starport, if only one on map
 	- cities
+
 <div class="pagebreak"> </div>
