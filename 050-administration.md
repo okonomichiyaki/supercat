@@ -20,21 +20,19 @@
 
 ✦ <!-- priority=10 --> Can bot Repair to take control of a rival building?
 
-✦ <!-- priority=12 --> Can bot Repair any other ships or buildings?
+✦ <!-- priority=12 --> Can bot Repair any other ships or buildings? Prefer:
 
-- Prefer:
-	- ships in <ins>task force</ins>
-	- other ships
-	- starport, if only one on map
-	- cities
+- ships in <ins>task force</ins>
+- other ships
+- starport, if only one on map
+- cities
 
 ✦ Can bot Tax to grow a lead in a declared ambition?
 
 ✦ Can bot Influence any other cards?
 
-✦ Can bot Tax to gain resources?
+✦ Can bot Tax to gain resources? Prefer:
 
-- Prefer:
-	- <ins>new resources</ins>
+- <ins>new resources</ins>
 
 <div class="pagebreak"> </div>

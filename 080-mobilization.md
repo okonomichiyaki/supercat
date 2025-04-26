@@ -10,8 +10,7 @@
 
 ✦ Does bot have <ins>unbuilt cities</ins> and fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>?
 
-- <!-- priority=5 --> Can bot Move to get at least one new <ins>claim</ins>?
-- Prefer:
+- <!-- priority=5 --> Can bot Move to get at least one new <ins>claim</ins>? Prefer:
 	- <ins>new resources</ins>
 	- <ins>unclaimed</ins>
 	- two slot planets
@@ -20,13 +19,24 @@
 
 ✦ <!-- priority=9 --> Can bot Influence a <ins>contested card</ins>?
 
+<#ifdef campaign>
+✦ Would bot <ins>contend</ins> a declared ambition with the Imperial Trust?
+
+- <!-- priority=9.5 --> Can bot Influence the Imperial Council with more agents than rivals?
+<#endif>
+
+<#ifdef campaign>
+✦ <!-- priority=10 --> Can bot Move to take control of rival city or Free city?
+<#endif>
+
+<#ifdef base>
 ✦ <!-- priority=10 --> Can bot Move to take control of rival city?
+<#endif>
 
-✦ Can bot Move to change control of a rival-controlled gate?
+✦ Can bot Move to change control of a rival-controlled gate? Prefer:
 
-- Prefer:
-	- take control adjacent to rival starport
-	- take or neutralize control adjacent to loyal starport
+- take control adjacent to rival starport
+- take or neutralize control adjacent to loyal starport
 
 ✦ Are there any ships not controlling gates or <ins>claims</ins> or rival buildings?
 

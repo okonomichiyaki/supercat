@@ -26,8 +26,7 @@
 
 ✦ Does bot have <ins>unbuilt cities</ins> and fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>?
 
-- <!-- priority=5 --> Can bot Move to get at least one new <ins>claim</ins>?
-- Prefer:
+- <!-- priority=5 --> Can bot Move to get at least one new <ins>claim</ins>? Prefer:
 	- <ins>new resources</ins>
 	- <ins>unclaimed</ins>
 	- two slot planets
@@ -52,16 +51,13 @@
 
 ✦ Can bot Secure to grow lead in an <ins>undeclared ambition</ins> or to take any other cards?
 
-✦ Can bot Move to change control of a rival-controlled gate?
+✦ Can bot Move to change control of a rival-controlled gate? Prefer:
 
-- Prefer:
-	- take control adjacent to rival starport
-	- take or neutralize control adjacent to loyal starport
+- take control adjacent to rival starport
+- take or neutralize control adjacent to loyal starport
 
-<#ifdef base>
 ✦ Are there any ships not controlling gates or <ins>claims</ins> or rival buildings?
 
 - Can bot Move to unassigned ships to <ins>task force</ins> (use <ins>partial move</ins>)?
-<#endif>
 
 <div class="pagebreak"> </div>
