@@ -67,6 +67,14 @@ def priority_comment(p):
     else:
         return ""
 
+def wrap_ifdef(row, stmt):
+    if row['Campaign'] == "x":
+        return f"<#ifdef campaign>\n{stmt}\n<#endif>"
+    elif row['Base'] == "x":
+        return f"<#ifdef base>\n{stmt}\n<#endif>"
+    else:
+        return stmt
+
 def build_statement(row):
     cond = row['Condition']
     pref = row['Prefer']
@@ -96,9 +104,7 @@ def build_statement(row):
         ps = [ indent(f"- {p.strip()}", i) for p in pref.split(";")]
         lines = lines + ps
     stmt = "\n".join(lines)
-    if row['Campaign'] == "x":
-        stmt = f"<#ifdef campaign>\n{stmt}\n<#endif>"
-    return stmt
+    return wrap_ifdef(row, stmt)
 
 def merge_goals(rows):
     action = rows[0]['Action']
@@ -109,9 +115,7 @@ def merge_goals(rows):
     else:
         things = f"{things[0]} or {things[1]}"
     stmt = f"✦ {pcomment} Can bot {action} {things}?"
-    if rows[0]['Campaign'] == "x":
-        stmt = f"<#ifdef campaign>\n{stmt}\n<#endif>"
-    return stmt
+    return wrap_ifdef(rows[0], stmt)
 
 def merge_actions(rows):
     cond = rows[0]['Condition']
@@ -137,11 +141,8 @@ def merge_actions(rows):
         lines.append(f"- Prefer{ctx}:")
         ps = [ indent(f"- {p.strip()}", 1) for p in pref.split(";")]
         lines = lines + ps
-
     stmt = "\n".join(lines)
-    if rows[0]['Campaign'] == "x":
-        stmt = f"<#ifdef campaign>\n{stmt}\n<#endif>"
-    return stmt
+    return wrap_ifdef(rows[0], stmt)
 
 def both_blank(a, b, k):
     return a[k] == "" and b[k] == ""
@@ -150,10 +151,10 @@ def equals(a, b, k):
     return a[k] == b[k]
 
 def same_priority_and_action(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Priority') and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and equals(a, b, 'Priority') and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
 
 def same_priority_goal_cond(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and equals(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
 
 def cleanup(s):
     s = s.replace("  ", " ")
@@ -198,17 +199,16 @@ def main():
         print(f"generating {suit}", end="")
         for row in rows:
             print(".", end="")
-            if row['Campaign'] == "" or row['Campaign'] == "x" and campaign:
-                if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
-                    rows = stmts[idx-1][1] + [row]
-                    stmts[idx-1] = (merge_goals(rows), rows)
-                elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][0], row):
-                    rows = stmts[idx-1][1] + [row]
-                    stmts[idx-1] = (merge_actions(rows), rows)
-                else:
-                    stmt = build_statement(row)
-                    stmts = stmts + [(stmt, [row])]
-                    idx = idx + 1
+            if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
+                rows = stmts[idx-1][1] + [row]
+                stmts[idx-1] = (merge_goals(rows), rows)
+            elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][0], row):
+                rows = stmts[idx-1][1] + [row]
+                stmts[idx-1] = (merge_actions(rows), rows)
+            else:
+                stmt = build_statement(row)
+                stmts = stmts + [(stmt, [row])]
+                idx = idx + 1
         with open(output, 'w') as outf:
             outf.write(f"# {suit} - {actions}\n\n")
             outf.write("\n\n".join([ cleanup(s[0]) for s in stmts ]))

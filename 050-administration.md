@@ -10,8 +10,8 @@
 
 
 ✦ <!-- priority=8 --> Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> a declared ambition, if Secured?
-✦ <!-- priority=9 --> Can bot Influence a <ins>contested card</ins>?
 
+✦ <!-- priority=9 --> Can bot Influence a <ins>contested card</ins>?
 
 <#ifdef campaign>
 ✦ <!-- priority=9.5 --> Would bot <ins>contend</ins> a declared ambition with the Imperial Trust, and can bot Influence the Imperial Council with more agents than rivals?
