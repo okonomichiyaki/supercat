@@ -4,9 +4,9 @@ import re
 import argparse
 import gspread
 
-campaign = True
+BULLET = '✦'
 
-suits = {
+SUITS = {
     'Administration': {
         "output": "050-administration.md",
         "actions": ["Tax", "Repair", "Influence"]
@@ -25,7 +25,7 @@ suits = {
     }
 }
 
-terms = [
+TERMS = [
     "claimed",
     "unclaimed",
     "claims",
@@ -51,7 +51,7 @@ terms = [
 def replacer(match):
     return f"<ins>{match.group(0)}</ins>"
 
-pattern = r'\b(' + '|'.join(terms) + r')\b'
+pattern = r'\b(' + '|'.join(TERMS) + r')\b'
 def highlight_terms(text):
     p = re.compile(pattern)
     return p.sub(replacer, text)
@@ -59,8 +59,8 @@ def highlight_terms(text):
 def get_suits(rows):
     result = []
     for row in rows:
-        for suit in suits:
-            if row[suit] ==  '◉':
+        for suit in SUITS:
+            if row[suit] ==  BULLET:
                 result.append(suit)
     return result
 
@@ -231,12 +231,12 @@ def main():
     all_rows = get_rows(filename)
     filtered = [ row for row in all_rows if row['Hide'] != "x" ]
     print(f"all rows: {len(all_rows)} filtered rows: {len(filtered)}")
-    for suit in suits:
-        actions = " | ".join(suits[suit]["actions"])
-        output = suits[suit]["output"]
+    for suit in SUITS:
+        actions = " | ".join(SUITS[suit]["actions"])
+        output = SUITS[suit]["output"]
         idx = 0
         stmts = []
-        rows = [ row for row in filtered if row[suit] == '◉' ]
+        rows = [ row for row in filtered if row[suit] == BULLET ]
         print(f"got {len(rows)} rows for {suit}")
         print(f"generating {suit}", end="")
         for row in rows:
