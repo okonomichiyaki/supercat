@@ -21,7 +21,7 @@
 
 ✦ Does bot have <ins>unbuilt cities</ins>?
 
-- Does bot have fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins>, rounded down<#endif>?
+- Does bot have fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half the number of <ins>unbuilt cities</ins>, rounded down<#endif>?
 	- Yes: <!-- Expand for city priority=5 --> Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
 	- No: <!-- Build city priority=5 --> Does bot have at least one <ins>claim</ins>? → Construction
 
