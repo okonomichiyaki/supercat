@@ -56,6 +56,14 @@ def highlight_terms(text):
     p = re.compile(pattern)
     return p.sub(replacer, text)
 
+def get_suits(rows):
+    result = []
+    for row in rows:
+        for suit in suits:
+            if row[suit] ==  '◉':
+                result.append(suit)
+    return result
+
 def indent(s, n):
     for i in range(0, n):
         s = "\t" + s
@@ -96,7 +104,7 @@ def ids(rows):
     i = f"<span style=\"font-size: 12px;\">({i})</span>"
     return i
 
-def build_statement(row):
+def build_statement(row, general=False):
     cond = row['Condition']
     pref = row['Prefer']
     action = row['Action']
@@ -115,11 +123,14 @@ def build_statement(row):
         lines.append(f"- {pcomment} {quest}")
     else:
         lines.append(f"✦ {pcomment} {quest}")
-    lines = add_pref(row, lines)
+    if not general:
+        lines = add_pref(row, lines)
+    else:
+        lines[-1] = lines[-1] + " → " + "/".join(get_suits([row]))
     stmt = "\n".join(lines)
     return wrap_ifdef(row, stmt)
 
-def merge_goals(rows):
+def merge_goals(rows, general=False):
     id_ = ids(rows)
     action = rows[0]['Action']
     pcomment = priority_comment(rows[0]['Priority'])
@@ -129,9 +140,11 @@ def merge_goals(rows):
     else:
         things = f"{things[0]} or {things[1]}"
     stmt = f"✦ {pcomment} Can bot {action} {things}? {id_}"
+    if general:
+        stmt = stmt + " → " + "/".join(get_suits(rows))
     return wrap_ifdef(rows[0], stmt)
 
-def merge_actions(rows):
+def merge_actions(rows, general=False):
     id_ = ids(rows)
     cond = rows[0]['Condition']
     actions = [row['Action'] for row in rows]
@@ -148,6 +161,8 @@ def merge_actions(rows):
         lines.append(f"✦ {pcomment} {quest}")
     lines = add_pref(rows[0], lines)
     stmt = "\n".join(lines)
+    if general:
+        stmt = stmt + " → " + "/".join(get_suits(rows))
     return wrap_ifdef(rows[0], stmt)
 
 def both_blank(a, b, k):
@@ -175,6 +190,26 @@ def get_rows(filename):
         for row in reader:
             result.append(row)
     return result
+
+def general_priorities(output, rows):
+    filtered = [ row for row in rows if float(row['Priority']) < 99 ]
+    stmts = []
+    idx = 0
+    for row in rows:
+        if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
+            rows = stmts[idx-1][1] + [row]
+            stmts[idx-1] = (merge_goals(rows, True), rows)
+        elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][0], row):
+            rows = stmts[idx-1][1] + [row]
+            stmts[idx-1] = (merge_actions(rows, True), rows, True)
+        else:
+            stmt = build_statement(row, True)
+            stmts = stmts + [(stmt, [row])]
+            idx = idx + 1
+    with open(output, 'w') as outf:
+        outf.write(f"# General Priorities\n\n")
+        outf.write("\n\n".join([ cleanup(s[0]) for s in stmts ]))
+        outf.write("\n\n<div class=\"pagebreak\"> </div>\n")
 
 def main():
     parser = argparse.ArgumentParser(
