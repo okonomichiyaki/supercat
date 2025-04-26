@@ -14,3 +14,5 @@ The procedures evaluate the number of <ins>claims</ins> the bot has in relation 
 The procedures prioritize building new cities somewhat highly relative to other actions. However there is a limit to this which is building a second city on the same planet where the bot already has a city. The bot will only build one of these <ins>double cities</ins> if it is winning a declared ambition (not tied for first place) and placing the city would uncover a power bonus.
 
 *Note that a <ins>claim</ins> counts for the purpose of the expansion priorities described above even if the bot would not build a city there due to this limit. For instance, if a bot has 4 <ins>unbuilt cities</ins>, and has a ship at a plant with 2 slots, it is considered to have 2 <ins>claims</ins> even though when it comes time to build a city, the bot would only build 1 city there.*
+
+<div class="pagebreak"> </div>
