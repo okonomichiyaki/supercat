@@ -8,7 +8,6 @@
 
 ✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or to take captives?
 
-
 ✦ <!-- priority=8 --> Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> a declared ambition, if Secured?
 
 ✦ <!-- priority=9 --> Can bot Influence a <ins>contested card</ins>?
