@@ -34,7 +34,7 @@
 
 - Prefer: With <ins>task force</ins>, Controlled system
 
-✦ <!-- priority=12 --> Can bot Repair any ships or buildings?
+✦ <!-- priority=12 --> Can bot Repair any other ships or buildings?
 
 - Prefer:
 	- ships in <ins>task force</ins>, then other ships
