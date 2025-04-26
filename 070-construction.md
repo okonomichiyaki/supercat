@@ -26,13 +26,17 @@
 
 - Build or Repair until at least 1 fresh ship defending planets with buildings
 
-✦ <!-- priority=11 --> Can bot Build ships?
+✦ <!-- priority=11 --> Can bot Build any ships?
 
-- Prefer: With <ins>task force</ins>, Fresh ships
+- Prefer:
+	- ships in <ins>task force</ins>
+	- fresh ships
 
-✦ Can bot Build other starports?
+✦ <!-- priority=11 --> Can bot Build any other starports?
 
-- Prefer: With <ins>task force</ins>, Controlled system
+- Prefer system with:
+	- <ins>task force</ins>
+	- bot control
 
 ✦ <!-- priority=12 --> Can bot Repair any other ships or buildings?
 
