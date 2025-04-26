@@ -75,6 +75,22 @@ def wrap_ifdef(row, stmt):
     else:
         return stmt
 
+def add_pref(row, lines):
+    pref = row['Prefer']
+    if pref != "":
+        ctx = ""
+        if row['PreferContext'] != "":
+            ctx = f" {row['PreferContext']}"
+        lines[-1] = lines[-1] + f" Prefer{ctx}:"
+        i = 0
+        if lines[-1].startswith("✦"):
+            lines.append("")
+        else:
+            i = 1
+        ps = [ indent(f"- {p.strip()}", i) for p in pref.split(";")]
+        lines = lines + ps
+    return lines
+
 def build_statement(row):
     cond = row['Condition']
     pref = row['Prefer']
@@ -93,16 +109,7 @@ def build_statement(row):
         lines.append(f"- {pcomment} {quest}")
     else:
         lines.append(f"✦ {pcomment} {quest}")
-    if pref != "":
-        if lines[-1].startswith("✦"):
-            lines.append("")
-        ctx = ""
-        if row['PreferContext'] != "":
-            ctx = f" {row['PreferContext']}"
-        lines.append(indent(f"- Prefer{ctx}:", i))
-        i = i + 1
-        ps = [ indent(f"- {p.strip()}", i) for p in pref.split(";")]
-        lines = lines + ps
+    lines = add_pref(row, lines)
     stmt = "\n".join(lines)
     return wrap_ifdef(row, stmt)
 
@@ -119,7 +126,6 @@ def merge_goals(rows):
 
 def merge_actions(rows):
     cond = rows[0]['Condition']
-    pref = rows[0]['Prefer']
     actions = [row['Action'] for row in rows]
     actions = " or ".join(actions)
     pcomment = priority_comment(rows[0]['Priority'])
@@ -132,15 +138,7 @@ def merge_actions(rows):
         lines.append(f"- {pcomment} {quest}")
     else:
         lines.append(f"✦ {pcomment} {quest}")
-    if pref != "":
-        if lines[-1].startswith("✦"):
-            lines.append("")
-        ctx = ""
-        if row['PreferContext'] != "":
-            ctx = f" {row['PreferContext']}"
-        lines.append(f"- Prefer{ctx}:")
-        ps = [ indent(f"- {p.strip()}", 1) for p in pref.split(";")]
-        lines = lines + ps
+    lines = add_pref(rows[0], lines)
     stmt = "\n".join(lines)
     return wrap_ifdef(rows[0], stmt)
 
