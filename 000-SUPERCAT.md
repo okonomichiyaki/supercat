@@ -1,6 +1,6 @@
 ## a procedural non-player system for solo Arcs
 
-*version 0.4.1*
+*version 0.5-draft*
 
 This is a non-player system, or "bot", for playing the board game Arcs. It is intended for solo play, i.e. one player versus one or more bots. It can also work as the 3rd or 4th opponent in a multiplayer game. There are two versions of the this document; this is the <#ifdef base>base game<#endif><#ifdef campaign>campaign<#endif> version. <#ifdef campaign>*(Note: it currently only supports "A" Fates through Act I)*<#endif>
 

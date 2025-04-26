@@ -91,6 +91,11 @@ def add_pref(row, lines):
         lines = lines + ps
     return lines
 
+def ids(rows):
+    i = ",".join([ row['Id'] for row in rows ])
+    i = f"<span style=\"font-size: 12px;\">({i})</span>"
+    return i
+
 def build_statement(row):
     cond = row['Condition']
     pref = row['Prefer']
@@ -99,7 +104,8 @@ def build_statement(row):
     goal = row['Goal']
     thing = f"{glue} {goal}"
     i = 0
-    quest = f"Can bot {action} {thing}?"
+    id_ = ids([row])
+    quest = f"Can bot {action} {thing}? {id_}"
     lines = []
     p = row['Priority']
     pcomment = priority_comment(p)
@@ -114,6 +120,7 @@ def build_statement(row):
     return wrap_ifdef(row, stmt)
 
 def merge_goals(rows):
+    id_ = ids(rows)
     action = rows[0]['Action']
     pcomment = priority_comment(rows[0]['Priority'])
     things = [f"{row['GlueWord']} {row['Goal']}" for row in rows]
@@ -121,16 +128,17 @@ def merge_goals(rows):
         things = ", ".join(things[0:len(things)-1]) + f", or {things[-1]}"
     else:
         things = f"{things[0]} or {things[1]}"
-    stmt = f"✦ {pcomment} Can bot {action} {things}?"
+    stmt = f"✦ {pcomment} Can bot {action} {things}? {id_}"
     return wrap_ifdef(rows[0], stmt)
 
 def merge_actions(rows):
+    id_ = ids(rows)
     cond = rows[0]['Condition']
     actions = [row['Action'] for row in rows]
     actions = " or ".join(actions)
     pcomment = priority_comment(rows[0]['Priority'])
     thing = f"{rows[0]['GlueWord']} {rows[0]['Goal']}"
-    quest = f"Can bot {actions} {thing}?"
+    quest = f"Can bot {actions} {thing}? {id_}"
     lines = []
     if cond != "":
         lines.append(f"✦ {cond}")
