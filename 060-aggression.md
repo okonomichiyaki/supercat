@@ -37,7 +37,7 @@
 <#endif>
 
 <#ifdef campaign>
-✦ Can bot <ins>favorable combat</ins> to destroy Blight?
+✦ Can bot <ins>favorable combat</ins> to destroy Blight in systems with loyal buildings?
 <#endif>
 
 ✦ Are there any ambition markers available?
