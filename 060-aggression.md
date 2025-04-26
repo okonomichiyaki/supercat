@@ -30,7 +30,11 @@
 
 ✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival city <#ifdef campaign>or Free city<#endif>?
 
-✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings<#ifdef campaign>, or <ins>favorable combat</ins> vs Blight<#endif>?
+✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings?
+
+<#ifdef campaign>
+✦ Can bot <ins>favorable combat</ins> to destroy Blight?
+<#endif>
 
 ✦ Are there any ambition markers available?
 
