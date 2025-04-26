@@ -46,9 +46,14 @@
 
 ✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
 
-✦ Are there ships not controlling gates or <ins>claims</ins> or rival buildings?
+✦ Can bot Move to change control of a rival-controlled gate?
 
-- Concentrate ships towards <ins>task force</ins> (use <ins>partial move</ins>)
-- If <ins>task force</ins> not at loyal starport, move towards loyal starport (use <ins>partial move</ins>)
+- Prefer:
+	- take control adjacent to rival starport
+	- take or neutralize control adjacent to loyal starport
+
+✦ Are there any ships not controlling gates or <ins>claims</ins> or rival buildings?
+
+- Can bot Move to unassigned ships to <ins>task force</ins> (use <ins>partial move</ins>)?
 
 <div class="pagebreak"> </div>
