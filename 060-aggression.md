@@ -10,9 +10,9 @@
 
 ✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
 
-✦ Does bot have no starport and no <ins>claim</ins>s?
+✦ Does bot have no starport and no <ins>claims</ins>?
 
-- <!-- priority=3 --> Can bot Move to get new <ins>claim</ins>s?
+- <!-- priority=3 --> Can bot Move to get new <ins>claims</ins>?
 
 ✦ Are any loyal buildings controlled by a rival?
 
@@ -23,7 +23,7 @@
 - <!-- priority=5 --> Can bot Move to get at least one new <ins>claim</ins>?
 - Prefer:
 	- <ins>new resources</ins>
-	- <ins>un<ins>claim</ins>ed</ins>
+	- <ins>unclaimed</ins>
 	- two slot planets
 
 ✦ <!-- priority=6 --> Can bot Secure to <ins>contend</ins> an <ins>undeclared ambition</ins> or to grow lead in declared ambition?
