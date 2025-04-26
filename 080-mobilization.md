@@ -1,42 +1,35 @@
 # Mobilization - Move | Influence
 
-✦ <!-- priority=4 --> Are any loyal buildings controlled by a rival?
+✦ Does bot have no starport and no <ins>claims</ins>?
 
-- Can bot change control by moving?
-	- Move to change control (Check "Movement Doctrine")
-	- Prefer:
-		- Take control if possible
-		- Neutralize control
+- <!-- priority=3 --> Can bot Move to get new <ins>claims</ins>?
 
-✦ <!-- Expand for city priority=5 --> Does bot have <ins>unbuilt cities</ins> and fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>?
+✦ Are any loyal buildings controlled by a rival?
 
-- Could bot Move to control any open slots?
-	- Move until bot has as many <ins>claims</ins> as <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>. Prefer:
-		- <ins>new resources</ins>
-		- <ins>unclaimed</ins>
-		- two slot planets
+- <!-- priority=4 --> Can bot Move to change control?
 
-✦ Can bot Influence a card?
+✦ Does bot have <ins>unbuilt cities</ins> and fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>?
+
+- <!-- priority=5 --> Can bot Move to get at least one new <ins>claim</ins>?
+- Prefer:
+	- <ins>new resources</ins>
+	- <ins>unclaimed</ins>
+	- two slot planets
+
+✦ <!-- priority=8 --> Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> a declared ambition, if Secured?
+
+✦ <!-- priority=9 --> Can bot Influence a <ins>contested card</ins>?
+
+✦ <!-- priority=10 --> Can bot Move to take control of rival city?
+
+✦ Can bot Move to change control of a rival-controlled gate?
 
 - Prefer:
-	- <!-- priority=8 --> <ins>uncontested card</ins> to <ins>contend</ins> declared ambition
-	- <!-- priority=9 --> <ins>contested card</ins><#ifdef campaign>
-	- <!-- priority=9.5 --> Imperial Council, if bot would <ins>contend</ins> a declared ambition with the Imperial Trust
-<#endif>	- <ins>uncontested card</ins> to <ins>contend</ins> undeclared ambition
-	- other cards (Check "Influence Doctrine" for priorities)
+	- take control adjacent to rival starport
+	- take or neutralize control adjacent to loyal starport
 
-✦ Can bot change control of a gate?
+✦ Can bot Move to concentrate ships towards <ins>task force</ins> (use <ins>partial move</ins>)?
 
-- Prefer:
-	- Take control if possible
-	- Adjacent to loyal starport
-	- Adjacent to rival starport
-
-✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival city <#ifdef campaign>or Free city<#endif>?
-
-✦ Are there any ships which are not in the <ins>task force</ins>, and not controlling gates or <ins>claims</ins> or rival cities?
-
-- Concentrate ships towards <ins>task force</ins> (use <ins>partial move</ins>)
-- Move <ins>task force</ins> towards loyal starport if not already at a starport (use <ins>partial move</ins>)
+✦ Can bot Influence any other cards?
 
 <div class="pagebreak"> </div>
