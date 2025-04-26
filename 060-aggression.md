@@ -8,9 +8,9 @@
 
 ✦ Does bot have no starport and no <ins>claim</ins>s?
 
-✦ Are any systems with a loyal building controlled by a rival?
 - <!-- priority=3 --> Can bot Move to get new <ins>claim</ins>s?
 
+✦ Are any loyal buildings controlled by a rival?
 
 - <!-- priority=4 --> Can bot Move or <ins>favorable combat</ins> to change control?
 
