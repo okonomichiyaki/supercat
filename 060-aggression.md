@@ -28,9 +28,9 @@
 
 ✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings<#ifdef campaign>, or <ins>favorable combat</ins> vs Blight<#endif>?
 
-✦ Are there any <ins>undeclared ambition</ins>s and can bot <ins>favorable combat</ins> for trophies?
+✦ Are there any ambition markers available?
 
-✦ Can bot Secure a card to grow a lead in an <ins>undeclared ambition</ins> or Secure another card?
+- Can bot <ins>favorable combat</ins> to take trophies?
 
 ✦ Can bot take control of a gate adjacent to a loyal starport or rival starport?
 
