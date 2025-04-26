@@ -26,7 +26,6 @@
 	- other ships
 	- starport, if only one on map
 	- cities
-	- other starports
 
 ✦ Can bot Tax to grow a lead in a declared ambition?
 
