@@ -9,10 +9,9 @@
 	- neutral control
 	- least rival ships
 
-✦ <!-- priority=4 --> Are any loyal buildings controlled by rival, and can bot Build or Repair to change control?
+✦ Are any loyal buildings controlled by a rival?
 
-- Build or Repair ships to change control
-- Take control if possible
+- <!-- priority=4 --> Can bot Build to change control?
 
 ✦ <!-- Build city priority=5 --> Does bot have <ins>unbuilt cities</ins> and at least one <ins>claim</ins>?
 
