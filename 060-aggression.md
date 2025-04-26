@@ -6,9 +6,11 @@
 
 ✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
 
-✦ <!-- Expand for starport priority=3 -->If bot have no starport and no <ins>claims</ins>, can bot Move to get at least one new <ins>claim</ins>?
+✦ Does bot have no starport and no <ins>claim</ins>s?
 
 ✦ Are any systems with a loyal building controlled by a rival?
+- <!-- priority=3 --> Can bot Move to get new <ins>claim</ins>s?
+
 
 - <!-- priority=4 --> Can bot Move or <ins>favorable combat</ins> to change control?
 
