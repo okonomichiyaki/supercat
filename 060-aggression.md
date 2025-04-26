@@ -28,9 +28,13 @@
 
 ✦ <!-- priority=6 --> Can bot Secure to <ins>contend</ins> an <ins>undeclared ambition</ins> or to grow lead in declared ambition?
 
-✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to take control of rival city <#ifdef campaign>or Free city<#endif>?
+<#ifdef campaign>
+✦ <!-- priority=10 --> Can bot Move to take control of rival city or Free city?
+<#endif>
 
-✦ Can bot <ins>favorable combat</ins> for control in a system with any loyal buildings?
+<#ifdef base>
+✦ <!-- priority=10 --> Can bot Move to take control of rival city?
+<#endif>
 
 <#ifdef campaign>
 ✦ Can bot <ins>favorable combat</ins> to destroy Blight?
