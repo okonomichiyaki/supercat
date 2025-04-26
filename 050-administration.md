@@ -17,6 +17,8 @@
 ✦ <!-- priority=9.5 --> Would bot <ins>contend</ins> a declared ambition with the Imperial Trust, and can bot Influence the Imperial Council with more agents than rivals?
 <#endif>
 
+✦ <!-- priority=10 --> Can bot Repair to take control of a rival building?
+
 ✦ <!-- priority=12 --> Can bot Repair any other ships or buildings?
 
 - Prefer:
