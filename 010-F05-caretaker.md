@@ -1,5 +1,7 @@
 <#ifdef campaign>
-# Caretaker (Act I)
+# Caretaker
+
+## Act I
 
 ✦ Can bot use Golem Beacon's **Awaken (Influence)** ability?
 
@@ -7,7 +9,23 @@
 
 ✦ Can bot Move, Build, Repair, or <ins>favorable combat</ins> to take control of any Golems on the map?
 
+✦ Are there any Sleeping Golems that are not on the map?
+
+- Can bot Influence or Secure the Imperial Council?
+
 Stone Speakers
 : If bot is winning an ambition it just declared, and bot has no Golems, use Stone-Speakers' ability.
+
+Imperial Council Decided
+: If there are any Sleeping Golems that are not on the map, bot will resolve the Crises.
+
+## Act II
+
+✦ Can bot Secure or Influence a Lore card?
+
+✦ Can bot Secure or Influence Librarians?
+
+Librarians
+: Bot will always use the ability to draw and attach a Lore card
 
 <#endif>
