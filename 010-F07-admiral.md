@@ -1,5 +1,7 @@
 <#ifdef campaign>
-# Admiral (Act I)
+# Admiral
+
+## Act I
 
 ✦ If bot does not have a piece matching the current Imperial Demand, can bot gain one via Tax or <ins>favorable combat</ins>?
 
@@ -17,4 +19,17 @@
 ✦ Does bot have unbuilt starports and at least one <ins>claim</ins>?
 
 - Build one new starport *(max one new starport per card)*
+
+## Act II
+
+✦ Can bot Tax or Secure to take captives from a Regent?
+
+✦ Can bot <ins>favorable combat</ins> for trophies against an Outlaw?
+
+✦ Can bot Build, Repair, or Move to get Empire control of a planet?
+
+✦ Can bot Build, Repair, or Move to take control of a Rival Regent's city?
+
+✦ Can bot Influence a card with more agents than a Rival Regent?
+
 <#endif>
