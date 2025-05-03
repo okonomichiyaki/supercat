@@ -1,5 +1,7 @@
 <#ifdef campaign>
-# Founder (Act I)
+# Founder
+
+## Act I
 
 ✦ Is bot a Regent?
 
@@ -18,6 +20,25 @@ Events
 
 Summits
 : If bot is a Regent, when given the opportunity to hold a Summit, it will always hold the Summit. During the "Call to Order" phase the bot will leave the Empire.
+
+## Act II
+
+✦ Can bot Tax or Secure to cause the Commonwealth to contend a declared ambition?
+
+✦ Can bot build a Free building?
+
+- Prefer:
+	- Free city on planet type matching bot Outrage
+	- Free city on a planet without a Free city
+	- Free starport on any planet
+
+✦ Are there any Empire controlled Free cities?
+
+- Can bot Move to change control? *(only applicable if bot is a Regent)*
+- Can bot favorable battle to change control?
+
+Founder of the Commonwealth
+: Bot will declare ambitions if the Commonwealth is winning or tied for first place in the ambition (place second or third ambition marker in already declared ambition only if the Commonwealth is winning). When declaring, place the Commonwealth Ambition marker.
 
 <div class="pagebreak"> </div>
 <#endif>
