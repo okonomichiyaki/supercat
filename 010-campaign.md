@@ -7,15 +7,15 @@ After an Event card is played, do not add it to the discard pile. Instead, set p
 
 ## Edicts
 
-If the bot is the First Regent, check the bot's Fate to determine if it will change the policy. If Fate does not dictate which policy to change to, choose a policy aligned with an ambition the bot is currently contending. While enforcing the policy, if a rival has no pieces for Imperial Demand and has no agent, roll 1d6 and make the rival an Outlaw on 5 or 6.
+### Govern the Imperial Reach
+
+If the bot is the First Regent, check the bot's Fate to determine if it will change the policy. If Fate does not dictate a policy change, check if enforcing the current policy would cause bot to <ins>contend</ins> an ambition. If so, enforce the policy. Otherwise, change the policy and select policy which, if enforced, would cause bot to <ins>contend</ins> an ambition.
+
+While enforcing the current policy, if a rival has no pieces for Imperial Demand and has no agent, roll 1d6 and make the rival an Outlaw on 5 or 6.
 
 ## Summits
 
-If bot is given the opportunity to call a Summit, via Event card or the Imperial Council, roll 1d6 and apply DRMs below. Bot will call a Summit on a result of 5 or 6.
-
-<ul>
-<li>+1 for each favor the bot has</li>
-</ul>
+If bot is given the opportunity to call a Summit, via Event card or the Imperial Council, check the bot's Fate. If Fate does not dictate behavior for Summits, roll 1d6, +1 for each favor the bot has, and call a Summit on a result of 5 or 6.
 
 If bot calls a Summit and has one or more favors, during the "Call to Order" phase, follow these procedures:
 
