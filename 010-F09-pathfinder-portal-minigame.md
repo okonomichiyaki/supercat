@@ -21,7 +21,20 @@ Each time "Uncovering Clues" is used, one "round" of the minigame will result in
 
 *(substitute other small pieces or other colors as needed, but they should be distinguishable from each other, and whatever stands in for the "cubes" needs to be drawn from the bag/cup at random)*
 
-TODO: insert chart here
+<br/>
+
+<!--
+TODO: print friendly chart using icons
+-->
+
+| | Hex | Arrow | Moon |
+| - | - | - | - |
+| 1 | | | |
+| 2 | | | |
+| 3 | | | |
+| 4 | | | |
+| 5 | | | |
+| 6 | | | |
 
 ### Overview
 
