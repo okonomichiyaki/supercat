@@ -3,7 +3,7 @@
 
 - 36 wooden letter tiles:
 	- 9 vowels (or all the same letter)
-	- 27 consonants (or all the same letter, but a different letter from first set of 18)
+	- 27 consonants (or all the same letter, but a different letter from first set of 9)
 
 The letters do not matter, what matters is that you have 36 pieces which can be turned face down to hide their value, and that you have 9 of one value and 27 of another value.
 
