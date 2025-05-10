@@ -2,23 +2,30 @@
 
 ## Act II
 
-✦ Has the Portal not been found yet?
+✦ Has the Portal been found?
 
-- Does bot have a resource matching a planet without a Clue token which meets the Clue Guidelines?
-	- Yes:
-		- Can bot Move the Flagship to that planet?
-	- No:
-		- Can bot Tax or favorable battle to gain a resource matching a planet without a Clue token which meets the Clue Guidelines?
+- Yes:
+	- Can bot Build, Repair, or Move to control the Portal?
+- No:
+	- Does bot have a resource matching a planet without a Clue token which meets the Clue Guidelines?
+		- Yes:
+			- Can bot Move the Flagship to that planet?
+		- No:
+			- Can bot Tax or favorable battle to gain a resource matching a planet without a Clue token which meets the Clue Guidelines?
 
-### Clue Guidelines
+Uncovering Clues
+: Use Prelude ability when current planet meets Clue Priorities
 
-Bot will follow these guidelines when selecting planets to target for Clue tokens.
-If it's not possible for bot to take actions above which meet these guidelines, then bot will continue to prioritize other actions. *(in other words, these are not preferences and do not select random planets if there is no planet meeting the guidelines)*
+
+## Clue Guidelines
+
+Use these guidelines to select planets to target for Clue tokens.
+If unable to select planet which meets the guidelines, prioritize other actions.
+*(do not select random planets if there is no planet meeting the guidelines)*
 
 - If there are no Clue tokens on the map:
 	- any planet
 - If the Portal's symbol and cluster has been deduced:
-	- *(in other words, the Clue tokens on the map indicate there is only one possibility, but the Portal token has not been placed yet)*
 	- identified planet
 - If the Portal's symbol has not been deduced yet:
 	- Prefer:
@@ -28,6 +35,3 @@ If it's not possible for bot to take actions above which meet these guidelines, 
 	- Prefer:
 		- planet in a cluster with no Clue tokens in that cluster
 		- planet with a symbol matching 
-
-Uncovering Clues
-: Use Prelude ability when current planet meets Clue Priorities
