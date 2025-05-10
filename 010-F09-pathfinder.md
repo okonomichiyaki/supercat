@@ -8,7 +8,7 @@
 	- Yes:
 		- Can bot Move the Flagship to that planet?
 	- No:
-		- Can bot Tax or favorable battle to gain a resource matching a planet without a Clue token which meets Clue Guidelines?
+		- Can bot Tax or favorable battle to gain a resource matching a planet without a Clue token which meets the Clue Guidelines?
 
 ### Clue Guidelines
 
