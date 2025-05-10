@@ -57,12 +57,16 @@ def highlight_terms(text):
     return p.sub(replacer, text)
 
 def get_suits(rows):
+    actions = []
     result = []
     for row in rows:
+        actions.append(row["Action"])
         for suit in SUITS:
             if row[suit] ==  BULLET:
                 result.append(suit)
-    return result
+    if actions == ["Battle"] and result == ["Aggression"]:
+        return ["Combat card"]
+    return list(set(result))
 
 def indent(s, n):
     for i in range(0, n):
@@ -110,6 +114,8 @@ def build_statement(row, general=False):
     action = row['Action']
     glue = row['GlueWord']
     goal = row['Goal']
+    if action == "":
+        return wrap_ifdef(row, BULLET + " " + goal)
     thing = f"{glue} {goal}"
     i = 0
     id_ = ids([row])
@@ -123,15 +129,16 @@ def build_statement(row, general=False):
         lines.append(f"- {pcomment} {quest}")
     else:
         lines.append(f"✦ {pcomment} {quest}")
-    if not general:
-        lines = add_pref(row, lines)
-    else:
+    if general:
         lines[-1] = lines[-1] + " → " + "/".join(get_suits([row]))
+    else:
+        lines = add_pref(row, lines)
     stmt = "\n".join(lines)
     return wrap_ifdef(row, stmt)
 
 def merge_goals(rows, general=False):
     id_ = ids(rows)
+    print(f"merging goals: {id_}")
     action = rows[0]['Action']
     pcomment = priority_comment(rows[0]['Priority'])
     things = [f"{row['GlueWord']} {row['Goal']}" for row in rows]
@@ -146,8 +153,10 @@ def merge_goals(rows, general=False):
 
 def merge_actions(rows, general=False):
     id_ = ids(rows)
+    print(f"merging actions: {id_}")
     cond = rows[0]['Condition']
     actions = [row['Action'] for row in rows]
+    actions = set(actions)
     actions = " or ".join(actions)
     pcomment = priority_comment(rows[0]['Priority'])
     thing = f"{rows[0]['GlueWord']} {rows[0]['Goal']}"
@@ -193,9 +202,11 @@ def get_rows(filename):
 
 def general_priorities(output, rows):
     filtered = [ row for row in rows if float(row['Priority']) < 99 ]
+    print(f"generating General Priorities from {len(rows)} rows filtered to {len(filtered)} rows")
     stmts = []
     idx = 0
-    for row in rows:
+    for row in filtered:
+        print(f"{row['Id']} - {row['Combined']}")
         if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
             rows = stmts[idx-1][1] + [row]
             stmts[idx-1] = (merge_goals(rows, True), rows)
@@ -216,13 +227,17 @@ def main():
         prog='SUPERCAT',
         description='convert google sheet to markdown procedures')
     parser.add_argument('-c', '--campaign', action='store_true')
+    parser.add_argument('-a', '--api_key')
+    parser.add_argument('-u', '--url')
     args = parser.parse_args()
     campaign = args.campaign
+    api_key = args.api_key
+    url = args.url
     filename = '/tmp/supercat.csv'
 
     print("downloading gsheet...", end="")
-    gc = gspread.oauth()
-    sh = gc.open("SUPERCAT")
+    gc = gspread.api_key(api_key)
+    sh = gc.open_by_url(url)
     bytes_ = sh.export(gspread.utils.ExportFormat.CSV)
     with open(filename, 'wb') as f:
         f.write(bytes_)
@@ -231,6 +246,7 @@ def main():
     all_rows = get_rows(filename)
     filtered = [ row for row in all_rows if row['Hide'] != "x" ]
     print(f"all rows: {len(all_rows)} filtered rows: {len(filtered)}")
+    general_priorities("030-general-priorities.md", all_rows)
     for suit in SUITS:
         actions = " | ".join(SUITS[suit]["actions"])
         output = SUITS[suit]["output"]
@@ -238,7 +254,7 @@ def main():
         stmts = []
         rows = [ row for row in filtered if row[suit] == BULLET ]
         print(f"got {len(rows)} rows for {suit}")
-        print(f"generating {suit}", end="")
+        print(f"generating {suit}", end="\n")
         for row in rows:
             print(".", end="")
             if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
