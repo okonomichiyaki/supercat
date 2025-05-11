@@ -47,7 +47,7 @@ When directed, use "General Priorities" to select a card: Lead, Pivot, or Copy w
 
 When multiple actions are available, first spend actions according to highest priority, then if actions remaining, restart the procedure from the top of the page.
 
-The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words like <ins>contend</ins>. When rounding fractions, round down unless otherwise specified.
+The procedures use some special vocabulary that is specific to SUPERCAT. See the "Terminology" page for explanations of words like contend. When rounding fractions, round down unless otherwise specified.
 
 Aside from the changes to card play described above, <#ifdef campaign>the negotiation minigame, some special handling of certain Fate abilities,<#endif> and the additional advantages below, the bot will follow every rule in the game.
 
