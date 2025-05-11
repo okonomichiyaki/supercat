@@ -12,17 +12,15 @@ Place 2 cities instead of a city and a starport. Prefer:
 
 ## Act I
 
-**Spend as many actions as possible here before turning to selected card's suit.**
-
-✦ Can bot use **Teach (Influence)**? (attach a Faithful card to a Guild card in the court)
+✦ Can bot use Spreading the Faith's **Teach (Influence)** ability? *(attach a Faithful card to a Guild card in the Court matching a Loyal city)*
 
 - Prefer:
-	- Guild card with loyal agents
+	- Guild card with Loyal agents
 
 ✦ Are there remaining cards in the stack of Faithful action cards?
 
-- Are there any suits which bot does not have a matching loyal city, and can bot get a <ins>claim</ins> on a planet with that suit?
-	- Move to get new <ins>claim</ins>
+- Are there any suits which bot does not have a matching Loyal city?
+	- Can bot get a claim on a planet with that suit?
 
 ## Act II
 
