@@ -3,20 +3,20 @@
 
 ## Act I
 
-✦ If bot does not have a piece matching the current Imperial Demand, can bot gain one via Tax or <ins>favorable combat</ins>?
+✦ If bot does not have a piece matching the current Imperial Demand, can bot gain one via Tax or favorable combat?
 
-✦ Can bot <ins>favorable combat</ins> for trophies with Imperial Ships?
+✦ Can bot favorable combat for trophies with Imperial Ships?
 
 - Yes:
 	- Use "Combat Doctrine" to resolve
 - No:
-	- Use <ins>partial move</ins> to acquire targets for future <ins>favorable combat</ins> for trophies with Imperial Ships, if possible.
+	- Use partial move to acquire targets for future favorable combat for trophies with Imperial Ships, if possible.
 
 ✦ Are there any loyal starports in systems without loyal ships?
 
 - Move or Build to get at least one loyal ship to each loyal starport without loyal ships
 
-✦ Does bot have unbuilt starports and at least one <ins>claim</ins>?
+✦ Does bot have unbuilt starports and at least one claim?
 
 - Build one new starport *(max one new starport per card)*
 
@@ -24,7 +24,7 @@
 
 ✦ Can bot Tax or Secure to take captives from a Regent?
 
-✦ Can bot <ins>favorable combat</ins> for trophies against an Outlaw?
+✦ Can bot favorable combat for trophies against an Outlaw?
 
 ✦ Can bot Build, Repair, or Move to get Empire control of a planet?
 

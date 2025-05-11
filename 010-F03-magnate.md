@@ -8,7 +8,7 @@
 ✦ Can bot Influence or Secure the Imperial Council?
 
 Events
-: Events are always considered <ins>effective</ins>.
+: Events are always considered effective.
 
 Summit Negotiations
 : During the negotiation minigame, on the bot's turn it will use 2 negotiation rounds instead of only 1, and the bot will use this second round even if the first round succeeds. The bot will offer according to procedures described in the minigame, however the bot will only accept resources or favors.
@@ -29,7 +29,7 @@ Prelude
 - Resource matching Monopoly in the supply
 
 Events
-: If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered <ins>effective</ins>.
+: If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered effective.
 
 Imperial Council Decided
 : If bot has more than half of the total resources of any type in play, bot will resolve Edicts.

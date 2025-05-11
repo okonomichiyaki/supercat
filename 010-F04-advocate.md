@@ -7,7 +7,7 @@
 
 ✦ Can bot use Guild Investigators' **Recover (Move)** ability?
 
-✦ Can bot <ins>favorable combat</ins> to steal a Guild card with a Prelude action that discards itself?
+✦ Can bot favorable combat to steal a Guild card with a Prelude action that discards itself?
 
 ## Act II
 

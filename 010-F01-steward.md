@@ -37,7 +37,7 @@ Revive the Empire
 ✦ Does a rival have more cities than bot?
 
 - Can bot Build a city?
-- If bot would have most cities by building a <ins>double city</ins>, ignore usual restriction on <ins>double cities</ins>. *(build even if not winning a declared ambition and not uncovering bonus power)*
+- If bot would have most cities by building a double city, ignore usual restriction on double cities. *(build even if not winning a declared ambition and not uncovering bonus power)*
 
 ✦ Does a rival have more starports than bot?
 
