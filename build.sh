@@ -10,6 +10,23 @@ done
 # cleanup prior build:
 rm output.html
 
+# wrap terminology with tags:
+for file in `cat pages.txt`; do
+    while IFS= read -r phrase; do
+        escaped=$(printf '%s\n' "$phrase" | sed 's/[][\.*^$/]/\\&/g')
+        perl -i -pe '
+      BEGIN {
+        $phrase = shift;
+      }
+      s{
+        (?<!<ins>)           # no tag open before
+        \b\Q'"$phrase"'\E\b  # exact word match
+        (?!<\/ins>)          # no tag close after
+      }{<ins>$&</ins>}igx;
+    ' "$escaped" "/tmp/$file"
+    done < "terminology.txt"
+done
+
 # run pandoc over the specific list of pages/sections, in the specified order:
 cat pages.txt |
     while read line; do echo /tmp/${line}; done |
