@@ -8,22 +8,32 @@
 
 ✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> declared ambition? → <ins>Combat card</ins>
 
-✦ Does bot have no starport?
+✦ Does bot have no starport? <#ifdef campaign>*(if Flagship, none on Flagship board, else none on map)*<#endif>
 
-- Does bot have a <ins>claim</ins>?
+- Can bot build a starport?
 	- <!-- Build starport priority=3 --> Yes: → Construction
 	- <!-- Expand for starport priority=3 --> No: → Mobilization/Aggression
 
 ✦ Are any loyal buildings in a system controlled by a rival?
 
-- <!-- priority=4 --> Can bot Move or <ins>favorable combat</ins> to change control? → Mobilization/Aggression
+- <!-- priority=4 --> Can bot Move to change control? → Mobilization/Aggression
+- <!-- priority=4 --> Can bot <ins>favorable combat</ins> to change control? → <ins>Combat card</ins>
 - <!-- priority=4 --> Can bot Build or Repair to change control? → Construction/Administration
 
 ✦ Does bot have <ins>unbuilt cities</ins>?
-
-- Does bot have fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half the number of <ins>unbuilt cities</ins>, rounded down<#endif>?
+<#ifdef campaign>
+- Does bot have a Flagship?
+	- Can bot Build at the current planet? → Construction
+	- Can bot Move to a planet matching an unbuilt upgrade/armor? → Mobilization/Aggression
+- Does bot have fewer <ins>claims</ins> than half the number of <ins>unbuilt cities</ins>, rounded down?
 	- Yes: <!-- Expand for city priority=5 --> Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
 	- No: <!-- Build city priority=5 --> Does bot have at least one <ins>claim</ins>? → Construction
+<#endif>
+<#ifdef base>
+- Does bot have fewer <ins>claims</ins> than <ins>unbuilt cities</ins>?
+	- Yes: <!-- Expand for city priority=5 --> Can bot move to get a new <ins>claim</ins>? → Mobilization/Aggression
+	- No: <!-- Build city priority=5 --> Does bot have at least one <ins>claim</ins>? → Construction
+<#endif>
 
 ✦ <!-- priority=6 --><!-- priority=7 --> Can bot Tax/Secure to <ins>contend</ins> <ins>undeclared ambition</ins>, take captives, or grow a lead in a declared ambition? <br>→ Administration/Aggression
 
