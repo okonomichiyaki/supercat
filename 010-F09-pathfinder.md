@@ -7,11 +7,11 @@
 - Yes:
 	- Can bot Build, Repair, or Move to control the Portal?
 - No:
-	- Does bot have a resource matching a planet without a Clue token which meets the Clue Guidelines?
+	- Select planets meeting the Clue guidelines below. Does bot have a resource different from all planets in the cluster with one of the selected planets?
 		- Yes:
 			- Can bot Move the Flagship to that planet?
 		- No:
-			- Can bot Tax or favorable battle to gain a resource matching a planet without a Clue token which meets the Clue Guidelines?
+			- Can bot Tax or favorable battle to gain a resource different from all planets in the cluster with one of the selected planets?
 
 Uncovering Clues
 : Use Prelude ability when current planet meets Clue Priorities
