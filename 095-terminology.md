@@ -4,8 +4,7 @@ claim
 : open building slot in a system with bot's loyal pieces
 
 combat card
-: any card combined with fuel and a weapon, or an Aggression card.
-use Aggression procedures to resolve
+: any card combined with fuel and a weapon, or an Aggression card. use Aggression procedures to resolve
 
 contend
 : take an action causing bot to improve its position with respect to an ambition AND bot will be either winning or tied for first or second place. (see "Clarifications")
@@ -17,11 +16,10 @@ double city
 : a second loyal city on planet that already has a loyal city
 
 effective
-: a Vox card is <ins>effective</ins> if its **When Secured** text can be fully carried out (see "Vox Cards")<#ifdef campaign>some Fates consider Event cards effective<#endif>
+: a Vox card is <ins>effective</ins> if its **When Secured** text can be fully carried out (see "Vox Cards") <#ifdef campaign>some Fates also consider Event cards effective<#endif>
 
 favorable combat
-: a series of Move and Battle actions that the bot considers likely to result in a specific goal
-(see "Combat Doctrine")
+: a series of Move and Battle actions that the bot considers likely to result in a specific goal (see "Combat Doctrine")
 
 new resources
 : type of resource that bot does not have OR type of planet bot does not have a city on
