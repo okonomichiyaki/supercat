@@ -89,7 +89,7 @@ When adding cubes to the chart, first count the number of blue meeples. Add cube
 
 **One or more blue meeples**
 
-- Every space which intersects with ALL blue meeples AND intersects with the pawn
+- Every space which intersects with ALL blue meeples AND intersects with the pawn:
 	- if pawn is in the space add a yellow cube
 	- if space is empty add a blue cube
 - Every space which intersects with ALL blue meeples:
