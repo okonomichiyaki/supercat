@@ -10,4 +10,4 @@
 	- system with Imperial Ships, if bot is a Regent
 
 Spore Ships
-: Bot will spend Material during Prelude to use the **Spawn (Build)** ability, if able to.
+: Bot will spend Material during Prelude to use the **Spawn (Build)** ability.
