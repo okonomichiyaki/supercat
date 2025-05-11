@@ -1,37 +1,37 @@
 # Aggression - Move | Battle | Secure
 
-✦ <!-- priority=1 --> Can bot Secure to <ins>contend</ins> a declared ambition? <span style="font-size: 12px;">(2)</span>
+✦ <!-- priority=1 --> Can bot Secure to contend a declared ambition? <span style="font-size: 12px;">(2)</span>
 
 <#ifdef base>
-✦ <!-- priority=2 --> Can bot Secure an <ins>effective</ins> Vox card? <span style="font-size: 12px;">(3)</span>
+✦ <!-- priority=2 --> Can bot Secure an effective Vox card? <span style="font-size: 12px;">(3)</span>
 <#endif>
 
 <#ifdef campaign>
-✦ <!-- priority=2 --> Can bot Secure an <ins>effective</ins> Vox card or the Imperial Council? <span style="font-size: 12px;">(4,5)</span>
+✦ <!-- priority=2 --> Can bot Secure an effective Vox card or the Imperial Council? <span style="font-size: 12px;">(4,5)</span>
 <#endif>
 
 <#ifdef campaign>
 ✦ <!-- priority=2.1 --> Can bot Secure a Faithful card or an attached Guild card? <span style="font-size: 12px;">(6,7)</span>
 <#endif>
 
-✦ <!-- priority=2.2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition? <span style="font-size: 12px;">(8)</span>
+✦ <!-- priority=2.2 --> Can bot favorable combat to contend a declared ambition? <span style="font-size: 12px;">(8)</span>
 
-✦ Does bot have no starport and no <ins>claims</ins>?
+✦ Does bot have no starport and no claims?
 
-- <!-- priority=3 --> Can bot Move to get new <ins>claims</ins>? <span style="font-size: 12px;">(10)</span>
+- <!-- priority=3 --> Can bot Move to get new claims? <span style="font-size: 12px;">(10)</span>
 
 ✦ Are any loyal buildings controlled by a rival?
 
-- <!-- priority=4 --> Can bot Move or <ins>favorable combat</ins> to change control? <span style="font-size: 12px;">(13,14)</span>
+- <!-- priority=4 --> Can bot Move or favorable combat to change control? <span style="font-size: 12px;">(13,14)</span>
 
-✦ Does bot have <ins>unbuilt cities</ins> and fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>?
+✦ Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
 
-- <!-- priority=5 --> Can bot Move to get at least one new <ins>claim</ins>? <span style="font-size: 12px;">(16)</span> Prefer:
-	- <ins>new resources</ins>
-	- <ins>unclaimed</ins>
+- <!-- priority=5 --> Can bot Move to get at least one new claim? <span style="font-size: 12px;">(16)</span> Prefer:
+	- new resources
+	- unclaimed
 	- two slot planets
 
-✦ <!-- priority=6 --> Can bot Secure to <ins>contend</ins> an <ins>undeclared ambition</ins>, to take captives, or to grow lead in declared ambition? <span style="font-size: 12px;">(17,18,21)</span>
+✦ <!-- priority=6 --> Can bot Secure to contend an undeclared ambition, to take captives, or to grow lead in declared ambition? <span style="font-size: 12px;">(17,18,21)</span>
 
 <#ifdef campaign>
 ✦ <!-- priority=10 --> Can bot Move to take control of rival city or Free city? <span style="font-size: 12px;">(27)</span>
@@ -42,22 +42,22 @@
 <#endif>
 
 <#ifdef campaign>
-✦ Can bot <ins>favorable combat</ins> to destroy Blight in systems with loyal buildings? <span style="font-size: 12px;">(36)</span>
+✦ Can bot favorable combat to destroy Blight in systems with loyal buildings? <span style="font-size: 12px;">(36)</span>
 <#endif>
 
 ✦ Are there any ambition markers available?
 
-- Can bot <ins>favorable combat</ins> to take trophies? <span style="font-size: 12px;">(37)</span>
+- Can bot favorable combat to take trophies? <span style="font-size: 12px;">(37)</span>
 
-✦ Can bot Secure to grow lead in an <ins>undeclared ambition</ins> or to take any other cards? <span style="font-size: 12px;">(38,39)</span>
+✦ Can bot Secure to grow lead in an undeclared ambition or to take any other cards? <span style="font-size: 12px;">(38,39)</span>
 
 ✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">(40)</span> Prefer:
 
 - take control adjacent to rival starport
 - take or neutralize control adjacent to loyal starport
 
-✦ Are there any ships not controlling gates or <ins>claims</ins> or rival buildings?
+✦ Are there any ships not controlling gates or claims or rival buildings?
 
-- Can bot Move to unassigned ships to <ins>task force</ins> (use <ins>partial move</ins>)? <span style="font-size: 12px;">(41)</span>
+- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">(41)</span>
 
 <div class="pagebreak"> </div>

@@ -1,14 +1,14 @@
 # Combat Doctrine
 
-When asked if bot can <ins>favorable combat</ins> to achieve some result, first identify the goal, then refer to the corresponding section below. Goal will always be one of:
+When asked if bot can favorable combat to achieve some result, first identify the goal, then refer to the corresponding section below. Goal will always be one of:
 
 - Trophies for warlord
-- Raid for resource(s) or card(s) to <ins>contend</ins> an ambition
+- Raid for resource(s) or card(s) to contend an ambition
 - Control of a system
 
 Bot will spend resources in prelude to maximize available actions during combat.
 
-Battle is not considered favorable if outrage would cause bot to stop <ins>contending</ins> a declared ambition. Otherwise, Battle risking outrage is favorable if bot could ransack the court.
+Battle is not considered favorable if outrage would cause bot to stop contending a declared ambition. Otherwise, Battle risking outrage is favorable if bot could ransack the court.
 
 If bot can re-roll, first re-roll any intercepts, then re-roll blanks.
 

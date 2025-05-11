@@ -1,36 +1,36 @@
 <#ifdef campaign>
 # Faithful Wisdom - Build | Repair | Secure
 
-✦ <!-- priority=1 --> Can bot Secure a card to <ins>contend</ins> a declared ambition?
+✦ <!-- priority=1 --> Can bot Secure a card to contend a declared ambition?
 
 ✦ <!-- Build starport priority=3 --> Does bot have no starport and can bot build a starport?
 
 ✦ <!-- priority=4 --> Are any loyal buildings controlled by rival, and can bot Build or Repair to change control?
 
-✦ <!-- Build city priority=5 --> Does bot have <ins>unbuilt cities</ins> and at least one <ins>claim</ins>?
+✦ <!-- Build city priority=5 --> Does bot have unbuilt cities and at least one claim?
 
-- Build cities at <ins>claims</ins>
-- Only Build <ins>double city</ins> if winning a declared ambition and uncovering power bonus
+- Build cities at claims
+- Only Build double city if winning a declared ambition and uncovering power bonus
 
-✦ <!-- priority=6 --> Can bot Secure a card to <ins>contend</ins> an <ins>undeclared ambition</ins>, <!-- priority=7 --> or Secure a card to grow a lead in a declared ambition?
+✦ <!-- priority=6 --> Can bot Secure a card to contend an undeclared ambition, <!-- priority=7 --> or Secure a card to grow a lead in a declared ambition?
 
 # Faithful Zeal - Move | Influence | Battle | Tax
 
-✦ <!-- priority=1 --> Can bot Tax to <ins>contend</ins> a declared ambition?
+✦ <!-- priority=1 --> Can bot Tax to contend a declared ambition?
 
-✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to <ins>contend</ins> a declared ambition?
+✦ <!-- priority=2 --> Can bot favorable combat to contend a declared ambition?
 
-✦ <!-- Expand for starport priority=3 -->If bot have no starport and no <ins>claims</ins>, can bot Move to get at least one new <ins>claim</ins>?
+✦ <!-- Expand for starport priority=3 -->If bot have no starport and no claims, can bot Move to get at least one new claim?
 
 ✦ Are any systems with a loyal building controlled by a rival?
 
-- <!-- priority=4 --> Can bot Move or <ins>favorable combat</ins> to change control?
+- <!-- priority=4 --> Can bot Move or favorable combat to change control?
 
-✦ <!-- Expand for city priority=5 --> Does bot have <ins>unbuilt cities</ins>, fewer <ins>claims</ins> than <#ifdef base><ins>unbuilt cities</ins><#endif><#ifdef campaign>half number of <ins>unbuilt cities</ins><#endif>, and can bot Move to get at least one new <ins>claim</ins>?
+✦ <!-- Expand for city priority=5 --> Does bot have unbuilt cities, fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>, and can bot Move to get at least one new claim?
 
-✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or Tax a rival city and captives?
+✦ <!-- priority=6 --> Can bot Tax to contend an undeclared ambition or Tax a rival city and captives?
 
-✦ Are there any <ins>undeclared ambition</ins>s and can bot <ins>favorable combat</ins> for trophies?
+✦ Are there any undeclared ambitions and can bot favorable combat for trophies?
 
 ✦ Can bot Influence any other card? (Check "Influence Doctrine")
 

@@ -1,19 +1,19 @@
 # Administration - Tax | Repair | Influence
 
-✦ <!-- priority=1 --> Can bot Tax to <ins>contend</ins> a declared ambition? <span style="font-size: 12px;">(1)</span>
+✦ <!-- priority=1 --> Can bot Tax to contend a declared ambition? <span style="font-size: 12px;">(1)</span>
 
 ✦ Are any loyal buildings controlled by a rival?
 
 - <!-- priority=4 --> Can bot Repair to change control? <span style="font-size: 12px;">(12)</span>
 
-✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins> or to take captives? <span style="font-size: 12px;">(19,20)</span>
+✦ <!-- priority=6 --> Can bot Tax to contend an undeclared ambition or to take captives? <span style="font-size: 12px;">(19,20)</span>
 
-✦ <!-- priority=8 --> Can bot Influence an <ins>uncontested card</ins> which would <ins>contend</ins> a declared ambition, if Secured? <span style="font-size: 12px;">(22)</span>
+✦ <!-- priority=8 --> Can bot Influence an uncontested card which would contend a declared ambition, if Secured? <span style="font-size: 12px;">(22)</span>
 
-✦ <!-- priority=9 --> Can bot Influence a <ins>contested card</ins>? <span style="font-size: 12px;">(23)</span>
+✦ <!-- priority=9 --> Can bot Influence a contested card? <span style="font-size: 12px;">(23)</span>
 
 <#ifdef campaign>
-✦ Would bot <ins>contend</ins> a declared ambition with the Imperial Trust?
+✦ Would bot contend a declared ambition with the Imperial Trust?
 
 - <!-- priority=9.5 --> Can bot Influence the Imperial Council? <span style="font-size: 12px;">(24)</span>
 <#endif>
@@ -22,7 +22,7 @@
 
 ✦ <!-- priority=12 --> Can bot Repair any other ships or buildings? <span style="font-size: 12px;">(34)</span> Prefer:
 
-- ships in <ins>task force</ins>
+- ships in task force
 - other ships
 - starport, if only one on map
 - cities
@@ -33,6 +33,6 @@
 
 ✦ Can bot Tax to gain resources? <span style="font-size: 12px;">(44)</span> Prefer:
 
-- <ins>new resources</ins>
+- new resources
 
 <div class="pagebreak"> </div>
