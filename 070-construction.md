@@ -2,7 +2,7 @@
 
 ✦ Does bot have no starport?
 
-- <!-- priority=3 --> Can bot Build a starport? <span style="font-size: 12px;">(9)</span> Prefer system with:
+- <!-- priority=3 --> Can bot Build a starport? <span style="font-size: 12px;">(9)</span> Prefer system with (ignore if Flagship):
 	- bot control
 	- most loyal ships
 	- neutral control
@@ -14,7 +14,8 @@
 
 ✦ <!-- priority=5 --> Can bot Build cities? <span style="font-size: 12px;">(15)</span> Prefer:
 
-- only Build double city if winning a declared ambition and uncovering power bonus
+- (ignore if Flagship) only Build double city if winning a declared ambition and uncovering power bonus
+- (Flagship only) do not build more cities than starports on Flagship board
 
 ✦ <!-- priority=10 --> Can bot Build or Repair to take control of a rival building? <span style="font-size: 12px;">(25,26)</span>
 
@@ -25,7 +26,7 @@
 - ships in task force
 - fresh ships
 
-✦ <!-- priority=11 --> Can bot Build any other starports? <span style="font-size: 12px;">(33)</span> Prefer system with:
+✦ <!-- priority=11 --> Can bot Build any other starports? <span style="font-size: 12px;">(33)</span> Prefer system with (ignore if Flagship):
 
 - task force
 - bot control

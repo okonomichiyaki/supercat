@@ -16,20 +16,28 @@
 
 ✦ <!-- priority=2.2 --> Can bot favorable combat to contend a declared ambition? <span style="font-size: 12px;">(8)</span>
 
-✦ Does bot have no starport and no claims?
+✦ (ignore for Flagship) Does bot have no starport and no claims?
 
 - <!-- priority=3 --> Can bot Move to get new claims? <span style="font-size: 12px;">(10)</span>
+
+✦ (Flagship only) Does bot have no starport and cannot Build upgrades or armor at the Flagship planet?
+
+- <!-- priority=3 --> Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">(10)</span>
 
 ✦ Are any loyal buildings controlled by a rival?
 
 - <!-- priority=4 --> Can bot Move or favorable combat to change control? <span style="font-size: 12px;">(13,14)</span>
 
-✦ Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
+✦ (ignore for Flagship) Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
 
 - <!-- priority=5 --> Can bot Move to get at least one new claim? <span style="font-size: 12px;">(16)</span> Prefer:
 	- new resources
 	- unclaimed
 	- two slot planets
+
+✦ (Flagship only) Does bot have unbuilt cities and cannot Build upgrades or armor at the Flagship planet?
+
+- <!-- priority=5 --> Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">(16)</span>
 
 ✦ <!-- priority=6 --> Can bot Secure to contend an undeclared ambition, to take captives, or to grow lead in declared ambition? <span style="font-size: 12px;">(17,18,21)</span>
 

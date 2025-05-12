@@ -25,37 +25,6 @@ SUITS = {
     }
 }
 
-TERMS = [
-    "claimed",
-    "unclaimed",
-    "claims",
-    "claim",
-
-    "uncontested card",
-    "contested card",
-
-    "unbuilt cities",
-    "unbuilt city",
-
-    "combat card",
-    "contend",
-    "double city",
-    "effective",
-    "favorable combat",
-    "new resources",
-    "partial move",
-    "task force",
-    "undeclared ambition"
-]
-
-def replacer(match):
-    return f"<ins>{match.group(0)}</ins>"
-
-pattern = r'\b(' + '|'.join(TERMS) + r')\b'
-def highlight_terms(text):
-    p = re.compile(pattern)
-    return p.sub(replacer, text)
-
 def get_suits(rows):
     actions = []
     result = []
@@ -108,7 +77,15 @@ def ids(rows):
     i = f"<span style=\"font-size: 12px;\">({i})</span>"
     return i
 
+def get_flagship(row):
+    if row['No Flagship'] == 'x':
+        return "(ignore for Flagship)"
+    elif row['Flagship'] == 'x':
+        return "(Flagship only)"
+    return ""
+
 def build_statement(row, general=False):
+    fs = get_flagship(row)
     cond = row['Condition']
     pref = row['Prefer']
     action = row['Action']
@@ -124,11 +101,11 @@ def build_statement(row, general=False):
     p = row['Priority']
     pcomment = priority_comment(p)
     if cond != "":
-        lines.append(f"✦ {cond}")
+        lines.append(f"✦ {fs} {cond}")
         lines.append("")
         lines.append(f"- {pcomment} {quest}")
     else:
-        lines.append(f"✦ {pcomment} {quest}")
+        lines.append(f"✦ {fs} {pcomment} {quest}")
     if general:
         lines[-1] = lines[-1] + " → " + "/".join(get_suits([row]))
     else:
@@ -187,10 +164,8 @@ def same_priority_goal_cond(a, b):
     return equals(a, b, 'Campaign') and equals(a, b, 'Base') and equals(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
 
 def cleanup(s):
-    s = s.replace("  ", " ")
     s = s.replace("Battle", "favorable combat")
-    s = highlight_terms(s)
-    return s.strip()
+    return re.sub(r' +', ' ', s).strip()
 
 def get_rows(filename):
     result = []
