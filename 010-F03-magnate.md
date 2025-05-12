@@ -21,7 +21,7 @@ Prelude
 
 ## Act II
 
-✦ Can bot Tax or favorable battle for resources, resulting in the bot having more than half of the total resources of its type in play? *(i.e. get resources such that if the Gain Monopolies edict were resolved, the bot take the matching Monopoly)*
+✦ Can bot Tax or favorable battle for resources, resulting in the bot having more than half of the total resources of its type in play? *(get resources such that if the Gain Monopolies edict were resolved, the bot take the matching Monopoly)*
 
 ✦ Can bot Influence or Secure the Imperial Council?
 
