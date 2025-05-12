@@ -1,12 +1,12 @@
 ## a procedural non-player system for solo Arcs
 
-*version 0.5*
+*version 0.6-draft*
 
-This is a non-player system, or "bot", for playing the board game Arcs. It is intended for solo play, i.e. one player versus one or more bots. It can also work as the 3rd or 4th opponent in a multiplayer game. There are two versions of the this document; this is the <#ifdef base>base game<#endif><#ifdef campaign>campaign<#endif> version. <#ifdef campaign>*(Note: it currently only supports "A" Fates through Act I)*<#endif>
+This is a non-player system, or "bot", for playing the board game Arcs. It is intended for solitaire play, in other words one player versus one or more bots. It can also work as the 3rd or 4th opponent in a multiplayer game. There are two versions of the this document; this is the <#ifdef base>base game<#endif><#ifdef campaign>campaign<#endif> version. <#ifdef campaign>*(Note: it currently only supports "A" and "B" Fates through Act II)*<#endif>
 
 ## Components
 
-You will need some way to track <#ifdef base>two<#endif><#ifdef campaign>several<#endif> numbers per bot, for instance dice of different colors rotated to show a different numbered face. <#ifdef campaign>For a solo game vs 3 bots, you will need 3 dice each of red, blue, yellow, and white, and 3 dice each of two other colors.<#endif><#ifdef base>You will also separately need one six sided die.<#endif>
+You will need some way to track <#ifdef base>two<#endif><#ifdef campaign>several<#endif> numbers per bot, for instance dice of different colors rotated to show a different numbered face. <#ifdef campaign>For a solo game vs 3 bots, you will need 3 dice each of red, blue, yellow, and white, and 3 dice each of two other colors. *(some Fates require additional components)*<#endif><#ifdef base>You will also separately need one six sided die.<#endif>
 
 <#ifdef base>
 ## Setup
@@ -16,11 +16,11 @@ Choose a difficulty mode (see next page) which will determine turn order. For op
 <#ifdef campaign>
 ## Setup (Act I)
 
-Choose a difficulty mode (see page 3) which will determine turn order. Set up the game according to the Blighted Reach rulebook, but make changes at the steps listed below.
+Choose difficulty modifiers (see page 3) which will determine turn order. Set up the game according to the Blighted Reach rulebook, but make changes at the steps listed below.
 
 **1.B.** If playing on "normal" or "harder" difficulty, give the initiative marker to a bot, and seat the player(s) last in turn order.
 
-**2.B.** Assign "A" Fates using any method you like. Suggestion: Each player draws 2 "A" Fate cards and chooses one secretly as in a multiplayer game, then assign each bot an "A" Fate card selected randomly from the remaining cards.
+**2.B.** Assign "A" Fates using any method you like. *(suggestion: the player draws 2 "A" Fate cards and chooses one, then randomly assign each bot an "A" Fate card)*
 
 **2.G-H.** When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport. *If a bot is the Believer, check that Fate's procedures for special instructions.*
 
@@ -53,7 +53,7 @@ Aside from the changes to card play described above, <#ifdef campaign>the negoti
 
 <#ifdef campaign><div class="pagebreak"> </div><#endif>
 
-## Difficulty mode (Optional but recommended)
+## Difficulty modifiers (Optional but recommended)
 
 For a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
 
