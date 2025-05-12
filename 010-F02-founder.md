@@ -25,12 +25,13 @@ Summits
 
 ✦ Can bot Tax or Secure to cause the Commonwealth to contend a declared ambition?
 
-✦ Can bot build a Free building?
+✦ Can bot Build a Free building?
 
-- Prefer:
+- Yes: Prefer:
 	- Free city on planet type matching bot Outrage
 	- Free city on a planet without a Free city
 	- Free starport on any planet
+- No: Can bot Move to get new claims on planets not controlled by the Empire?
 
 ✦ Are there any Empire controlled Free cities?
 
