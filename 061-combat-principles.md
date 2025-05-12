@@ -1,4 +1,4 @@
-# Combat Doctrine
+# Combat Principles
 
 When asked if bot can favorable combat to achieve some result, first identify the goal, then refer to the corresponding section below. Goal will always be one of:
 

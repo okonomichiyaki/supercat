@@ -8,11 +8,11 @@
 - Use **Bargain (Secure)**. Use these priorities to select a card for rival to Secure and subsequent Influence and Secure actions:
 	- Imperial Council and Council Intrigue *(Select target which allows bot to Influence and Secure either of these cards, or prevent rival from Securing)*
 	- Protect loyal agents
-	- Check "Influence Doctrine" for additional priorities
+	- Check "Influence Principles" for additional priorities
 
 ✦ Is the Imperial Council "In Session"?
 
-- Yes: Can bot Secure or Influence the Imperial Council? (check "Influence Doctrine")
+- Yes: Can bot Secure or Influence the Imperial Council? (check "Influence Principles")
 - No: Is bot no longer the First Regent?
 	- Can bot Influence or Secure Council Intrigue?
 

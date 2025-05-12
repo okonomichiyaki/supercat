@@ -19,13 +19,13 @@ effective
 : a Vox card is effective if its **When Secured** text can be fully carried out (see "Vox Cards") <#ifdef campaign>some Fates also consider Event cards effective<#endif>
 
 favorable combat
-: a series of Move and Battle actions that the bot considers likely to result in a specific goal (see "Combat Doctrine")
+: a series of Move and Battle actions that the bot considers likely to result in a specific goal (see "Combat Principles")
 
 new resources
 : type of resource that bot does not have OR type of planet bot does not have a city on
 
 partial move
-: a bot Move which does not reach a destination on a single card (see "Movement Doctrine")
+: a bot Move which does not reach a destination on a single card (see "Movement Principles")
 
 task force
 : group of bot ships with the most fresh ships

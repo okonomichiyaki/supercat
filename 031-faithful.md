@@ -32,7 +32,7 @@
 
 ✦ Are there any undeclared ambitions and can bot favorable combat for trophies?
 
-✦ Can bot Influence any other card? (Check "Influence Doctrine")
+✦ Can bot Influence any other card? (Check "Influence Principles")
 
 <div class="pagebreak"> </div>
 <#endif>

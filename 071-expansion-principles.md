@@ -1,6 +1,6 @@
-# Expansion Doctrine
+# Expansion Principles
 
-When getting new claims and building new cities the bot will follow these guidelines. Note that the bot will still use the guidance in the "Movement Doctrine" to move ships. This page aims to clarify **when** the bot will expand by staking new claims and building new cities, not explain **how** the bot will move. Use "Movement Doctrine" to determine how the moves are carried out.
+When getting new claims and building new cities the bot will follow these guidelines. Note that the bot will still use the guidance in the "Movement Principles" to move ships. This page aims to clarify **when** the bot will expand by staking new claims and building new cities, not explain **how** the bot will move. Use "Movement Principles" to determine how the moves are carried out.
 
 ## Staking New Claims
 

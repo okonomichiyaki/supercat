@@ -8,7 +8,7 @@
 ✦ Can bot favorable combat for trophies with Imperial Ships?
 
 - Yes:
-	- Use "Combat Doctrine" to resolve
+	- Use "Combat Principles" to resolve
 - No:
 	- Use partial move to acquire targets for future favorable combat for trophies with Imperial Ships, if possible.
 

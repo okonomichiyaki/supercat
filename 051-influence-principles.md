@@ -1,4 +1,4 @@
-# Influence Doctrine
+# Influence Principles
 
 When influencing cards in the court, the bot will follow these guidelines.
 

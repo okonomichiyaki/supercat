@@ -15,13 +15,13 @@ Song of Freedom
 : Effective if the bot controls a rival city and it's possible to seize the initiative. If not possible to seize the initiative, secure only for captives.
 
 Guild Struggle
-: Effective if rivals have any guild cards. Steal a guild card to contend a declared ambition or contend an undeclared ambition. Otherwise use "Influence Doctrine".
+: Effective if rivals have any guild cards. Steal a guild card to contend a declared ambition or contend an undeclared ambition. Otherwise use "Influence Principles".
 
 Call to Action
 : Always effective
 
 Council Intrigue
-: Check Fate to determine whether effective. When resolving, move agents to other cards in the court according to "Influence Doctrine".
+: Check Fate to determine whether effective. When resolving, move agents to other cards in the court according to "Influence Principles".
 
 Diplomatic Fiasco
 : Effective if at least one rival would be impacted by the Crisis. During the Crisis, select Guild cards for bot to discard which do not match declared ambitions.
