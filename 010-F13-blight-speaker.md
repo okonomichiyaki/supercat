@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Blight Speaker
 
 ## Act II
@@ -11,3 +12,6 @@
 
 Spore Ships
 : Bot will spend Material during Prelude to use the **Spawn (Build)** ability.
+
+<div class="pagebreak"> </div>
+<#endif>

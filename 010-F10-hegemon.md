@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Hegemon
 
 ## Act II
@@ -12,3 +13,6 @@
 
 Planting Banners
 : Bot will place a Banner if possible (i.e. Flagship is at an eligible planet)
+
+<div class="pagebreak"> </div>
+<#endif>

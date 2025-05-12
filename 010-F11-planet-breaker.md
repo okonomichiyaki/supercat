@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Planet Breaker
 
 ## Act II
@@ -20,3 +21,6 @@
 
 Sycophants
 : Bot will not use the Prelude ability to place ships
+
+<div class="pagebreak"> </div>
+<#endif>

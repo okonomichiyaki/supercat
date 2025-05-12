@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Warden
 
 ## Act II
@@ -18,3 +19,6 @@
 
 Feudal Law 
 : Note that all bots will consider the impact of Feudal Law when determining if a given Battle action is favorable. In other words, bots will only risk provoking outrage if able to ransack the court.
+
+<div class="pagebreak"> </div>
+<#endif>

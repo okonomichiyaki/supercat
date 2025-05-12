@@ -1,3 +1,4 @@
+<#ifdef campaign>
 ## Act II
 
 ✦ Can bot Tax for a weapon?
@@ -10,3 +11,6 @@ Arsenal Keepers
 : When bot takes a Weapon, place it in a slot with three keys if one is empty, otherwise place it on this card.
 
 <!-- TODO: become Outlaw, steal from Imperial Trust -->
+
+<div class="pagebreak"> </div>
+<#endif>

@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Pacifist
 
 ## Act II
@@ -29,3 +30,6 @@ Secure and Tax
 Influence
 : Bot will only Influence uncontested cards or cards which only have Loyal agents.
 Bot will follow "Influence Doctrine" otherwise.
+
+<div class="pagebreak"> </div>
+<#endif>
