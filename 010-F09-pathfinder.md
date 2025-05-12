@@ -1,4 +1,11 @@
+<#ifdef campaign>
 # Pathfinder
+
+## Find the Portal Minigames
+
+There are two different minigames which make it possible for the Pathfinder to be used in a solo game. Both minigames retain all the mechanics of the Portal and the Clue tokens, and enable either the player or the bot to play the Pathfinder. The Portal is still secretly located on one of the planets, and the meaning of the Clue tokens is exactly the same as described on the cards "Uncovering Clues" and "Clues to the Portal" (F9-03).
+
+Each minigame has slightly different pros and cons, and you may prefer one over the other due to components or ease of setup vs ease of play. See the following pages for details on the minigames. Select one during setup of Act II, and use the minigame when performing the Prelude ability on "Uncovering Clues" (F9-02).
 
 ## Act II
 
@@ -32,3 +39,6 @@ Uncovering Clues
 		- select planet in a cluster with no Clue token
 	- Otherwise:
 		- select planet which is a possible Portal location
+
+<div class="pagebreak"> </div>
+<#endif>

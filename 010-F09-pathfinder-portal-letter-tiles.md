@@ -1,3 +1,7 @@
+<#ifdef campaign>
+## Find the Portal Minigame: Letter Tiles
+
+This minigame has a more involved setup than the Cube Bag minigame and requires tiles to be placed in every planet on the board, however it is easier to play once the setup is complete.
 
 ### Components
 
@@ -38,3 +42,6 @@ Set aside the other 18 tiles for now.
 After the above setup is complete, one of the 18 planets has 2 vowel tiles, the other planets in the same cluster have 1 vowel, and the other planets with the matching symbol have 1 vowel. All other planets have 2 consonant tiles. The Portal is located on the planet with with 2 vowels.
 
 Each time the Prelude ability on "Uncovering Clues" is used, turn over both tiles at the target planet. If both of the tiles are vowels, place the Portal token; it has been found. If only one of the tiles is a vowel, place a Clue token with the "check" side face up. If both tiles are consonants, place a Clue token with the "x" side face up. These Clue tokens retain their original meaning as described on the cards "Uncovering Clues" and "Clues to the Portal" (F9-03).
+
+<div class="pagebreak"> </div>
+<#endif>
