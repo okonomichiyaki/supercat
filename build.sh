@@ -12,9 +12,10 @@ rm output.html
 
 # wrap terminology with tags:
 for file in `cat pages.md`; do
-    while IFS= read -r phrase; do
-        escaped=$(printf '%s\n' "$phrase" | sed 's/[][\.*^$/]/\\&/g')
-        perl -i -pe '
+    if [[ $file != "095-terminology.md" ]]; then
+        while IFS= read -r phrase; do
+            escaped=$(printf '%s\n' "$phrase" | sed 's/[][\.*^$/]/\\&/g')
+            perl -i -pe '
       BEGIN {
         $phrase = shift;
       }
@@ -23,8 +24,9 @@ for file in `cat pages.md`; do
         \b\Q'"$phrase"'\E\b  # exact word match
         (?!<\/ins>)          # no tag close after
       }{<ins>$&</ins>}igx;
-    ' "$escaped" "/tmp/$file"
-    done < "terminology.txt"
+          ' "$escaped" "/tmp/$file"
+        done < "terminology.txt"
+    fi
 done
 
 # run pandoc over the specific list of pages/sections, in the specified order:
