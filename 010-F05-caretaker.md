@@ -21,11 +21,11 @@ Imperial Council Decided
 
 ## Act II
 
-✦ Can bot Secure or Influence a Lore card?
+✦ Can bot Secure or Influence a lore card? *(or a card in the Court with an attached lore card)*
 
 ✦ Can bot Secure or Influence Librarians?
 
 Librarians
-: Bot will always use the ability to draw and attach a Lore card
+: Bot will always use the ability to draw and attach a lore card
 
 <#endif>

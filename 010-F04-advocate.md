@@ -32,7 +32,7 @@ Prelude
 
 ✦ Can bot use Guild Investigators' **Recover (Move)** ability?
 
-✦ Can bot Secure or Influence an effective Vox card or Lore card?
+✦ Can bot Secure or Influence an effective Vox card or lore card?
 
 Prelude
 : Only use the Prelude action of a Guild card that discards itself if bot has 2 or more Guild cards of that suit.
