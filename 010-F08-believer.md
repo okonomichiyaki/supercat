@@ -24,25 +24,26 @@ Place 2 cities instead of a city and a starport. Prefer:
 
 ## Act II
 
-If the bot does not have initiative, after drawing 2 action cards ("Bot Turn"), check the following:
+✦ Can bot Tax, Secure, or favorable battle to improve its position in an ambition with an Ideal marker? *(any improvement in the bot's ranking for the ambition, not just first or second place)*
 
-- is one of those cards a Faithful card?
-- does bot's hand counter show 2 or greater?
+<!--
+If the bot does not have initiative, after drawing 2 action cards ("Bot Turn") and decrementing the hand counter, check the following:
 
-If both are true, bot will take the Faithful card:
-Place it in the bot's play area and decrement the hand counter.
-Select the other card to play.
+- Is one of those cards a Faithful card?
+- Does bot's hand counter show 2 or greater?
+- Are there undeclared ambitions?
 
-When checking for bot seizing the initiative, subtract 1 from the die roll for each Faithful card in the bot's play area.
+If all are true, bot will take the Faithful card. Place it in the bot's play area. Select the other card to play. When checking for bot seizing the initiative, subtract 1 from the die roll for each Faithful card in the bot's play area.
 
 If the bot has initiative, and has a Faithful card in its play area, check the following:
 
 - is bot winning or tied for first place for an undeclared ambition?
 
 If true, do not draw 2 cards, simply play the Faithful card and declare the ambition.
+-->
 
 The Young Light
-: Bot will always use this Prelude ability when possible. *(decrement hand counter to represent discarding an action card)*
+: Bot will use this Prelude ability whenever possible. *(discard an action card to take a played Faithful card. decrement the bot's hand counter to represent discarding an action card)*
 
 Set Doctrine
 : If bot can Secure to contend an ambition, switch to Wisdom. If bot can Tax or favorable combat to contend an ambition, switch to Zeal. Otherwise do not switch.
