@@ -2,7 +2,7 @@
 <#ifdef campaign>
 ✦ Check bot's Fate for initial priorities. If no card selected, return to this page.
 <#endif>
-✦ <!-- priority=1 --> Can bot Tax/Secure to contend declared ambition? → Administration/Aggression
+✦ <!-- priority=1 --> Can bot Secure or Tax to contend declared ambition? → Administration/Aggression
 
 ✦ <!-- priority=1.5 --> Can bot Secure an effective Vox card<#ifdef campaign>, the Imperial Council, or Secure a card with an attached Faithful or Guild card<#endif>? → Aggression
 
@@ -35,7 +35,7 @@
 	- No: <!-- Build city priority=5 --> Does bot have at least one claim? → Construction
 <#endif>
 
-✦ <!-- priority=6 --><!-- priority=7 --> Can bot Tax/Secure to contend undeclared ambition, take captives, or grow a lead in a declared ambition? <br>→ Administration/Aggression
+✦ <!-- priority=6 --><!-- priority=7 --> Can bot Tax or Secure to contend undeclared ambition, take captives, or grow a lead in a declared ambition? <br>→ Administration/Aggression
 
 ✦ <!-- priority=8 --><!-- priority=9 --> Can bot Influence a card with more agents than rivals? → Mobilization/Administration
 <#ifdef campaign>
