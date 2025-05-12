@@ -11,7 +11,7 @@ done
 rm output.html
 
 # wrap terminology with tags:
-for file in `cat pages.txt`; do
+for file in `cat pages.md`; do
     while IFS= read -r phrase; do
         escaped=$(printf '%s\n' "$phrase" | sed 's/[][\.*^$/]/\\&/g')
         perl -i -pe '
@@ -28,6 +28,6 @@ for file in `cat pages.txt`; do
 done
 
 # run pandoc over the specific list of pages/sections, in the specified order:
-cat pages.txt |
+cat pages.md |
     while read line; do echo /tmp/${line}; done |
     xargs pandoc -s --css=pandoc.css --metadata title=SUPERCAT -o output.html
