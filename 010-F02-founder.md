@@ -8,9 +8,7 @@
 - Can bot Influence or Secure the Imperial Council?
 - Can bot Influence or Secure a card which would enable it to declare an ambition?
 
-✦ Can bot Build, Repair, or Move to take control of a system?
-
-✦ Can bot favorable combat to take control of a system? (use all available actions if needed)
+✦ Can bot Build, Repair, Move, or favorable combat to take control of a system?
 
 Parade Fleets
 : Place ships where bot would gain control. If bot is a Regent, always become an Outlaw.

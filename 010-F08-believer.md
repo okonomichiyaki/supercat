@@ -10,6 +10,10 @@ Place 2 cities instead of a city and a starport. Prefer:
 </ul>
 </dd>
 
+## Faithful Cards
+
+Since Faithful cards enable any type of action, they are not selected normally via "General Priorities". If any bot needs to use "General Priorities" to select between a Faithful card and any other card, read down the procedures as normal until identifying the bot's priority. If the bot can take the prioritized action using the Faithful card, select that card and turn to the page for the Faithful suit.
+
 ## Act I
 
 ✦ Can bot use Spreading the Faith's **Teach (Influence)** ability? *(attach a Faithful card to a Guild card in the Court matching a Loyal city)*

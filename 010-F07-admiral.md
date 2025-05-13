@@ -32,4 +32,5 @@
 
 ✦ Can bot Influence a card with more agents than a Rival Regent?
 
+<div class="pagebreak"> </div>
 <#endif>

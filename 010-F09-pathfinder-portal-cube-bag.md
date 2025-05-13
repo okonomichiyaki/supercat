@@ -22,9 +22,7 @@ Each time "Uncovering Clues" is used, one "round" of the minigame will result in
 
 <br/>
 
-<!--
-TODO: print friendly chart using icons
--->
+<div class="pagebreak"> </div>
 
 | | Hex | Arrow | Moon |
 | - | - | - | - |

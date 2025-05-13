@@ -1,6 +1,22 @@
 <#ifdef campaign>
 # Advocate
 
+## Golems
+
+All bots will use Golems' Prelude ability according to these guidelines:
+
+Warrior
+: Use if trophies would result in bot contending for warlord
+
+Protector
+: Use if bot has two or more damaged ships. Repair only Loyal ships.
+
+Seeker
+: Use like Fuel *(only for a Combat card)*
+
+Harvester
+: Use to gain a resource to contend a declared ambition
+
 ## Act I
 
 ✦ Can bot Influence or Secure a Guild card with a Prelude action that discards itself?

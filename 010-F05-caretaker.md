@@ -28,4 +28,5 @@ Imperial Council Decided
 Librarians
 : Bot will always use the ability to draw and attach a lore card
 
+<div class="pagebreak"> </div>
 <#endif>

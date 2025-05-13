@@ -26,6 +26,8 @@ Set aside the other 18 tiles for now.
 
 (3) Starting with one of the groups and keeping the tiles facedown, place one tile from this group in each of the planets with a hex symbol. Repeat this with another group and the arrow planets, and finally with the last group and the moon planets. After this step, each planet will have a single facedown tile, and all the planets with the same symbol will have tiles which originated from the same group.
 
+<div class="pagebreak"> </div>
+
 (4) Organize the remaining tiles into 6 facedown groups of 3 each:
 
 - one group of 3 vowels

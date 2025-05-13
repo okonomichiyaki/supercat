@@ -23,4 +23,5 @@ if not winning/tied, declare any other ambitions?
 - If possible, place damaged Blight in a system bot controls or where bot has ships.
 - If necessary, return 1 or 2 agents from the court to change the roll.
 
+<div class="pagebreak"> </div>
 <#endif>

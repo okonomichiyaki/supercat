@@ -23,6 +23,7 @@ Each minigame has slightly different pros and cons, and you may prefer one over 
 Uncovering Clues
 : Use Prelude ability if current planet meets Clue Guidelines
 
+<div class="pagebreak"> </div>
 
 ## Clue Guidelines
 
