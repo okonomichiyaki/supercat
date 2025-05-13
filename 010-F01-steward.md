@@ -28,6 +28,8 @@ Leave the Empire
 Revive the Empire
 : Always
 
+<div class="pagebreak"> </div>
+
 ## Act II
 
 ✦ Are there any clusters where the Empire does not control any systems?
@@ -66,5 +68,5 @@ If bot IS the First Regent -> actions to stay First Regent
 Imperial Sponsor
 : If the Steward is the First Regent, select an undeclared ambition which an Outlaw is winning or contending.
 -->
-
+<div class="pagebreak"> </div>
 <#endif>
