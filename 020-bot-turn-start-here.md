@@ -1,8 +1,8 @@
 # Bot turn (START HERE)
 
-✦ If bot has no cards left (check hand counter) then pass.
+✦ If bot has no cards left *(check hand counter)* then bot will pass.
 
-✦ Draw 2 cards. Decrement hand counter. Use procedures below to select a card. Then go to the page for selected card's suit and discard the other card.
+✦ Draw 2 cards. Decrement hand counter. Use procedures below to select a card. After a card is selected, discard the other card. <#ifdef campaign>Check the bot's Fate for special instruction.<#endif> <#ifdef base>Then go to the page for the selected card's suit.<#endif>
 
 ✦ Does bot have initiative?
 
