@@ -8,9 +8,9 @@
 010-F06-partisan.md
 010-F07-admiral.md
 010-F08-believer.md
+010-F09-pathfinder.md
 010-F09-pathfinder-portal-cube-bag.md
 010-F09-pathfinder-portal-letter-tiles.md
-010-F09-pathfinder.md
 010-F10-hegemon.md
 010-F11-planet-breaker.md
 010-F13-blight-speaker.md
@@ -32,5 +32,4 @@
 091-vox-cards.md
 092-leaders-and-lore.md
 093-questions.md
-094-clarifications.md
 095-terminology.md
