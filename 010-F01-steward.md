@@ -20,7 +20,7 @@ Events
 : If bot is not First Regent and Imperial Council is "Decided" or there are no Regents
 
 Petition the Council
-: If bot is not the First Regent and the Imperial Counci is "Decided"
+: If bot is not the First Regent and the Imperial Council is "Decided"
 
 Leave the Empire
 : Never
