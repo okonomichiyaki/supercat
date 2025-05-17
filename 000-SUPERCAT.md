@@ -16,7 +16,7 @@ There are two versions of this document; this is the <#ifdef base>base game<#end
 
 <#ifdef campaign>If this is your first time playing Arcs using SUPERCAT, consider playing at least one chapter of the base game with the bot before using it to play the campaign.<#endif>
 
-*Arcs was designed by Cole Werhle and published by Leder Games.* <br>
+*Arcs was designed by Cole Wehrle and published by Leder Games.* <br>
 *SUPERCAT is an unofficial fan project, and is not affiliated with Leder Games.*
 
 ## Components
