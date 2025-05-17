@@ -1,15 +1,14 @@
 # Prelude
 
+After a card has been selected, before following procedures for the card's suit, check to see if bot will spend resources and/or guild cards for Prelude actions. Bot will use resources and guild cards according to the following guidelines.
+
 ## Restrictions
 
-Bot will spend resources and guild cards according to these guidelines.
-If bot is contending a declared ambition and spending a resource or guild card will take it out of contention, it will not spend that resource or guild card.
+Bot will not spend resources or guild cards matching a declared ambition, with one exception. Specifically:
 
-Specifically:
-
-- if tycoon is declared AND bot is contending for tycoon then do not spend fuel or material resources or guild cards
-- if empath is declared AND bot is contending for empath then do not spend psionic resources or guild cards
-- if seeker is declared AND bot is contending for seeker then do not spend relic resources or guild cards, UNLESS securing another relic card
+- if Tycoon is declared do not spend Fuel or Material resources or guild cards
+- if Empath is declared do not spend Psionic resource or guild cards
+- if Seeker is declared do not spend Relic resources or guild cards, UNLESS securing a Relic card
 
 ## Resources
 
@@ -19,7 +18,9 @@ Specifically:
 
 **Relic**: Secure for captives, contend a declared ambition, or effective Vox card.
 
-**Psionic**: Tax/Secure to contend for a declared ambition, or spend for Combat card
+**Psionic**: Tax/Secure to contend a declared ambition, or spend for Combat card
+
+See "Combat principles" for more details on Fuel, Weapon, and Psionic usage.
 
 ## Guild cards
 

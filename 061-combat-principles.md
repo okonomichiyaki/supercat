@@ -6,21 +6,19 @@ When asked if bot can favorable combat to achieve some result, first identify th
 - Raid for resource(s) or card(s) to contend an ambition
 - Control of a system
 
-Bot will spend resources in prelude to maximize available actions during combat.
+Bot will spend Weapon resources to enable combat and will spend Fuel and Psionic resources to maximize available actions during a combat.
 
-Battle is not considered favorable if outrage would cause bot to stop contending a declared ambition. Otherwise, Battle risking outrage is favorable if bot could ransack the court.
-
-If bot can re-roll, first re-roll any intercepts, then re-roll blanks.
+A combat which risks outrages is only favorable if bot could ransack the court AND if outrage would not cause bot to stop contending a declared ambition. If bot is able to re-roll, first re-roll any intercepts, then re-roll blanks.
 
 ## Trophies
 
 A Battle for trophies is considered favorable if bot has at least 1:1 ratio of fresh ships<#ifdef campaign> or can roll 2 dice vs Blight<#endif>.
 
-If bot has multiple actions, first roll skirmish dice until ratio of fresh ships is better than 1:1, or only 1 action left. Then roll all assault dice if ratio is better than 1:1, or select half assault dice and the rest skirmish dice. Allocate hits prioritizing trophies.
+If bot has multiple actions, first roll all skirmish dice until ratio of fresh ships is better than 1:1, or only 1 action left. Then roll assault dice up to 2x defending fresh ships, and the rest skirmish dice. Allocate hits prioritizing trophies.
 
 ## Raid
 
-A raid is considered favorable if bot can roll raid dice equal to 2x the number of keys on the target AND bot has better than 1:1 ratio of fresh ships to defender OR has 1:1 ratio AND more than one Battle action available after moving to the target.
+A raid is considered favorable if bot can roll raid dice equal to 2x keys on the target AND bot has better than 1:1 ratio of fresh ships to defender OR has 1:1 ratio AND more than one Battle action available after moving to the target.
 
 If favorable, the bot will first spend actions to roll dice like a trophies Battle, up to the last action available, when it will roll raid dice.
 

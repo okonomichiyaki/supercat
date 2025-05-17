@@ -35,6 +35,8 @@
 	- No: <!-- Build city priority=5 --> Does bot have at least one claim? → Construction
 <#endif>
 
+✦ Can bot use an ability on a ready Guild card? → Select suit matching ability, then exhaust Guild card. Use ability, then go to page for card's suit if actions remaining.
+
 ✦ <!-- priority=6 --><!-- priority=7 --> Can bot Tax or Secure to contend undeclared ambition, take captives, or grow a lead in a declared ambition? <br>→ Administration/Aggression
 
 ✦ <!-- priority=8 --><!-- priority=9 --> Can bot Influence a card with more agents than rivals? → Mobilization/Administration
