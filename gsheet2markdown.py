@@ -42,8 +42,8 @@ def indent(s, n):
         s = "\t" + s
     return s
 
-def priority_comment(p):
-    if p != "" and p != "99":
+def priority_comment(args, p):
+    if args.priority and p != "" and p != "99":
         return f"<!-- priority={p} -->"
     else:
         return ""
@@ -77,15 +77,17 @@ def ids(rows):
     i = f"<span style=\"font-size: 12px;\">({i})</span>"
     return i
 
-def get_flagship(row):
+def get_flagship(args, row):
+    if not args.campaign:
+        return ""
     if row['No Flagship'] == 'x':
         return "(ignore for Flagship)"
     elif row['Flagship'] == 'x':
         return "(Flagship only)"
     return ""
 
-def build_statement(row, general=False):
-    fs = get_flagship(row)
+def build_statement(args, row, general=False):
+    fs = get_flagship(args, row)
     cond = row['Condition']
     pref = row['Prefer']
     action = row['Action']
@@ -99,7 +101,7 @@ def build_statement(row, general=False):
     quest = f"Can bot {action} {thing}? {id_}"
     lines = []
     p = row['Priority']
-    pcomment = priority_comment(p)
+    pcomment = priority_comment(args, p)
     if cond != "":
         lines.append(f"✦ {fs} {cond}")
         lines.append("")
@@ -113,11 +115,11 @@ def build_statement(row, general=False):
     stmt = "\n".join(lines)
     return wrap_ifdef(row, stmt)
 
-def merge_goals(rows, general=False):
+def merge_goals(args, rows, general=False):
     id_ = ids(rows)
     print(f"merging goals: {id_}")
     action = rows[0]['Action']
-    pcomment = priority_comment(rows[0]['Priority'])
+    pcomment = priority_comment(args, rows[0]['Priority'])
     things = [f"{row['GlueWord']} {row['Goal']}" for row in rows]
     if len(things) > 2:
         things = ", ".join(things[0:len(things)-1]) + f", or {things[-1]}"
@@ -128,14 +130,14 @@ def merge_goals(rows, general=False):
         stmt = stmt + " → " + "/".join(get_suits(rows))
     return wrap_ifdef(rows[0], stmt)
 
-def merge_actions(rows, general=False):
+def merge_actions(args, rows, general=False):
     id_ = ids(rows)
     print(f"merging actions: {id_}")
     cond = rows[0]['Condition']
     actions = [row['Action'] for row in rows]
-    actions = set(actions)
+    actions = list(dict.fromkeys(actions)) # remove duplicates but keep order
     actions = " or ".join(actions)
-    pcomment = priority_comment(rows[0]['Priority'])
+    pcomment = priority_comment(args, rows[0]['Priority'])
     thing = f"{rows[0]['GlueWord']} {rows[0]['Goal']}"
     quest = f"Can bot {actions} {thing}? {id_}"
     lines = []
@@ -175,7 +177,7 @@ def get_rows(filename):
             result.append(row)
     return result
 
-def general_priorities(output, rows):
+def general_priorities(args, output, rows):
     filtered = [ row for row in rows if float(row['Priority']) < 99 ]
     print(f"generating General Priorities from {len(rows)} rows filtered to {len(filtered)} rows")
     stmts = []
@@ -184,12 +186,12 @@ def general_priorities(output, rows):
         print(f"{row['Id']} - {row['Combined']}")
         if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
             rows = stmts[idx-1][1] + [row]
-            stmts[idx-1] = (merge_goals(rows, True), rows)
+            stmts[idx-1] = (merge_goals(args, rows, True), rows)
         elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][0], row):
             rows = stmts[idx-1][1] + [row]
-            stmts[idx-1] = (merge_actions(rows, True), rows, True)
+            stmts[idx-1] = (merge_actions(args, rows, True), rows, True)
         else:
-            stmt = build_statement(row, True)
+            stmt = build_statement(args, row, True)
             stmts = stmts + [(stmt, [row])]
             idx = idx + 1
     with open(output, 'w') as outf:
@@ -204,6 +206,8 @@ def main():
     parser.add_argument('-c', '--campaign', action='store_true')
     parser.add_argument('-a', '--api_key')
     parser.add_argument('-u', '--url')
+    parser.add_argument('-p', '--priority', action='store_true')
+    parser.add_argument('-g', '--general', action='store_true')
     args = parser.parse_args()
     campaign = args.campaign
     api_key = args.api_key
@@ -221,7 +225,8 @@ def main():
     all_rows = get_rows(filename)
     filtered = [ row for row in all_rows if row['Hide'] != "x" ]
     print(f"all rows: {len(all_rows)} filtered rows: {len(filtered)}")
-    general_priorities("030-general-priorities.md", all_rows)
+    if args.general:
+        general_priorities(args, "030-general-priorities.md", all_rows)
     for suit in SUITS:
         actions = " | ".join(SUITS[suit]["actions"])
         output = SUITS[suit]["output"]
@@ -234,12 +239,12 @@ def main():
             print(".", end="")
             if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
                 rows = stmts[idx-1][1] + [row]
-                stmts[idx-1] = (merge_goals(rows), rows)
+                stmts[idx-1] = (merge_goals(args, rows), rows)
             elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][0], row):
                 rows = stmts[idx-1][1] + [row]
-                stmts[idx-1] = (merge_actions(rows), rows)
+                stmts[idx-1] = (merge_actions(args, rows), rows)
             else:
-                stmt = build_statement(row)
+                stmt = build_statement(args, row)
                 stmts = stmts + [(stmt, [row])]
                 idx = idx + 1
         with open(output, 'w') as outf:
