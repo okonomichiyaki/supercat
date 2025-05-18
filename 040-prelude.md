@@ -1,14 +1,14 @@
 # Prelude
 
-After a card has been selected, before following procedures for the card's suit, check to see if bot will spend resources and/or guild cards for Prelude actions. Bot will use resources and guild cards according to the following guidelines.
+After a card has been selected, before following procedures for the card's suit, check to see if bot will spend resources and/or Guild cards for Prelude actions. Bot will use resources and Guild cards according to the following guidelines.
 
 ## Restrictions
 
-Bot will not spend resources or guild cards matching a declared ambition, with one exception. Specifically:
+Bot will not spend resources or Guild cards matching a declared ambition, with one exception. Specifically:
 
-- if Tycoon is declared do not spend Fuel or Material resources or guild cards
-- if Empath is declared do not spend Psionic resource or guild cards
-- if Seeker is declared do not spend Relic resources or guild cards, UNLESS securing a Relic card
+- if Tycoon is declared do not spend Fuel or Material resources or Guild cards
+- if Empath is declared do not spend Psionic resource or Guild cards
+- if Seeker is declared do not spend Relic resources or Guild cards, UNLESS securing a Relic card
 
 ## Resources
 
@@ -24,10 +24,10 @@ See "Combat principles" for more details on Fuel, Weapon, and Psionic usage.
 
 ## Guild cards
 
-Bot will discard some guild card for their prelude effect at the first opportunity.
+Bot will discard some Guild card for their Prelude ability at the first opportunity.
 
-Bot will discard a Weapon guild card for effect, if it has 3 ships available. Place ships at starport with most fresh ships, otherwise with task force.
+Bot will discard a Weapon Guild card for Prelude ability if it has 3 ships available. Place ships at starport with most fresh ships, otherwise with task force.
 
-Bot will discard a Union card for effect. Place action card in bot's play area, and increment bot's hand counter.
+Bot will discard all Union cards to gain bonus action cards. Place action card in bot's play area, and increment bot's hand counter.
 
 <div class="pagebreak"> </div>

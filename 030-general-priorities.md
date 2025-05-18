@@ -17,8 +17,8 @@
 ✦ Are any loyal buildings in a system controlled by a rival?
 
 - <!-- priority=4 --> Can bot Move to change control? → Mobilization/Aggression
-- <!-- priority=4 --> Can bot favorable combat to change control? → Combat card
 - <!-- priority=4 --> Can bot Build or Repair to change control? → Construction/Administration
+- <!-- priority=4 --> Can bot favorable combat to change control? → Combat card
 
 ✦ Does bot have unbuilt cities?
 <#ifdef campaign>
@@ -35,7 +35,7 @@
 	- No: <!-- Build city priority=5 --> Does bot have at least one claim? → Construction
 <#endif>
 
-✦ Can bot use an ability on a ready Guild card? → Select suit matching ability, then exhaust Guild card. Use ability, then go to page for card's suit if actions remaining.
+✦ Can bot use an ability on a ready Guild or lore card? → Select suit matching ability, then exhaust card. Use ability, then go to page for card's suit if actions remaining.
 
 ✦ <!-- priority=6 --><!-- priority=7 --> Can bot Tax or Secure to contend undeclared ambition, take captives, or grow a lead in a declared ambition? <br>→ Administration/Aggression
 

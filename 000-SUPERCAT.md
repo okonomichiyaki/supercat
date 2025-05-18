@@ -10,7 +10,7 @@ SUPERCAT is not an "automa" but is instead a simulation-style bot. Rather than s
 - there are optional difficulty modifiers to make the solo experience more challenging
 <#ifdef campaign>- some Fates use special rules for mechanics which are awkward in a solo context<#endif>
 
-These rules will always refer to the human player as the "player", and will refer to the non-player system exclusively as the "bot" or "bots". The word "player" never refers to a bot.
+These rules will always refer to the human player as the "player", and will refer to the non-player system exclusively as the "bot". The word "player" never refers to a bot.
 
 There are two versions of this document; this is the <#ifdef base>base game<#endif><#ifdef campaign>Blighted Reach campaign<#endif> version. <#ifdef campaign>*(note: it currently only supports "A" and "B" Fates through Act II)*<#endif>
 
@@ -36,11 +36,11 @@ You will need at least two counters per bot, and if playing with the optional Gr
 
 Set up the game according to the Arcs rulebook, but make changes at the steps listed below.
 
-**1.B.** If playing on "normal" difficulty *(see optional "Difficulty Modifiers" section for more details)*, give the initiative marker to a bot, and seat the player last in turn order.
+**1.B.** If playing on "normal" difficulty, give the initiative marker to a bot, and seat the player last in turn order. *(see optional "Difficulty Modifiers" section for more details)*
 
 **2.N.** (optional Difficulty Modifier) Place an extra ship in each system with bot pieces. *(see "Fleet Readiness" under "Difficulty Modifiers" section)*
 
-**2.P.** Deal 6 cards to the player, but do not deal cards to bots. Place a counter on each bot's board showing a value of 6 face up.
+**2.P.** Deal 6 cards to each player, but do not deal cards to the bot(s). Place a counter on each bot's board showing a value of 6 faceup.
 
 **2.Q.** Place all action cards not in player hands in a single face down stack next to the board.
 <#endif>
@@ -50,13 +50,13 @@ Set up the game according to the Arcs rulebook, but make changes at the steps li
 
 Set up the game according to the Blighted Reach rulebook, but make changes at the steps listed below.
 
-**1.B.** If playing on "normal" difficulty *(see "Difficulty Modifiers" section for more details)*, give the initiative marker to a bot, and seat the player last in turn order.
+**1.B.** If playing on "normal" difficulty, give the initiative marker to a bot, and seat the player(s) last in turn order. *(see optional "Difficulty Modifiers" section for more details)*
 
 **2.B.** Assign "A" Fates using any method you like. *(suggestion: the player draws 2 "A" Fate cards and chooses one, then randomly assign each bot an "A" Fate card)*
 
 **2.G-H.** When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport. *If a bot is the Believer, check that Fate's procedures for special instructions.* (optional Difficulty Modifier) Place an extra ship in each system with bot pieces. *(see "Fleet Readiness" under "Difficulty Modifiers")*
 
-**2.J.** Deal 6 cards to the player, but do not deal cards to bots. Place a counter on each bot's board showing a value of 6 faceup.
+**2.J.** Deal 6 cards to each player, but do not deal cards to the bot(s). Place a counter on each bot's board showing a value of 6 faceup.
 
 **2.K.** Place all action cards not in player hands in a single face down stack next to the board.
 <#endif>
@@ -65,7 +65,7 @@ Set up the game according to the Blighted Reach rulebook, but make changes at th
 
 The bot does not hold a hand of action cards. Instead, the bot's cards are abstracted by a counter and a facedown stack of all remaining action cards. This stack is shared by all bots, but each bot has its own counter, representing that bot's hand.
 
-Each bot's counter starts the chapter at 6 and will be decremented when the bot plays a card. If the bot seizes initiative, the counter will be decremented a second time. If the bot receives a "bonus" card (for example, from the "Call to Action" Vox card) the counter will be incremented. This way, the counter will always show the number of cards remaining in the bot's "virtual" hand. *(when the counter is on 1, decrement by removing the counter)*
+Each bot's counter starts the chapter at 6 and will be decremented when the bot plays a card. If the bot seizes initiative, the counter will be decremented a second time, to represent the bot playing an extra card facedown. If the bot receives a "bonus" card the counter will be incremented (for example, from the "Call to Action" Vox card). This way, the counter will always show the number of cards remaining in the bot's "virtual" hand. *(when the counter is on 1, decrement by removing the counter)*
 
 If at any time the stack runs out, shuffle the discard pile <#ifdef campaign>(excluding Event cards)<#endif> before drawing cards for the bot. Continue until the player has no cards and each bot's hand counter is at zero, at which point the chapter ends.
 <#ifdef campaign>
@@ -78,7 +78,7 @@ At the end of the chapter, shuffle all action cards from the discard pile, any r
 
 ## Playing a bot turn
 
-At the start of the bot's turn, check the hand counter. If it is showing 1 or greater, the bot has cards remaining and will play one. Draw 2 action cards from the facedown stack and decrement the counter. The procedures on the "Bot Turn" page will select one of the cards for the bot to play, and also determine whether the bot declares an ambition or seizes the initiative. At that point, discard the other card, and continue with the procedures to execute the bot's turn.
+At the start of a bot's turn, check the hand counter. If it is showing 1 or greater, the bot has cards remaining and will play one. Draw 2 action cards from the facedown stack and decrement the counter. The procedures on the "Bot Turn" page will select one of the cards for the bot to play, and also determine whether the bot declares an ambition or seizes the initiative. At that point, discard the other card, and continue with the procedures to execute the bot's turn.
 
 ### Bonus cards
 
@@ -90,9 +90,9 @@ Then the bot will then select a card to play from among all available cards: any
 
 After the bot has selected a card, consult the guidelines for Prelude actions, and spend any resources or Guild cards for their effect now. After the bot completes the Prelude, go to the page for the selected card's suit, and execute the bot's actions using the procedures on that page.
 
-### Guild Cards
+### Guild and Lore Cards
 
-The bot will use **new actions** on Guild cards, like **Manufacture (Build)**, at most once per chapter. When using "General Priorities" to select a card to play, there is a check to see if the bot can use any abilities on ready Guild cards. A Guild card is ready if it has not been used this chapter. If the bot selects a card due to this procedure, mark the Guild card as exhausted (rotate the card or place a marker on the card). At the end of the chapter, all cards become ready again (turn the card upright or remove the marker).
+The bot will use **new actions** on Guild and lore cards, like **Manufacture (Build)**, at most once per chapter. When using "General Priorities" to select a card to play, there is a check to see if the bot can use any abilities on ready Guild cards. A Guild card is ready if it has not been used this chapter. If the bot selects a card due to this procedure, mark the Guild card as exhausted (rotate the card or place a marker on the card). At the end of the chapter, all cards become ready again (turn the card upright or remove the marker).
 
 <#ifdef base>
 <div class="pagebreak"></div>
@@ -139,7 +139,7 @@ Random
 
 ## Difficulty modifiers (Optional but recommended)
 
-The procedures try to emulate competent play, but the bot doesn't plan multiple cards ahead and makes limited use of guild and lore cards. For a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
+The procedures try to emulate competent play, but the bot doesn't plan multiple cards ahead and makes limited use of Guild and lore cards. For a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
 
 - **Efficient Logistics**: bot performs 1 extra action per card
 - **Elite Pilots**: bot collects 1 extra die during Battle
@@ -161,7 +161,7 @@ For extra challenge, mix and match any of the following modifiers:
 - **Armored Hulls**\*: bot's fresh ships are Tough. they take 2 hits to damage (but damaged ships only take 1 hit to destroy)
 - **Energy Shields**\*: all bot's ships are Tough
 - **Carrier Tactics**\*: attacker must damage all ships before destroying any of them
-- **Fortress Vaults**\*: stealing a resource in a bot's 1 key slot costs 2 keys
+- **Fortress Vaults**\*: treat bot's 1 key resource slots as having 2 keys for all purposes
 - **Warp Blockades**: bot controls gates with a single fresh ship (regardless of number of fresh player ships). if more than one bot in play, bot with more fresh ships controls the gate
 
 \*apply only if player is the attacker

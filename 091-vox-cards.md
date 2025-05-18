@@ -1,25 +1,26 @@
 # Vox Cards
 
-The bot will Secure a Vox card if it is effective or if Securing the card will take captives. In general, a Vox card is effective if its **When Secured** text can be fully carried out. The following clarifies specific Vox cards and gives instructions for how to perform the text for the bot.
+The bot will Secure a Vox card if it is effective or if Securing the card will take captives. In general, a Vox card is effective if its **When Secured** text can be fully carried out<#ifdef campaign> or if the **Crisis** text would impact the bot<#endif>. The following clarifies specific Vox cards and gives instructions for how to perform the text for the bot.
 
 Mass Uprising
-: Effective if the bot has 4 or more ships in its supply. Choose the cluster with the task force. If no task force, then choose randomly.
+: Effective if bot has 4 or more ships in its supply. Prefer cluster with task force.
 
 Populist Demands
-: Effective if the bot is winning or tied for first in an undeclared ambition. Choose an ambition the bot is winning, if possible. If only Securing for captives, do not choose an ambition.
+: Effective if bot is winning or tied for first in an undeclared ambition. Prefer ambition bot is winning. If only Securing for captives, do not choose an ambition.
 
 Outrage Spreads
-: Effective if outrage would cause a player to stop winning a declared ambition. If multiple options, choose whichever resource bot has fewest of. If unable to stop a player from winning an ambition, do not trigger outrage.
+: Effective if outrage would cause a Rival to stop winning a declared ambition. Prefer resource which bot has fewest of
 
 Song of Freedom
 : Effective if the bot controls a rival city and it's possible to seize the initiative. If not possible to seize the initiative, secure only for captives.
 
 Guild Struggle
-: Effective if rivals have any guild cards. Steal a guild card to contend a declared ambition or contend an undeclared ambition. Otherwise use "Influence Principles".
+: Effective if rivals have any Guild cards. Steal a Guild card to contend a declared ambition or contend an undeclared ambition. Otherwise use "Influence Principles".
 
 Call to Action
 : Always effective
 
+<#ifdef campaign>
 Council Intrigue
 : Check Fate to determine whether effective. When resolving, move agents to other cards in the court according to "Influence Principles".
 
@@ -28,5 +29,6 @@ Diplomatic Fiasco
 
 Blight Looms
 : Effective if there is any damaged Blight in a cluster with loyal pieces, and if trophies gained would contend for warlord (whether or not it is declared). During resolution, if more than one cluster, choose the cluster with more damaged Blight.
+<#endif>
 
 <div class="pagebreak"> </div>

@@ -2,7 +2,7 @@
 
 ✦ If bot has no cards left *(check hand counter)* then bot will pass.
 
-✦ Is bot's hand counter greater than number of bonus cards?
+✦ Is bot's hand counter greater than number of bonus cards in the bot's play area?
 
 - Draw 2 cards.
 

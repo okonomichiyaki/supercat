@@ -1,12 +1,15 @@
 # Expansion Principles
 
-When getting new claims and building new cities the bot will follow these guidelines. Note that the bot will still use the guidance in the "Movement Principles" to move ships. This page aims to clarify **when** the bot will expand by staking new claims and building new cities, not explain **how** the bot will move. Use "Movement Principles" to determine how the moves are carried out.
+When getting new claims and building new cities the bot will follow these guidelines. Note that the bot will still use the guidance in the "Movement Principles" to move ships. This page aims to clarify **when** the bot will expand by getting new claims and building new cities, not explain **how** the bot will move. Use "Movement Principles" to determine how the moves are carried out.
 
-## Staking New Claims
+## Getting New Claims
 
-A claim is an open building slot on a planet where the bot has one or more pieces, i.e. it is a building slot where the bot could legally build a city or starport. Count each slot separately: if the bot has a ship at a planet with two open slots, count the bot as having two claims. *(Note that in previous versions of SUPERCAT, a claim was an open building slot **controlled** by the bot. This has since been relaxed to deprioritize expansion. If a bot has a ship or other building enabling it to build in an open slot, that counts as a claim, regardless of control of the system)* 
+A claim is an open building slot on a planet where the bot has one or more pieces, i.e. it is a building slot where the bot could legally build a city or starport. Count each slot separately: if the bot has a ship at a planet with two open slots, count the bot as having two claims.
+
+*(Note that in previous versions of SUPERCAT, a claim was an open building slot **controlled** by the bot. This has since been relaxed to deprioritize expansion. If a bot has a ship or other building enabling it to build in an open slot, that counts as a claim, regardless of control of the system)* 
 
 The procedures evaluate the number of claims the bot has in relation to the number of unbuilt cities (cities on the bot's board which it could build, not any cities held by rivals as trophies). The bot will seek to gain new claims if it has fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half the number of unbuilt cities, rounded down<#endif>.
+
 *(Note that this differs between the campaign game and the base game: in the campaign game the bot is satisfied with fewer claims than in the base game)*
 
 ## Limit on Building New Cities
