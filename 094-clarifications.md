@@ -6,6 +6,4 @@ There is a difference between contending an ambition and "winning or tied for fi
 
 Furthermore, the bot will only declare an ambition which has already been declared (double or triple declare to add second or third marker to the ambition box) if it is **winning** the ambition. It will not double or triple declare if it is tied for first place.
 
-<#ifdef base>
 <div class="pagebreak"></div>
-<#endif>

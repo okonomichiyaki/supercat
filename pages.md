@@ -29,6 +29,7 @@
 080-mobilization.md
 081-movement-principles.md
 031-faithful.md
+090-guild-cards.md
 091-vox-cards.md
 092-leaders-and-lore.md
 093-questions.md
