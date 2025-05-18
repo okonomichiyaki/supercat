@@ -1,6 +1,6 @@
 ## a procedural non-player system for solo Arcs
 
-*version 0.6-draft*
+*version 0.6*
 
 This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solitaire play, i.e. one human playing against one or more bots. Although it can also work as the 3rd or 4th opponent in a multiplayer game, using it in this way has not been tested thoroughly.
 
@@ -34,11 +34,13 @@ You will need at least two counters per bot, and if playing with the optional Gr
 <#ifdef base>
 ## Setup
 
-Set up the game according to the Arcs rulebook, but make changes at the steps listed below.
+Set up the game according to the Arcs rulebook, but make changes at the steps listed below. See "Difficulty Modifiers" section for more details on optional steps.
 
-**1.B.** If playing on "normal" difficulty, give the initiative marker to a bot, and seat the player last in turn order. *(see optional "Difficulty Modifiers" section for more details)*
+**1.B.** (optional) Give the initiative marker to a bot, and seat the player last in turn order.
 
-**2.N.** (optional Difficulty Modifier) Place an extra ship in each system with bot pieces. *(see "Fleet Readiness" under "Difficulty Modifiers" section)*
+**2.N.** (optional) Place an extra ship in each system with bot pieces.
+
+**2.O.** (optional) Give each bot a random resource.
 
 **2.P.** Deal 6 cards to each player, but do not deal cards to the bot(s). Place a counter on each bot's board showing a value of 6 faceup.
 
@@ -48,13 +50,13 @@ Set up the game according to the Arcs rulebook, but make changes at the steps li
 <#ifdef campaign>
 ## Act I Setup
 
-Set up the game according to the Blighted Reach rulebook, but make changes at the steps listed below.
+Set up the game according to the Blighted Reach rulebook, but make changes at the steps listed below. See "Difficulty Modifiers" section for more details on optional steps.
 
-**1.B.** If playing on "normal" difficulty, give the initiative marker to a bot, and seat the player(s) last in turn order. *(see optional "Difficulty Modifiers" section for more details)*
+**1.B.** (optional) Give the initiative marker to a bot, and seat the player last in turn order.
 
 **2.B.** Assign "A" Fates using any method you like. *(suggestion: the player draws 2 "A" Fate cards and chooses one, then randomly assign each bot an "A" Fate card)*
 
-**2.G-H.** When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport. *If a bot is the Believer, check that Fate's procedures for special instructions.* (optional Difficulty Modifier) Place an extra ship in each system with bot pieces. *(see "Fleet Readiness" under "Difficulty Modifiers")*
+**2.G-H.** When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport. *If a bot is the Believer, check that Fate's procedures for special instructions.* (optional) Place an extra ship in each system with bot pieces and give each bot one random resource.
 
 **2.J.** Deal 6 cards to each player, but do not deal cards to the bot(s). Place a counter on each bot's board showing a value of 6 faceup.
 
@@ -158,6 +160,7 @@ For a harder game:
 For extra challenge, mix and match any of the following modifiers:
 
 - **Fleet Readiness**: during setup, place 1 extra ship in each system with bot pieces
+- **Strategic Reserves**: during setup, give bot 1 extra random resource
 - **Armored Hulls**\*: bot's fresh ships are Tough. they take 2 hits to damage (but damaged ships only take 1 hit to destroy)
 - **Energy Shields**\*: all bot's ships are Tough
 - **Carrier Tactics**\*: attacker must damage all ships before destroying any of them
