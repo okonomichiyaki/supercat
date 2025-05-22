@@ -14,7 +14,7 @@
 
 - Yes: Can bot Secure or Influence the Imperial Council? (check "Influence Principles")
 - No: Is bot no longer the First Regent?
-	- Can bot Influence or Secure Council Intrigue?
+	- Can bot Secure or Influence Council Intrigue?
 
 Events
 : If bot is not First Regent and Imperial Council is "Decided" or there are no Regents
