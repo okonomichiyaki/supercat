@@ -1,13 +1,17 @@
 claim
 claims
 combat card
+combat cards
 contend
+contends
 contending
 contested card
+contested cards
 double city
 double cities
 effective
 favorable combat
+new resource
 new resources
 partial move
 task force
@@ -15,4 +19,5 @@ unbuilt city
 unbuilt cities
 unclaimed
 uncontested card
+uncontested cards
 undeclared ambition
