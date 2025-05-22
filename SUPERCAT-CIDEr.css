@@ -1,0 +1,72 @@
+.card {
+    width: 825px;
+    height: 1125px;
+    border-radius: 25px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    background-color: deepskyblue;
+    border: 45px solid hsl(0, 0%, 10%);
+    /* color: hsl(0, 0%, 90%); */
+    font-weight: 600;
+    font-size: 50px;
+}
+.card .left-panel .value {
+    flex: 1;
+    background-color: limegreen;
+}
+.card .left-panel .pips {
+    flex: 1;
+    background-color: orange;
+    font-size: 50px;
+}
+.card .left-panel .suit {
+    writing-mode: sideways-lr;
+    flex: 20;
+    background-color: darkviolet;
+}
+.card .left-panel .ambition {
+    flex: 1;
+    background-color: gold;
+}
+.card .left-panel.ambition.value1 > *:not(.value1),
+.card .left-panel.ambition.value2 > *:not(.value2),
+.card .left-panel.ambition.value3 > *:not(.value3),
+.card .left-panel.ambition.value4 > *:not(.value4),
+.card .left-panel.ambition.value5 > *:not(.value5),
+.card .left-panel.ambition.value6 > *:not(.value6),
+.card .left-panel.ambition.value7 > *:not(.value7) {
+  display: none;
+}
+.card .left-panel {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex: 0.25;
+    height: 100%;
+    font-size: 80px;
+    font-weight: 600;
+    padding: 10px;
+    padding-top: 60px;
+}
+.card .content {
+    font-size: 40px;
+    background-color: deeppink;
+    flex: 1;
+}
+.card .content.Aggression > *:not(.Aggression),
+.card .content.Administration > *:not(.Administration),
+.card .content.Construction > *:not(.Construction),
+.card .content.Mobilization > *:not(.Mobilization) {
+  display: none;
+}
+.card .content li {
+  padding-top: 25px;
+  list-style-type: none;
+}
+.card .footer {
+    height: 200px;
+    text-align: right;
+    padding: 100px;
+    padding-right: 50px;
+}
