@@ -22,15 +22,21 @@
 
 ## Act II
 
+✦ Can bot Tax to get a Weapon resource?
+
+✦ Can bot Secure or Influence Court Enforcers?
+
 ✦ Can bot Tax or Secure to take captives from a Regent?
 
-✦ Can bot favorable combat for trophies against an Outlaw?
+✦ Can bot use Court Enforcers' Abduct (Battle) ability to take captives from a Regent?
 
 ✦ Can bot Build, Repair, or Move to get Empire control of a planet?
 
 ✦ Can bot Build, Repair, or Move to take control of a Rival Regent's city?
 
 ✦ Can bot Influence a card with more agents than a Rival Regent?
+
+✦ Can bot favorable combat for trophies against an Outlaw?
 
 <div class="pagebreak"> </div>
 <#endif>
