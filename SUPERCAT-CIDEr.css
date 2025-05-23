@@ -1,33 +1,136 @@
+/* 
+.card .left-panel .value {
+    background-color: limegreen;
+}
+.card .left-panel .pips {
+    background-color: orange;
+}
+.card .left-panel .suit {
+    background-color: darkviolet;
+}
+.card .content {
+    background-color: deeppink;
+}
+.card .left-panel .ambition {
+    background-color: gold;
+} */
+
 .card {
-    width: 825px;
-    height: 1125px;
+    background-color: white;
+    width: 784px;
+    height: 1069px;
     border-radius: 25px;
     text-align: left;
     display: flex;
     flex-direction: row;
-    background-color: deepskyblue;
-    border: 45px solid hsl(0, 0%, 10%);
-    /* color: hsl(0, 0%, 90%); */
+    /* border: 45px solid hsl(0, 0%, 10%); */
+    border: 10px solid hsl(0, 0%, 10%);
+    padding: 35px;
     font-weight: 600;
     font-size: 50px;
+    color: black;
 }
 .card .left-panel .value {
-    flex: 1;
-    background-color: limegreen;
+    flex: 1 1;
+    font-size: 150px;
+    padding: 0;
 }
-.card .left-panel .pips {
-    flex: 1;
-    background-color: orange;
+.seize {
+    left: 40px;
+    top: -80px;
+    position: relative;
     font-size: 50px;
+    height: 0;
+    overflow: visible;
+    font-family: 'DejaVu Sans', 'Arial Unicode MS', sans-serif;
+}
+*:not(.value7) > .value7 {
+  display: none;
+}
+
+.card.Administration .left-panel { color: rgb(153, 144, 132) }
+.card.Aggression .left-panel { color: rgb(216, 0, 20) }
+.card.Construction .left-panel { color: rgb(255, 147, 0) }
+.card.Mobilization .left-panel { color: rgb(0, 148, 165) }
+
+.card .left-panel .pips {
+    flex: 1 1;
+    font-size: 75px;
+}
+.pips p {
+    margin: 0;
+}
+.pips1 p.top {
+    position: relative;
+    left: 0px;
+    top: 30px
+}
+.pips1 p.bottom {
+    position: relative;
+    visibility: hidden;
+}
+.pips2 p.top {
+    position: relative;
+    left: -25px;
+}
+.pips2 p.bottom {
+    position: relative;
+    left: 25px;
+    top: -50px
+}
+.pips3 p.top {
+    position: relative;
+    left: -15px;
+}
+.pips3 p.top span {
+    padding: 0 10px 0 10px;
+}
+.pips3 p.bottom {
+    position: relative;
+    left: 0px;
+    top: -40px
+}
+.pips4 p.top {
+    position: relative;
+    left: -15px;
+}
+.pips4 p.bottom {
+    position: relative;
+    left: 15px;
+    top: -40px
+}
+
+.pips.pips1 > *:not(.pips1),
+.pips.pips2 > *:not(.pips2),
+.pips.pips3 > *:not(.pips3),
+.pips.pips4 > *:not(.pips4) {
+  display: none;
+}
+
+.suitname {
+    font-variant: small-caps;
 }
 .card .left-panel .suit {
+    text-align: right;
     writing-mode: sideways-lr;
-    flex: 20;
-    background-color: darkviolet;
+    flex: 10 1;
+    font-size: 50px;
+    font-weight: 1000;
 }
+.card .left-panel .suit .actions {
+    font-size: 35px;
+    font-weight: normal;
+}
+.card .suit.Aggression > *:not(.Aggression),
+.card .suit.Administration > *:not(.Administration),
+.card .suit.Construction > *:not(.Construction),
+.card .suit.Mobilization > *:not(.Mobilization) {
+  display: none;
+}
+
 .card .left-panel .ambition {
-    flex: 1;
-    background-color: gold;
+    flex: 1 1;
+    color: black;
 }
 .card .left-panel.ambition.value1 > *:not(.value1),
 .card .left-panel.ambition.value2 > *:not(.value2),
@@ -44,15 +147,17 @@
     flex-direction: column;
     flex: 0.25;
     height: 100%;
+    width: 150px;
     font-size: 80px;
     font-weight: 600;
     padding: 10px;
-    padding-top: 60px;
 }
 .card .content {
     font-size: 40px;
-    background-color: deeppink;
     flex: 1;
+}
+.card .content ul {
+    margin-top: 0px;
 }
 .card .content.Aggression > *:not(.Aggression),
 .card .content.Administration > *:not(.Administration),
@@ -63,10 +168,4 @@
 .card .content li {
   padding-top: 25px;
   list-style-type: none;
-}
-.card .footer {
-    height: 200px;
-    text-align: right;
-    padding: 100px;
-    padding-right: 50px;
 }

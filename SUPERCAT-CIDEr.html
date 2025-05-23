@@ -1,43 +1,76 @@
-<div class="card">
-    <div class="left-panel">
-        <div class="left-panel value">{{card.value}}</div>
-        <div class="left-panel pips">{{card.pips}}</div>
-        <div class="left-panel suit">{{card.suit}}</div>
-        <div class="left-panel ambition value{{card.value}}">
-            <div class="value1">X</div>
-            <div class="value2">C</div>
-            <div class="value3">R</div>
-            <div class="value4">W</div>
-            <div class="value5">K</div>
-            <div class="value6">E</div>
-            <div class="value7">?</div>
-        </div>
+<div class="card {{card.suit}}">
+  <div class="left-panel">
+    <div class="left-panel value value{{card.value}}">
+        {{card.value}}
+        <div class="seize value7">♟</div>
     </div>
-    <div class="content {{card.suit}}">
+    <div class="left-panel pips pips{{card.pips}}">
+      <div class="pips1">
+        <p class="top">✦</p>
+        <p class="bottom">✦</p>
+      </div>
+      <div class="pips2">
+        <p class="top">✦</p>
+        <p class="bottom">✦</p>
+      </div>
+      <div class="pips3">
+        <p class="top"><span>✦</span><span>✦</span></p>
+        <p class="bottom">✦</p>
+      </div>
+      <div class="pips4">
+        <p class="top">✦✦</p>
+        <p class="bottom">✦✦</p>
+      </div>
+    </div>
+    <div class="left-panel suit {{card.suit}}">
+      <div class="suitname {{card.suit}}">{{card.suit}}</div>
+      <div class="actions Administration">
+        Tax <b>OR</b> Repair <b>OR</b> Influence
+      </div>
+      <div class="actions Aggression">
+        Battle <b>OR</b> Move <b>OR</b> Secure
+      </div>
+      <div class="actions Mobilization">Move <b>OR</b> Influence</div>
+      <div class="actions Construction">Build <b>OR</b> Repair</div>
+    </div>
+    <div class="left-panel ambition value{{card.value}}">
+      <div class="value1"></div>
+      <div class="value2">C</div>
+      <div class="value3">R</div>
+      <div class="value4">W</div>
+      <div class="value5">K</div>
+      <div class="value6">E</div>
+      <div class="value7">?</div>
+    </div>
+  </div>
+  <div class="content {{card.suit}}">
 <ul class="Administration">
-<li>[1] Tax contend declared</li>
+<li>[1] Tax → declared</li>
 <li>[7] Repair defend control</li>
 <li>[9] Guild or lore ability</li>
-<li>[10] Tax contend undeclared</li>
+<li>[10] Tax → undeclared</li>
 <li>[10] Tax take captives</li>
-<li>[11] Influence uncontested</li>
+<li>[11] Influence uncontested → undeclared</li>
 <li>[12] Influence contested</li>
-<li>[14] Repair control rival ▲</li>
+<li>[14] Repair control rival building</li>
 <li>[17] Repair any</li>
+<li>[99] Tax grow lead declared</li>
+<li>[99] Influence other cards</li>
+<li>[99] Tax other resources</li>
 </ul>
 <ul class="Aggression">
-<li>[1] Secure contend declared</li>
+<li>[1] Secure → declared</li>
 <li>[2] Secure effective Vox</li>
-<li>[5] Battle contend declared</li>
+<li>[5] Battle → declared</li>
 <li>[6] Expand for first starport</li>
 <li>[7] Move defend control</li>
 <li>[7] Battle defend control</li>
 <li>[8] Expand for cities</li>
 <li>[9] Guild or lore ability</li>
-<li>[10] Secure contend undeclared</li>
+<li>[10] Secure → undeclared</li>
 <li>[10] Secure take captives</li>
 <li>[10] Secure grow lead declared</li>
-<li>[14] Move control rival ▲</li>
+<li>[14] Move control rival building</li>
 </ul>
 <ul class="Construction">
 <li>[6] Build first starport</li>
@@ -45,8 +78,8 @@
 <li>[7] Repair defend control</li>
 <li>[8] Build cities</li>
 <li>[9] Guild or lore ability</li>
-<li>[14] Build control rival ▲</li>
-<li>[14] Repair control rival ▲</li>
+<li>[14] Build control rival building</li>
+<li>[14] Repair control rival building</li>
 <li>[15] Build at undefended</li>
 <li>[16] Build ships</li>
 <li>[16] Build starports</li>
@@ -57,9 +90,13 @@
 <li>[7] Move defend control</li>
 <li>[8] Expand for cities</li>
 <li>[9] Guild or lore ability</li>
-<li>[11] Influence uncontested</li>
+<li>[11] Influence uncontested → undeclared</li>
 <li>[12] Influence contested</li>
-<li>[14] Move control rival ▲</li>
+<li>[14] Move control rival building</li>
+<li>[99] Move control gates</li>
+<li>[99] Move ships to task force</li>
+<li>[99] Influence other cards</li>
 </ul>
-    </div>
+
+  </div>
 </div>
