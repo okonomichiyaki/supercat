@@ -42,12 +42,6 @@ def indent(s, n):
         s = "\t" + s
     return s
 
-def priority_comment(args, p):
-    if args.priority and p != "" and p != "99":
-        return f"<!-- priority={p} -->"
-    else:
-        return ""
-
 def wrap_ifdef(row, stmt):
     if row['Campaign'] == "x":
         return f"<#ifdef campaign>\n{stmt}\n<#endif>"
@@ -72,9 +66,10 @@ def add_pref(row, lines):
         lines = lines + ps
     return lines
 
+# use priority to identify/link procedures between markdown, chart, cards
 def ids(rows):
-    i = ",".join([ row['Id'] for row in rows ])
-    i = f"<span style=\"font-size: 12px;\">({i})</span>"
+    i = ",".join([ row['Priority'] for row in rows ])
+    i = f"<span style=\"font-size: 12px;\">[{i}]</span>"
     return i
 
 def get_flagship(args, row):
@@ -100,14 +95,12 @@ def build_statement(args, row, general=False):
     id_ = ids([row])
     quest = f"Can bot {action} {thing}? {id_}"
     lines = []
-    p = row['Priority']
-    pcomment = priority_comment(args, p)
     if cond != "":
         lines.append(f"✦ {fs} {cond}")
         lines.append("")
-        lines.append(f"- {pcomment} {quest}")
+        lines.append(f"- {quest}")
     else:
-        lines.append(f"✦ {fs} {pcomment} {quest}")
+        lines.append(f"✦ {fs} {quest}")
     if general:
         lines[-1] = lines[-1] + " → " + "/".join(get_suits([row]))
     else:
@@ -119,13 +112,12 @@ def merge_goals(args, rows, general=False):
     id_ = ids(rows)
     print(f"merging goals: {id_}")
     action = rows[0]['Action']
-    pcomment = priority_comment(args, rows[0]['Priority'])
     things = [f"{row['GlueWord']} {row['Goal']}" for row in rows]
     if len(things) > 2:
         things = ", ".join(things[0:len(things)-1]) + f", or {things[-1]}"
     else:
         things = f"{things[0]} or {things[1]}"
-    stmt = f"✦ {pcomment} Can bot {action} {things}? {id_}"
+    stmt = f"✦ Can bot {action} {things}? {id_}"
     if general:
         stmt = stmt + " → " + "/".join(get_suits(rows))
     return wrap_ifdef(rows[0], stmt)
@@ -137,16 +129,15 @@ def merge_actions(args, rows, general=False):
     actions = [row['Action'] for row in rows]
     actions = list(dict.fromkeys(actions)) # remove duplicates but keep order
     actions = " or ".join(actions)
-    pcomment = priority_comment(args, rows[0]['Priority'])
     thing = f"{rows[0]['GlueWord']} {rows[0]['Goal']}"
     quest = f"Can bot {actions} {thing}? {id_}"
     lines = []
     if cond != "":
         lines.append(f"✦ {cond}")
         lines.append("")
-        lines.append(f"- {pcomment} {quest}")
+        lines.append(f"- {quest}")
     else:
-        lines.append(f"✦ {pcomment} {quest}")
+        lines.append(f"✦ {quest}")
     lines = add_pref(rows[0], lines)
     stmt = "\n".join(lines)
     if general:
@@ -183,7 +174,6 @@ def general_priorities(args, output, rows):
     stmts = []
     idx = 0
     for row in filtered:
-        print(f"{row['Id']} - {row['Combined']}")
         if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
             rows = stmts[idx-1][1] + [row]
             stmts[idx-1] = (merge_goals(args, rows, True), rows)
