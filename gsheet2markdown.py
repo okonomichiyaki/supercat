@@ -150,11 +150,15 @@ def both_blank(a, b, k):
 def equals(a, b, k):
     return a[k] == b[k]
 
+# return true if the integer values are adjacent (ie priority is within one)
+def adj(a,b,k):
+    return abs(int(a[k])-int(b[k])) == 1
+
 def same_priority_and_action(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and equals(a, b, 'Priority') and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and adj(a, b, 'Priority') and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
 
 def same_priority_goal_cond(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and equals(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and adj(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
 
 def cleanup(s):
     s = s.replace("Battle", "favorable combat")
@@ -196,7 +200,6 @@ def main():
     parser.add_argument('-c', '--campaign', action='store_true')
     parser.add_argument('-a', '--api_key')
     parser.add_argument('-u', '--url')
-    parser.add_argument('-p', '--priority', action='store_true')
     parser.add_argument('-g', '--general', action='store_true')
     args = parser.parse_args()
     campaign = args.campaign
