@@ -45,11 +45,11 @@ def main():
     for suit in SUITS:
         print(f"<ul class=\"{suit}\">")
         rows = [ row for row in filtered if row[suit] == BULLET ]
+        rows = rows[:12]
         for row in rows:
             priority = int(row["Priority"])
             shorter = row["Shorter"]
-            if priority < 99:
-                print(f"<li>[{priority}] {shorter}</li>")
+            print(f"<li>[{priority}] {shorter}</li>")
         print(f"</ul>")
 
 if __name__ == "__main__":
