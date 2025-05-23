@@ -68,9 +68,10 @@ def add_pref(row, lines):
 
 # use priority to identify/link procedures between markdown, chart, cards
 def ids(rows):
-    i = ",".join([ row['Priority'] for row in rows ])
-    i = f"<span style=\"font-size: 12px;\">[{i}]</span>"
-    return i
+    ps = [ row['Priority'] for row in rows ]
+    ps = list(dict.fromkeys(ps)) # remove duplicates but keep order
+    i = ",".join(ps)
+    return f"<span style=\"font-size: 12px;\">[{i}]</span>"
 
 def get_flagship(args, row):
     if not args.campaign:
@@ -155,10 +156,10 @@ def adj(a,b,k):
     return abs(int(a[k])-int(b[k])) == 1
 
 def same_priority_and_action(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and adj(a, b, 'Priority') and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and (adj(a, b, 'Priority') or equals(a, b, 'Priority')) and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
 
 def same_priority_goal_cond(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and adj(a, b, 'Priority') and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and (adj(a, b, 'Priority') or equals(a, b, 'Priority')) and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
 
 def cleanup(s):
     s = s.replace("Battle", "favorable combat")

@@ -65,9 +65,7 @@
 
 - Can bot favorable combat to take trophies? <span style="font-size: 12px;">[99]</span>
 
-✦ Can bot Secure to grow lead in an undeclared ambition? <span style="font-size: 12px;">[99]</span>
-
-✦ Can bot Secure to take any other cards? <span style="font-size: 12px;">[99]</span>
+✦ Can bot Secure to grow lead in an undeclared ambition or to take any other cards? <span style="font-size: 12px;">[99]</span>
 
 ✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[99]</span> Prefer:
 
