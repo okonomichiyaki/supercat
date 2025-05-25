@@ -22,6 +22,7 @@
 <#ifdef base>
 ✦ Can bot Build cities? <span style="font-size: 12px;">[17]</span> Prefer:
 
+- system with control
 - only Build double city if winning a declared ambition and uncovering power bonus
 <#endif>
 
