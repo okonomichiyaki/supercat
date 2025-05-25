@@ -8,7 +8,7 @@ Bot will not spend resources or Guild cards matching a declared ambition, with o
 
 - if Tycoon is declared do not spend Fuel or Material resources or Guild cards
 - if Empath is declared do not spend Psionic resource or Guild cards
-- if Seeker is declared do not spend Relic resources or Guild cards, UNLESS securing a Relic card
+- if Keeper is declared do not spend Relic resources or Guild cards, UNLESS securing a Relic card
 
 ## Resources
 
