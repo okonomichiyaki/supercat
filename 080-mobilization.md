@@ -29,7 +29,19 @@
 
 ✦ Can bot use an ability on a ready Guild or lore card?
 
-✦ Can bot Influence an uncontested card which would contend a declared ambition, if Secured or a contested card? <span style="font-size: 12px;">[26,27]</span>
+<#ifdef base>
+✦ Can bot Influence a card? <span style="font-size: 12px;">[26]</span> Prefer:
+
+- defend Loyal agents on contested card
+- icon to contend a declared ambition, if Secured
+- icon to contend an undeclared ambition, if Secured
+- effective Vox
+- icon to grow a lead in a declared ambition
+<#endif>
+
+<#ifdef campaign>
+✦ Can bot Influence a card? <span style="font-size: 12px;">[27]</span>
+<#endif>
 
 <#ifdef campaign>
 ✦ Would bot contend a declared ambition with the Imperial Trust?
@@ -45,15 +57,13 @@
 ✦ Can bot Move to take control of rival city? <span style="font-size: 12px;">[32]</span>
 <#endif>
 
-✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[99]</span> Prefer:
+✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[44]</span> Prefer:
 
 - take control adjacent to rival starport
 - take or neutralize control adjacent to loyal starport
 
 ✦ Are there any ships not controlling gates or claims or rival buildings?
 
-- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[99]</span>
-
-✦ Can bot Influence any other cards? <span style="font-size: 12px;">[99]</span>
+- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[45]</span>
 
 <div class="pagebreak"> </div>
