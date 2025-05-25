@@ -58,22 +58,22 @@
 <#endif>
 
 <#ifdef campaign>
-✦ Can bot favorable combat to destroy Blight in systems with loyal buildings? <span style="font-size: 12px;">[99]</span>
+✦ Can bot favorable combat to destroy Blight in systems with loyal buildings? <span style="font-size: 12px;">[40]</span>
 <#endif>
 
 ✦ Are there any ambition markers available?
 
-- Can bot favorable combat to take trophies? <span style="font-size: 12px;">[99]</span>
+- Can bot favorable combat to take trophies? <span style="font-size: 12px;">[41]</span>
 
-✦ Can bot Secure to grow lead in an undeclared ambition or to take any other cards? <span style="font-size: 12px;">[99]</span>
+✦ Can bot Secure to grow lead in an undeclared ambition or to take any other cards? <span style="font-size: 12px;">[42,43]</span>
 
-✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[99]</span> Prefer:
+✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[44]</span> Prefer:
 
 - take control adjacent to rival starport
 - take or neutralize control adjacent to loyal starport
 
 ✦ Are there any ships not controlling gates or claims or rival buildings?
 
-- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[99]</span>
+- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[45]</span>
 
 <div class="pagebreak"> </div>
