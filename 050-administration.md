@@ -10,7 +10,20 @@
 
 ✦ Can bot Tax to contend an undeclared ambition or to take captives? <span style="font-size: 12px;">[23,24]</span>
 
-✦ Can bot Influence an uncontested card which would contend a declared ambition, if Secured or a contested card? <span style="font-size: 12px;">[26,27]</span>
+<#ifdef base>
+✦ Can bot Influence a card? <span style="font-size: 12px;">[26]</span> Prefer:
+
+- defend Loyal agents on contested card
+- icon to contend a declared ambition, if Secured
+- icon to contend an undeclared ambition, if Secured
+- effective Vox
+- Weapon
+- icon to grow a lead in a declared ambition
+<#endif>
+
+<#ifdef campaign>
+✦ Can bot Influence a card? <span style="font-size: 12px;">[27]</span>
+<#endif>
 
 <#ifdef campaign>
 ✦ Would bot contend a declared ambition with the Imperial Trust?
@@ -27,11 +40,9 @@
 - starport, if only one on map
 - cities
 
-✦ Can bot Tax to grow a lead in a declared ambition? <span style="font-size: 12px;">[99]</span>
+✦ Can bot Tax to grow a lead in a declared ambition? <span style="font-size: 12px;">[46]</span>
 
-✦ Can bot Influence any other cards? <span style="font-size: 12px;">[99]</span>
-
-✦ Can bot Tax to gain resources? <span style="font-size: 12px;">[99]</span> Prefer:
+✦ Can bot Tax to gain resources? <span style="font-size: 12px;">[47]</span> Prefer:
 
 - new resources
 

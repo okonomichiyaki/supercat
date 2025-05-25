@@ -13,15 +13,12 @@ When choosing between options which are otherwise equal in priority, use the fol
 <#ifdef campaign>
 - Lore card
 - card with attached Faithful card
-- card with attached Guild card
-<#endif>- Weapon icon
-- Union card, "Call to Action" (Vox card)
-- Effective Vox card
-- Captives
-	- i.e. any card where bot could influence with more agents than rival
-- Other Vox card
-- Icon to grow a lead in a declared ambition
-- "Loyal" card matching outraged resource (e.g "Loyal Engineers" if bot outraged Material)
+- card with attached Guild card<#endif>
+
+- uncontested card
+- card granting a bonus action card (for example Union card or "Call to Action" Vox card)
+- card which would take most captives
+- Loyal card for outraged resource
 
 If further tie breaking is necessary, prefer the card with more keys.
 
