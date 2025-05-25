@@ -36,6 +36,7 @@
 - icon to contend a declared ambition, if Secured
 - icon to contend an undeclared ambition, if Secured
 - effective Vox
+- Weapon icon
 - icon to grow a lead in a declared ambition
 <#endif>
 
