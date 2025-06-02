@@ -10,6 +10,68 @@ Each Fate's procedures are arranged by Act. When consulting the page correspondi
 
 By default, the bot will not take more actions from its Fate page than **half the number of available actions, rounded up.** Once it takes that many actions, or is unable to take further actions from this page, turn to the page for the selected suit and spend the remaining actions.
 
+## Imperial Politics
+
+Depending on which Fate the bot is playing it will behave differently with regard to Regent and Outlaw status. When playing some Fates, the bot will prioritize leaving the Empire to become an Outlaw and in other cases the bot will prioritize staying a Regent. This is called "Empire Affinity" and has three possible values: Strong, Neutral, and Weak/Anti-Empire. Fates will indicate their Empire Affinity; by default if this is absent the bot will adopt the Neutral stance. When indicated, check the procedures below and follow them during the bot's turn.
+
+### Strong
+
+A bot playing a Fate with Strong Empire Affinity always wants to stay a Regent or become a Regent (if it is an Outlaw).
+
+Leave the Empire
+: Never
+
+Revive the Empire
+: Always
+
+- if Regent and not First Regent:
+	- check if exposed to "Govern the Imperial Reach" or "Govern with Authority":
+		- does bot have piece for Demand OR at least 1 agent in supply?
+		- if not:
+			- get a piece for Demand (Prefer: Tax, Secure, then favorable combat)
+			- or get agent back (Secure any card to return agents in the Court to supply)
+- if Outlaw:
+	- either:
+		- get a Favor from First Regent
+		- call Summit
+		- return Favor to force invite to Empire
+	- or:
+		- call Summit
+		- negotiate with First Regent to invite
+		- bot-bot negotiation is covered
+		- if player is the First Regent:
+			- TODO: need a special case for bot-human negotiation here
+
+### Neutral
+
+A bot playing a Fate with Neutral Empire Affinity will randomly determine if it will stay a Regent, become an Outlaw, or accept invitations to become a Regent.
+
+TODO:
+- track grievances vs the empire
+- contend declared by stealing from the Trust
+
+Leave the Empire
+: TODO
+
+Revive the Empire
+: TODO
+
+### Weak/Anti-Empire
+
+A bot playing a Fate with Weak Empire Affinity always wants to become an Outlaw and will always reject invitations to become a Regent.
+
+Leave the Empire
+: Always
+
+Revive the Empire
+: Never
+
+- if Regent:
+	- play Event -> get Initiative -> call Summit
+	- Influence & Secure Imperial Council -> call Summit
+	- call Summit -> Leave the Empire
+
+
 ## Event Cards
 
 After a round ends in which an Event card was played and resolved, do not add it to the discard pile. Instead, set played Event cards aside and only shuffle them with the action cards prior to dealing at the start of the next chapter. *(since the action card deck will be reshuffled mid-round when there are 2 or more bots, this is to ensure Event cards do not occur more frequently than in multiplayer games)*
@@ -32,7 +94,7 @@ If bot calls a Summit and has one or more favors, during the "Call to Order" pha
 	- cause rival to stop contending for a declared ambition
 - **Petition the Council, Leave the Empire, Revive the Empire:** Check Fate
 
-## Grievances (Optional but recommended)
+## Grievances (Optional)
 
 This should be considered an optional but recommended rule. It will add a little bit of extra friction for the solo player as well as some texture to the negotiation minigame.
 
@@ -48,7 +110,7 @@ Certain actions taken against a bot, by a player or other bot, will result in a 
 
 <div class="pagebreak"> </div>
 
-## Negotiation Minigame
+## Negotiation Minigame (Optional)
 
 During the Negotiations phase of a Summit, the player has an opportunity to offer bots negotiation actions, and each bot may do the same with other bots. This takes the form of a new, solo-specific minigame. This alternative enables a solo player to engage with all of the mechanics of the campaign, and makes it possible for certain Fates which rely on the Negotiation mechanics (Magnate, Caretaker) to be piloted by a player or a bot.
 

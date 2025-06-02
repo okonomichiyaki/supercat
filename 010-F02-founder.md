@@ -1,6 +1,9 @@
 <#ifdef campaign>
 # Founder
 
+Empire Affinity
+: Weak/Anti-Empire
+
 ## Act I
 
 ✦ Is bot a Regent?

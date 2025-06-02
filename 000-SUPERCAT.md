@@ -139,7 +139,7 @@ Random
 <div class="pagebreak"></div>
 <#endif>
 
-## Difficulty modifiers (Optional but recommended)
+## Difficulty modifiers (Optional)
 
 The procedures try to emulate competent play, but the bot doesn't plan multiple cards ahead and makes limited use of Guild and lore cards. For a more challenging game, start each game with the player last in turn order, and give the bot some additional advantages when it does not have more power than the player:
 
@@ -150,7 +150,7 @@ The procedures try to emulate competent play, but the bot doesn't plan multiple 
 
 Relative power should be evaluated per bot, so in a game with 2 bots, if one bot is ahead of the player, and the other is behind, apply these only to the losing bot. In a multiplayer game, check power between bots and players: grant the bot advantages when it is behind all players.
 
-This setting should be considered "normal mode", because without these advantages you may find the bot unsatisfying, especially in games with only 1 bot.
+These modifiers are recommended and should be considered "normal mode", because without these advantages you may find the bot unsatisfying, especially in games with only 1 bot.
 
 For a harder game:
 

@@ -1,6 +1,9 @@
 <#ifdef campaign>
 # Steward
 
+Empire Affinity
+: Strong
+
 ## All Acts
 
 ✦ Can bot use Dealmakers' **Bargain (Secure)** ability?
@@ -21,12 +24,6 @@ Events
 
 Petition the Council
 : If bot is not the First Regent and the Imperial Council is "Decided"
-
-Leave the Empire
-: Never
-
-Revive the Empire
-: Always
 
 <div class="pagebreak"> </div>
 

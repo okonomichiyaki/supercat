@@ -1,6 +1,9 @@
 <#ifdef campaign>
 # Admiral
 
+Empire Affinity
+: Strong
+
 ## Act I
 
 ✦ If bot does not have a piece matching the current Imperial Demand, can bot gain one via Tax or favorable combat?
