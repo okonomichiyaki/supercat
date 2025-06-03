@@ -25,13 +25,13 @@ Empire Affinity
 
 ## Act II
 
-✦ Can bot Tax to get a Weapon resource?
+✦ Does bot have no Weapon resources?
+
+- Can bot Tax to get a Weapon resource?
 
 ✦ Can bot Secure or Influence Court Enforcers?
 
-✦ Can bot Tax or Secure to take captives from a Regent?
-
-✦ Can bot use Court Enforcers' Abduct (Battle) ability to take captives from a Regent?
+✦ Can bot Tax, Secure, or use Court Enforcers' Abduct (Battle) ability to take captives from a Regent?
 
 ✦ Can bot Build, Repair, or Move to get Empire control of a planet?
 

@@ -23,7 +23,7 @@ Harvester
 
 - If bot is not winning a declared ambition, check if bot can take Prelude or other actions which would cause bot to be winning a declared ambition, then take Golems. Otherwise just take Golems.
 
-✦ Can bot Move, Build, Repair, or favorable combat to take control of any Golems on the map?
+✦ Can bot Move, Build, Repair, or favorable combat to take control of any Golems?
 
 ✦ Are there any Sleeping Golems that are not on the map?
 
