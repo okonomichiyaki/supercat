@@ -10,12 +10,10 @@ If possible, influence a contested card with one more agent than the most rival 
 
 When choosing between options which are otherwise equal in priority, use the following priorities to select a card to influence.
 
-<#ifdef campaign>
-- Lore card
+<#ifdef campaign>- Lore card
 - card with attached Faithful card
-- card with attached Guild card<#endif>
-
-- uncontested card
+- card with attached Guild card
+<#endif>- uncontested card
 - card granting a bonus action card (for example Union card or "Call to Action" Vox card)
 - card which would take most captives
 - Loyal card for outraged resource
