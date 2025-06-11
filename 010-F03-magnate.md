@@ -30,7 +30,7 @@ Prelude
 - Prefer: Resource matching Monopoly in the supply
 
 Events
-: If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered effective.
+: If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered critical.
 
 Imperial Council Decided
 : If bot has more than half of the total resources of any type in play, bot will resolve Edicts.
