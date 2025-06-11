@@ -1,9 +1,6 @@
 <#ifdef campaign>
 # Founder
 
-Empire Affinity
-: Weak/Anti-Empire
-
 ## Act I
 
 ✦ Is bot a Regent?
@@ -17,10 +14,10 @@ Parade Fleets
 : Place ships where bot would gain control. If bot is a Regent, always become an Outlaw.
 
 Events
-: If bot is a Regent, Event cards are always effective.
+: If bot is a Regent, then Event cards are critical.
 
 Summits
-: If bot is a Regent, when given the opportunity to hold a Summit, it will always hold the Summit. During the "Call to Order" phase the bot will leave the Empire.
+: If bot is a Regent, then always call the Summit. During the "Call to Order" phase, **Leave the Empire**.
 
 ## Act II
 

@@ -1,7 +1,7 @@
 <#ifdef campaign>
 ## Fates
 
-Each Fate has its own set of procedures and priorities which will drive the bot's behavior. Some Fates have instructions for specific cards, and some Fates have additional rules for handling mechanics which pose a complication for solo play. Others will have general information for how other bots will interact with the mechanics introduced by the Fate (e.g. Faithful cards).
+Each Fate has its own set of procedures and priorities which will supplement the generic procedures to drive the bot's behavior. Some Fates have instructions for specific cards, and some Fates have additional rules for handling mechanics which pose a complication for solo play. Others will have general information for how other bots will interact with the mechanics introduced by the Fate. *(for example, Faithful cards and Golems)*
 
 Each Fate's procedures are arranged by Act. When consulting the page corresponding to the active bot's Fate, refer to the section for the current Act only. Check the bot's Fate **once** each turn when explicitly directed to, depending on how the bot's card is selected:
 
@@ -9,68 +9,6 @@ Each Fate's procedures are arranged by Act. When consulting the page correspondi
 - When using "General Priorities" to select a card, note that the first line on that page checks the bot's Fate. Consult the page for the Fate, and if the procedures apply select the card with the suit matching the actions listed.
 
 By default, the bot will not take more actions from its Fate page than **half the number of available actions, rounded up.** Once it takes that many actions, or is unable to take further actions from this page, turn to the page for the selected suit and spend the remaining actions.
-
-## Imperial Politics
-
-Depending on which Fate the bot is playing it will behave differently with regard to Regent and Outlaw status. When playing some Fates, the bot will prioritize leaving the Empire to become an Outlaw and in other cases the bot will prioritize staying a Regent. This is called "Empire Affinity" and has three possible values: Strong, Neutral, and Weak/Anti-Empire. Fates will indicate their Empire Affinity; by default if this is absent the bot will adopt the Neutral stance. When indicated, check the procedures below and follow them during the bot's turn.
-
-### Strong
-
-A bot playing a Fate with Strong Empire Affinity always wants to stay a Regent or become a Regent (if it is an Outlaw).
-
-Leave the Empire
-: Never
-
-Revive the Empire
-: Always
-
-- if Regent and not First Regent:
-	- check if exposed to "Govern the Imperial Reach" or "Govern with Authority":
-		- does bot have piece for Demand OR at least 1 agent in supply?
-		- if not:
-			- get a piece for Demand (Prefer: Tax, Secure, then favorable combat)
-			- or get agent back (Secure any card to return agents in the Court to supply)
-- if Outlaw:
-	- either:
-		- get a Favor from First Regent
-		- call Summit
-		- return Favor to force invite to Empire
-	- or:
-		- call Summit
-		- negotiate with First Regent to invite
-		- bot-bot negotiation is covered
-		- if player is the First Regent:
-			- TODO: need a special case for bot-human negotiation here
-
-### Neutral
-
-A bot playing a Fate with Neutral Empire Affinity will randomly determine if it will stay a Regent, become an Outlaw, or accept invitations to become a Regent.
-
-TODO:
-- track grievances vs the empire
-- contend declared by stealing from the Trust
-
-Leave the Empire
-: TODO
-
-Revive the Empire
-: TODO
-
-### Weak/Anti-Empire
-
-A bot playing a Fate with Weak Empire Affinity always wants to become an Outlaw and will always reject invitations to become a Regent.
-
-Leave the Empire
-: Always
-
-Revive the Empire
-: Never
-
-- if Regent:
-	- play Event -> get Initiative -> call Summit
-	- Influence & Secure Imperial Council -> call Summit
-	- call Summit -> Leave the Empire
-
 
 ## Event Cards
 

@@ -1,9 +1,6 @@
 <#ifdef campaign>
 # Steward
 
-Empire Affinity
-: Strong
-
 ## All Acts
 
 ✦ Can bot use Dealmakers' **Bargain (Secure)** ability?
@@ -20,10 +17,10 @@ Empire Affinity
 	- Can bot Secure or Influence Council Intrigue?
 
 Events
-: If bot is not First Regent and Imperial Council is "Decided" or there are no Regents
+: If bot is not First Regent and Imperial Council is "Decided", then Events are critical
 
-Petition the Council
-: If bot is not the First Regent and the Imperial Council is "Decided"
+Summits
+: If bot is not the First Regent and the Imperial Council is "Decided", then always call a Summit. During the "Call to Order" phase, **Petition the Council**.
 
 <div class="pagebreak"> </div>
 

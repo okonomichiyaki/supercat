@@ -12,6 +12,9 @@ contend
 contested card
 : court card with bot agents and rival agents, and more rival agents than bot agents
 
+critical
+: some Fates consider Event cards critical, and will apply a DRM during seize check
+
 double city
 : a second loyal city on planet that already has a loyal city
 
