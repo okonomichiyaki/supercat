@@ -2,7 +2,7 @@
 
 ✦ Does bot have no starport?
 
-- Can bot Build a starport? <span style="font-size: 12px;">[9]</span> Prefer system with<#ifdef campaign>(ignore if Flagship)<#endif>:
+- Can bot Build a starport? <span style="font-size: 12px;">[9]</span> Prefer system with<#ifdef campaign> (ignore if Flagship)<#endif>:
 	- bot control
 	- most loyal ships
 	- neutral control
