@@ -16,15 +16,16 @@ Since Faithful cards enable any type of action, they are not selected normally v
 
 ## Act I
 
-✦ Can bot use Spreading the Faith's **Teach (Influence)** ability? *(attach a Faithful card to a Guild card in the Court matching a Loyal city)*
+✦ Can bot use Spreading the Faith's **Teach (Influence)** ability?
 
+- Spend as many additional actions as possible
 - Prefer:
 	- Guild card with Loyal agents
 
 ✦ Are there remaining cards in the stack of Faithful action cards?
 
-- Are there any suits which bot does not have a matching Loyal city?
-	- Can bot get a claim on a planet with that suit?
+- Does bot have unbuilt cities, and are there any suits which bot does not have a matching Loyal city?
+	- Can bot Build a city or get a claim on a planet matching one of those suits?
 
 ## Act II
 

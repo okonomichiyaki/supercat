@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$"$if(dir)$ dir="$dir$"$endif$>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+$for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+$endfor$
+$if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+$endif$
+$if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+$endif$
+$if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style>
+    $styles.html()$
+  </style>
+$for(css)$
+  <link rel="stylesheet" href="$css$" />
+$endfor$
+$for(header-includes)$
+  $header-includes$
+$endfor$
+$if(math)$
+  $math$
+$endif$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+$if(title)$
+<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$
+<p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+<p class="author">$author$</p>
+$endfor$
+$if(date)$
+<p class="date">$date$</p>
+$endif$
+$if(abstract)$
+<div class="abstract">
+<div class="abstract-title">$abstract-title$</div>
+$abstract$
+</div>
+$endif$
+</header>
+$endif$
+
+$if(toc)$
+<nav id="toc-main" class="no-print">
+    <ul>
+        <li><a href="#bot-turn-start-here" id="toc-bot-turn-start-here">Bot turn (START HERE)</a></li>
+        <li><a href="#general-priorities" id="toc-general-priorities">General Priorities</a></li>
+        <li><a href="#prelude-1" id="toc-prelude-1">Prelude</a></li>
+        <li><a href="#administration---tax-repair-influence" id="toc-administration---tax-repair-influence">Administration - Tax | Repair | Influence</a></li>
+        <li><a href="#influence-principles" id="toc-influence-principles">Influence Principles</a></li>
+        <li><a href="#aggression---move-battle-secure" id="toc-aggression---move-battle-secure">Aggression - Move | Battle | Secure</a></li>
+        <li><a href="#combat-principles" id="toc-combat-principles">Combat Principles</a></li>
+        <li><a href="#construction---build-repair" id="toc-construction---build-repair">Construction - Build | Repair</a></li>
+        <li><a href="#expansion-principles" id="toc-expansion-principles">Expansion Principles</a></li>
+        <li><a href="#mobilization---move-influence" id="toc-mobilization---move-influence">Mobilization - Move | Influence</a></li>
+        <li><a href="#movement-principles" id="toc-movement-principles">Movement Principles</a></li>
+        <li><a href="#faithful-wisdom---build-repair-secure" id="toc-faithful-wisdom---build-repair-secure">Faithful Wisdom - Build | Repair | Secure</a></li>
+        <li><a href="#faithful-zeal---move-influence-battle-tax" id="toc-faithful-zeal---move-influence-battle-tax">Faithful Zeal - Move | Influence | Battle | Tax</a></li>
+        <li><a href="#vox-cards" id="toc-vox-cards">Vox Cards</a></li>
+        <li><a href="#questions" id="toc-questions">Questions</a></li>
+        <li><a href="#clarifications" id="toc-clarifications">Clarifications</a></li>
+        <li><a href="#terminology" id="toc-terminology">Terminology</a></li>
+    </ul>
+</nav>
+<nav id="toc-fates" class="no-print">
+    <ul>
+        <li><a href="#steward" id="toc-steward">Steward</a></li>
+        <li><a href="#founder" id="toc-founder">Founder</a></li>
+        <li><a href="#magnate" id="toc-magnate">Magnate</a></li>
+        <li><a href="#advocate" id="toc-advocate">Advocate</a></li>
+        <li><a href="#caretaker" id="toc-caretaker">Caretaker</a></li>
+        <li><a href="#partisan" id="toc-partisan">Partisan</a></li>
+        <li><a href="#admiral" id="toc-admiral">Admiral</a></li>
+        <li><a href="#believer" id="toc-believer">Believer</a></li>
+        <li><a href="#pathfinder" id="toc-pathfinder">Pathfinder</a></li>
+        <li><a href="#hegemon" id="toc-hegemon">Hegemon</a></li>
+        <li><a href="#planet-breaker" id="toc-planet-breaker">Planet Breaker</a></li>
+        <li><a href="#blight-speaker" id="toc-blight-speaker">Blight Speaker</a></li>
+        <li><a href="#pacifist" id="toc-pacifist">Pacifist</a></li>
+        <li><a href="#peacekeeper" id="toc-peacekeeper">Peacekeeper</a></li>
+        <li><a href="#warden" id="toc-warden">Warden</a></li>
+    </ul>
+</nav>
+$endif$
+
+$body$
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

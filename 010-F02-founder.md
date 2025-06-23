@@ -6,12 +6,15 @@
 ✦ Is bot a Regent?
 
 - Can bot Influence or Secure the Imperial Council?
-- Can bot Influence or Secure a card which would enable it to declare an ambition?
+- Can bot Influence or Secure "Populist Demands"?
+	- Secure if an ambition marker is available
 
-✦ Can bot Build, Repair, Move, or favorable combat to take control of a system?
+✦ Can bot Build, Repair, Move, or favorable combat to increase the number of systems bot controls?
+
+- Spend additional actions if needed to execute Move
 
 Parade Fleets
-: Place ships where bot would gain control. If bot is a Regent, always become an Outlaw.
+: Place ships where bot would gain control. If bot is a Regent, become an Outlaw.
 
 Events
 : If bot is a Regent, then Event cards are critical.
@@ -38,6 +41,9 @@ Summits
 
 Founder of the Commonwealth
 : Bot will declare ambitions if the Commonwealth is winning or tied for first place in the ambition (place second or third ambition marker in already declared ambition only if the Commonwealth is winning). When declaring, place the Commonwealth Ambition marker.
+
+Call For Armistice
+: TODO
 
 <div class="pagebreak"> </div>
 <#endif>

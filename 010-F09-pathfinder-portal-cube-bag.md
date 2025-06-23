@@ -1,11 +1,11 @@
 <#ifdef campaign>
 ## Find the Portal Minigame: Cube Bag
 
-This minigame has less setup than the Letter Tiles minigame, however it has a much more involved system and may be harder to learn and play.
+This minigame has less setup than the Letter Tiles minigame, however it is a much more involved system and may be harder to learn and play.
 
-Unlike the multiplayer game and the Letter Tiles minigame, the Portal is not in a single fixed location at the start of Act II. Instead, its location is uncertain until narrowed down to a single planet. A probabilistic method is used to hide the Portal's location from both the player and the bot. The Pathfinder (either bot or player) will need to narrow down the possible locations using an identical logical deduction process as they would in the original multiplayer game.
+Unlike the multiplayer game and the Letter Tiles minigame, the Portal is not in a single fixed location at the start of Act II. Instead, its location is uncertain until narrowed down to a single planet. The Pathfinder (either bot or player) will need to narrow down the possible locations using an identical logical deduction process as they would in the original multiplayer game.
 
-Each time "Uncovering Clues" is used, one "round" of the minigame will result in either a Clue token or the Portal token being placed on the map. The minigame builds a pool of cubes which are used to randomly determine which token to place. The distribution of cubes ensures that Clue tokens are never placed which contradict previous Clues.
+Each time "Uncovering Clues" is used, a random process places either a Clue token or the Portal token on the map. The minigame builds a pool of cubes which drive the probabilistic method that determines which token to place. The distribution of cubes ensures that the range of possible outcomes is consistent with the previous Clues already on the map.
 
 ### Components
 

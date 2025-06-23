@@ -20,7 +20,7 @@ Events
 : If bot is not First Regent and Imperial Council is "Decided", then Events are critical
 
 Summits
-: If bot is not the First Regent and the Imperial Council is "Decided", then always call a Summit. During the "Call to Order" phase, **Petition the Council**.
+: If bot is not First Regent and the Imperial Council is "Decided", then always call a Summit. During the "Call to Order" phase, **Petition the Council**.
 
 <div class="pagebreak"> </div>
 

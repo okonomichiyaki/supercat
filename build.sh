@@ -32,4 +32,4 @@ done
 # run pandoc over the specific list of pages/sections, in the specified order:
 cat pages.md |
     while read line; do echo /tmp/${line}; done |
-    xargs pandoc -s --css=pandoc.css --metadata title=SUPERCAT -o output.html
+    xargs pandoc --standalone --toc --template template.html --css=pandoc.css --metadata title=SUPERCAT -o output.html

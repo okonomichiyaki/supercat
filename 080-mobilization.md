@@ -1,11 +1,11 @@
 # Mobilization - Move | Influence
 
-✦ Does bot have no starport and no claims?
+✦ (ignore for Flagship) Does bot have no starport and no claims?
 
 - Can bot Move to get new claims? <span style="font-size: 12px;">[10]</span>
 
 <#ifdef campaign>
-✦ Does bot have no starport and cannot Build upgrades or armor at the Flagship planet?
+✦ (Flagship only) Does bot have no starport and cannot Build upgrades or armor at the Flagship planet?
 
 - Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[11]</span>
 <#endif>
@@ -14,7 +14,7 @@
 
 - Can bot Move to change control? <span style="font-size: 12px;">[14]</span>
 
-✦ Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
+✦ (ignore for Flagship) Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
 
 - Can bot Move to get at least one new claim? <span style="font-size: 12px;">[18]</span> Prefer:
 	- new resources
@@ -22,7 +22,7 @@
 	- two slot planets
 
 <#ifdef campaign>
-✦ Does bot have unbuilt cities and cannot Build upgrades or armor at the Flagship planet?
+✦ (Flagship only) Does bot have unbuilt cities and cannot Build upgrades or armor at the Flagship planet?
 
 - Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[19]</span>
 <#endif>
