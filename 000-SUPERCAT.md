@@ -1,6 +1,6 @@
 ## a procedural non-player system for solo Arcs
 
-*version 0.9-draft*
+*version 0.9*
 
 This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solitaire play, i.e. one human playing against one or more bots. Although it can also work as the 3rd or 4th opponent in a multiplayer game, using it in this way has not been tested thoroughly.
 

@@ -28,9 +28,51 @@
 <header id="title-block-header">
 <h1 class="title">SUPERCAT</h1>
 </header>
+
+<nav id="toc-main" class="no-print">
+    <ul>
+        <li><a href="#bot-turn-start-here" id="toc-bot-turn-start-here">Bot turn (START HERE)</a></li>
+        <li><a href="#general-priorities" id="toc-general-priorities">General Priorities</a></li>
+        <li><a href="#prelude-1" id="toc-prelude-1">Prelude</a></li>
+        <li><a href="#administration---tax-repair-influence" id="toc-administration---tax-repair-influence">Administration - Tax | Repair | Influence</a></li>
+        <li><a href="#influence-principles" id="toc-influence-principles">Influence Principles</a></li>
+        <li><a href="#aggression---move-battle-secure" id="toc-aggression---move-battle-secure">Aggression - Move | Battle | Secure</a></li>
+        <li><a href="#combat-principles" id="toc-combat-principles">Combat Principles</a></li>
+        <li><a href="#construction---build-repair" id="toc-construction---build-repair">Construction - Build | Repair</a></li>
+        <li><a href="#expansion-principles" id="toc-expansion-principles">Expansion Principles</a></li>
+        <li><a href="#mobilization---move-influence" id="toc-mobilization---move-influence">Mobilization - Move | Influence</a></li>
+        <li><a href="#movement-principles" id="toc-movement-principles">Movement Principles</a></li>
+        <li><a href="#faithful-wisdom---build-repair-secure" id="toc-faithful-wisdom---build-repair-secure">Faithful Wisdom - Build | Repair | Secure</a></li>
+        <li><a href="#faithful-zeal---move-influence-battle-tax" id="toc-faithful-zeal---move-influence-battle-tax">Faithful Zeal - Move | Influence | Battle | Tax</a></li>
+        <li><a href="#vox-cards" id="toc-vox-cards">Vox Cards</a></li>
+        <li><a href="#questions" id="toc-questions">Questions</a></li>
+        <li><a href="#clarifications" id="toc-clarifications">Clarifications</a></li>
+        <li><a href="#terminology" id="toc-terminology">Terminology</a></li>
+    </ul>
+</nav>
+<nav id="toc-fates" class="no-print">
+    <ul>
+        <li><a href="#steward" id="toc-steward">Steward</a></li>
+        <li><a href="#founder" id="toc-founder">Founder</a></li>
+        <li><a href="#magnate" id="toc-magnate">Magnate</a></li>
+        <li><a href="#advocate" id="toc-advocate">Advocate</a></li>
+        <li><a href="#caretaker" id="toc-caretaker">Caretaker</a></li>
+        <li><a href="#partisan" id="toc-partisan">Partisan</a></li>
+        <li><a href="#admiral" id="toc-admiral">Admiral</a></li>
+        <li><a href="#believer" id="toc-believer">Believer</a></li>
+        <li><a href="#pathfinder" id="toc-pathfinder">Pathfinder</a></li>
+        <li><a href="#hegemon" id="toc-hegemon">Hegemon</a></li>
+        <li><a href="#planet-breaker" id="toc-planet-breaker">Planet Breaker</a></li>
+        <li><a href="#blight-speaker" id="toc-blight-speaker">Blight Speaker</a></li>
+        <li><a href="#pacifist" id="toc-pacifist">Pacifist</a></li>
+        <li><a href="#peacekeeper" id="toc-peacekeeper">Peacekeeper</a></li>
+        <li><a href="#warden" id="toc-warden">Warden</a></li>
+    </ul>
+</nav>
+
 <h2 id="a-procedural-non-player-system-for-solo-arcs">a procedural
 non-player system for solo Arcs</h2>
-<p><em>version 0.9-draft</em></p>
+<p><em>version 0.9</em></p>
 <p>This is a non-player system, or “bot”, for playing the board game
 Arcs. It’s intended for solitaire play, i.e. one human playing against
 one or more bots. Although it can also work as the 3rd or 4th opponent
@@ -269,18 +311,16 @@ one bot in play, bot with more fresh ships controls the gate</li>
 </ul>
 <p>*apply only if player is the attacker</p>
 <h2 id="fates">Fates</h2>
-<p>Each Fate has its own set of procedures and priorities which will
-supplement the generic procedures to drive the bot’s behavior. Some
-Fates have instructions for specific cards, and some Fates have
-additional rules for handling mechanics which pose a complication for
-solo play. Others will have general information for how other bots will
-interact with the mechanics introduced by the Fate. <em>(for example,
-Faithful cards and Golems)</em></p>
+<p>Each Fate has its own procedures and priorities which supplement the
+bot’s behavior. Some Fates have instructions for how other bots interact
+with mechanics introduced by the Fate. <em>(for example, Faithful cards
+and Golems)</em> Some Fates have additional rules to make certain
+mechanics easier to play solo. <em>(for example, the
+Pathfinder)</em></p>
 <p>Each Fate’s procedures are arranged by Act. When consulting the page
 corresponding to the active bot’s Fate, refer to the section for the
-current Act only. Check the bot’s Fate <strong>once</strong> each turn
-when explicitly directed to, depending on how the bot’s card is
-selected:</p>
+current Act only. Check the procedures for the bot’s Fate
+<strong>once</strong> each turn:</p>
 <ul>
 <li>After a card is automatically selected to declare an ambition or
 surpass, check the page corresponding to the bot’s Fate, and follow
@@ -294,15 +334,15 @@ the actions listed.</li>
 than <strong>half the number of available actions, rounded up.</strong>
 Once it takes that many actions, or is unable to take further actions
 from this page, turn to the page for the selected suit and spend the
-remaining actions.</p>
+remaining actions. Some Fates have explicit instructions to spend
+additional actions in certain situations.</p>
 <h2 id="event-cards">Event Cards</h2>
-<p>After a round ends in which an Event card was played and resolved, do
-not add it to the discard pile. Instead, set played Event cards aside
-and only shuffle them with the action cards prior to dealing at the
-start of the next chapter. <em>(since the action card deck will be
-reshuffled mid-round when there are 2 or more bots, this is to ensure
-Event cards do not occur more frequently than in multiplayer
-games)</em></p>
+<p>After a round ends in which an Event card was played, do not add it
+to the discard pile. Instead, set played Event cards aside and only
+shuffle them with the other action cards prior to dealing at the start
+of the next chapter. <em>(since the deck may be reshuffled mid-round
+this ensures that Events do not occur more frequently than is possible
+in multiplayer games)</em></p>
 <h2 id="govern-the-imperial-reach">Govern the Imperial Reach</h2>
 <p>If the bot is the First Regent, check the bot’s Fate to determine if
 it will change the policy. If Fate does not dictate a policy change,
@@ -322,7 +362,7 @@ a Summit on a result of 5 or 6.</p>
 Order” phase, follow these procedures:</p>
 <ul>
 <li><strong>Return Favors</strong>: Follow these priorities to select
-negotiation actions. Return as many as possible, using favors as
+Negotiation actions. Return as many as possible, using favors as
 efficiently as possible.
 <ul>
 <li><ins>
@@ -337,9 +377,9 @@ ambition</li>
 Empire:</strong> Check Fate</li>
 </ul>
 <h2 id="grievances-optional">Grievances (Optional)</h2>
-<p>This should be considered an optional but recommended rule. It will
-add a little bit of extra friction for the solo player as well as some
-texture to the negotiation minigame.</p>
+<p>This an optional rule which will add a little bit of extra friction
+for the solo player as well as some texture to the Negotiation
+minigame.</p>
 <p>Each bot will have a grievance counter matching the colors of all
 other bots and players. For instance, in a game with 1 player and 3
 bots, a bot using the red pieces will track grievances in white, blue,
@@ -362,13 +402,13 @@ action)</li>
 </div>
 <h2 id="negotiation-minigame-optional">Negotiation Minigame
 (Optional)</h2>
-<p>During the Negotiations phase of a Summit, the player has an
-opportunity to offer bots negotiation actions, and each bot may do the
-same with other bots. This takes the form of a new, solo-specific
-minigame. This alternative enables a solo player to engage with all of
-the mechanics of the campaign, and makes it possible for certain Fates
-which rely on the Negotiation mechanics (Magnate, Caretaker) to be
-piloted by a player or a bot.</p>
+<p>This is an optional, solo-specific minigame which takes place during
+the Negotiations phase of a Summit. During this minigame, the player
+will have an opportunity to offer bots Negotiation actions, and each bot
+may do the same with other bots. This enables a solo player to engage
+with all of the mechanics of the campaign, and makes it possible for
+Fates which rely on the Negotiation mechanics (for example, Magnate and
+Caretaker) to be piloted by a player or a bot.</p>
 <p>When a Summit occurs, after the “Call to Order” phase, follow this
 sequence of play for the minigame:</p>
 <ul>
@@ -376,26 +416,25 @@ sequence of play for the minigame:</p>
 <li>Player(s) may settle Grievances with favors:
 <ul>
 <li>if a player returns a favor to a bot <em>(without forcing any
-negotiation actions)</em> or gives one of their agents to a bot as a
+Negotiation actions)</em> or gives one of their agents to a bot as a
 favor, reduce the bot’s Grievances matching the player by one</li>
 </ul></li>
-<li>Starting with the bot or player with initiative, conduct negotiation
+<li>Starting with the bot or player with initiative, conduct Negotiation
 rounds</li>
-<li>On a player’s round, they may attempt a trade with a bot.
+<li>On a player’s round, they may attempt an exchange of Negotiation
+actions with a bot.
 <ul>
-<li>If the trade is successful, they must pass to next player or bot in
-turn order</li>
+<li>If the exchange is successful, they must pass to next player or bot
+in turn order</li>
 <li>After 3 consecutive failures, they must pass to next player or bot
 in turn order</li>
 </ul></li>
-<li>During a bot’s negotiation round, it will attempt one negotiation
-with another bot, then pass</li>
-<li>After each player and bot as had a turn, end minigame <em>(even if
-rounds remain)</em></li>
+<li>During a bot’s Negotiation round, it will attempt one exchange with
+another bot, then pass</li>
 </ul>
-<p>Each negotiation round is a single trade attempt:</p>
+<p>Each Negotiation round is a single trade attempt:</p>
 <ul>
-<li>Player or bot will offer to exchange one or more negotiation actions
+<li>Player or bot will offer to exchange one or more Negotiation actions
 with a target bot</li>
 <li>Player or bot will commit to an offer, then roll 1d6 to determine if
 the target bot accepts</li>
@@ -418,28 +457,37 @@ ambition
 would gain from the ambition
 </li>
 <li>
-+1 for each negotiation action offered above an even trade
++1 for each Negotiation action offered above an even trade
 </li>
 <li>
 +1 if trade would cause target to <ins>contend</ins> a declared ambition
 </li>
 <li>
 +1 if trade would cause bot to directly or indirectly advance objective
+(any amount)
 </li>
 </ul>
 <p>To determine bot-bot offers, examine each rival bot in turn order,
 and identify what the active bot “wants” from the other bot. Use these
-priorities, and if none apply, pass next player or bot, but still count
-the round as having occurred:</p>
+priorities, and if none apply, pass to next player or bot, but still
+count one round as having occurred:</p>
 <ul>
-<li>resource, trophy, or captive which would cause bot to
-<ins>contend</ins> a declared ambition</li>
-<li>negotiation actions which would directly or indirectly advance bot’s
+<li>Negotiation actions which would directly or indirectly advance bot’s
 objective</li>
+<li>Negotiation actions which would cause bot to <ins>contend</ins> a
+declared ambition</li>
 </ul>
-The active bot will offer the target resources and favors such that the
-final DRM is +2. Bot will not offer resources matching declared ambition
-bot is currently <ins>contending</ins>.
+<p>The active bot will offer the target bot Transfer Asset and Promise
+Favor actions such that the final DRM is +2, but within the following
+limits:</p>
+<ul>
+<li>up to a maximum of 4-1 trade (4 Negotiation actions for 1
+action)</li>
+<li>no more favors than would result in the target having 3 of the
+active bot’s favors</li>
+</ul>
+If the only eligible offers exceed these limits, the active bot will
+pass (count one round as having occurred).
 <div class="pagebreak">
 
 </div>
@@ -476,9 +524,9 @@ Events are critical
 </dd>
 <dt>Summits</dt>
 <dd>
-If bot is not the First Regent and the Imperial Council is “Decided”,
-then always call a Summit. During the “Call to Order” phase,
-<strong>Petition the Council</strong>.
+If bot is not First Regent and the Imperial Council is “Decided”, then
+always call a Summit. During the “Call to Order” phase, <strong>Petition
+the Council</strong>.
 </dd>
 </dl>
 <div class="pagebreak">
@@ -543,16 +591,21 @@ Imperial Sponsor
 <p>✦ Is bot a Regent?</p>
 <ul>
 <li>Can bot Influence or Secure the Imperial Council?</li>
-<li>Can bot Influence or Secure a card which would enable it to declare
-an ambition?</li>
+<li>Can bot Influence or Secure “Populist Demands”?
+<ul>
+<li>Secure if an ambition marker is available</li>
+</ul></li>
 </ul>
-<p>✦ Can bot Build, Repair, Move, or <ins>favorable combat</ins> to take
-control of a system?</p>
+<p>✦ Can bot Build, Repair, Move, or <ins>favorable combat</ins> to
+increase the number of systems bot controls?</p>
+<ul>
+<li>Spend additional actions if needed to execute Move</li>
+</ul>
 <dl>
 <dt>Parade Fleets</dt>
 <dd>
-Place ships where bot would gain control. If bot is a Regent, always
-become an Outlaw.
+Place ships where bot would gain control. If bot is a Regent, become an
+Outlaw.
 </dd>
 <dt>Events</dt>
 <dd>
@@ -592,6 +645,10 @@ first place in the ambition (place second or third ambition marker in
 already declared ambition only if the Commonwealth is winning). When
 declaring, place the Commonwealth Ambition marker.
 </dd>
+<dt>Call For Armistice</dt>
+<dd>
+TODO
+</dd>
 </dl>
 <div class="pagebreak">
 
@@ -599,11 +656,20 @@ declaring, place the Commonwealth Ambition marker.
 <h1 id="magnate">Magnate</h1>
 <h2 id="act-i-1">Act I</h2>
 <p>✦ Can bot Tax for any resource?</p>
+<ul>
+<li>Prefer:
+<ul>
+<li>resource matching any declared ambition</li>
+<li><ins>
+new resource
+</ins></li>
+</ul></li>
+</ul>
 <p>✦ Can bot Influence or Secure the Imperial Council?</p>
 <dl>
 <dt>Events</dt>
 <dd>
-Events are always considered <ins>effective</ins>.
+If objective marker is greater than zero, events are critical.
 </dd>
 <dt>Summit Negotiations</dt>
 <dd>
@@ -617,12 +683,19 @@ resources or favors.
 <dd>
 If the bot has 3 or more resources at the end of the negotiation
 minigame, then discard 3 resources to advance objective, unless bot is
-currently winning a declared ambition matching those resources.
+currently <ins>contending</ins> a declared ambition matching those
+resources.
 </dd>
 <dt>Prelude</dt>
 <dd>
 Do not spend resources for any Prelude actions if bot has 3 or fewer
 resources.
+</dd>
+<dt>Merchant League</dt>
+<dd>
+When gaining resources prefer resources to <ins>contend</ins> ambitions.
+When conducting negotiations, prefer these resources for
+<strong>Transfer Asset</strong>.
 </dd>
 </dl>
 <div class="pagebreak">
@@ -633,15 +706,15 @@ resources.
 having more than half of the total resources of its type in play?
 <em>(get resources such that if the Gain Monopolies edict were resolved,
 the bot take the matching Monopoly)</em></p>
-<p>✦ Can bot Influence or Secure the Imperial Council?</p>
 <ul>
 <li>Prefer: Resource matching Monopoly in the supply</li>
 </ul>
+<p>✦ Can bot Influence or Secure the Imperial Council?</p>
 <dl>
 <dt>Events</dt>
 <dd>
 If bot has more than half of any type of resource, and does not have the
-matching Monopoly, then Events are considered <ins>effective</ins>.
+matching Monopoly, then Events are considered critical.
 </dd>
 <dt>Imperial Council Decided</dt>
 <dd>
@@ -891,9 +964,9 @@ the bot can take the prioritized action using the Faithful card, select
 that card and turn to the page for the Faithful suit.</p>
 <h2 id="act-i-6">Act I</h2>
 <p>✦ Can bot use Spreading the Faith’s <strong>Teach
-(Influence)</strong> ability? <em>(attach a Faithful card to a Guild
-card in the Court matching a Loyal city)</em></p>
+(Influence)</strong> ability?</p>
 <ul>
+<li>Spend as many additional actions as possible</li>
 <li>Prefer:
 <ul>
 <li>Guild card with Loyal agents</li>
@@ -902,9 +975,11 @@ card in the Court matching a Loyal city)</em></p>
 <p>✦ Are there remaining cards in the stack of Faithful action
 cards?</p>
 <ul>
-<li>Are there any suits which bot does not have a matching Loyal city?
+<li>Does bot have <ins>unbuilt cities</ins>, and are there any suits
+which bot does not have a matching Loyal city?
 <ul>
-<li>Can bot get a <ins>claim</ins> on a planet with that suit?</li>
+<li>Can bot Build a city or get a <ins>claim</ins> on a planet matching
+one of those suits?</li>
 </ul></li>
 </ul>
 <h2 id="act-ii-7">Act II</h2>
@@ -1023,20 +1098,20 @@ clusters from Clue token</li>
 <h2 id="find-the-portal-minigame-cube-bag">Find the Portal Minigame:
 Cube Bag</h2>
 <p>This minigame has less setup than the Letter Tiles minigame, however
-it has a much more involved system and may be harder to learn and
+it is a much more involved system and may be harder to learn and
 play.</p>
 <p>Unlike the multiplayer game and the Letter Tiles minigame, the Portal
 is not in a single fixed location at the start of Act II. Instead, its
-location is uncertain until narrowed down to a single planet. A
-probabilistic method is used to hide the Portal’s location from both the
-player and the bot. The Pathfinder (either bot or player) will need to
-narrow down the possible locations using an identical logical deduction
-process as they would in the original multiplayer game.</p>
-<p>Each time “Uncovering Clues” is used, one “round” of the minigame
-will result in either a Clue token or the Portal token being placed on
-the map. The minigame builds a pool of cubes which are used to randomly
-determine which token to place. The distribution of cubes ensures that
-Clue tokens are never placed which contradict previous Clues.</p>
+location is uncertain until narrowed down to a single planet. The
+Pathfinder (either bot or player) will need to narrow down the possible
+locations using an identical logical deduction process as they would in
+the original multiplayer game.</p>
+<p>Each time “Uncovering Clues” is used, a random process places either
+a Clue token or the Portal token on the map. The minigame builds a pool
+of cubes which drive the probabilistic method that determines which
+token to place. The distribution of cubes ensures that the range of
+possible outcomes is consistent with the previous Clues already on the
+map.</p>
 <h3 id="components-1">Components</h3>
 <ul>
 <li>red and blue meeples
@@ -2243,8 +2318,8 @@ bot agents
 </dd>
 <dt>critical</dt>
 <dd>
-some Fates consider Event cards critical, and will apply a DRM during
-seize check
+some Fates consider Event cards critical, and will automatically seize
+initiative if an Event is played
 </dd>
 <dt>double city</dt>
 <dd>
