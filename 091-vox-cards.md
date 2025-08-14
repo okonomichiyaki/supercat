@@ -1,6 +1,6 @@
 # Vox Cards
 
-The bot will Secure a Vox card if it is effective or if Securing the card will take captives. In general, a Vox card is effective if its **When Secured** text can be fully carried out<#ifdef campaign> or if the **Crisis** text would impact the bot<#endif>. The following clarifies specific Vox cards and gives instructions for how to perform the text for the bot.
+The bot will Secure a Vox card if it is effective or if Securing the card will take captives. In general, a Vox card is effective if its **When Secured** text can be fully carried out<#ifdef campaign> or if the **Crisis** text would negatively impact the bot<#endif>. The following clarifies specific Vox cards and gives instructions for how to perform the text for the bot.
 
 Mass Uprising
 : Effective if bot has 4 or more ships in its supply. Prefer cluster with task force.
@@ -12,7 +12,7 @@ Outrage Spreads
 : Effective if outrage would cause a Rival to stop winning a declared ambition. Prefer resource which bot has fewest of
 
 Song of Freedom
-: Effective if the bot controls a rival city and it's possible to seize the initiative. If not possible to seize the initiative, secure only for captives.
+: Effective if the bot controls a rival city and it's possible to seize the initiative<#ifdef campaign>, or if bot has the most power<#endif>.
 
 Guild Struggle
 : Effective if rivals have any Guild cards. Steal a Guild card to contend a declared ambition or contend an undeclared ambition. Otherwise use "Influence Principles".
