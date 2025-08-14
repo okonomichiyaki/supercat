@@ -1,6 +1,17 @@
 <#ifdef campaign>
 # Pacifist
 
+## All Acts
+
+Battle and Trophies
+: Bot will avoid Battle actions if there is any chance of taking trophies. *(in other words, will avoid most battles except in some rare cases may raid, if target has 1 key and defender has 2 buildings present)* Bot will reject Transfer Asset offers which give the bot Trophies, except for Loyal pieces.
+
+Secure and Tax and Captives
+: Bot will avoid Secure and Tax actions that would take captives. Bot will reject Transfer Asset offers which give the bot Captives, except for Loyal pieces.
+
+Influence
+: Bot will avoid Influencing contested cards with more agents than Rivals. Bot will only Influence contested cards to defend own agents up to number of Rival agents.
+
 ## Act II
 
 ✦ Can bot Move a Witness token to a Psionic planet?
@@ -12,24 +23,25 @@
 - Prefer: Witness token at a Psionic planet
 
 Witnesses
-: Bot will use the Prelude ability when bot is in first place or second place for Empath, including ties.
+: Bot will always use the Prelude ability to take a Witness if possible, but only declare Empath if not already declared and only if bot is contending for Empath.
 
 Well of Empathy
-: Bot will place Psionics first in 3 key slots, then place them on this card.
+: Bot will place Psionic resources first in 3 key slots, then place them on this card.
 
-### special rules
+Prelude
+: If Empathy is declared, bot will spend Psionic resources if doing so will advance its objective and will not change the bot's place for Empath. Additionally, bot will spend resources to enable it to use the Prelude ability above on the same turn. Limit one resource per Witness token. *(e.g. spend a Fuel to Move a Witness to a Psionic planet under bot control, or spend a Material to Build and get control of a Witness already at a Psionic planet)*
 
-If bot has not completed its objective, modify the procedures with these additional guidelines.
+Govern the Imperial Reach
+: Bot will change if current Policy is A Policy of War.
 
-Battle
-: Bot will avoid Battle actions if there is a chance of taking trophies. *(in other words, will avoid most battles except in some cases may raid, if target has 1 key and defender has 2 buildings present)*
+## Act III
 
-Secure and Tax
-: Bot will avoid Secure and Tax actions that would take captives.
+Empath and Psionic resources
+: If bot is winning Empath, and A > G, then keep Psionic resources. Otherwise, spend Psionics until Rivals have more Psionic resources than you.
+<!-- TODO: Otherwise? -->
 
-Influence
-: Bot will only Influence uncontested cards or cards which only have Loyal agents.
-Bot will follow "Influence Principles" otherwise.
+Govern the Imperial Reach
+: Bot will enforce or change to A Policy of Escalation.
 
 <div class="pagebreak"> </div>
 <#endif>

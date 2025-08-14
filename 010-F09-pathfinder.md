@@ -23,6 +23,23 @@ Each minigame has slightly different pros and cons, and you may prefer one over 
 Uncovering Clues
 : Use Prelude ability if current planet meets Clue Guidelines
 
+## Act III
+
+✦ Can bot Move, Build, Repair, or favorable combat for control of the Portal token?
+
+✦ Can bot use Pilgrims' Use the Portal (Move) ability?
+
+✦ Doe the Empire control the Portal token?
+
+- Is bot a Regent, but not the First Regent?
+	- Can bot Influence or Secure the Imperial Council?
+
+Pilgrims (Prelude)
+: Prior to using this ability, if bot has a Slipstream Drive and can Catapult either the Flagship or ships from the Flagship which will enable a Pilgrim token to move closer to the Portal, then the bot will do that first (Prefer: ships Catapulting for control). Afterwards, use this ability to move as many Pilgrim tokens as possible closer to the Portal.
+
+Movement Principles
+: If bot currently controls the Portal, do not abandon control when evaluating Move actions for other reasons.
+
 <div class="pagebreak"> </div>
 
 ## Clue Guidelines
