@@ -14,8 +14,8 @@ When possible, retain control of the origin system. If it's not possible to reac
 
 If multiple origins and destinations meet above criteria, use these priorities:
 
-- if goal is not new claims, prefer destinations which result in new claims
-- if goal is not control, prefer destinations which result in bot control of rival <#ifdef campaign> or Free <#endif> city.
+- if goal is not new claims, prefer destinations which result in new claims.
+- if goal is not control of buildings, prefer destinations which result in bot taking control of loyal or rival <#ifdef campaign> or Free <#endif> buildings (prefer control of cities).
 - if otherwise equal options, select task force as the origin system
 
 <#ifdef campaign>

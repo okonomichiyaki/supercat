@@ -25,7 +25,7 @@
 - Yes:
 	- Select card which surpasses. Prefer: higher number
 - No:
-	- If seize counter is on bot's board, increment it, else place seize counter, with a value of 1.
+	- If seize counter is present, increment it, else place seize counter, with a value of 1.
 	- If hand counter is 2 or greater and initiative was not already seized this round, check for seize:
 <#ifdef campaign>		- if holding Event or Event played earlier this round, and Events are critical, automatically seize initiative. Otherwise:
 <#endif>		- Roll 1d6, and subtract 1 for each undeclared ambition that bot is winning. Seize initiative if result is less than seize counter. Decrement hand counter to represent bot discarding an extra card.

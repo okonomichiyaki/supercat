@@ -11,6 +11,7 @@ If possible, influence a contested card with one more agent than the most rival 
 When choosing between options which are otherwise equal in priority, use the following priorities to select a card to influence.
 
 <#ifdef campaign>- Lore card
+- adverse Vox card (Crisis negatively impacts bot)
 - card with attached Faithful card
 - card with attached Guild card
 <#endif>- uncontested card

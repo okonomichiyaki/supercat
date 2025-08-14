@@ -23,7 +23,7 @@
 ✦ Does bot have unbuilt cities?
 <#ifdef campaign>
 - Does bot have a Flagship?
-	- Can bot Build at the current planet? → Construction
+	- Can bot Build an upgrade/armor at the current planet? → Construction
 	- Can bot Move to a planet matching an unbuilt upgrade/armor? → Mobilization/Aggression
 - Does bot have fewer claims than half the number of unbuilt cities, rounded down?
 	- Yes: <!-- Expand for city priority=5 --> Can bot move to get a new claim? → Mobilization/Aggression
