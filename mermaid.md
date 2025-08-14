@@ -17,3 +17,24 @@ flowchart TD
     Event -->|No| Ambition{Ambition?}
     Ambition -->|Yes| Declare
 ```
+
+```
+flowchart TD
+    IC[Pass Initiative] -->EC{"`Event
+                                Council?`"}
+    EC -->|Event| IHS["`Initiative Holder
+                        may call Summit`"]
+    EC -->|Council| CS["`Council Securer
+                         may call Summit`"]
+    IHS --> SE{Summit?}
+    CS --> SC{Summit?}
+    SE -->|No| R[Roll Edict or Crises]
+    SE -->|Yes| CTO["`Call to Order
+                      (May flip Council)`"]
+    SC -->|Yes| CTO
+    CTO --> N[Negotiations]
+    N --> FR
+    N --> R
+    SC -->|No| FR[Regent? Become FR. Outlaw? Steal from Trust.]
+    FR --> CH[Choose Edict or Crises]
+```
