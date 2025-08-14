@@ -50,17 +50,21 @@ Imperial Quorum
 
 TODO: Grand Ambitions
 
-✦ Can bot Build, Repair, or Move to take control of an Outlaw city?
+✦ Can bot Build, Repair, or Move to get Imperial control of an Outlaw city?
 
-✦ Can bot favorable battle to take control of an Outlaw city?
+✦ Can bot favorable battle to get Imperial control of an Outlaw city?
+
+✦ Does bot have no resources?
+
+- Can bot Tax for any resource?
 
 TODO:
 If bot is not the First Regent -> actions to become First Regent
 If bot IS the First Regent -> actions to stay First Regent
 
-
 Imperial Sponsor
 : If the Steward is the First Regent, select an undeclared ambition which an Outlaw is winning or contending.
 -->
+
 <div class="pagebreak"> </div>
 <#endif>
