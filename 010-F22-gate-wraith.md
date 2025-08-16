@@ -4,7 +4,7 @@
 
 ✦ Can bot Build, Repair, Move, or favorable combat for control of the Twisted Passage?
 
-✦ Can bot Build, Repair, Move, or favorable combat for control of a Rival starport adjacent to an unbroken gate?
+✦ Can bot Build, Repair, Move, or favorable combat for control of a Rival or Free starport adjacent to an unbroken gate?
 
 ✦ Can bot Build a starport adjacent to an unbroken gate?
 
@@ -12,10 +12,10 @@
 
 - Can bot favorable combat vs Blight in the Twisted Passage?
 
-✦ Doe the Empire control the Twisted Passage?
+✦ Does the Empire control the Twisted Passage?
 
 - Is bot a Regent, but not the First Regent?
-	- Can bot Influence or Secure the Imperial Council?
+	- Can bot Secure or Influence the Imperial Council?
 
 <!--
 TODO:

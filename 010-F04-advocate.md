@@ -3,7 +3,7 @@
 
 ## Act I
 
-✦ Can bot Influence or Secure a Guild card with a Prelude action that discards itself?
+✦ Can bot Secure or Influence a Guild card with a Prelude action that discards itself?
 
 ✦ Can bot use Guild Investigators' **Recover (Move)** ability?
 

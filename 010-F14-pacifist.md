@@ -17,6 +17,7 @@ Influence
 ✦ Can bot Move a Witness token to a Psionic planet?
 
 - Prefer: Psionic planet where bot will have control at the end of the move.
+- Use partial move
 
 ✦ Can bot Build, Repair, or Move to take control of a Witness token?
 
@@ -42,6 +43,9 @@ Empath and Psionic resources
 
 Govern the Imperial Reach
 : Bot will enforce or change to A Policy of Escalation.
+
+<!-- TODO: Reconcile with the Outraged -->
+<!-- TODO: Rebuke of the Empaths -->
 
 <div class="pagebreak"> </div>
 <#endif>

@@ -3,9 +3,9 @@
 
 ## Act I
 
-✦ Can bot Influence or Secure a card which would enable it to gain the initiative?
+✦ Can bot Secure or Influence a card which would enable it to gain the initiative?
 
-✦ Can bot Influence or Secure a card which would give the bot an additional action card?
+✦ Can bot Secure or Influence a card which would give the bot an additional action card?
 
 ✦ Does bot have 4 or more cards and can bot use Informants' **Spy (Influence)** ability?
 <br/>*(limit once per chapter, see special rules below)*

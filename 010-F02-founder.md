@@ -5,8 +5,8 @@
 
 ✦ Is bot a Regent?
 
-- Can bot Influence or Secure the Imperial Council?
-- Can bot Influence or Secure "Populist Demands"?
+- Can bot Secure or Influence the Imperial Council?
+- Can bot Secure or Influence "Populist Demands"?
 	- Secure if an ambition marker is available
 
 ✦ Can bot Build, Repair, Move, or favorable combat to increase the number of systems bot controls?

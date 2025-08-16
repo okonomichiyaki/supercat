@@ -9,7 +9,7 @@
 	- resource matching any declared ambition
 	- new resource
 
-✦ Can bot Influence or Secure the Imperial Council?
+✦ Can bot Secure or Influence the Imperial Council?
 
 Events
 : If objective marker is greater than zero, events are critical.
@@ -34,7 +34,7 @@ Merchant League
 
 - Prefer: Resource matching Monopoly in the supply
 
-✦ Can bot Influence or Secure the Imperial Council?
+✦ Can bot Secure or Influence the Imperial Council?
 
 Events
 : If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered critical.
