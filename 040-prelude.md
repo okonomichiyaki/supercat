@@ -14,9 +14,11 @@ Bot will not spend resources or Guild cards matching a declared ambition, with o
 
 **Material**: spend to Build a starport if none on map, otherwise Build cities, then ships
 
-**Fuel and Weapon**: spend for Combat card
+**Fuel**: spend for Expansion Principles or Combat card
 
-**Relic**: Secure for captives, contend a declared ambition, or effective Vox card.
+**Weapon**: spend for Combat card
+
+**Relic**: Secure for captives, contend a declared ambition, or effective Vox card
 
 **Psionic**: Tax/Secure to contend a declared ambition, or spend for Combat card
 
