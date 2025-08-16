@@ -11,6 +11,12 @@ When placing a starting city, Prefer:
 
 ## Act I
 
+✦ Is bot Regent and winning an ambition?
+
+- Would Govern the Imperial Reach or Imperial Foundries place Imperial Ships?
+	- Can bot Secure or Influence the Imperial Council?
+		- Select Edicts
+
 ✦ Can bot favorable combat for trophies with Imperial Ships?
 
 - Yes:
