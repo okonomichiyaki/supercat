@@ -56,7 +56,7 @@ Set up the game according to the Blighted Reach rulebook, but make changes at th
 
 **2.B.** Assign "A" Fates using any method you like. *(suggestion: the player draws 2 "A" Fate cards and chooses one, then randomly assign each bot an "A" Fate card)*
 
-**2.G-H.** When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport. *If a bot is the Believer, check that Fate's procedures for special instructions.* (optional) Place an extra ship in each system with bot pieces and give each bot one random resource.
+**2.G-H.** When the bot places a building, randomly select an empty building slot from among those eligible. The first building each bot places will be a city and the second will be a starport. *If a bot is the Believer or Admiral, check the Fate's procedures for special instructions.* (optional) Place an extra ship in each system with bot pieces and give each bot one random resource.
 
 **2.J.** Deal 6 cards to each player, but do not deal cards to the bot(s). Place a counter on each bot's board showing a value of 6 faceup.
 

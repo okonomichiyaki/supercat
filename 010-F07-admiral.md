@@ -1,6 +1,14 @@
 <#ifdef campaign>
 # Admiral
 
+<dt>Setup</dt>
+<dd>
+When placing a starting city, Prefer:
+<ul>
+<li>Weapon planets</li>
+</ul>
+</dd>
+
 ## Act I
 
 ✦ Can bot favorable combat for trophies with Imperial Ships?
