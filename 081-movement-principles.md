@@ -20,6 +20,12 @@ If multiple origins and destinations meet above criteria, use these priorities:
 
 <#ifdef campaign>
 When destination contains Blight and Imperial ships not present at destination, bring Imperial ships if possible. Otherwise, leave Imperial ships to retain Empire control if including them in the move would give rival control of loyal building.
+<!--
+TODO: formalize these priorities
+- origin has rival ships and move would grant rival control of loyal building ? -> leave Imperial Ships for Imperial control
+- destination has Blight ? -> bring Imperial Ships for crisis (1 vs damaged, 2 vs fresh)
+- origin has Blight ? -> leave Imperial Ships for crisis (1 vs damaged, 2 vs fresh)
+-->
 <#endif>
 
 <div class="pagebreak"> </div>
