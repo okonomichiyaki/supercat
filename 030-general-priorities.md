@@ -20,6 +20,8 @@
 - <!-- priority=4 --> Can bot Build or Repair to change control? → Construction/Administration
 - <!-- priority=4 --> Can bot favorable combat to change control? → Combat card
 
+✦ Can bot favorable combat vs fresh Blight at Loyal building or claim? → Combat card
+
 ✦ Does bot have unbuilt cities?
 <#ifdef campaign>
 - Does bot have a Flagship?

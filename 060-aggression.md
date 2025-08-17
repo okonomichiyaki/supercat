@@ -30,9 +30,13 @@
 
 - Can bot Move or favorable combat to change control? <span style="font-size: 12px;">[14,15]</span>
 
+<#ifdef campaign>
+✦ Can bot favorable combat vs fresh Blight at Loyal building or claim? <span style="font-size: 12px;">[16]</span>
+<#endif>
+
 ✦ (ignore for Flagship) Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
 
-- Can bot Move to get at least one new claim? <span style="font-size: 12px;">[18]</span> Prefer:
+- Can bot Move to get at least one new claim? <span style="font-size: 12px;">[19]</span> Prefer:
 	- new resources
 	- unclaimed
 	- two slot planets
@@ -40,25 +44,21 @@
 <#ifdef campaign>
 ✦ (Flagship only) Does bot have unbuilt cities and cannot Build upgrades or armor at the Flagship planet?
 
-- Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[19]</span>
+- Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[20]</span>
 <#endif>
 
 ✦ Can bot use an ability on a ready Guild or lore card?
 
-✦ Can bot Secure to contend an undeclared ambition or to take captives? <span style="font-size: 12px;">[21,22]</span>
+✦ Can bot Secure to contend an undeclared ambition or to take captives? <span style="font-size: 12px;">[22,23]</span>
 
-✦ Can bot Secure to grow lead in declared ambition? <span style="font-size: 12px;">[25]</span>
+✦ Can bot Secure to grow lead in declared ambition? <span style="font-size: 12px;">[26]</span>
 
 <#ifdef campaign>
-✦ Can bot Move to take control of rival city or Free city? <span style="font-size: 12px;">[31]</span>
+✦ Can bot Move to take control of rival city or Free city? <span style="font-size: 12px;">[32]</span>
 <#endif>
 
 <#ifdef base>
-✦ Can bot Move to take control of rival city? <span style="font-size: 12px;">[32]</span>
-<#endif>
-
-<#ifdef campaign>
-✦ Can bot favorable combat to destroy Blight in systems with loyal buildings? <span style="font-size: 12px;">[40]</span>
+✦ Can bot Move to take control of rival city? <span style="font-size: 12px;">[33]</span>
 <#endif>
 
 ✦ Are there any ambition markers available?
