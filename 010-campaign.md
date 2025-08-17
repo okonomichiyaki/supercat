@@ -76,7 +76,7 @@ Apply the following DRMs to the roll:
 <li>-1 for each matching Grievance</li>
 <li>-1 if trade would cause rival of target to contend a declared ambition</li>
 <li>-X if bot is contending a declared ambition. X=power bot would gain from the ambition</li>
-<li>+1 for each Negotiation action offered above an even trade</li>
+<li>+/-1 for each Negotiation action offered above/below an even trade</li>
 <li>+1 if trade would cause target to contend a declared ambition</li>
 <li>+1 if trade would cause bot to directly or indirectly advance objective (any amount)</li>
 </ul>
