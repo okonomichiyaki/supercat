@@ -6,7 +6,8 @@
 ✦ Can bot use Dealmakers' **Bargain (Secure)** ability?
 
 - Use **Bargain (Secure)**. Use these priorities to select a card for rival to Secure and subsequent Influence and Secure actions:
-	- Imperial Council and Council Intrigue *(Select target which allows bot to Influence and Secure either of these cards, or prevent rival from Securing)*
+	- Card which gives rival smallest lead in declared ambition
+	- Imperial Council and Council Intrigue *(Select a target which allows bot to Influence and Secure either of these cards, or prevent a rival from Securing them)*
 	- Protect loyal agents
 	- Check "Influence Principles" for additional priorities
 
