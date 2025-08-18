@@ -11,10 +11,6 @@ When placing a starting city, Prefer:
 
 ## Act I
 
-✦ Does bot have more unbuilt ships than most Rivals?
-
-- Can bot build ships?
-
 ✦ Is bot Regent and winning an ambition?
 
 - Would either Govern the Imperial Reach ("A Policy of Escalation") or Imperial Foundries place Imperial Ships?
@@ -31,6 +27,10 @@ When placing a starting city, Prefer:
 ✦ Are there any loyal starports in systems without loyal ships?
 
 - Move or Build to get at least one loyal ship to each loyal starport without loyal ships
+
+✦ Does bot have more unbuilt ships than most Rivals?
+
+- Can bot build ships?
 
 ✦ Does bot have unbuilt starports and at least one claim?
 
