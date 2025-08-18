@@ -36,16 +36,50 @@ Summits
 	- Free starport on any planet
 - No: Can bot Move to get new claims on planets not controlled by the Empire?
 
-✦ Are there any Empire controlled Free cities?
+✦ Are there any Free cities controlled by the Empire?
 
 - Can bot Move to change control? *(only applicable if bot is a Regent)*
 - Can bot favorable battle to change control?
+
+✦ Is there no copy of Armistice in the Court?
+
+- Can bot Secure or Influence the Imperial Council?
+	- Choose to resolve the Edicts
 
 Founder of the Commonwealth
 : Ignore usual rules for declaring ambitions. Bot will only declare undeclared ambitions if the Commonwealth is winning or tied for first place in the ambition, and will only declare already declared ambitions if the Commonwealth is winning (not tied). When declaring, place the Commonwealth Ambition marker.
 
 Call For Armistice
-: If this bot (Founder) has the least power, attach an Armistice card to a card in the Court. Select card which bot could Secure. This bot will not Secure a card while it has an Armistice attached to it.
+: If this bot (Founder) has the least power, attach an Armistice card to a card in the Court. Select card which bot could Secure if possible. This bot will not Secure a card while it has an Armistice attached to it.
+
+## Act III
+
+✦ Are there any Free cities controlled by the Empire?
+
+- Can bot Move to change control? *(only applicable if bot is a Regent)*
+- Can bot favorable battle to change control?
+
+✦ Are there any Free cities controlled by a Rival who is not a Member of the Commonwealth?
+
+- Can bot Move to change control? *(only applicable if bot is a Regent)*
+- Can bot favorable battle to change control?
+
+✦ Can bot use Freedom Fighters' **Incite Revolt (Battle)** ability?
+
+- Prefer:
+	- Systems with no Loyal ships
+	- Imperial ships
+	- Most ships destroyed
+
+✦ Can bot Influence a card with Armistice attached with enough agents to prevent a Rival from Securing it?
+
+✦ Is there no copy of Armistice in the Court?
+
+- Can bot Secure or Influence the Imperial Council?
+	- Choose to resolve the Edicts
+
+Mass Call for Armistice
+: If no copy of Armistice is in the Court, attach an Armistice card to a card in the Court. Select card which bot could Secure if possible. This bot will not Secure a card while it has an Armistice attached to it.
 
 <div class="pagebreak"> </div>
 <#endif>
