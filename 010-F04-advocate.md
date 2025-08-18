@@ -21,18 +21,18 @@ Advocate's Demand
 Prelude
 : Only use the Prelude action of a Guild card that discards itself if bot has 2 or more Guild cards of that suit, and only if bot would still have more Guild cards than each other rival afterwards.
 
-<!-- 
 ## Act III
 
 ✦ Can bot Secure or Influence a Guild card with a suit it does not have?
 
 ✦ Can bot use Guild Investigators' **Recover (Move)** ability?
 
-✦ Can bot Secure or Influence an effective Vox card or lore card?
+✦ Do Guild cards make up half or fewer of the Court?
+
+- Can bot Secure or Influence an effective Vox card or Lore card?
 
 Prelude
 : Only use the Prelude action of a Guild card that discards itself if bot has 2 or more Guild cards of that suit.
--->
 
 <div class="pagebreak"> </div>
 <#endif>
