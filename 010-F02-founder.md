@@ -24,6 +24,8 @@ Summits
 
 ## Act II
 
+✦ Can bot Influence a card with Armistice attached with enough agents to prevent a Rival from Securing it?
+
 ✦ Can bot Tax or Secure to cause the Commonwealth to contend a declared ambition?
 
 ✦ Can bot Build a Free building?
@@ -40,10 +42,10 @@ Summits
 - Can bot favorable battle to change control?
 
 Founder of the Commonwealth
-: Bot will declare ambitions if the Commonwealth is winning or tied for first place in the ambition (place second or third ambition marker in already declared ambition only if the Commonwealth is winning). When declaring, place the Commonwealth Ambition marker.
+: Ignore usual rules for declaring ambitions. Bot will only declare undeclared ambitions if the Commonwealth is winning or tied for first place in the ambition, and will only declare already declared ambitions if the Commonwealth is winning (not tied). When declaring, place the Commonwealth Ambition marker.
 
 Call For Armistice
-: TODO
+: If this bot (Founder) has the least power, attach an Armistice card to a card in the Court. Select card which bot could Secure. This bot will not Secure a card while it has an Armistice attached to it.
 
 <div class="pagebreak"> </div>
 <#endif>
