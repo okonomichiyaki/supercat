@@ -30,6 +30,8 @@ Merchant League
 
 ## Act II and III
 
+(in Act II use the following procedures. in Act III, use the Act III only procedures first, then use these procedures)
+
 ✦ Can bot Tax or favorable battle for resources, resulting in the bot having more than half of the total resources of its type in play? *(get resources such that if the Gain Monopolies Edict were resolved, the bot take the matching Monopoly)*
 
 - Prefer: Resource matching Monopoly in the supply
@@ -49,7 +51,7 @@ Monopoly
 Prelude
 : If bot has a matching Monopoly, or the matching Monopoly is in the supply, do not spend resources for Prelude actions.
 
-## Act III
+## Act III only
 
 ✦ Is the Magnate a Regent? *(Is Closed Economy face up?)*
 
