@@ -44,10 +44,11 @@
 - Can bot Move to get at least one new claim? → Mobilization/Aggression
 <#endif>
 
-✦ Can bot use an ability on a ready Guild or lore card?
+✦ Can bot use an ability on a ready Guild or lore card? → Select suit matching ability
 
-- Select suit matching ability, then exhaust card.
-- Use ability, then go to page for card's suit if actions remaining.
+✦ Does bot have more unbuilt ships than any other Rival?
+
+- Can bot Build ships? → Construction
 
 ✦ Can bot Tax or Secure to contend undeclared ambition, take captives, or grow a lead in a declared ambition? → Administration/Aggression
 
