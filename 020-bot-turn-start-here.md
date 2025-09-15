@@ -17,7 +17,11 @@
 <#endif>- Is bot winning or tied for first place for a matching ambition?
 	- Is there an ambition marker available?
 		- Select matching card and declare, if bot is winning OR ambition not yet declared.
-		- Prefer: ambition that bot is winning
+		- Prefer:
+			- ambition that bot is winning
+			- higher number
+- Are all cards being considered the same suit?
+	- Prefer: higher number
 - Use General Priorities to select card.
 
 ✦ Can bot surpass with any card?
