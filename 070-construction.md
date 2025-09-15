@@ -28,21 +28,21 @@
 
 ✦ Can bot use an ability on a ready Guild or lore card?
 
-✦ Can bot Build or Repair to take control of a rival building? <span style="font-size: 12px;">[30,31]</span>
+✦ Can bot Build or Repair to take control of a rival building? <span style="font-size: 12px;">[31,32]</span>
 
-✦ Can bot Build to defend an undefended building? <span style="font-size: 12px;">[36]</span>
+✦ Can bot Build to defend an undefended building? <span style="font-size: 12px;">[37]</span>
 
-✦ Can bot Build any ships? <span style="font-size: 12px;">[37]</span> Prefer:
+✦ Can bot Build any ships? <span style="font-size: 12px;">[38]</span> Prefer:
 
 - ships in task force
 - fresh ships
 
-✦ Can bot Build any other starports? <span style="font-size: 12px;">[38]</span> Prefer system with<#ifdef campaign> (ignore if Flagship)<#endif>:
+✦ Can bot Build any other starports? <span style="font-size: 12px;">[39]</span> Prefer system with<#ifdef campaign> (ignore if Flagship)<#endif>:
 
 - task force
 - bot control
 
-✦ Can bot Repair any other ships or buildings? <span style="font-size: 12px;">[39]</span> Prefer:
+✦ Can bot Repair any other ships or buildings? <span style="font-size: 12px;">[40]</span> Prefer:
 
 - ships in task force
 - other ships

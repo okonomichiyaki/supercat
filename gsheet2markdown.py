@@ -156,10 +156,10 @@ def adj(a,b,k):
     return abs(int(a[k])-int(b[k])) == 1
 
 def same_priority_and_action(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and (adj(a, b, 'Priority') or equals(a, b, 'Priority')) and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and (adj(a, b, 'EffectivePriority') or equals(a, b, 'EffectivePriority')) and equals(a, b, 'Action') and both_blank(a, b, 'Condition') and both_blank(a, b, 'Prefer')
 
 def same_priority_goal_cond(a, b):
-    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and (adj(a, b, 'Priority') or equals(a, b, 'Priority')) and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
+    return equals(a, b, 'Campaign') and equals(a, b, 'Base') and (adj(a, b, 'EffectivePriority') or equals(a, b, 'EffectivePriority')) and equals(a, b, 'Goal') and equals(a, b, 'Condition') and equals(a, b, 'Prefer')
 
 def cleanup(s):
     s = s.replace("Battle", "favorable combat")
@@ -173,13 +173,20 @@ def get_rows(filename):
             result.append(row)
     return result
 
+def set_effective_priorities(rows):
+    idx = 1
+    for row in rows:
+        row['EffectivePriority'] = idx
+        idx = idx + 1
+
 def general_priorities(args, output, rows):
-    filtered = [ row for row in rows if float(row['Priority']) < 99 ]
+    filtered = [ row for row in rows if float(row['Priority']) < 99 ] # no longer makes sense since Priority = Id
     print(f"generating General Priorities from {len(rows)} rows filtered to {len(filtered)} rows")
     stmts = []
     idx = 0
+    set_effective_priorities(filtered)
     for row in filtered:
-        if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
+        if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row): # stmts[idx-1][1][0] -> [0] -> first among merged rows. will not merge more than two
             rows = stmts[idx-1][1] + [row]
             stmts[idx-1] = (merge_goals(args, rows, True), rows)
         elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][0], row):
@@ -227,14 +234,15 @@ def main():
         idx = 0
         stmts = []
         rows = [ row for row in filtered if row[suit] == BULLET ]
+        set_effective_priorities(rows)
         print(f"got {len(rows)} rows for {suit}")
         print(f"generating {suit}", end="\n")
         for row in rows:
             print(".", end="")
-            if idx > 0 and same_priority_and_action(stmts[idx-1][1][0], row):
+            if idx > 0 and same_priority_and_action(stmts[idx-1][1][-1], row): # stmts[idx-1][1][-1] -> [-1] -> LAST among merged rows. WILL merge more than two rows
                 rows = stmts[idx-1][1] + [row]
                 stmts[idx-1] = (merge_goals(args, rows), rows)
-            elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][0], row):
+            elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][-1], row):
                 rows = stmts[idx-1][1] + [row]
                 stmts[idx-1] = (merge_actions(args, rows), rows)
             else:

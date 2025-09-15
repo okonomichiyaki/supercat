@@ -6,19 +6,38 @@ If possible, influence uncontested cards with 2 agents. Otherwise, influence unc
 
 If possible, influence a contested card with one more agent than the most rival agents. Otherwise, check if the bot has enough agents: if the bot could influence with agents up to the most rival agents, and still have agents in its supply left over, then influence the card to match rival agents. Otherwise, do not influence the card.
 
+<#ifdef campaign>
+## Priority Cards
+
+A priority card is any one of the following:
+
+- adverse Vox card (Crisis negatively impacts bot)
+- card with Loyal agents at risk of capture
+- card matching declared ambition
+- card granting any bonus action card
+	- *(for example attached Faithful card, Union card, or "Call to Action" Vox card)*
+
+## Tie-breaking
+
+When choosing between cards which are otherwise equal in priority, use the following priorities to select a card to influence.
+
+- uncontested card
+- card with attached Faithful card
+- card with attached Guild card
+- card which would take most captives
+- Loyal card for outraged resource
+
+<#endif>
+<#ifdef base>
 ## Priorities
 
 When choosing between options which are otherwise equal in priority, use the following priorities to select a card to influence.
 
-<#ifdef campaign>- Lore card
-- adverse Vox card (Crisis negatively impacts bot)
-- card with attached Faithful card
-- card with attached Guild card
-<#endif>- uncontested card
+- uncontested card
 - card granting a bonus action card (for example Union card or "Call to Action" Vox card)
 - card which would take most captives
 - Loyal card for outraged resource
 
 If further tie breaking is necessary, prefer the card with more keys.
-
+<#endif>
 <div class="pagebreak"> </div>

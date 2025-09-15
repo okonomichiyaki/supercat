@@ -30,7 +30,7 @@
 ✦ Can bot use an ability on a ready Guild or lore card?
 
 <#ifdef base>
-✦ Can bot Influence a card? <span style="font-size: 12px;">[27]</span> Prefer:
+✦ Can bot Influence a card? <span style="font-size: 12px;">[28]</span> Prefer:
 
 - defend Loyal agents on contested card
 - icon to contend a declared ambition, if Secured
@@ -41,30 +41,34 @@
 <#endif>
 
 <#ifdef campaign>
-✦ Can bot Influence a card? <span style="font-size: 12px;">[28]</span>
+✦ Can bot Influence a priority card? <span style="font-size: 12px;">[29]</span>
 <#endif>
 
 <#ifdef campaign>
 ✦ Would bot contend a declared ambition with the Imperial Trust?
 
-- Can bot Influence the Imperial Council? <span style="font-size: 12px;">[29]</span>
+- Can bot Influence the Imperial Council? <span style="font-size: 12px;">[30]</span>
 <#endif>
 
 <#ifdef campaign>
-✦ Can bot Move to take control of rival city or Free city? <span style="font-size: 12px;">[32]</span>
+✦ Can bot Move to take control of rival city or Free city? <span style="font-size: 12px;">[33]</span>
 <#endif>
 
 <#ifdef base>
-✦ Can bot Move to take control of rival city? <span style="font-size: 12px;">[33]</span>
+✦ Can bot Move to take control of rival city? <span style="font-size: 12px;">[34]</span>
 <#endif>
 
-✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[44]</span> Prefer:
+<#ifdef campaign>
+✦ Can bot Influence any other card? <span style="font-size: 12px;">[45]</span>
+<#endif>
+
+✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[46]</span> Prefer:
 
 - take control adjacent to rival starport
 - take or neutralize control adjacent to loyal starport
 
 ✦ Are there any ships not controlling gates or claims or rival buildings?
 
-- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[45]</span>
+- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[47]</span>
 
 <div class="pagebreak"> </div>
