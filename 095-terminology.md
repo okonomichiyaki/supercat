@@ -24,10 +24,6 @@ effective
 favorable combat
 : a series of Move and Battle actions that the bot considers likely to result in a specific goal (see "Combat Principles")
 
-gain
-: any single action, other than Battle, which enables a bot to get a resource
-*e.g. Mining Interest's Manufacture (Build) ability*
-
 new resources
 : type of resource that bot does not have OR type of planet bot does not have a city on
 
