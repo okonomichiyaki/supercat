@@ -37,12 +37,29 @@ Imperial Council Decided
 
 ## Act II
 
-✦ Can bot Secure or Influence a lore card? *(or a card in the Court with an attached lore card)*
+✦ Can bot Secure or Influence a lore card?
+*(or a card in the Court with an attached lore card)*
 
 ✦ Can bot Secure or Influence Librarians?
 
 Librarians
 : Bot will always use the ability to draw and attach a lore card
+
+## Act III
+
+✦ Can bot Secure or Influence a lore card?
+
+✦ Does bot have no Golems?
+
+- Can bot favorable battle to steal one or more Golems?
+
+### Grand Ambitions
+
+✦ Does bot have only one Golem and only one lore card?
+
+- Yes: Is this the end of the third or fourth chapter?
+	- Bot will scrap both a lore card and then a Golem
+- No: Bot will scrap a lore card and then a Golem
 
 <div class="pagebreak"> </div>
 <#endif>
