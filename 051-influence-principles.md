@@ -1,50 +1,37 @@
 # Influence Principles
 
-When Influencing cards in the court, the bot will follow these guidelines. An uncontested card is a card in the court with no agents *(no Loyal agents and no Rival agents)*. A contested card is a card in the court which a Rival could Secure *(a Rival has more agents than each other Rival)*.
+When Influencing cards in the court, the bot will follow these guidelines.
 
-If possible, influence uncontested cards with 2 agents.
-Otherwise, influence uncontested cards with 1 agent.
+If possible, influence uncontested cards with 2 agents. Otherwise, influence uncontested cards with 1 agent. If possible, Influence contested cards with 1 more agent than Rival with most agents.
 
-<!--
-*(if the bot has 2 actions and 2 available agents, and procedures direct the bot to Influence an uncontested card, bot will spend 2 actions to place 2 agents)*
--->
+Defending Loyal agents on a contested card means preventing their capture by a Rival who could Secure the card. When defending Loyal agents, roll 1d6 and compare the result to the most Rival agents currently on the card.
 
-If possible, Influence contested cards with 1 more agent than Rival with most agents.
-*(Influence such that bot could Secure the card, but do not Influence more than the minimum needed to Secure)*
+- If the die roll is greater than most Rival agents, Outbid:
+	- Influence with one more agent than Rival with most agents
+- If die roll is equal to most Rival agents Block:
+	- Influence with agents up to Rival with most agents, but first:
+		- Check if bot would have no agents remaining, then Abandon instead.
+- If die roll is less than most Rival agents, Abandon:
+	- Do not Influence card at all
 
-Defending Loyal agents on a contested card means preventing their capture by a Rival who can Secure the card. When defending Loyal agents bot will carry out one of three possible choices:
+### Critical Court cards
 
-- Outbid: Influence with one more agent than Rival with most agents *(potentially allowing bot to Secure)*
-- Block: Influence with agents up to Rival with most agents *(preventing the Rival from Securing and taking captives)*
-- Abandon: do not Influence at all
-
-Roll 1d6 and compare the result to the most Rival agents currently on the card.
-If the die roll is greater than most Rival agents, bot will Outbid.
-If die roll is equal to most Rival agents, bot will Block.
-If die roll is less than most Rival agents, bot will Abandon.
-
-Additionally, before Blocking, check if any agents would remain in bot's supply. If the bot cannot Influence with agents up to Rival with most agents and still have at least one agent in its supply left over, then Abandon instead.
-
-## Critical Court cards
-
-Critical Court cards are cards in the Court which the bot is more interested in Influencing and Securing than others. When procedures direct bot to Influence or Secure a Critical Court card, select cards from the priority list below.
+When procedures direct bot to Influence or Secure a Critical Court card, select cards from the priority list below.
 
 - an adverse Vox card (Vox card with a Crisis which negatively impacts bot)
 - a card which would result in bot contending a declared ambition, if Secured
 - an effective Vox card
 - a card granting any bonus action card
-	- *(for example any Faithful card, Union card, or "Call to Action" Vox card)*
 - any non-Vox card with any other non-Vox card attached to it
-	- *(for example, a Guild card with an attached Faithful card, or a Guild card with an attached lore card. but NOT a Vox card with an attached Faithful card, etc.)*
 
-## Tie-breaking
+### Tie-breaking
 
-When choosing between two or more cards which are otherwise equal in priority, use the following priorities to select a card to influence.
+Use the following priorities to select between two or more cards of equal priority:
 
 - uncontested card
 - card with attached Faithful, Guild, or lore card
 - card which would take most captives
-- "Loyal" card matching an Outrage type *(for example, "Loyal Marines" if bot has Weapon Outrage)*
-- card with more keys.
+- "Loyal" card matching an Outrage type
+- card with more keys
 
 <div class="pagebreak"> </div>
