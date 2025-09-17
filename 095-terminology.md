@@ -10,7 +10,11 @@ contend
 : take an action causing bot to improve its position with respect to an ambition AND bot will be either winning or tied for first or second place (see "Clarifications")
 
 contested card
-: court card with bot agents and rival agents, and more rival agents than bot agents
+: card in the court which a Rival could Secure
+
+critical court card
+: card in the court which bot is more interested in Influencing and Securing
+(see "Influence Principles")
 
 critical
 : some Fates consider Event cards critical, and will automatically seize initiative if an Event is played
@@ -43,7 +47,7 @@ unclaimed
 : system that is not controlled by a rival
 
 uncontested card
-: court card with no agents
+: court card with no agents *(no Loyal agents and no Rival agents)*
 
 undeclared ambition
 : ambition that has not been declared yet AND there are markers available

@@ -1,43 +1,37 @@
 # Influence Principles
 
-When influencing cards in the court, the bot will follow these guidelines.
+When Influencing cards in the court, the bot will follow these guidelines.
 
-If possible, influence uncontested cards with 2 agents. Otherwise, influence uncontested cards with 1 agent. *(in other words, if the bot has 2 actions and 2 available agents, and procedures direct the bot to influence an uncontested card, bot will spend 2 actions to place 2 agents)*
+If possible, influence uncontested cards with 2 agents. Otherwise, influence uncontested cards with 1 agent. If possible, Influence contested cards with 1 more agent than Rival with most agents.
 
-If possible, influence a contested card with one more agent than the most rival agents. Otherwise, check if the bot has enough agents: if the bot could influence with agents up to the most rival agents, and still have agents in its supply left over, then influence the card to match rival agents. Otherwise, do not influence the card.
+Defending Loyal agents on a contested card means preventing their capture by a Rival who could Secure the card. When defending Loyal agents, roll 1d6 and compare the result to the most Rival agents currently on the card.
 
-<#ifdef campaign>
-## Priority Cards
+- If the die roll is greater than most Rival agents, Outbid:
+	- Influence with one more agent than Rival with most agents
+- If die roll is equal to most Rival agents Block:
+	- Influence with agents up to Rival with most agents, but first:
+		- Check if bot would have no agents remaining, then Abandon instead.
+- If die roll is less than most Rival agents, Abandon:
+	- Do not Influence card at all
 
-A priority card is any one of the following:
+### Critical Court cards
 
-- adverse Vox card (Crisis negatively impacts bot)
-- card with Loyal agents at risk of capture
-- card matching declared ambition
-- card granting any bonus action card
-	- *(for example attached Faithful card, Union card, or "Call to Action" Vox card)*
+When procedures direct bot to Influence or Secure a Critical Court card, select cards from the priority list below.
 
-## Tie-breaking
+- an adverse Vox card (Vox card with a Crisis which negatively impacts bot)
+- a card which would result in bot contending a declared ambition, if Secured
+- an effective Vox card
+- a card granting any bonus action card
+- any non-Vox card with any other non-Vox card attached to it
 
-When choosing between cards which are otherwise equal in priority, use the following priorities to select a card to influence.
+### Tie-breaking
 
-- uncontested card
-- card with attached Faithful card
-- card with attached Guild card
-- card which would take most captives
-- Loyal card for outraged resource
-
-<#endif>
-<#ifdef base>
-## Priorities
-
-When choosing between options which are otherwise equal in priority, use the following priorities to select a card to influence.
+Use the following priorities to select between two or more cards of equal priority:
 
 - uncontested card
-- card granting a bonus action card (for example Union card or "Call to Action" Vox card)
+- card with attached Faithful, Guild, or lore card
 - card which would take most captives
-- Loyal card for outraged resource
+- "Loyal" card matching an Outrage type
+- card with more keys
 
-If further tie breaking is necessary, prefer the card with more keys.
-<#endif>
 <div class="pagebreak"> </div>
