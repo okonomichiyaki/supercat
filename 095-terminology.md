@@ -40,8 +40,8 @@ ready/exhausted
 task force
 : group of bot ships with the most fresh ships
 
-unbuilt city
-: a loyal city on bot's board (not a destroyed city in a rival's trophy area)
+unbuilt
+: ship, city, or starport which is available to build *(not in a Rival's trophy area)*
 
 unclaimed
 : system that is not controlled by a rival
