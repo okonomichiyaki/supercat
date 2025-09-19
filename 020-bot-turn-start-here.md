@@ -19,7 +19,7 @@
 		- Select matching card and declare, if bot is winning OR ambition not yet declared.
 		- Prefer:
 			- ambition that bot is winning
-			- higher number
+			- more pips
 - Are all cards being considered the same suit?
 	- Prefer: higher number
 - Use General Priorities to select card.
