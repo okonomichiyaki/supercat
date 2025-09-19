@@ -12,8 +12,8 @@ contend
 contested card
 : card in the court which a Rival could Secure
 
-critical court card
-: card in the court which bot is more interested in Influencing and Securing
+critical card
+: card in the court which bot will prioritize for Influence and Secure
 (see "Influence Principles")
 
 critical
