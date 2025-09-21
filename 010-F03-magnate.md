@@ -11,6 +11,8 @@
 
 ✦ Can bot Secure or Influence the Imperial Council?
 
+- If Secured, call a Summit
+
 Events
 : If objective marker is greater than zero, events are critical.
 
@@ -34,15 +36,26 @@ Merchant League
 
 ✦ Can bot Tax or favorable battle for resources, resulting in the bot having more than half of the total resources of its type in play? *(get resources such that if the Gain Monopolies Edict were resolved, the bot take the matching Monopoly)*
 
-- Prefer: Resource matching Monopoly in the supply
+- Prefer:
+	- Resource matching Monopoly in the supply
+	- Resource matching Monopoly held by a Rival
+	- Resource matching Monopoly held by bot
 
-✦ Can bot Secure or Influence the Imperial Council?
+✦ Is bot a Regent but not First Regent?
+
+- If bot were First Regent, would bot have more than half of the total resources of a type in play via the Imperial Trust?
+
+- Can bot Secure or Influence the Imperial Council?
+
+✦ Would bot gain a Monopoly if the Edicts were resolved?
+
+- Can bot Secure or Influence the Imperial Council?
 
 Events
 : If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered critical.
 
 Imperial Council Decided
-: If bot has more than half of the total resources of any type in play, bot will resolve Edicts.
+: If bot would gain a Monopoly, bot will resolve Edicts.
 
 Monopoly
 : Bots holding a Monopoly will never consent to the matching resource type being given.
