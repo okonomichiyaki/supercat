@@ -1,74 +1,67 @@
 # Mobilization - Move | Influence
 
-✦ (ignore for Flagship) Does bot have no starport and no claims?
+✦ Does bot have no starport and no claims?
 
-- Can bot Move to get new claims? <span style="font-size: 12px;">[10]</span>
+- Can bot Move to get new claims? <span style="font-size: 12px;">[5]</span>
 
 <#ifdef campaign>
-✦ (Flagship only) Does bot have no starport and cannot Build upgrades or armor at the Flagship planet?
+✦ Does bot have no starport and cannot Build upgrades or armor at the Flagship planet?
 
-- Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[11]</span>
+- Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[6]</span>
 <#endif>
 
-✦ Are any loyal buildings controlled by a rival?
+✦ Are any Loyal buildings controlled by a Rival?
 
-- Can bot Move to change control? <span style="font-size: 12px;">[14]</span>
+- Can bot Move to change control? <span style="font-size: 12px;">[9]</span>
 
-✦ (ignore for Flagship) Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
+✦ Can bot Influence to defend Loyal agents on a contested card? <span style="font-size: 12px;">[11]</span>
 
-- Can bot Move to get at least one new claim? <span style="font-size: 12px;">[20]</span> Prefer:
+<#ifdef campaign>
+✦ Is it the last Chapter of Act I or Act II?
+
+- Can bot Move ships to Loyal buildings in systems with Blight and no ships? <span style="font-size: 12px;">[13]</span>
+<#endif>
+
+✦ Does bot have unbuilt cities and fewer claims than <#ifdef base>unbuilt cities<#endif><#ifdef campaign>half number of unbuilt cities<#endif>?
+
+- Can bot Move to get at least one new claim? <span style="font-size: 12px;">[17]</span> Prefer:
 	- new resources
 	- unclaimed
 	- two slot planets
 
 <#ifdef campaign>
-✦ (Flagship only) Does bot have unbuilt cities and cannot Build upgrades or armor at the Flagship planet?
+✦ Does bot have unbuilt cities and cannot Build upgrades or armor at the Flagship planet?
 
-- Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[21]</span>
+- Can bot Move Flagship to planet matching unbuilt upgrades or armor? <span style="font-size: 12px;">[18]</span>
 <#endif>
 
 ✦ Can bot use an ability on a ready Guild or lore card?
 
-<#ifdef base>
-✦ Can bot Influence a card? <span style="font-size: 12px;">[29]</span> Prefer:
-
-- defend Loyal agents on contested card
-- icon to contend a declared ambition, if Secured
-- icon to contend an undeclared ambition, if Secured
-- effective Vox
-- Weapon icon
-- icon to grow a lead in a declared ambition
-<#endif>
-
-<#ifdef campaign>
-✦ Can bot Influence a priority card? <span style="font-size: 12px;">[30]</span>
-<#endif>
+✦ Can bot Influence a critical card? <span style="font-size: 12px;">[21]</span>
 
 <#ifdef campaign>
 ✦ Would bot contend a declared ambition with the Imperial Trust?
 
-- Can bot Influence the Imperial Council? <span style="font-size: 12px;">[31]</span>
+- Can bot Influence the Imperial Council? <span style="font-size: 12px;">[22]</span>
 <#endif>
 
 <#ifdef campaign>
-✦ Can bot Move to take control of rival city or Free city? <span style="font-size: 12px;">[34]</span>
+✦ Can bot Move to take control of Rival city or Free city? <span style="font-size: 12px;">[25]</span>
 <#endif>
 
 <#ifdef base>
-✦ Can bot Move to take control of rival city? <span style="font-size: 12px;">[35]</span>
+✦ Can bot Move to take control of Rival city? <span style="font-size: 12px;">[26]</span>
 <#endif>
 
-<#ifdef campaign>
-✦ Can bot Influence any other card? <span style="font-size: 12px;">[46]</span>
-<#endif>
+✦ Can bot Influence any other card? <span style="font-size: 12px;">[39]</span>
 
-✦ Can bot Move to change control of a rival-controlled gate? <span style="font-size: 12px;">[47]</span> Prefer:
+✦ Can bot Move to change control of a Rival-controlled gate? <span style="font-size: 12px;">[40]</span> Prefer:
 
-- take control adjacent to rival starport
-- take or neutralize control adjacent to loyal starport
+- take control adjacent to Rival starport
+- take or neutralize control adjacent to Loyal starport
 
-✦ Are there any ships not controlling gates or claims or rival buildings?
+✦ Are there any ships not controlling gates or claims or Rival buildings?
 
-- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[48]</span>
+- Can bot Move to unassigned ships to task force (use partial move)? <span style="font-size: 12px;">[41]</span>
 
 <div class="pagebreak"> </div>
