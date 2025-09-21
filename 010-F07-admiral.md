@@ -38,25 +38,23 @@ When placing a starting city, Prefer:
 
 ## Act II
 
+✦ Can bot Tax, Secure, or use Court Enforcers' Abduct (Battle) ability to take captives from a Regent?
+
+✦ Can bot Secure or Influence Court Enforcers?
+
+✦ Can bot Build, Repair, Move or favorable combat to get Empire control of a planet or to take control of a Rival Regent's city?
+
+✦ Can bot Influence a card with more agents than a Rival Regent?
+
 ✦ Does bot have more unbuilt ships than most Rivals?
 
 - Can bot build ships?
 
+✦ Can bot favorable combat for trophies against an Outlaw?
+
 ✦ Does bot have no Weapon resources?
 
 - Can bot Tax to get a Weapon resource?
-
-✦ Can bot Secure or Influence Court Enforcers?
-
-✦ Can bot Tax, Secure, or use Court Enforcers' Abduct (Battle) ability to take captives from a Regent?
-
-✦ Can bot Build, Repair, or Move to get Empire control of a planet?
-
-✦ Can bot Build, Repair, or Move to take control of a Rival Regent's city?
-
-✦ Can bot Influence a card with more agents than a Rival Regent?
-
-✦ Can bot favorable combat for trophies against an Outlaw?
 
 ✦ Can bot Secure or Influence Rogue Admirals or Imperial Defectors?
 
