@@ -6,7 +6,8 @@
 Place 2 cities instead of a city and a starport. Prefer:
 <ul>
 <li>planets matching suits on guild cards in the initial court</li>
-<li>planets with 2 different suits</li>
+<li>planets with a single building slot</li>
+<li>planets with different suits</li>
 </ul>
 </dd>
 
@@ -29,6 +30,10 @@ Since Faithful cards enable any type of action, they are not selected normally v
 
 ## Act II
 
+✦ Does a Rival have "The Young Light" ?
+
+- Can bot favorable combat to steal "The Young Light" ?
+
 ✦ Can bot Tax, Secure, or favorable battle to improve its position in an ambition with an Ideal marker? *(any improvement in the bot's ranking for the ambition, not just first or second place)*
 
 <!--
@@ -48,10 +53,21 @@ If true, do not draw 2 cards, simply play the Faithful card and declare the ambi
 -->
 
 The Young Light
-: Bot will use this Prelude ability whenever possible. *(discard an action card to take a played Faithful card. decrement the bot's hand counter to represent discarding an action card)*
+: Bot will use this Prelude ability whenever possible. *(bot's hand counter must be 1 or greater. at the end of the round, place the Faithful card in the bot's play area. do not change the bot's hand counter)*
 
 Set Doctrine
 : If bot can Secure to contend an ambition, switch to Wisdom. If bot can Tax or favorable combat to contend an ambition, switch to Zeal. Otherwise do not switch.
+
+# Act III
+
+When bot has the initiative and there are undeclared ambitions, if a Faithful card is available (either among those drawn or in the bot's play area), then bot will always lead with a Faithful card and declare an undeclared ambition. Prefer:
+
+- ambition bot is winning or tied for first place
+- ambition for which bot is currently in third place
+- ambition for which no rival is winning or tied for first place
+
+The Prophet
+: Bot will use this Prelude ability whenever possible. *(bot's hand counter must be 1 or greater. at the end of the round, place the Faithful card in the bot's play area. do not change the bot's hand counter)*
 
 <div class="pagebreak"> </div>
 <#endif>
