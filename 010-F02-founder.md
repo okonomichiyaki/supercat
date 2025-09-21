@@ -14,7 +14,7 @@
 - Spend additional actions if needed to execute Move
 
 Parade Fleets
-: Place ships where bot would gain control. If bot is a Regent, become an Outlaw.
+: If bot has the initiative would not otherwise declare an undeclared ambition *(i.e. bot is not winning or tied for first place)* declare an ambition no rival is winning. Place ships where bot would gain control. If bot is a Regent, become an Outlaw.
 
 Events
 : If bot is a Regent, then Event cards are critical.
@@ -26,7 +26,7 @@ Summits
 
 ✦ Can bot Influence a card with Armistice attached with enough agents to prevent a Rival from Securing it?
 
-✦ Can bot Tax or Secure to cause the Commonwealth to contend a declared ambition?
+✦ Can bot Tax or Secure to cause the Commonwealth to contend the Commonwealth ambition?
 
 ✦ Can bot Build a Free building?
 
@@ -35,6 +35,10 @@ Summits
 	- Free city on a planet without a Free city
 	- Free starport on any planet
 - No: Can bot Move to get new claims on planets not controlled by the Empire?
+
+✦ Does bot have more unbuilt ships than unbuilt Imperial ships?
+
+- Can bot build ships?
 
 ✦ Are there any Free cities controlled by the Empire?
 
