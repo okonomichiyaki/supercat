@@ -6,6 +6,8 @@
 ✦ Are there any Hammer Fragment tokens on the map?
 
 - Can bot Repair to take a Hammer Fragment token?
+	- Prefer:
+		- Hammer Fragments where fewest Loyal ships
 - Can bot Build, Repair, Move, or favorable battle to take control of a Hammer Fragment token?
 
 ✦ Can bot use Planet Hammer's **Prepare (Build)** ability?
@@ -21,6 +23,9 @@
 
 Sycophants
 : Bot will not use the Prelude ability to place ships
+
+Slipstream Drive
+: Bot will use Slipstream Drive to catapult move for control of a hammer fragment if such a move is possible. Use Movement Principles to carry out move, and prefer moving ships.
 
 <div class="pagebreak"> </div>
 <#endif>
