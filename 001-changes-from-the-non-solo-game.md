@@ -5,5 +5,7 @@ This aims to be an exhaustive list of every deviation from how original, non-sol
 - trick-taking card play: abstract hands for bots
 - Partisan "Informants"
 - difficulty modifiers
-- negotiation minigame
-- Pathfinder portal deduction minigame
+- (campaign) the solo player will have less information about what Faithful cards will be played during a round: they don't know exactly which Rival has Faithful cards, which differs compared to the multiplayer game
+- (campaign) negotiation minigame
+- (campaign) Pathfinder portal deduction minigame
+
