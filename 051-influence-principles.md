@@ -32,6 +32,7 @@ Critical cards are cards in the Court which the bot is more interested in Influe
 
 - an adverse Vox card (Vox card with a Crisis which negatively impacts bot)
 - a card which would result in bot contending a declared ambition, if Secured
+	- *(this includes the Imperial Council, if bot could contend a declared via the Imperial Trust, by becoming First Regent OR by stealing from the Trust as an Outlaw)*
 - an effective Vox card
 - a card granting any bonus action card
 	- *(for example any Faithful card, Union card, or "Call to Action" Vox card)*
@@ -52,7 +53,8 @@ When procedures direct bot to Influence or Secure any other Court card, select c
 
 When choosing between two or more cards (either Critical or non-Critical) which are otherwise equal in priority, use the following priorities to select a card to influence.
 
-- uncontested card, if bot can influence with 2 agents
+- uncontested card
+	- only if bot is Influencing with 2 agents
 - card with attached Faithful, Guild, or lore card
 - card which would take most captives
 - "Loyal" card matching an Outrage type *(for example, "Loyal Marines" if bot has Weapon Outrage)*
