@@ -9,8 +9,10 @@ nav#toc-fates {
     top: 0;
 }
 
-@media print {
-    .pagebreak { page-break-before: always; }
+@media only screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
 }
 
 html {
@@ -259,6 +261,8 @@ table td {
   }
 }
 @media print {
+  .pagebreak { page-break-before: always; }
+
   .no-print, .no-print * {
     display: none !important;
   }
