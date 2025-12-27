@@ -80,7 +80,7 @@ At the end of the chapter, shuffle all action cards from the discard pile, any r
 
 ## Playing a bot turn
 
-At the start of a bot's turn, check the hand counter. If it is showing 1 or greater, the bot has cards remaining and will play one. Draw 2 action cards from the facedown stack and decrement the counter. The procedures on the "Bot Turn" page will select one of the cards for the bot to play, and also determine whether the bot declares an ambition or seizes the initiative. At that point, discard the other card, and continue with the procedures to execute the bot's turn.
+At the start of a bot's turn, check the hand counter. If it is showing 1 or greater, the bot has cards remaining and will play one. Draw 2 action cards from the facedown stack and decrement the counter. The procedures on the "Bot Turn" page will select one of the cards for the bot to play, and also determine whether the bot declares an ambition (if playing the lead card) or seizes the initiative (if it does not have the initiative). At that point, discard the other card, and continue with the procedures to execute the bot's turn.
 
 ### Bonus cards
 
