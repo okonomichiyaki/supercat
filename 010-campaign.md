@@ -57,7 +57,7 @@ When a Summit occurs, after the "Call to Order" phase, follow this sequence of p
 - Determine the number of rounds: roll 1d6 and add 1 per bot
 - Player(s) may settle Grievances with favors:
 	- if a player returns a favor to a bot *(without forcing any Negotiation actions)* or gives one of their agents to a bot as a favor, reduce the bot's Grievances matching the player by one
-- Starting with the bot or player with initiative, conduct Negotiation rounds
+- Starting with the bot or player who called the Summit, conduct Negotiation rounds
 - On a player's round, they may attempt an exchange of Negotiation actions with a bot.
 	- If the exchange is successful, they must pass to next player or bot in turn order
 	- After 3 consecutive failures, they must pass to next player or bot in turn order
