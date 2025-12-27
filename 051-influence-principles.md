@@ -30,6 +30,7 @@ Additionally, before Blocking, check if any agents would remain in bot's supply.
 
 Critical cards are cards in the Court which the bot is more interested in Influencing and Securing than others. When procedures direct bot to Influence or Secure a Critical card, select cards from the priority list below.
 
+<#ifdef campaign>
 - an adverse Vox card (Vox card with a Crisis which negatively impacts bot)
 - a card which would result in bot contending a declared ambition, if Secured
 	- *(this includes the Imperial Council, if bot could contend a declared via the Imperial Trust, by becoming First Regent OR by stealing from the Trust as an Outlaw)*
@@ -38,6 +39,15 @@ Critical cards are cards in the Court which the bot is more interested in Influe
 	- *(for example any Faithful card, Union card, or "Call to Action" Vox card)*
 - any non-Vox card with any other non-Vox card attached to it
 	- *(for example, a Guild card with an attached Faithful card, or a Guild card with an attached lore card. but NOT a Vox card with an attached Faithful card, etc.)*
+<#endif>
+<#ifdef base>
+- a card which would result in bot contending a declared ambition, if Secured
+- an effective Vox card
+- a card granting any bonus action card
+	- *(for example any Union card, or "Call to Action" Vox card)*
+- "Loyal" card matching an Outrage type
+	- *(for example, "Loyal Marines" if bot has Weapon Outrage)*
+<#endif>
 
 ## non-Critical cards
 
@@ -53,11 +63,10 @@ When procedures direct bot to Influence or Secure any other Court card, select c
 
 When choosing between two or more cards (either Critical or non-Critical) which are otherwise equal in priority, use the following priorities to select a card to influence.
 
-- uncontested card
-	- only if bot is Influencing with 2 agents
+- uncontested card<#ifdef campaign>
 - card with attached Faithful, Guild, or lore card
+<#endif>
 - card which would take most captives
-- "Loyal" card matching an Outrage type *(for example, "Loyal Marines" if bot has Weapon Outrage)*
 - card with more keys
 
 <div class="pagebreak"> </div>
