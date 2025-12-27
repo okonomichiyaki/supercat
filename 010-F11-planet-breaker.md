@@ -3,29 +3,39 @@
 
 ## Act II
 
-✦ Are there any Hammer Fragment tokens on the map?
+<!--
+TODO: needs "stateful" procedures? get fragments & build fleet before "Prepare"
+TODO: at least needs some guidance on "favorable" target selection
+-->
 
-- Can bot Repair to take a Hammer Fragment token?
+✦ Are there any Hammer Fragments on the map?
+
+- Can bot Repair to take a Hammer Fragment?
 	- Prefer:
-		- Hammer Fragments where fewest Loyal ships
-- Can bot Build, Repair, Move, or favorable battle to take control of a Hammer Fragment token?
+		- Hammer Fragment where fewest Loyal ships
+- Can bot Build, Repair, Move, or favorable battle to take control of a Hammer Fragment?
+
+✦ Can bot use Planet Hammer's **Break World (Battle)** ability?
 
 ✦ Can bot use Planet Hammer's **Prepare (Build)** ability?
 
 - Prefer:
-	- planet with most intercept response *(fresh ships plus fresh starports on Flagship if Defense Array upgrade has been built)*
-
-✦ Can bot use Planet Hammer's **Break World (Battle)** ability?
-
-<!-- TODO: guidance on "favorable" planet hammer usage -->
+	- planet with most fresh Loyal ships plus fresh starports on Flagship (only count if Defense Array upgrade has been built)
+	- planet with most buildings
 
 ✦ Can bot Build, Repair, or Move to control a planet which is not a Broken World?
 
 Sycophants
-: Bot will not use the Prelude ability to place ships
+: Bot will not use the Prelude discard ability to place ships
 
 Slipstream Drive
-: Bot will use Slipstream Drive to catapult move for control of a hammer fragment if such a move is possible. Use Movement Principles to carry out move, and prefer moving ships.
+: Bot will use Slipstream Drive to catapult move for control of a Hammer Fragment if such a move is possible. Use Movement Principles to carry out move, and prefer moving ships.
+
+## Act III
+
+✦ Are there equal to or fewer buildings on the Breaking Worlds card than the current Chapter?
+
+- Follow Act II procedures
 
 <div class="pagebreak"> </div>
 <#endif>

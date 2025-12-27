@@ -7,7 +7,12 @@
 
 ✦ Can bot use Guild Investigators' **Recover (Move)** ability?
 
+- *(if the court discard pile is empty, consider if bot will use a Prelude action that discards itself this turn. note Union cards are not discarded until the end of the round)*
+
 ✦ Can bot favorable combat to steal a Guild card with a Prelude action that discards itself?
+
+Prelude
+: If bot has not achieved its objective, use the Prelude action of any Guild card that discards itself if action benefits bot in any way.
 
 ## Act II
 

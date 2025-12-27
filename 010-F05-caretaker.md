@@ -9,7 +9,7 @@ Warrior
 : Use if trophies would result in bot contending for warlord
 
 Protector
-: Use if bot has two or more damaged ships. Repair only Loyal ships.
+: Use if bot has two or more damaged ships. Repair all Loyal ships, and if Regent all Imperial ships with Loyal ships. If Regent, roll 1d6 for each other damaged Imperial ship and repair if result greater than bot's Imperial grievances.
 
 Seeker
 : Use like Fuel *(only for a Combat card)*
