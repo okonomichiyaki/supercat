@@ -73,17 +73,7 @@ def ids(rows):
     i = ",".join(ps)
     return f"<span style=\"font-size: 12px;\">[{i}]</span>"
 
-def get_flagship(args, row):
-    if not args.campaign:
-        return ""
-    if row['No Flagship'] == 'x':
-        return "(ignore for Flagship)"
-    elif row['Flagship'] == 'x':
-        return "(Flagship only)"
-    return ""
-
 def build_statement(args, row, general=False):
-    fs = get_flagship(args, row)
     cond = row['Condition']
     pref = row['Prefer']
     action = row['Action']
@@ -97,11 +87,11 @@ def build_statement(args, row, general=False):
     quest = f"Can bot {action} {thing}? {id_}"
     lines = []
     if cond != "":
-        lines.append(f"✦ {fs} {cond}")
+        lines.append(f"✦ {cond}")
         lines.append("")
         lines.append(f"- {quest}")
     else:
-        lines.append(f"✦ {fs} {quest}")
+        lines.append(f"✦ {quest}")
     if general:
         lines[-1] = lines[-1] + " → " + "/".join(get_suits([row]))
     else:
