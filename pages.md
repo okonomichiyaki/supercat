@@ -13,10 +13,12 @@
 010-F09-pathfinder-portal-letter-tiles.md
 010-F10-hegemon.md
 010-F11-planet-breaker.md
+010-F12-pirate.md
 010-F13-blight-speaker.md
 010-F14-pacifist.md
 010-F15-peacekeeper.md
 010-F16-warden.md
+010-F17-overlord.md
 020-bot-turn-start-here.md
 030-general-priorities.md
 040-prelude.md
