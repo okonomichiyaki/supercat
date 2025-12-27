@@ -1,11 +1,22 @@
-## Differences to the non-solo game
+## Differences from the non-solo game
 
-This aims to be an exhaustive list of every deviation from how original, non-solo Arcs plays. This includes optional difficulty modifiers and campaign specific rules, and is ordered roughly from most significant to least significant.
+This is an exhaustive list of every way in which playing with SUPERCAT differs from the original Arcs rules, including optional difficulty modifiers and campaign specific rules. If you believe the bot breaks from the original Arcs rules in any way which is not listed here, that is either a misunderstanding, something accidentally omitted from this page, or a bug. Please report it in the BGG thread for correction or clarification!
 
-- trick-taking card play: abstract hands for bots
-- Partisan "Informants"
+### base game
+
+- changes to the card mechanics:
+	- cards may end up being played more than once per round
+	- abstract hands for bots
 - difficulty modifiers
-- (campaign) the solo player will have less information about what Faithful cards will be played during a round: they don't know exactly which Rival has Faithful cards, which differs compared to the multiplayer game
-- (campaign) negotiation minigame
-- (campaign) Pathfinder portal deduction minigame
+	- optional but strongly suggested
 
+### campaign
+
+*(in addition to above changes to the base game)*
+
+- Faithful cards are not trackable
+- Event card probability
+- Negotiation minigame
+- Partisan: "Informants"
+- Hegemon: "Mind Managers"
+- Pathfinder: deduction minigame
