@@ -28,7 +28,7 @@ See "Combat principles" for more details on Fuel, Weapon, and Psionic usage.
 
 Bot will discard some Guild card for their Prelude ability at the first opportunity.
 
-Bot will discard a Weapon Guild card for Prelude ability if it has 3 ships available. Place ships at starport with most fresh ships, otherwise with task force.
+Bot will discard a Weapon Guild card for Prelude ability if it has 3 ships available. Place ships at Loyal starport with most fresh ships, otherwise with task force.
 
 Bot will discard all Union cards to gain bonus action cards. Place action card in bot's play area, and increment bot's hand counter.
 
