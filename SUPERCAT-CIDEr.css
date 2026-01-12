@@ -1,4 +1,6 @@
-/* 
+/* this worked with cider desktop version 0.4.13 */
+
+/*
 .card .left-panel .value {
     background-color: limegreen;
 }
@@ -13,8 +15,8 @@
 }
 .card .left-panel .ambition {
     background-color: gold;
-} */
-
+}
+*/
 .card {
     background-color: white;
     width: 784px;
@@ -111,11 +113,12 @@
     font-variant: small-caps;
 }
 .card .left-panel .suit {
+    width: 500px;
     text-align: right;
-    writing-mode: sideways-lr;
+    transform: rotate(-90deg);
     flex: 10 1;
     font-size: 50px;
-    font-weight: 1000;
+    font-weight: bolder;
 }
 .card .left-panel .suit .actions {
     font-size: 35px;
