@@ -1,4 +1,5 @@
 000-SUPERCAT.md
+001-changes-from-the-non-solo-game.md
 010-campaign.md
 010-F01-steward.md
 010-F02-founder.md

@@ -20,3 +20,5 @@ This is a list of every way in which playing with SUPERCAT differs from playing 
 - Partisan: "Informants"
 - Hegemon: "Mind Managers"
 - Pathfinder: deduction minigame
+
+<div class="pagebreak"></div>
