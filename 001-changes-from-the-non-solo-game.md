@@ -1,6 +1,6 @@
 ## Differences from the non-solo game
 
-This is an exhaustive list of every way in which playing with SUPERCAT differs from the original Arcs rules, including optional difficulty modifiers and campaign specific rules. If you believe the bot breaks from the original Arcs rules in any way which is not listed here, that is either a misunderstanding, something accidentally omitted from this page, or a bug. Please report it in the BGG thread for correction or clarification!
+This is a list of every way in which playing with SUPERCAT differs from playing multiplayer Arcs with the the original rules, including optional difficulty modifiers and campaign specific rules. If you think the bot breaks from the original Arcs rules in any way which is not listed here, that is either something accidentally omitted from this page, an unintended "bug" in the bot rules, or a misunderstanding. Please report it in the BGG thread for correction or clarification.
 
 ### base game
 
@@ -12,7 +12,7 @@ This is an exhaustive list of every way in which playing with SUPERCAT differs f
 
 ### campaign
 
-*(in addition to above changes to the base game)*
+*(includes above changes to the base game)*
 
 - Faithful cards are not trackable
 - Event card probability
