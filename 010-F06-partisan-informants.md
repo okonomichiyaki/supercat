@@ -1,4 +1,5 @@
-Informants - Spy (Influence)
+<#ifdef campaign>
+# Informants - Spy (Influence)
 
 If the player is the Partisan:
 
@@ -17,3 +18,6 @@ If the bot is the Partisan:
 - Shuffle the remaining drawn action cards back into the stack.
 
 *At the end of these procedures, the bot will have one additional card on the bot's board, the bot's hand counter will not have changed, and the player's hand count will not have changed.*
+
+<div class="pagebreak"> </div>
+<#endif>

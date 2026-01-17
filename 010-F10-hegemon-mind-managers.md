@@ -1,4 +1,5 @@
-Mind Managers - Manipulate (Influence)
+<#ifdef campaign>
+# Mind Managers - Manipulate (Influence)
 
 If the player is the Hegemon:
 
@@ -12,3 +13,6 @@ If the bot is the Hegemon:
 - Target the player if possible (if the bot has a Captive of the player's, and the player has cards in their hand). Otherwise do not use the ability.
 - Select a card from the player's hand at random and place it in the bot's play area.
 - Draw one card from the top of the stack and add it to the player's hand.
+
+<div class="pagebreak"> </div>
+<#endif>
