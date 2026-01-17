@@ -25,7 +25,7 @@ for file in `cat pages.md`; do
         (?!<\/ins>)          # no tag close after
       }{<ins>$&</ins>}igx;
           ' "$escaped" "/tmp/$file"
-        done < "terminology.txt"
+        done < "terminology.md"
     fi
 done
 

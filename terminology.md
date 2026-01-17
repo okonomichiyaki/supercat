@@ -3,21 +3,29 @@ claims
 combat card
 combat cards
 contend
-contends
 contending
+contends
 contested card
 contested cards
-double city
+critical card
 double cities
+double city
 effective
+exhausted
 favorable combat
 new resource
 new resources
 partial move
+ready
+ready/exhausted
 task force
-unbuilt city
+unbuilt
 unbuilt cities
+unbuilt city
 unclaimed
 uncontested card
 uncontested cards
 undeclared ambition
+urgent
+urgent card
+urgent cards
