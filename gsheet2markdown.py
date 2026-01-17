@@ -22,6 +22,14 @@ SUITS = {
     'Mobilization': {
         "output": "080-mobilization.md",
         "actions": ["Move", "Influence"]
+    },
+    'Faithful Wisdom': {
+        "output": "031-faithful-wisdom.md",
+        "actions": ["Build", "Repair", "Secure"]
+    },
+    'Faithful Zeal': {
+        "output": "032-faithful-zeal.md",
+        "actions": ["Move", "Influence", "Battle", "Tax"]
     }
 }
 

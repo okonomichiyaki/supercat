@@ -36,7 +36,8 @@
 071-expansion-principles.md
 080-mobilization.md
 081-movement-principles.md
-031-faithful.md
+031-faithful-wisdom.md
+032-faithful-zeal.md
 090-guild-cards.md
 091-vox-cards.md
 092-leaders-and-lore.md
