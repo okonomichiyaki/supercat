@@ -60,19 +60,30 @@
         <li><a href="#partisan" id="toc-partisan">Partisan</a></li>
         <li><a href="#admiral" id="toc-admiral">Admiral</a></li>
         <li><a href="#believer" id="toc-believer">Believer</a></li>
+
         <li><a href="#pathfinder" id="toc-pathfinder">Pathfinder</a></li>
         <li><a href="#hegemon" id="toc-hegemon">Hegemon</a></li>
         <li><a href="#planet-breaker" id="toc-planet-breaker">Planet Breaker</a></li>
+        <li><a href="#pirate" id="toc-pirate">Pirate</a></li>
         <li><a href="#blight-speaker" id="toc-blight-speaker">Blight Speaker</a></li>
         <li><a href="#pacifist" id="toc-pacifist">Pacifist</a></li>
         <li><a href="#peacekeeper" id="toc-peacekeeper">Peacekeeper</a></li>
         <li><a href="#warden" id="toc-warden">Warden</a></li>
+
+        <li><a href="#overlord" id="toc-overlord">Overlord</a></li>
+        <li><a href="#survivalist" id="toc-survivalist">Survivalist</a></li>
+        <li><a href="#redeemer" id="toc-redeemer">Redeemer</a></li>
+        <li><a href="#guardian" id="toc-guardian">Guardian</a></li>
+        <li><a href="#naturalist" id="toc-naturalist">Naturalist</a></li>
+        <li><a href="#gate-wraith" id="toc-gate-wraith">Gate Wraith</a></li>
+        <li><a href="#conspirator" id="toc-conspirator"><s>Conspirator</s></a></li>
+        <li><a href="#judge" id="toc-judge"><s>Judge</s></a></li>
     </ul>
 </nav>
 
 <h2 id="a-procedural-non-player-system-for-solo-arcs">a procedural
 non-player system for solo Arcs</h2>
-<p><em>version 0.9</em></p>
+<p><em>version 0.10</em></p>
 <p>This is a non-player system, or “bot”, for playing the board game
 Arcs. It’s intended for solitaire play, i.e. one human playing against
 one or more bots. Although it can also work as the 3rd or 4th opponent
@@ -96,8 +107,10 @@ solo context</li>
 and will refer to the non-player system exclusively as the “bot”. The
 word “player” never refers to a bot.</p>
 <p>There are two versions of this document; this is the Blighted Reach
-campaign version. <em>(note: it currently only supports “A” and “B”
-Fates through Act II)</em></p>
+campaign version. <em>(note: it currently supports most Fates across all
+three Acts with some exceptions. see the <a
+href="https://boardgamegeek.com/thread/3499164/updating-supercat-for-solo-blighted-reach">BGG
+thread</a> for details)</em></p>
 <p>If this is your first time playing Arcs using SUPERCAT, consider
 playing at least one chapter of the base game with the bot before using
 it to play the campaign.</p>
@@ -129,9 +142,10 @@ randomly assign each bot an “A” Fate card)</em></p>
 <p><strong>2.G-H.</strong> When the bot places a building, randomly
 select an empty building slot from among those eligible. The first
 building each bot places will be a city and the second will be a
-starport. <em>If a bot is the Believer, check that Fate’s procedures for
-special instructions.</em> (optional) Place an extra ship in each system
-with bot pieces and give each bot one random resource.</p>
+starport. <em>If a bot is the Believer or Admiral, check the Fate’s
+procedures for special instructions.</em> (optional) Place an extra ship
+in each system with bot pieces and give each bot one random
+resource.</p>
 <p><strong>2.J.</strong> Deal 6 cards to each player, but do not deal
 cards to the bot(s). Place a counter on each bot’s board showing a value
 of 6 faceup.</p>
@@ -163,8 +177,9 @@ showing 1 or greater, the bot has cards remaining and will play one.
 Draw 2 action cards from the facedown stack and decrement the counter.
 The procedures on the “Bot Turn” page will select one of the cards for
 the bot to play, and also determine whether the bot declares an ambition
-or seizes the initiative. At that point, discard the other card, and
-continue with the procedures to execute the bot’s turn.</p>
+(if playing the lead card) or seizes the initiative (if it does not have
+the initiative). At that point, discard the other card, and continue
+with the procedures to execute the bot’s turn.</p>
 <h3 id="bonus-cards">Bonus cards</h3>
 <p>When the bot receives a bonus action card, place the new card in the
 bot’s play area and increment the bot’s hand counter. On subsequent
@@ -190,12 +205,12 @@ page.</p>
 <p>The bot will use <strong>new actions</strong> on Guild and lore
 cards, like <strong>Manufacture (Build)</strong>, at most once per
 chapter. When using “General Priorities” to select a card to play, there
-is a check to see if the bot can use any abilities on ready Guild cards.
-A Guild card is ready if it has not been used this chapter. If the bot
-selects a card due to this procedure, mark the Guild card as exhausted
-(rotate the card or place a marker on the card). At the end of the
-chapter, all cards become ready again (turn the card upright or remove
-the marker).</p>
+is a check to see if the bot can use any abilities on <ins>ready</ins>
+Guild cards. A Guild card is <ins>ready</ins> if it has not been used
+this chapter. If the bot selects a card due to this procedure, mark the
+Guild card as <ins>exhausted</ins> (rotate the card or place a marker on
+the card). At the end of the chapter, all cards become <ins>ready</ins>
+again (turn the card upright or remove the marker).</p>
 <h2 id="how-to-follow-the-procedures">How to follow the procedures</h2>
 <p>Follow each bulleted instruction explicitly, executing statements if
 possible. When posed with a question, evaluate the situation and follow
@@ -310,6 +325,42 @@ fresh ship (regardless of number of fresh player ships). if more than
 one bot in play, bot with more fresh ships controls the gate</li>
 </ul>
 <p>*apply only if player is the attacker</p>
+<h2 id="differences-from-the-non-solo-game">Differences from the
+non-solo game</h2>
+<p>This is a list of every way in which playing with SUPERCAT differs
+from playing multiplayer Arcs with the the original rules, including
+optional difficulty modifiers and campaign specific rules. If you think
+the bot breaks from the original Arcs rules in any way which is not
+listed here, that is either something accidentally omitted from this
+page, an unintended “bug” in the bot rules, or a misunderstanding.
+Please report it in the <a
+href="https://boardgamegeek.com/thread/3499164/updating-supercat-for-solo-blighted-reach">BGG
+thread</a> for correction or clarification.</p>
+<h3 id="base-game">base game</h3>
+<ul>
+<li>changes to the card mechanics:
+<ul>
+<li>cards may end up being played more than once per round</li>
+<li>abstract hands for bots</li>
+</ul></li>
+<li>difficulty modifiers
+<ul>
+<li>optional but strongly suggested</li>
+</ul></li>
+</ul>
+<h3 id="campaign">campaign</h3>
+<p><em>(includes above changes to the base game)</em></p>
+<ul>
+<li>Faithful cards are not trackable</li>
+<li>Event card probability</li>
+<li>Negotiation minigame</li>
+<li>Partisan: “Informants”</li>
+<li>Hegemon: “Mind Managers”</li>
+<li>Pathfinder: deduction minigame</li>
+</ul>
+<div class="pagebreak">
+
+</div>
 <h2 id="fates">Fates</h2>
 <p>Each Fate has its own procedures and priorities which supplement the
 bot’s behavior. Some Fates have instructions for how other bots interact
@@ -419,8 +470,8 @@ sequence of play for the minigame:</p>
 Negotiation actions)</em> or gives one of their agents to a bot as a
 favor, reduce the bot’s Grievances matching the player by one</li>
 </ul></li>
-<li>Starting with the bot or player with initiative, conduct Negotiation
-rounds</li>
+<li>Starting with the bot or player who called the Summit, conduct
+Negotiation rounds</li>
 <li>On a player’s round, they may attempt an exchange of Negotiation
 actions with a bot.
 <ul>
@@ -457,7 +508,7 @@ ambition
 would gain from the ambition
 </li>
 <li>
-+1 for each Negotiation action offered above an even trade
++/-1 for each Negotiation action offered above/below an even trade
 </li>
 <li>
 +1 if trade would cause target to <ins>contend</ins> a declared ambition
@@ -500,27 +551,24 @@ ability?</p>
 select a card for rival to Secure and subsequent Influence and Secure
 actions:
 <ul>
-<li>Imperial Council and Council Intrigue <em>(Select target which
-allows bot to Influence and Secure either of these cards, or prevent
-rival from Securing)</em></li>
+<li>Card which gives rival smallest lead in declared ambition</li>
+<li>Imperial Council and Council Intrigue <em>(Select a target which
+allows bot to Influence and Secure either of these cards, or prevent a
+rival from Securing them)</em></li>
 <li>Protect loyal agents</li>
 <li>Check “Influence Principles” for additional priorities</li>
 </ul></li>
 </ul>
-<p>✦ Is the Imperial Council “In Session”?</p>
-<ul>
-<li>Yes: Can bot Secure or Influence the Imperial Council? (check
-“Influence Principles”)</li>
-<li>No: Is bot no longer the First Regent?
+<p>✦ Can bot Secure or Influence the Imperial Council?</p>
+<p>✦ Is bot no longer the First Regent?</p>
 <ul>
 <li>Can bot Secure or Influence Council Intrigue?</li>
-</ul></li>
 </ul>
 <dl>
 <dt>Events</dt>
 <dd>
 If bot is not First Regent and Imperial Council is “Decided”, then
-Events are critical
+Events are <ins>urgent</ins>
 </dd>
 <dt>Summits</dt>
 <dd>
@@ -566,23 +614,47 @@ most cities is a bot, check the Fate to see if it will change the
 policy.
 </dd>
 </dl>
-<!-- 
-## Act III
-
-TODO: Grand Ambitions
-
-✦ Can bot Build, Repair, or Move to take control of an Outlaw city?
-
-✦ Can bot favorable battle to take control of an Outlaw city?
-
-TODO:
-If bot is not the First Regent -> actions to become First Regent
-If bot IS the First Regent -> actions to stay First Regent
-
-
-Imperial Sponsor
-: If the Steward is the First Regent, select an <ins>undeclared ambition</ins> which an Outlaw is winning or <ins>contending</ins>.
--->
+<h2 id="act-iii">Act III</h2>
+<p>✦ Does the Imperial Trust have equal to or fewer resources than the
+current chapter?</p>
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?</li>
+<li>If Secured, during resolution:
+<ul>
+<li>Check if the current policy would not add resources to the Imperial
+Trust
+<ul>
+<li>If it would not, call a Summit and Petition the Council</li>
+</ul></li>
+<li>Choose to resolve the Edicts</li>
+<li>See below for details on Govern with Authority</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Build, Repair, or Move to get Imperial control of an Outlaw
+city?</p>
+<p>✦ Can bot favorable battle to get Imperial control of an Outlaw
+city?</p>
+<p>✦ Does bot have no resources?</p>
+<ul>
+<li>Can bot Tax for any resource?</li>
+</ul>
+<dl>
+<dt>Imperial Sponsor</dt>
+<dd>
+If the Steward is the First Regent, select an <ins>undeclared
+ambition</ins> which an Outlaw or the Steward is winning or
+<ins>contending</ins>. If the Imperial Trust has equal to or fewer
+resources than the current chapter, add a resource to the Imperial
+Trust.
+</dd>
+<dt>Govern with Authority</dt>
+<dd>
+If the Imperial Trust does not have more resources than the current
+chapter, enforce the current policy if it would add resources to the
+Imperial Trust, otherwise change the policy and select a policy matching
+resources held by most Rivals.
+</dd>
+</dl>
 <div class="pagebreak">
 
 </div>
@@ -590,8 +662,8 @@ Imperial Sponsor
 <h2 id="act-i">Act I</h2>
 <p>✦ Is bot a Regent?</p>
 <ul>
-<li>Can bot Influence or Secure the Imperial Council?</li>
-<li>Can bot Influence or Secure “Populist Demands”?
+<li>Can bot Secure or Influence the Imperial Council?</li>
+<li>Can bot Secure or Influence “Populist Demands”?
 <ul>
 <li>Secure if an ambition marker is available</li>
 </ul></li>
@@ -604,12 +676,14 @@ increase the number of systems bot controls?</p>
 <dl>
 <dt>Parade Fleets</dt>
 <dd>
-Place ships where bot would gain control. If bot is a Regent, become an
-Outlaw.
+If bot has the initiative would not otherwise declare an <ins>undeclared
+ambition</ins> <em>(i.e. bot is not winning or tied for first
+place)</em> declare an ambition no rival is winning. Place ships where
+bot would gain control. If bot is a Regent, become an Outlaw.
 </dd>
 <dt>Events</dt>
 <dd>
-If bot is a Regent, then Event cards are critical.
+If bot is a Regent, then Event cards are <ins>urgent</ins>.
 </dd>
 <dt>Summits</dt>
 <dd>
@@ -618,8 +692,10 @@ Order” phase, <strong>Leave the Empire</strong>.
 </dd>
 </dl>
 <h2 id="act-ii-1">Act II</h2>
+<p>✦ Can bot Influence a card with Armistice attached with enough agents
+to prevent a Rival from Securing it?</p>
 <p>✦ Can bot Tax or Secure to cause the Commonwealth to
-<ins>contend</ins> a declared ambition?</p>
+<ins>contend</ins> the Commonwealth ambition?</p>
 <p>✦ Can bot Build a Free building?</p>
 <ul>
 <li>Yes: Prefer:
@@ -631,23 +707,79 @@ Order” phase, <strong>Leave the Empire</strong>.
 <li>No: Can bot Move to get new <ins>claims</ins> on planets not
 controlled by the Empire?</li>
 </ul>
-<p>✦ Are there any Empire controlled Free cities?</p>
+<p>✦ Does bot have more <ins>unbuilt</ins> ships than <ins>unbuilt</ins>
+Imperial ships?</p>
+<ul>
+<li>Can bot build ships?</li>
+</ul>
+<p>✦ Are there any Free cities controlled by the Empire?</p>
 <ul>
 <li>Can bot Move to change control? <em>(only applicable if bot is a
 Regent)</em></li>
 <li>Can bot favorable battle to change control?</li>
 </ul>
+<p>✦ Is there no copy of Armistice in the Court?</p>
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?
+<ul>
+<li>Choose to resolve the Edicts</li>
+</ul></li>
+</ul>
 <dl>
 <dt>Founder of the Commonwealth</dt>
 <dd>
-Bot will declare ambitions if the Commonwealth is winning or tied for
-first place in the ambition (place second or third ambition marker in
-already declared ambition only if the Commonwealth is winning). When
-declaring, place the Commonwealth Ambition marker.
+Ignore usual rules for declaring ambitions. Bot will only declare
+undeclared ambitions if the Commonwealth is winning or tied for first
+place in the ambition, and will only declare already declared ambitions
+if the Commonwealth is winning (not tied). When declaring, place the
+Commonwealth Ambition marker.
 </dd>
 <dt>Call For Armistice</dt>
 <dd>
-TODO
+If this bot (Founder) has the least power, attach an Armistice card to a
+card in the Court. Select card which bot could Secure if possible. This
+bot will not Secure a card while it has an Armistice attached to it.
+</dd>
+</dl>
+<h2 id="act-iii-1">Act III</h2>
+<p>✦ Are there any Free cities controlled by the Empire?</p>
+<ul>
+<li>Can bot Move to change control? <em>(only applicable if bot is a
+Regent)</em></li>
+<li>Can bot favorable battle to change control?</li>
+</ul>
+<p>✦ Are there any Free cities controlled by a Rival who is not a Member
+of the Commonwealth?</p>
+<ul>
+<li>Can bot Move to change control? <em>(only applicable if bot is a
+Regent)</em></li>
+<li>Can bot favorable battle to change control?</li>
+</ul>
+<p>✦ Can bot use Freedom Fighters’ <strong>Incite Revolt
+(Battle)</strong> ability?</p>
+<ul>
+<li>Prefer:
+<ul>
+<li>Systems with no Loyal ships</li>
+<li>Imperial ships</li>
+<li>Most ships destroyed</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Influence a card with Armistice attached with enough agents
+to prevent a Rival from Securing it?</p>
+<p>✦ Is there no copy of Armistice in the Court?</p>
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?
+<ul>
+<li>Choose to resolve the Edicts</li>
+</ul></li>
+</ul>
+<dl>
+<dt>Mass Call for Armistice</dt>
+<dd>
+If no copy of Armistice is in the Court, attach an Armistice card to a
+card in the Court. Select card which bot could Secure if possible. This
+bot will not Secure a card while it has an Armistice attached to it.
 </dd>
 </dl>
 <div class="pagebreak">
@@ -665,11 +797,14 @@ new resource
 </ins></li>
 </ul></li>
 </ul>
-<p>✦ Can bot Influence or Secure the Imperial Council?</p>
+<p>✦ Can bot Secure or Influence the Imperial Council?</p>
+<ul>
+<li>If Secured, call a Summit</li>
+</ul>
 <dl>
 <dt>Events</dt>
 <dd>
-If objective marker is greater than zero, events are critical.
+If objective marker is greater than zero, events are <ins>urgent</ins>.
 </dd>
 <dt>Summit Negotiations</dt>
 <dd>
@@ -701,25 +836,40 @@ When conducting negotiations, prefer these resources for
 <div class="pagebreak">
 
 </div>
-<h2 id="act-ii-2">Act II</h2>
+<h2 id="act-ii-and-iii">Act II and III</h2>
+<p>(in Act II use the following procedures. in Act III, use the Act III
+only procedures first, then use these procedures)</p>
 <p>✦ Can bot Tax or favorable battle for resources, resulting in the bot
 having more than half of the total resources of its type in play?
-<em>(get resources such that if the Gain Monopolies edict were resolved,
+<em>(get resources such that if the Gain Monopolies Edict were resolved,
 the bot take the matching Monopoly)</em></p>
 <ul>
-<li>Prefer: Resource matching Monopoly in the supply</li>
+<li>Prefer:
+<ul>
+<li>Resource matching Monopoly in the supply</li>
+<li>Resource matching Monopoly held by a Rival</li>
+<li>Resource matching Monopoly held by bot</li>
+</ul></li>
 </ul>
-<p>✦ Can bot Influence or Secure the Imperial Council?</p>
+<p>✦ Is bot a Regent but not First Regent?</p>
+<ul>
+<li><p>If bot were First Regent, would bot have more than half of the
+total resources of a type in play via the Imperial Trust?</p></li>
+<li><p>Can bot Secure or Influence the Imperial Council?</p></li>
+</ul>
+<p>✦ Would bot gain a Monopoly if the Edicts were resolved?</p>
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?</li>
+</ul>
 <dl>
 <dt>Events</dt>
 <dd>
 If bot has more than half of any type of resource, and does not have the
-matching Monopoly, then Events are considered critical.
+matching Monopoly, then Events are considered <ins>urgent</ins>.
 </dd>
 <dt>Imperial Council Decided</dt>
 <dd>
-If bot has more than half of the total resources of any type in play,
-bot will resolve Edicts.
+If bot would gain a Monopoly, bot will resolve Edicts.
 </dd>
 <dt>Monopoly</dt>
 <dd>
@@ -733,18 +883,46 @@ If bot has a matching Monopoly, or the matching Monopoly is in the
 supply, do not spend resources for Prelude actions.
 </dd>
 </dl>
+<h2 id="act-iii-only">Act III only</h2>
+<p>✦ Is the Magnate a Regent? <em>(Is Closed Economy face up?)</em></p>
+<ul>
+<li>Yes:
+<ul>
+<li>Can bot Move or Repair to get Imperial control of a Rival city?
+<ul>
+<li>Prefer: City matching Monopoly bot does not have</li>
+</ul></li>
+</ul></li>
+<li>No: <em>(Is Open Economy face up?)</em>
+<ul>
+<li>Can bot Build, Move, Repair or <ins>favorable combat</ins> to get
+control of a Rival city?</li>
+</ul></li>
+</ul>
 <div class="pagebreak">
 
 </div>
 <h1 id="advocate">Advocate</h1>
 <h2 id="act-i-2">Act I</h2>
-<p>✦ Can bot Influence or Secure a Guild card with a Prelude action that
+<p>✦ Can bot Secure or Influence a Guild card with a Prelude action that
 discards itself?</p>
 <p>✦ Can bot use Guild Investigators’ <strong>Recover (Move)</strong>
 ability?</p>
+<ul>
+<li><em>(if the court discard pile is empty, consider if bot will use a
+Prelude action that discards itself this turn. note Union cards are not
+discarded until the end of the round)</em></li>
+</ul>
 <p>✦ Can bot <ins>favorable combat</ins> to steal a Guild card with a
 Prelude action that discards itself?</p>
-<h2 id="act-ii-3">Act II</h2>
+<dl>
+<dt>Prelude</dt>
+<dd>
+If bot has not achieved its objective, use the Prelude action of any
+Guild card that discards itself if action benefits bot in any way.
+</dd>
+</dl>
+<h2 id="act-ii-2">Act II</h2>
 <p>✦ Can bot Secure or Influence a Guild card with a suit it does not
 have?</p>
 <p>✦ Can bot Secure a Guild card which would cause it to have more Guild
@@ -764,18 +942,23 @@ has 2 or more Guild cards of that suit, and only if bot would still have
 more Guild cards than each other rival afterwards.
 </dd>
 </dl>
-<!-- 
-## Act III
-
-✦ Can bot Secure or Influence a Guild card with a suit it does not have?
-
-✦ Can bot use Guild Investigators' **Recover (Move)** ability?
-
-✦ Can bot Secure or Influence an <ins>effective</ins> Vox card or lore card?
-
-Prelude
-: Only use the Prelude action of a Guild card that discards itself if bot has 2 or more Guild cards of that suit.
--->
+<h2 id="act-iii-2">Act III</h2>
+<p>✦ Can bot Secure or Influence a Guild card with a suit it does not
+have?</p>
+<p>✦ Can bot use Guild Investigators’ <strong>Recover (Move)</strong>
+ability?</p>
+<p>✦ Do Guild cards make up half or fewer of the Court?</p>
+<ul>
+<li>Can bot Secure or Influence an <ins>effective</ins> Vox card or Lore
+card?</li>
+</ul>
+<dl>
+<dt>Prelude</dt>
+<dd>
+Only use the Prelude action of a Guild card that discards itself if bot
+has 2 or more Guild cards of that suit.
+</dd>
+</dl>
 <div class="pagebreak">
 
 </div>
@@ -790,7 +973,10 @@ Use if trophies would result in bot <ins>contending</ins> for warlord
 </dd>
 <dt>Protector</dt>
 <dd>
-Use if bot has two or more damaged ships. Repair only Loyal ships.
+Use if bot has two or more damaged ships. Repair all Loyal ships, and if
+Regent all Imperial ships with Loyal ships. If Regent, roll 1d6 for each
+other damaged Imperial ship and repair if result greater than bot’s
+Imperial grievances.
 </dd>
 <dt>Seeker</dt>
 <dd>
@@ -827,7 +1013,7 @@ If there are any Sleeping Golems that are not on the map, bot will
 resolve Crises.
 </dd>
 </dl>
-<h2 id="act-ii-4">Act II</h2>
+<h2 id="act-ii-3">Act II</h2>
 <p>✦ Can bot Secure or Influence a lore card? <em>(or a card in the
 Court with an attached lore card)</em></p>
 <p>✦ Can bot Secure or Influence Librarians?</p>
@@ -837,41 +1023,55 @@ Court with an attached lore card)</em></p>
 Bot will always use the ability to draw and attach a lore card
 </dd>
 </dl>
+<h2 id="act-iii-3">Act III</h2>
+<p>✦ Can bot Secure or Influence a lore card?</p>
+<p>✦ Does bot have no Golems?</p>
+<ul>
+<li>Can bot favorable battle to steal one or more Golems?</li>
+</ul>
+<h3 id="grand-ambitions">Grand Ambitions</h3>
+<p>✦ Does bot have only one Golem and only one lore card?</p>
+<ul>
+<li>Yes: Is this the end of the third or fourth chapter?
+<ul>
+<li>Bot will scrap both a lore card and then a Golem</li>
+</ul></li>
+<li>No: Bot will scrap a lore card and then a Golem</li>
+</ul>
 <div class="pagebreak">
 
 </div>
 <h1 id="partisan">Partisan</h1>
 <h2 id="act-i-4">Act I</h2>
-<p>✦ Can bot Influence or Secure a card which would enable it to gain
+<p>✦ Can bot Secure or Influence a card which would enable it to gain
 the initiative?</p>
-<p>✦ Can bot Influence or Secure a card which would give the bot an
-additional action card?</p>
+<p>✦ Can bot Secure or Influence a card which would give the bot a bonus
+action card?</p>
 <p>✦ Does bot have 4 or more cards and can bot use Informants’
 <strong>Spy (Influence)</strong> ability? <br/><em>(limit once per
-chapter)</em></p>
+chapter, see special rules below)</em></p>
 <dl>
-<dt>Informants</dt>
-<dd>
-To use this ability when the player is the Partisan, choose a bot to
-target. Draw a number of action cards equal to the bot’s hand counter.
-Place your action card with the highest number on the bot board and take
-the card with the highest number from those drawn. Shuffle the rest back
-into the stack. If bot uses the ability, do the same but always target
-the player.
-</dd>
 <dt>Partisan Seizing (Ability)</dt>
 <dd>
 If the bot is the Partisan, use a seize counter and check for seizing
-the initiative as described on the “Bot Turn” page. Add 1 to the roll
-for each Outraged resource. If the seize check passes (roll is less than
-seize counter) instead of decrementing the hand counter, provoke outrage
-for a resource. Select resource based on least impact (fewest cards and
-resources discarded).
+the initiative as described on the “Bot Turn” page. Check for seize when
+hand counter is 1 or greater. Add 1 to the roll for each Outraged
+resource. If the seize check passes (modified roll is less than seize
+counter) instead of decrementing the hand counter, Provoke Outrage for a
+resource, if there is a non-Outraged resource not matching a Protected
+Guild card. Select resource to Outrage based on least impact (fewest
+cards and resources discarded).
 </dd>
 </dl>
-<h2 id="act-ii-5">Act II</h2>
+<h2 id="act-ii-4">Act II</h2>
 <p>✦ Can bot Secure or Influence any Guild card matching an Outraged
 resource?</p>
+<p>✦ Does a Rival have the initiative?</p>
+<ul>
+<li>Does bot have 4 or more cards and can bot use Informants’
+<strong>Spy (Influence)</strong> ability? <br/><em>(limit once per
+chapter, see special rules below)</em></li>
+</ul>
 <dl>
 <dt>People’s Hero</dt>
 <dd>
@@ -884,20 +1084,96 @@ ambitions if it is winning.
 <dt>Partisan Seizing (Law)</dt>
 <dd>
 After this Law is added to the rules booklet, all bots will use the
-above guidelines from Act I above to dictate seizing behavior.
+guidelines from Act I to dictate seizing behavior.
 </dd>
 </dl>
+<!--
+Lattice Spies
+: TODO
+-->
 <!--
 TODO: this needs to be tweaked for other bots
 maybe +1 for each Guild/Resource bot has?
 select the resource first based on least impact, and +1 for each matching selected?
 maybe also special case for certain Fates like Advocate
 -->
+<h2 id="act-iii-4">Act III</h2>
+<p>✦ Can bot Secure or Influence a card which would enable it to gain
+the initiative?</p>
+<p>✦ Can bot Secure or Influence a card which would give the bot a bonus
+action card?</p>
+<p>✦ Does bot have fewer Guild cards any Rival?</p>
+<ul>
+<li>Can bot Secure or Influence any Guild card?</li>
+<li>Can bot favorable battle to steal one or more Guild cards?
+<ul>
+<li>Prefer:
+<ul>
+<li>Guild card held by Rival with more Guild cards than bot</li>
+</ul></li>
+</ul></li>
+</ul>
+<dl>
+<dt>Seizing Initiative</dt>
+<dd>
+Bot will use the guidelines from Act I for seizing initiative. Subtract
+1 from the roll if it’s the last round of a chapter.
+</dd>
+</dl>
 <div class="pagebreak">
 
 </div>
+<p>Informants - Spy (Influence)</p>
+<p>If the player is the Partisan:</p>
+<ul>
+<li>Choose any bot to target.</li>
+<li>Draw action cards equal to the bot’s hand counter from the
+stack.</li>
+<li>Place your action card of highest number on the bot’s board.</li>
+<li>Take the action card of highest number from the bot. <em>(from among
+those drawn and any action cards on the bot’s board, including the one
+you just placed)</em></li>
+<li>Shuffle the remaining drawn action cards back into the stack.</li>
+</ul>
+<p>If the bot is the Partisan:</p>
+<ul>
+<li>Bot will always target the player.</li>
+<li>Draw a number of action cards equal to the bot’s hand counter from
+the stack.</li>
+<li>Take the action card of <strong>lowest</strong> number from the bot.
+<em>(from among those drawn and any action cards on the bot’s
+board)</em></li>
+<li>Place your action card of <strong>highest</strong> number on the
+bot’s board.</li>
+<li>Shuffle the remaining drawn action cards back into the stack.</li>
+</ul>
+<p><em>At the end of these procedures, the bot will have one additional
+card on the bot’s board, the bot’s hand counter will not have changed,
+and the player’s hand count will not have changed.</em></p>
 <h1 id="admiral">Admiral</h1>
+<dt>
+Setup
+</dt>
+<dd>
+When placing a starting city, Prefer:
+<ul>
+<li>
+Weapon planets
+</li>
+</ul>
+</dd>
 <h2 id="act-i-5">Act I</h2>
+<p>✦ Is bot Regent and winning an ambition?</p>
+<ul>
+<li>Would either Govern the Imperial Reach (“A Policy of Escalation”) or
+Imperial Foundries place Imperial Ships?
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?
+<ul>
+<li>Choose to resolve the Edicts</li>
+</ul></li>
+</ul></li>
+</ul>
 <p>✦ Can bot <ins>favorable combat</ins> for trophies with Imperial
 Ships?</p>
 <ul>
@@ -917,26 +1193,57 @@ possible.</li>
 <li>Move or Build to get at least one loyal ship to each loyal starport
 without loyal ships</li>
 </ul>
-<p>✦ Does bot have unbuilt starports and at least one
+<p>✦ Does bot have more <ins>unbuilt</ins> ships than most Rivals?</p>
+<ul>
+<li>Can bot build ships?</li>
+</ul>
+<p>✦ Does bot have <ins>unbuilt</ins> starports and at least one
 <ins>claim</ins>?</p>
 <ul>
 <li>Build one new starport <em>(max one new starport per card)</em></li>
 </ul>
-<h2 id="act-ii-6">Act II</h2>
+<h2 id="act-ii-5">Act II</h2>
+<p>✦ Can bot Tax, Secure, or use Court Enforcers’ Abduct (Battle)
+ability to take captives from a Regent?</p>
+<p>✦ Can bot Secure or Influence Court Enforcers?</p>
+<p>✦ Can bot Build, Repair, Move or <ins>favorable combat</ins> to get
+Empire control of a planet or to take control of a Rival Regent’s
+city?</p>
+<p>✦ Can bot Influence a card with more agents than a Rival Regent?</p>
+<p>✦ Does bot have more <ins>unbuilt</ins> ships than most Rivals?</p>
+<ul>
+<li>Can bot build ships?</li>
+</ul>
+<p>✦ Can bot <ins>favorable combat</ins> for trophies against an
+Outlaw?</p>
 <p>✦ Does bot have no Weapon resources?</p>
 <ul>
 <li>Can bot Tax to get a Weapon resource?</li>
 </ul>
-<p>✦ Can bot Secure or Influence Court Enforcers?</p>
-<p>✦ Can bot Tax, Secure, or use Court Enforcers’ Abduct (Battle)
-ability to take captives from a Regent?</p>
-<p>✦ Can bot Build, Repair, or Move to get Empire control of a
-planet?</p>
-<p>✦ Can bot Build, Repair, or Move to take control of a Rival Regent’s
-city?</p>
-<p>✦ Can bot Influence a card with more agents than a Rival Regent?</p>
-<p>✦ Can bot <ins>favorable combat</ins> for trophies against an
-Outlaw?</p>
+<p>✦ Can bot Secure or Influence Rogue Admirals or Imperial
+Defectors?</p>
+<ul>
+<li>Discard Imperial Defectors if secured.</li>
+</ul>
+<h2 id="act-iii-5">Act III</h2>
+<p>✦ Does bot have more <ins>unbuilt</ins> ships than any Rivals?</p>
+<ul>
+<li>Can bot Build ships?</li>
+</ul>
+<p>✦ Does bot control fewer than 9 planets?</p>
+<ul>
+<li><p>Can bot Build, Repair, Move or <ins>favorable combat</ins> for
+control of a planet?</p></li>
+<li><p>Is bot a Regent but not First Regent, and is the Imperial Council
+“In Session”?</p>
+<ul>
+<li>If bot was First Regent, would bot control 9 or more planets during
+scoring?
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?</li>
+</ul></li>
+</ul></li>
+</ul>
 <div class="pagebreak">
 
 </div>
@@ -951,7 +1258,10 @@ Place 2 cities instead of a city and a starport. Prefer:
 planets matching suits on guild cards in the initial court
 </li>
 <li>
-planets with 2 different suits
+planets with a single building slot
+</li>
+<li>
+planets with different suits
 </li>
 </ul>
 </dd>
@@ -975,14 +1285,19 @@ that card and turn to the page for the Faithful suit.</p>
 <p>✦ Are there remaining cards in the stack of Faithful action
 cards?</p>
 <ul>
-<li>Does bot have <ins>unbuilt cities</ins>, and are there any suits
+<li>Does bot have <ins>unbuilt</ins> cities, and are there any suits
 which bot does not have a matching Loyal city?
 <ul>
 <li>Can bot Build a city or get a <ins>claim</ins> on a planet matching
 one of those suits?</li>
 </ul></li>
 </ul>
-<h2 id="act-ii-7">Act II</h2>
+<h2 id="act-ii-6">Act II</h2>
+<p>✦ Does a Rival have “The Young Light” ?</p>
+<ul>
+<li>Can bot <ins>favorable combat</ins> to steal “The Young Light”
+?</li>
+</ul>
 <p>✦ Can bot Tax, Secure, or favorable battle to improve its position in
 an ambition with an Ideal marker? <em>(any improvement in the bot’s
 ranking for the ambition, not just first or second place)</em></p>
@@ -1004,15 +1319,35 @@ If true, do not draw 2 cards, simply play the Faithful card and declare the ambi
 <dl>
 <dt>The Young Light</dt>
 <dd>
-Bot will use this Prelude ability whenever possible. <em>(discard an
-action card to take a played Faithful card. decrement the bot’s hand
-counter to represent discarding an action card)</em>
+Bot will use this Prelude ability whenever possible. <em>(bot’s hand
+counter must be 1 or greater. at the end of the round, place the
+Faithful card in the bot’s play area. do not change the bot’s hand
+counter)</em>
 </dd>
 <dt>Set Doctrine</dt>
 <dd>
 If bot can Secure to <ins>contend</ins> an ambition, switch to Wisdom.
 If bot can Tax or <ins>favorable combat</ins> to <ins>contend</ins> an
 ambition, switch to Zeal. Otherwise do not switch.
+</dd>
+</dl>
+<h1 id="act-iii-6">Act III</h1>
+<p>When bot has the initiative and there are undeclared ambitions, if a
+Faithful card is available (either among those drawn or in the bot’s
+play area), then bot will always lead with a Faithful card and declare
+an <ins>undeclared ambition</ins>. Prefer:</p>
+<ul>
+<li>ambition bot is winning or tied for first place</li>
+<li>ambition for which bot is currently in third place</li>
+<li>ambition for which no rival is winning or tied for first place</li>
+</ul>
+<dl>
+<dt>The Prophet</dt>
+<dd>
+Bot will use this Prelude ability whenever possible. <em>(bot’s hand
+counter must be 1 or greater. at the end of the round, place the
+Faithful card in the bot’s play area. do not change the bot’s hand
+counter)</em>
 </dd>
 </dl>
 <div class="pagebreak">
@@ -1032,7 +1367,7 @@ prefer one over the other due to components or ease of setup vs ease of
 play. See the following pages for details on the minigames. Select one
 during setup of Act II, and use the minigame when performing the Prelude
 ability on “Uncovering Clues” (F9-02).</p>
-<h2 id="act-ii-8">Act II</h2>
+<h2 id="act-ii-7">Act II</h2>
 <p>✦ Has the Portal been found? <em>(is the Portal token on the
 map?)</em></p>
 <ul>
@@ -1063,6 +1398,33 @@ Uncovering Clues on one of the planets?</li>
 <dt>Uncovering Clues</dt>
 <dd>
 Use Prelude ability if current planet meets Clue Guidelines
+</dd>
+</dl>
+<h2 id="act-iii-7">Act III</h2>
+<p>✦ Can bot Move, Build, Repair, or <ins>favorable combat</ins> for
+control of the Portal token?</p>
+<p>✦ Can bot use Pilgrims’ Use the Portal (Move) ability?</p>
+<p>✦ Doe the Empire control the Portal token?</p>
+<ul>
+<li>Is bot a Regent, but not the First Regent?
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?</li>
+</ul></li>
+</ul>
+<dl>
+<dt>Pilgrims (Prelude)</dt>
+<dd>
+Prior to using this ability, if bot has a Slipstream Drive and can
+Catapult either the Flagship or ships from the Flagship which will
+enable a Pilgrim token to move closer to the Portal, then the bot will
+do that first (Prefer: ships Catapulting for control). Afterwards, use
+this ability to move as many Pilgrim tokens as possible closer to the
+Portal.
+</dd>
+<dt>Movement Principles</dt>
+<dd>
+If bot currently controls the Portal, do not abandon control when
+evaluating Move actions for other reasons.
 </dd>
 </dl>
 <div class="pagebreak">
@@ -1357,9 +1719,23 @@ tokens retain their original meaning as described on the cards
 
 </div>
 <h1 id="hegemon">Hegemon</h1>
-<h2 id="act-ii-9">Act II</h2>
-<p>✦ Can bot favorable battle to eliminate ships and buildings that are
-not Loyal in a system with no Banners?</p>
+<h2 id="act-ii-8">Act II</h2>
+<!--
+TODO: player-piloted Hegemon, other bots should target Banners. how?
+TODO: bot-piloted Hegemon, need to define "Outrage impact" ?
+-->
+<p>✦ Are there Banners available to be placed?</p>
+<ul>
+<li>Can bot favorable battle to eliminate ships and buildings that are
+not Loyal at a planet with no Banners?
+<ul>
+<li>Prefer:
+<ul>
+<li>planet with no cities that are not Loyal</li>
+<li>planet with least Outrage impact</li>
+</ul></li>
+</ul></li>
+</ul>
 <p>✦ Can bot Repair any Banners?</p>
 <p>✦ Can bot use Song of the Banner’s <strong>Call Bodies
 (Build)</strong> ability or <strong>Call Spirits (Tax)</strong>
@@ -1367,41 +1743,133 @@ ability?</p>
 <p>✦ Can bot Build, Repair, or Move to get 2 fresh ships to a Banner
 without at least 2 fresh ships?</p>
 <dl>
+<dt>Slipstream Drive, Fuel</dt>
+<dd>
+Move Flagship to a planet where Banner could be placed if possible.
+Spend Fuel only if not <ins>contending</ins> a matching ambition.
+</dd>
 <dt>Planting Banners</dt>
 <dd>
-Bot will place a Banner if possible (i.e. Flagship is at an eligible
-planet)
+Place a Banner if possible.
+</dd>
+</dl>
+<h2 id="act-iii-8">Act III</h2>
+<p>✦ Are fewer Banners on the map than the current Chapter, and are
+there Banners available to be placed?</p>
+<ul>
+<li>Refer to Act II procedures including Prelude abilities.</li>
+</ul>
+<p>✦ Can bot use Happy Hosts’ “Pacify (Secure)” ability?</p>
+<p>✦ Can bot Build, Repair, Move, or <ins>favorable combat</ins> to get
+control of damaged Rival or Imperial ships?</p>
+<p>✦ Can bot Build, Repair, Move, or <ins>favorable combat</ins> to
+change control of a Banner controlled by a Rival?</p>
+<p>✦ Can bot use Mind Managers’ “Manipulate (Influence)” ability?</p>
+<dl>
+<dt>Happy Hosts</dt>
+<dd>
+Bot will always keep as many Captives as possible.
 </dd>
 </dl>
 <div class="pagebreak">
 
 </div>
-<h1 id="planet-breaker">Planet Breaker</h1>
-<h2 id="act-ii-10">Act II</h2>
-<p>✦ Are there any Hammer Fragment tokens on the map?</p>
+<p>Mind Managers - Manipulate (Influence)</p>
+<p>If the player is the Hegemon:</p>
 <ul>
-<li>Can bot Repair to take a Hammer Fragment token?</li>
-<li>Can bot Build, Repair, Move, or favorable battle to take control of
-a Hammer Fragment token?</li>
+<li>Choose a Rival bot that you have a Captive of.</li>
+<li>Draw action cards from the stack and place them in the bot’s play
+area until the bot has as cards in its play area equal to its hand
+counter.</li>
+<li>Take one card from the bot’s play area and add it to your hand.</li>
+<li>Give the bot any card from your hand by adding it to the bot’s play
+area.</li>
 </ul>
+<p>If the bot is the Hegemon:</p>
+<ul>
+<li>Target the player if possible (if the bot has a Captive of the
+player’s, and the player has cards in their hand). Otherwise do not use
+the ability.</li>
+<li>Select a card from the player’s hand at random and place it in the
+bot’s play area.</li>
+<li>Draw one card from the top of the stack and add it to the player’s
+hand.</li>
+</ul>
+<h1 id="planet-breaker">Planet Breaker</h1>
+<h2 id="act-ii-9">Act II</h2>
+<!--
+TODO: needs "stateful" procedures? get fragments & build fleet before "Prepare"
+TODO: at least needs some guidance on "favorable" target selection
+-->
+<p>✦ Are there any Hammer Fragments on the map?</p>
+<ul>
+<li>Can bot Repair to take a Hammer Fragment?
+<ul>
+<li>Prefer:
+<ul>
+<li>Hammer Fragment where fewest Loyal ships</li>
+</ul></li>
+</ul></li>
+<li>Can bot Build, Repair, Move, or favorable battle to take control of
+a Hammer Fragment?</li>
+</ul>
+<p>✦ Can bot use Planet Hammer’s <strong>Break World (Battle)</strong>
+ability?</p>
 <p>✦ Can bot use Planet Hammer’s <strong>Prepare (Build)</strong>
 ability?</p>
 <ul>
 <li>Prefer:
 <ul>
-<li>planet with most intercept response <em>(fresh ships plus fresh
-starports on Flagship if Defense Array upgrade has been built)</em></li>
+<li>planet with most fresh Loyal ships plus fresh starports on Flagship
+(only count if Defense Array upgrade has been built)</li>
+<li>planet with most buildings</li>
 </ul></li>
 </ul>
-<p>✦ Can bot use Planet Hammer’s <strong>Break World (Battle)</strong>
-ability?</p>
-<!-- TODO: guidance on "favorable" planet hammer usage -->
 <p>✦ Can bot Build, Repair, or Move to control a planet which is not a
 Broken World?</p>
 <dl>
 <dt>Sycophants</dt>
 <dd>
-Bot will not use the Prelude ability to place ships
+Bot will not use the Prelude discard ability to place ships
+</dd>
+<dt>Slipstream Drive</dt>
+<dd>
+Bot will use Slipstream Drive to catapult move for control of a Hammer
+Fragment if such a move is possible. Use Movement Principles to carry
+out move, and prefer moving ships.
+</dd>
+</dl>
+<h2 id="act-iii-9">Act III</h2>
+<p>✦ Are there equal to or fewer buildings on the Breaking Worlds card
+than the current Chapter?</p>
+<ul>
+<li>Follow Act II procedures</li>
+</ul>
+<div class="pagebreak">
+
+</div>
+<h1 id="pirate">Pirate</h1>
+<h2 id="act-ii-10">Act II</h2>
+<!--
+TODO: Bot could steal from the Imperial Trust (rules check?)
+TODO: Outrage check for Raids should be relaxed for clock
+-->
+<p>✦ Can bot <ins>favorable combat</ins> to raid for resources?
+<em>(check for raid targets made possible by Pirate Fleet)</em></p>
+<ul>
+<li>Prefer: type of resource that bot’s Pirate Hoard has less of than
+each Rival</li>
+</ul>
+<p>✦ Has bot completed its objective?</p>
+<ul>
+<li>Can bot <ins>favorable combat</ins> to eliminate all of one Rival’s
+pieces in a system with Loyal pieces?</li>
+</ul>
+<dl>
+<dt>Pirate Hoard</dt>
+<dd>
+Place all stolen resources here. If bot has not completed its objective
+yet, do not spend during Prelude.
 </dd>
 </dl>
 <div class="pagebreak">
@@ -1413,12 +1881,6 @@ Bot will not use the Prelude ability to place ships
 ability?</p>
 <p>✦ Can bot Build, Repair, or Move to control a system with fresh
 Blight?</p>
-<ul>
-<li>Prefer:
-<ul>
-<li>system with Imperial Ships, if bot is a Regent</li>
-</ul></li>
-</ul>
 <dl>
 <dt>Spore Ships</dt>
 <dd>
@@ -1426,15 +1888,85 @@ Bot will spend Material during Prelude to use the <strong>Spawn
 (Build)</strong> ability.
 </dd>
 </dl>
+<h2 id="act-iii-10">Act III</h2>
+<p>✦ Can bot Tax to gain a Psionic?</p>
+<p>✦ Are Blight Purge, Blight Panic, or Blight Looms in the Court?</p>
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?
+<ul>
+<li>If Securing the Imperial Council, trigger Crisis.</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Secure or Influence Blight Purge or Blight Looms?</p>
+<ul>
+<li>If Securing Blight Looms, do not destroy any Blight.</li>
+<li>If Securing Blight Purge, prefer cluster with fewest Blight.</li>
+</ul>
+<p>✦ Can bot use Blight Fury’s <strong>Anger (Battle)</strong>
+ability?</p>
+<ul>
+<li>Spend 1 or 2 Psionics to change the roll, if necessary.</li>
+<li>Prefer:
+<ul>
+<li>system where more pieces are destroyed by the Blight Crisis.</li>
+<li>system where fewer Loyal pieces are destroyed by the Blight
+Crisis.</li>
+</ul></li>
+</ul>
+<p>✦ Can bot use Spore Ships’s <strong>Spawn (Build)</strong>
+ability?</p>
+<p>✦ Can bot Build, Repair, or Move to control a system with damaged
+Blight?</p>
+<ul>
+<li>Prefer:
+<ul>
+<li>system with more pieces</li>
+<li>system with fewer Loyal pieces</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Move Blight to a destination system with more pieces than
+the origin system?</p>
+<ul>
+<li>Prefer:
+<ul>
+<li>system with more pieces</li>
+<li>system with fewer Loyal pieces</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Repair any Blight?</p>
 <div class="pagebreak">
 
 </div>
 <h1 id="pacifist">Pacifist</h1>
+<h2 id="all-acts-1">All Acts</h2>
+<dl>
+<dt>Battle and Trophies</dt>
+<dd>
+Bot will avoid Battle actions if there is any chance of taking trophies.
+<em>(in other words, will avoid most battles except in some rare cases
+may raid, if target has 1 key and defender has 2 buildings present)</em>
+Bot will reject Transfer Asset offers which give the bot Trophies,
+except for Loyal pieces.
+</dd>
+<dt>Secure and Tax and Captives</dt>
+<dd>
+Bot will avoid Secure and Tax actions that would take captives. Bot will
+reject Transfer Asset offers which give the bot Captives, except for
+Loyal pieces.
+</dd>
+<dt>Influence</dt>
+<dd>
+Bot will avoid Influencing <ins>contested cards</ins> with more agents
+than Rivals. Bot will only Influence <ins>contested cards</ins> to
+defend own agents up to number of Rival agents.
+</dd>
+</dl>
 <h2 id="act-ii-12">Act II</h2>
 <p>✦ Can bot Move a Witness token to a Psionic planet?</p>
 <ul>
 <li>Prefer: Psionic planet where bot will have control at the end of the
 move.</li>
+<li>Use <ins>partial move</ins></li>
 </ul>
 <p>✦ Can bot Build, Repair, or Move to take control of a Witness
 token?</p>
@@ -1444,35 +1976,45 @@ token?</p>
 <dl>
 <dt>Witnesses</dt>
 <dd>
-Bot will use the Prelude ability when bot is in first place or second
-place for Empath, including ties.
+Bot will always use the Prelude ability to take a Witness if possible,
+but only declare Empath if not already declared and only if bot is
+<ins>contending</ins> for Empath.
 </dd>
 <dt>Well of Empathy</dt>
 <dd>
-Bot will place Psionics first in 3 key slots, then place them on this
-card.
+Bot will place Psionic resources first in 3 key slots, then place them
+on this card.
+</dd>
+<dt>Prelude</dt>
+<dd>
+If Empathy is declared, bot will spend Psionic resources if doing so
+will advance its objective and will not change the bot’s place for
+Empath. Additionally, bot will spend resources to enable it to use the
+Prelude ability above on the same turn. Limit one resource per Witness
+token. <em>(e.g. spend a Fuel to Move a Witness to a Psionic planet
+under bot control, or spend a Material to Build and get control of a
+Witness already at a Psionic planet)</em>
+</dd>
+<dt>Govern the Imperial Reach</dt>
+<dd>
+Bot will change if current Policy is A Policy of War.
 </dd>
 </dl>
-<h3 id="special-rules">special rules</h3>
-<p>If bot has not completed its objective, modify the procedures with
-these additional guidelines.</p>
+<h2 id="act-iii-11">Act III</h2>
 <dl>
-<dt>Battle</dt>
+<dt>Empath and Psionic resources</dt>
 <dd>
-Bot will avoid Battle actions if there is a chance of taking trophies.
-<em>(in other words, will avoid most battles except in some cases may
-raid, if target has 1 key and defender has 2 buildings present)</em>
+If bot is winning Empath, and A &gt; G, then keep Psionic resources.
+Otherwise, spend Psionics until Rivals have more Psionic resources than
+you. <!-- TODO: Otherwise? -->
 </dd>
-<dt>Secure and Tax</dt>
+<dt>Govern the Imperial Reach</dt>
 <dd>
-Bot will avoid Secure and Tax actions that would take captives.
-</dd>
-<dt>Influence</dt>
-<dd>
-Bot will only Influence <ins>uncontested cards</ins> or cards which only
-have Loyal agents. Bot will follow “Influence Principles” otherwise.
+Bot will enforce or change to A Policy of Escalation.
 </dd>
 </dl>
+<!-- TODO: Reconcile with the Outraged -->
+<!-- TODO: Rebuke of the Empaths -->
 <div class="pagebreak">
 
 </div>
@@ -1526,6 +2068,200 @@ will only risk provoking outrage if able to ransack the court.
 <div class="pagebreak">
 
 </div>
+<h1 id="overlord">Overlord</h1>
+<h2 id="act-iii-12">Act III</h2>
+<dl>
+<dt>Setup</dt>
+<dd>
+If bot has at least 2 <ins>unbuilt</ins> ships and would take control of
+a planet by placing ships, then Provoke Outrage. Prefer:
+</dd>
+</dl>
+<ul>
+<li>least Outrage impact</li>
+<li>planet with no Blight</li>
+<li>planet with no Rival ships.</li>
+</ul>
+<p>✦ Can bot Tax or favorable battle for a resource type bot that
+matches its Outrage?Prefer: <ins>new resource</ins></p>
+<p>✦ Are there any planet types matching bot’s Outrage that it does not
+control?</p>
+<ul>
+<li>Can bot Build, Repair, Move or <ins>favorable combat</ins> for
+control of any of those planet types?</li>
+</ul>
+<p>✦ Is bot a Regent but not First Regent, and is the Imperial Council
+“In Session”?</p>
+<ul>
+<li>If bot was First Regent, would bot control additional planet types
+matching its Outrage during scoring?
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Battle to intentionally provoke Outrage of a type not yet
+Outraged?</p>
+<ul>
+<li>Ignore Combat Principles rules for avoiding Outrage
+<!-- TODO: new combat principles for intentional outrage. raid to steal matching resource --></li>
+<li>Limit once per turn</li>
+<li>Prefer:
+<ul>
+<li>least impact (fewest cards and resources discarded)</li>
+<li>most matching planets controlled by bot</li>
+</ul></li>
+</ul>
+<div class="pagebreak">
+
+</div>
+<h1 id="survivalist">Survivalist</h1>
+<h2 id="act-iii-13">Act III</h2>
+<p>✦ Can bot Build a bunker?</p>
+<ul>
+<li>Prefer:
+<ul>
+<li>capture agent from Rival with less power than bot</li>
+<li>capture agent from Rival with fewest ships</li>
+<li>build Bunker in a system controlled by bot</li>
+<li>build Bunker in a system with Blight</li>
+</ul></li>
+</ul>
+<p>✦ Are any Bunkers controlled by a Rival?</p>
+<ul>
+<li>Can bot Build or Repair to change control of the Bunker?</li>
+<li>Can bot Move or <ins>favorable combat</ins> to change control of the
+Bunker?</li>
+</ul>
+<p>✦ Does bot have fewer Captives than Bunkers on the map?</p>
+<ul>
+<li>Can bot Tax or Secure to take captives?</li>
+</ul>
+<dl>
+<dt>Captive Release</dt>
+<dd>
+Always choose to Provoke Outrage
+</dd>
+</dl>
+<div class="pagebreak">
+
+</div>
+<h1 id="redeemer">Redeemer</h1>
+<h2 id="act-iii-14">Act III</h2>
+<p>If Keeper is not declared, then declare any ambition, even if bot is
+not winning or tied for first place. Prefer:</p>
+<ul>
+<li>ambition for which bot is currently in third place</li>
+<li>ambition for which no rival is winning or tied for first place</li>
+</ul>
+<p>✦ Can bot Tax for a Relic?</p>
+<p>✦ Can bot favorable battle to steal a Relic or a Relic card?</p>
+<p>✦ Can bot Secure or Influence a Relic card?</p>
+<p>✦ Are there any Loyal cities on Relic planets not controlled by
+bot?</p>
+<ul>
+<li>Can bot Build or Repair to get control?</li>
+<li>Can bot Move or <ins>favorable combat</ins> to get control?</li>
+</ul>
+<div class="pagebreak">
+
+</div>
+<h1 id="guardian">Guardian</h1>
+<h2 id="act-iii-15">Act III</h2>
+<!--
+TODO: bot could become Outlaw, and steal from the Trust for Green Vault?
+TODO: bot could declare other ambition to prevent Tyrant / Edenguard from being declared. if Rival is winning and bot not <ins>contending</ins> ? if Rival has a big lead ?
+-->
+<p>✦ Is bot a Regent, but not First Regent?</p>
+<ul>
+<li>Would bot <ins>contend</ins> Edenguard if bot was First Regent?
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Tax, Gain, or favorable battle for Material or Fuel?</p>
+<p>✦ Can bot Build, Repair, Move, or favorable battle for control of a
+Material or Fuel planet?</p>
+<p>✦ Can bot Tax or Secure to take Captives?</p>
+<ul>
+<li>Prefer:
+<ul>
+<li>Planet with Loyal city</li>
+</ul></li>
+</ul>
+<dl>
+<dt>Green Vault</dt>
+<dd>
+When taking any Material or Fuel, place it in bot’s Captives
+</dd>
+</dl>
+<div class="pagebreak">
+
+</div>
+<h1 id="naturalist">Naturalist</h1>
+<h2 id="act-iii-16">Act III</h2>
+<!--
+TODO: should there is some kind of ambition declaration priority here?
+for example, declare Blightkin if winning/tied
+if not winning/tied, declare any other ambitions?
+-->
+<p>✦ Does bot have no psionics?</p>
+<ul>
+<li>Can bot Tax to gain one?</li>
+<li>Can bot <ins>favorable combat</ins> to steal one?</li>
+</ul>
+<p>✦ Can bot Build, Repair, or Move ships to control fresh Blight?</p>
+<p>✦ Can bot Repair any damaged Blight it already controls?</p>
+<p>✦ Can bot <ins>favorable combat</ins> to control fresh Blight?</p>
+<p>✦ Does bot have at least 2 agents in the court and can bot
+<strong>Seed (Build)</strong>?</p>
+<ul>
+<li>If possible, place damaged Blight in a system bot controls or where
+bot has ships.</li>
+<li>If necessary, return 1 or 2 agents from the court to change the
+roll.</li>
+</ul>
+<div class="pagebreak">
+
+</div>
+<h1 id="gate-wraith">Gate Wraith</h1>
+<h2 id="act-iii-17">Act III</h2>
+<p>✦ Can bot Catapult move from a planet into the gate of the same
+cluster to break the gate and place a Passage token? <em>(Breaking Gates
+&amp; Placing Passages ability)</em></p>
+<p>✦ Can bot Build, Repair, Move, or <ins>favorable combat</ins> for
+control of the Twisted Passage?</p>
+<p>✦ Can bot Build, Repair, Move, or <ins>favorable combat</ins> for
+control of a Rival or Free starport adjacent to an unbroken gate?</p>
+<p>✦ Can bot Build a starport adjacent to an unbroken gate?</p>
+<p>✦ Would a Blight Crisis cause bot to lose control of the Twisted
+Passage?</p>
+<ul>
+<li>Can bot <ins>favorable combat</ins> vs Blight in the Twisted
+Passage?</li>
+</ul>
+<p>✦ Does the Empire control the Twisted Passage?</p>
+<ul>
+<li>Is bot a Regent, but not the First Regent?
+<ul>
+<li>Can bot Secure or Influence the Imperial Council?</li>
+</ul></li>
+</ul>
+<!--
+TODO:
+check for Imperial Gambit ?
+Twisted Passage should be considered "adjacent" for purpose of over-control of planets and blockades
+-->
+<dl>
+<dt>Movement Principles</dt>
+<dd>
+Always retain control of the Twisted Passage if possible. <em>(i.e. if
+bot currently controls the Twisted Passage, do not abandon control when
+evaluating Move actions for other reasons)</em>
+</dd>
+</dl>
+<div class="pagebreak">
+
+</div>
 <h1 id="bot-turn-start-here">Bot turn (START HERE)</h1>
 <p>✦ If bot has no cards left <em>(check hand counter)</em> then bot
 will pass.</p>
@@ -1551,8 +2287,16 @@ non-Event cards.</li>
 <ul>
 <li>Select matching card and declare, if bot is winning OR ambition not
 yet declared.</li>
-<li>Prefer: ambition that bot is winning</li>
+<li>Prefer:
+<ul>
+<li>ambition that bot is winning</li>
+<li>more pips</li>
 </ul></li>
+</ul></li>
+</ul></li>
+<li>Are all cards being considered the same suit?
+<ul>
+<li>Prefer: higher number</li>
 </ul></li>
 <li>Use General Priorities to select card.</li>
 </ul>
@@ -1564,13 +2308,13 @@ yet declared.</li>
 </ul></li>
 <li>No:
 <ul>
-<li>If seize counter is on bot’s board, increment it, else place seize
-counter, with a value of 1.</li>
+<li>If seize counter is present, increment it, else place seize counter,
+with a value of 1.</li>
 <li>If hand counter is 2 or greater and initiative was not already
 seized this round, check for seize:
 <ul>
 <li>if holding Event or Event played earlier this round, and Events are
-critical, automatically seize initiative. Otherwise:</li>
+<ins>urgent</ins>, automatically seize initiative. Otherwise:</li>
 <li>Roll 1d6, and subtract 1 for each <ins>undeclared ambition</ins>
 that bot is winning. Seize initiative if result is less than seize
 counter. Decrement hand counter to represent bot discarding an extra
@@ -1589,68 +2333,72 @@ Prelude actions, then go to page for selected card’s suit.</p>
 <h1 id="general-priorities">General Priorities</h1>
 <p>✦ Check bot’s Fate for initial priorities. If no card selected,
 return to this page.</p>
-<p>✦ <!-- priority=1 --> Can bot Secure or Tax to <ins>contend</ins>
-declared ambition? → Administration/Aggression</p>
-<p>✦ <!-- priority=1.5 --> Can bot Secure an <ins>effective</ins> Vox
-card, the Imperial Council, or Secure a card with an attached Faithful
-or Guild card? → Aggression</p>
-<p>✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to
-<ins>contend</ins> declared ambition? → <ins>Combat card</ins></p>
+<p>✦ Can bot Tax or Secure to <ins>contend</ins> declared ambition? →
+Administration/Aggression</p>
+<p>✦ Can bot Secure an <ins>effective</ins> Vox card, the Imperial
+Council, or Secure a card with an attached Faithful or Guild card? →
+Aggression</p>
+<p>✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> declared
+ambition? → <ins>Combat card</ins></p>
 <p>✦ Does bot have no starport? <em>(if Flagship, none on Flagship
 board, else none on map)</em></p>
 <ul>
-<li>Can bot build a starport?
+<li>Can bot Build a starport? → Construction</li>
+</ul>
+<p>✦ Does bot have no starport and no <ins>claims</ins>? <em>(ignore if
+Flagship)</em></p>
 <ul>
-<li><!-- Build starport priority=3 -->
-Yes: → Construction</li>
-<li><!-- Expand for starport priority=3 -->
-No: → Mobilization/Aggression</li>
-</ul></li>
+<li>Can bot Move to get new <ins>claims</ins>? →
+Aggression/Mobilization</li>
 </ul>
 <p>✦ Are any loyal buildings in a system controlled by a rival?</p>
 <ul>
-<li><!-- priority=4 -->
-Can bot Move to change control? → Mobilization/Aggression</li>
-<li><!-- priority=4 -->
-Can bot Build or Repair to change control? →
+<li>Can bot Build or Repair to change control? →
 Construction/Administration</li>
-<li><!-- priority=4 -->
-Can bot <ins>favorable combat</ins> to change control? → <ins>Combat
+<li>Can bot Move to change control? → Mobilization/Aggression</li>
+<li>Can bot <ins>favorable combat</ins> to change control? → <ins>Combat
 card</ins></li>
 </ul>
-<p>✦ Does bot have <ins>unbuilt cities</ins>?</p>
+<p>✦ Can bot <ins>favorable combat</ins> vs fresh Blight at Loyal
+building or <ins>claim</ins>? → <ins>Combat card</ins></p>
+<p>✦ Does bot have <ins>unbuilt</ins> cities?</p>
 <ul>
 <li>Does bot have a Flagship?
 <ul>
-<li>Can bot Build at the current planet? → Construction</li>
-<li>Can bot Move to a planet matching an unbuilt upgrade/armor? →
-Mobilization/Aggression</li>
+<li>Can bot Build an upgrade/armor at the current planet? →
+Construction</li>
+<li>Can bot Move to a planet matching an <ins>unbuilt</ins>
+upgrade/armor? → Mobilization/Aggression</li>
 </ul></li>
 <li>Does bot have fewer <ins>claims</ins> than half the number of
-<ins>unbuilt cities</ins>, rounded down?
+<ins>unbuilt</ins> cities, rounded down?
 <ul>
-<li>Yes: <!-- Expand for city priority=5 --> Can bot move to get a new
-<ins>claim</ins>? → Mobilization/Aggression</li>
-<li>No: <!-- Build city priority=5 --> Does bot have at least one
-<ins>claim</ins>? → Construction</li>
+<li>Yes: Can bot move to get a new <ins>claim</ins>? →
+Mobilization/Aggression</li>
+<li>No: Does bot have at least one <ins>claim</ins>? → Construction</li>
 </ul></li>
 </ul>
-<p>✦ Can bot use an ability on a ready Guild or lore card? → Select suit
-matching ability, then exhaust card. Use ability, then go to page for
-card’s suit if actions remaining.</p>
-<p>✦ <!-- priority=6 --><!-- priority=7 --> Can bot Tax or Secure to
-<ins>contend</ins> <ins>undeclared ambition</ins>, take captives, or
-grow a lead in a declared ambition? <br>→ Administration/Aggression</p>
-<p>✦ <!-- priority=8 --><!-- priority=9 --> Can bot Influence a card
-with more agents than rivals? → Mobilization/Administration</p>
-<p>✦ <!-- priority=9.5 --> Would bot <ins>contend</ins> a declared
-ambition with the Imperial Trust, and can bot Influence the Imperial
-Council with more agents than rivals? → Mobilization/Administration</p>
-<p>✦ <!-- priority=10 --> Can bot Move or <ins>favorable combat</ins> to
-take control of rival city or Free city?<br/> →
-Mobilization/Aggression</p>
-<p>✦ <!-- priority=11 --><!-- priority=12 --> Can bot Build or Repair
-ships? → Construction/Administration</p>
+<p>✦ Can bot use an ability on a <ins>ready</ins> Guild or lore card? →
+Select suit matching ability</p>
+<p>✦ Does bot have more <ins>unbuilt</ins> ships than any other
+Rival?</p>
+<ul>
+<li>Can bot Build ships? → Construction</li>
+</ul>
+<p>✦ Can bot Tax or Secure to <ins>contend</ins> <ins>undeclared
+ambition</ins>, take captives, or grow a lead in a declared ambition? →
+Administration/Aggression</p>
+<p>✦ Can bot Influence a card with more agents than rivals? →
+Mobilization/Administration</p>
+<p>✦ Would bot <ins>contend</ins> a declared ambition with the Imperial
+Trust, and can bot Influence the Imperial Council with more agents than
+rivals? → Mobilization/Administration</p>
+<p>✦ Can bot Build or Repair to take control of rival city or Free city?
+→ Construction/Administration</p>
+<p>✦ Can bot Move or <ins>favorable combat</ins> to take control of
+rival city or Free city? → Mobilization/Aggression</p>
+<p>✦ Can bot Build or Repair any other ships? →
+Construction/Administration</p>
 <div class="pagebreak">
 
 </div>
@@ -1673,10 +2421,11 @@ UNLESS securing a Relic card</li>
 <h2 id="resources">Resources</h2>
 <p><strong>Material</strong>: spend to Build a starport if none on map,
 otherwise Build cities, then ships</p>
-<p><strong>Fuel and Weapon</strong>: spend for <ins>Combat
+<p><strong>Fuel</strong>: spend for Expansion Principles or <ins>Combat
 card</ins></p>
+<p><strong>Weapon</strong>: spend for <ins>Combat card</ins></p>
 <p><strong>Relic</strong>: Secure for captives, <ins>contend</ins> a
-declared ambition, or <ins>effective</ins> Vox card.</p>
+declared ambition, or <ins>effective</ins> Vox card</p>
 <p><strong>Psionic</strong>: Tax/Secure to <ins>contend</ins> a declared
 ambition, or spend for <ins>Combat card</ins></p>
 <p>See “Combat principles” for more details on Fuel, Weapon, and Psionic
@@ -1685,7 +2434,7 @@ usage.</p>
 <p>Bot will discard some Guild card for their Prelude ability at the
 first opportunity.</p>
 <p>Bot will discard a Weapon Guild card for Prelude ability if it has 3
-ships available. Place ships at starport with most fresh ships,
+ships available. Place ships at Loyal starport with most fresh ships,
 otherwise with <ins>task force</ins>.</p>
 <p>Bot will discard all Union cards to gain bonus action cards. Place
 action card in bot’s play area, and increment bot’s hand counter.</p>
@@ -1696,111 +2445,192 @@ action card in bot’s play area, and increment bot’s hand counter.</p>
 Repair | Influence</h1>
 <p>✦ Can bot Tax to <ins>contend</ins> a declared ambition? <span
 style="font-size: 12px;">[1]</span></p>
-<p>✦ Are any loyal buildings controlled by a rival?</p>
+<p>✦ Are any Loyal buildings controlled by a Rival?</p>
 <ul>
 <li>Can bot Repair to change control? <span
-style="font-size: 12px;">[13]</span></li>
+style="font-size: 12px;">[10]</span></li>
 </ul>
-<p>✦ Can bot use an ability on a ready Guild or lore card?</p>
-<p>✦ Can bot Tax to <ins>contend</ins> an <ins>undeclared ambition</ins>
-or to take captives? <span style="font-size: 12px;">[23,24]</span></p>
-<p>✦ Can bot Influence a card? <span
-style="font-size: 12px;">[27]</span></p>
-<p>✦ Would bot <ins>contend</ins> a declared ambition with the Imperial
+<p>✦ Can bot Influence to defend Loyal agents on a <ins>contested
+card</ins>? <span style="font-size: 12px;">[13]</span></p>
+<p>✦ Is it the last Chapter of Act I or Act II?</p>
+<ul>
+<li>Can bot Repair any buildings or ships? <span
+style="font-size: 12px;">[14]</span> Prefer:
+<ul>
+<li>starport (if bot has only one on map)</li>
+<li>cities</li>
+<li>ships</li>
+<li>other starports</li>
+</ul></li>
+</ul>
+<p>✦ Can bot use an ability on a <ins>ready</ins> Guild or lore
+card?</p>
+<p>✦ Can bot Influence a <ins>critical card</ins>? <span
+style="font-size: 12px;">[24]</span></p>
+<p>✦ Could bot <ins>contend</ins> a declared ambition via the Imperial
 Trust?</p>
 <ul>
 <li>Can bot Influence the Imperial Council? <span
-style="font-size: 12px;">[28]</span></li>
+style="font-size: 12px;">[25]</span></li>
 </ul>
-<p>✦ Can bot Repair to take control of a rival building? <span
-style="font-size: 12px;">[30]</span></p>
-<p>✦ Can bot Repair any other ships or buildings? <span
-style="font-size: 12px;">[38]</span> Prefer:</p>
+<p>✦ Can bot Repair to take control of a Rival building? <span
+style="font-size: 12px;">[27]</span></p>
+<p>✦ Can bot Tax to <ins>contend</ins> an <ins>undeclared
+ambition</ins>, to take captives, or to grow a lead in a declared
+ambition? <span style="font-size: 12px;">[37,38,39]</span></p>
+<p>✦ Can bot Repair any ships or buildings? <span
+style="font-size: 12px;">[40]</span> Prefer:</p>
 <ul>
 <li>ships in <ins>task force</ins></li>
 <li>other ships</li>
 <li>starport, if only one on map</li>
 <li>cities</li>
 </ul>
-<p>✦ Can bot Tax to grow a lead in a declared ambition? <span
-style="font-size: 12px;">[46]</span></p>
-<p>✦ Can bot Tax to gain resources? <span
-style="font-size: 12px;">[47]</span> Prefer:</p>
+<p>✦ Can bot Influence any other card? <span
+style="font-size: 12px;">[43]</span></p>
+<p>✦ Can bot Tax to gain any other resources? <span
+style="font-size: 12px;">[46]</span> Prefer:</p>
 <ul>
 <li><ins>
 new resources
 </ins></li>
+<li>grow a lead in an <ins>undeclared ambition</ins></li>
 </ul>
 <div class="pagebreak">
 
 </div>
 <h1 id="influence-principles">Influence Principles</h1>
-<p>When influencing cards in the court, the bot will follow these
-guidelines.</p>
+<p>When Influencing cards in the court, the bot will follow these
+guidelines. An <ins>uncontested card</ins> is a card in the court with
+no agents <em>(no Loyal agents and no Rival agents)</em>. A
+<ins>contested card</ins> is a card in the court which a Rival could
+Secure <em>(a Rival has more agents than each other Rival)</em>. A safe
+card is a card in the court which the bot could Secure <em>(more Loyal
+agents than each other Rival)</em>.</p>
 <p>If possible, influence <ins>uncontested cards</ins> with 2 agents.
-Otherwise, influence <ins>uncontested cards</ins> with 1 agent. <em>(in
-other words, if the bot has 2 actions and 2 available agents, and
-procedures direct the bot to influence an <ins>uncontested card</ins>,
-bot will spend 2 actions to place 2 agents)</em></p>
-<p>If possible, influence a <ins>contested card</ins> with one more
-agent than the most rival agents. Otherwise, check if the bot has enough
-agents: if the bot could influence with agents up to the most rival
-agents, and still have agents in its supply left over, then influence
-the card to match rival agents. Otherwise, do not influence the
-card.</p>
-<h2 id="priorities">Priorities</h2>
-<p>When choosing between options which are otherwise equal in priority,
-use the following priorities to select a card to influence.</p>
+Otherwise, influence <ins>uncontested cards</ins> with 1 agent. Never
+influence safe cards.</p>
+<!--
+*(if the bot has 2 actions and 2 available agents, and procedures direct the bot to Influence an <ins>uncontested card</ins>, bot will spend 2 actions to place 2 agents)*
+-->
+<p>If possible, Influence <ins>contested cards</ins> with 1 more agent
+than Rival with most agents. <em>(Influence such that bot could Secure
+the card, but do not Influence more than the minimum needed to
+Secure)</em></p>
+<p>Defending Loyal agents on a <ins>contested card</ins> means
+preventing their capture by a Rival who can Secure the card. When
+defending Loyal agents bot will carry out one of three possible
+choices:</p>
 <ul>
-<li>Lore card</li>
-<li>card with attached Faithful card</li>
-<li>card with attached Guild card</li>
+<li>Outbid: Influence with one more agent than Rival with most agents
+<em>(potentially allowing bot to Secure)</em></li>
+<li>Block: Influence with agents up to Rival with most agents
+<em>(preventing the Rival from Securing and taking captives)</em></li>
+<li>Abandon: do not Influence at all</li>
+</ul>
+<p>Roll 1d6 and compare the result to the most Rival agents currently on
+the card. If the die roll is greater than most Rival agents, bot will
+Outbid. If die roll is equal to most Rival agents, bot will Block. If
+die roll is less than most Rival agents, bot will Abandon.</p>
+<p>Additionally, before Blocking, check if any agents would remain in
+bot’s supply. If the bot cannot Influence with agents up to Rival with
+most agents and still have at least one agent in its supply left over,
+then Abandon instead.</p>
+<h2 id="critical-cards">Critical cards</h2>
+<p>Critical cards are cards in the Court which the bot is more
+interested in Influencing and Securing than others. When procedures
+direct bot to Influence or Secure a <ins>Critical card</ins>, select
+cards from the priority list below.</p>
+<ul>
+<li>an adverse Vox card (Vox card with a Crisis which negatively impacts
+bot)</li>
+<li>a card which would result in bot <ins>contending</ins> a declared
+ambition, if Secured
+<ul>
+<li><em>(this includes the Imperial Council, if bot could
+<ins>contend</ins> a declared via the Imperial Trust, by becoming First
+Regent OR by stealing from the Trust as an Outlaw)</em></li>
+</ul></li>
+<li>an <ins>effective</ins> Vox card</li>
+<li>a card granting any bonus action card
+<ul>
+<li><em>(for example any Faithful card, Union card, or “Call to Action”
+Vox card)</em></li>
+</ul></li>
+<li>any non-Vox card with any other non-Vox card attached to it
+<ul>
+<li><em>(for example, a Guild card with an attached Faithful card, or a
+Guild card with an attached lore card. but NOT a Vox card with an
+attached Faithful card, etc.)</em></li>
+</ul></li>
+</ul>
+<h2 id="non-critical-cards">non-Critical cards</h2>
+<p>When procedures direct bot to Influence or Secure any other Court
+card, select cards from the priority list below.</p>
+<ul>
+<li>captives</li>
+<li><ins>
+contend
+</ins>
+an <ins>undeclared ambition</ins></li>
+<li>grow a lead in a declared ambition</li>
+<li>Weapon icon</li>
+<li>grow a lead in an <ins>undeclared ambition</ins></li>
+</ul>
+<h2 id="tie-breaking">Tie-breaking</h2>
+<p>When choosing between two or more cards (either Critical or
+non-Critical) which are otherwise equal in priority, use the following
+priorities to select a card to influence.</p>
+<ul>
 <li><ins>
 uncontested card
 </ins></li>
-<li>card granting a bonus action card (for example Union card or “Call
-to Action” Vox card)</li>
+<li>card with attached Faithful, Guild, or lore card</li>
 <li>card which would take most captives</li>
-<li>Loyal card for outraged resource</li>
+<li>card with more keys</li>
 </ul>
-<p>If further tie breaking is necessary, prefer the card with more
-keys.</p>
 <div class="pagebreak">
 
 </div>
 <h1 id="aggression---move-battle-secure">Aggression - Move | Battle |
 Secure</h1>
-<p>✦ Can bot Secure to <ins>contend</ins> a declared ambition? <span
+<p>✦ Can bot Secure a <ins>critical card</ins>? <span
 style="font-size: 12px;">[2]</span></p>
-<p>✦ Can bot Secure an <ins>effective</ins> Vox card or the Imperial
-Council? <span style="font-size: 12px;">[4,5]</span></p>
-<p>✦ Can bot Secure a Faithful card or an attached Guild card? <span
-style="font-size: 12px;">[6,7]</span></p>
+<p>✦ Could bot <ins>contend</ins> a declared ambition via the Imperial
+Trust?</p>
+<ul>
+<li>Can bot Secure the Imperial Council? <span
+style="font-size: 12px;">[3]</span></li>
+</ul>
 <p>✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> a
-declared ambition? <span style="font-size: 12px;">[8]</span></p>
-<p>✦ (ignore for Flagship) Does bot have no starport and no
-<ins>claims</ins>?</p>
+declared ambition? <span style="font-size: 12px;">[4]</span></p>
+<p>✦ Does bot have no starport and either no <ins>claims</ins> or cannot
+Build upgrades/armor at the Flagship planet?</p>
 <ul>
-<li>Can bot Move to get new <ins>claims</ins>? <span
-style="font-size: 12px;">[10]</span></li>
+<li>Can bot Move to get new <ins>claims</ins>, or get Flagship to a
+planet matching <ins>unbuilt</ins> upgrades/armor? <span
+style="font-size: 12px;">[8]</span></li>
 </ul>
-<p>✦ (Flagship only) Does bot have no starport and cannot Build upgrades
-or armor at the Flagship planet?</p>
-<ul>
-<li>Can bot Move Flagship to planet matching unbuilt upgrades or armor?
-<span style="font-size: 12px;">[11]</span></li>
-</ul>
-<p>✦ Are any loyal buildings controlled by a rival?</p>
+<p>✦ Are any Loyal buildings controlled by a Rival?</p>
 <ul>
 <li>Can bot Move or <ins>favorable combat</ins> to change control? <span
-style="font-size: 12px;">[14,15]</span></li>
+style="font-size: 12px;">[11,12]</span></li>
 </ul>
-<p>✦ (ignore for Flagship) Does bot have <ins>unbuilt cities</ins> and
-fewer <ins>claims</ins> than half number of <ins>unbuilt
-cities</ins>?</p>
+<p>✦ Is it the last Chapter of Act I or Act II?</p>
 <ul>
-<li>Can bot Move to get at least one new <ins>claim</ins>? <span
-style="font-size: 12px;">[18]</span> Prefer:
+<li>Can bot Move fresh ships to Loyal buildings where Blight and no
+fresh ships? <span style="font-size: 12px;">[15]</span></li>
+</ul>
+<p>✦ Can bot <ins>favorable combat</ins> vs fresh Blight at Loyal
+building or <ins>claim</ins>? <span
+style="font-size: 12px;">[16]</span></p>
+<p>✦ Does bot have <ins>unbuilt</ins> cities and either fewer
+<ins>claims</ins> than half the number of <ins>unbuilt</ins> cities or
+cannot Build upgrades/armor at the Flagship planet?</p>
+<ul>
+<li>Can bot Move to get at least one new <ins>claim</ins> or get
+Flagship to planet matching <ins>unbuilt</ins> upgrades/armor ? <span
+style="font-size: 12px;">[20]</span> Prefer:
 <ul>
 <li><ins>
 new resources
@@ -1811,40 +2641,25 @@ unclaimed
 <li>two slot planets</li>
 </ul></li>
 </ul>
-<p>✦ (Flagship only) Does bot have <ins>unbuilt cities</ins> and cannot
-Build upgrades or armor at the Flagship planet?</p>
-<ul>
-<li>Can bot Move Flagship to planet matching unbuilt upgrades or armor?
-<span style="font-size: 12px;">[19]</span></li>
-</ul>
-<p>✦ Can bot use an ability on a ready Guild or lore card?</p>
-<p>✦ Can bot Secure to <ins>contend</ins> an <ins>undeclared
-ambition</ins> or to take captives? <span
-style="font-size: 12px;">[21,22]</span></p>
-<p>✦ Can bot Secure to grow lead in declared ambition? <span
-style="font-size: 12px;">[25]</span></p>
-<p>✦ Can bot Move to take control of rival city or Free city? <span
-style="font-size: 12px;">[31]</span></p>
-<p>✦ Can bot <ins>favorable combat</ins> to destroy Blight in systems
-with loyal buildings? <span style="font-size: 12px;">[40]</span></p>
-<p>✦ Are there any ambition markers available?</p>
-<ul>
-<li>Can bot <ins>favorable combat</ins> to take trophies? <span
-style="font-size: 12px;">[41]</span></li>
-</ul>
-<p>✦ Can bot Secure to grow lead in an <ins>undeclared ambition</ins> or
-to take any other cards? <span
-style="font-size: 12px;">[42,43]</span></p>
-<p>✦ Can bot Move to change control of a rival-controlled gate? <span
+<p>✦ Can bot use an ability on a <ins>ready</ins> Guild or lore
+card?</p>
+<p>✦ Can bot Move to take control of Rival city or Free city? <span
+style="font-size: 12px;">[28]</span></p>
+<p>✦ Can bot Secure any other card? <span
+style="font-size: 12px;">[36]</span></p>
+<p>✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> an
+<ins>undeclared ambition</ins>? <span
+style="font-size: 12px;">[42]</span></p>
+<p>✦ Can bot Move to change control of a Rival-controlled gate? <span
 style="font-size: 12px;">[44]</span> Prefer:</p>
 <ul>
-<li>take control adjacent to rival starport</li>
-<li>take or neutralize control adjacent to loyal starport</li>
+<li>take control adjacent to Rival starport</li>
+<li>take or neutralize control adjacent to Loyal starport</li>
 </ul>
 <p>✦ Are there any ships not controlling gates or <ins>claims</ins> or
-rival buildings?</p>
+Rival buildings?</p>
 <ul>
-<li>Can bot Move to unassigned ships to <ins>task force</ins> (use
+<li>Can bot Move unassigned ships to <ins>task force</ins> (use
 <ins>partial move</ins>)? <span
 style="font-size: 12px;">[45]</span></li>
 </ul>
@@ -1852,64 +2667,96 @@ style="font-size: 12px;">[45]</span></li>
 
 </div>
 <h1 id="combat-principles">Combat Principles</h1>
-<p>When asked if bot can <ins>favorable combat</ins> to achieve some
-result, first identify the goal, then refer to the corresponding section
-below. Goal will always be one of:</p>
-<ul>
-<li>Trophies for warlord</li>
-<li>Raid for resource(s) or card(s) to <ins>contend</ins> an
-ambition</li>
-<li>Control of a system</li>
-</ul>
-<p>Bot will spend Weapon resources to enable combat and will spend Fuel
-and Psionic resources to maximize available actions during a combat.</p>
-<p>A combat which risks outrages is only favorable if bot could ransack
-the court AND if outrage would not cause bot to stop
-<ins>contending</ins> a declared ambition. Ransack for most trophies. If
-bot is able to re-roll, first re-roll any intercepts, then re-roll
-blanks.</p>
+<p>When asked if bot can <ins>favorable combat</ins>, first identify the
+goal (Trophies, Raid, Control, Ransack, or Defense vs Fresh Blight) and
+then refer to the corresponding section below. Bot will spend Weapons to
+enable Battle and will spend Fuel or Psionics to enable more than one
+Battle action at target (up to two Battle actions).</p>
+<p>Any combat which risks outrage is favorable only if bot can ransack
+the court AND if bot is not <ins>contending</ins> a matching declared
+ambition AND bot has no matching protected cards. If multiple equivalent
+ransack targets, select the card which results in the most trophies.</p>
+<p>If bot is able to re-roll any dice, first re-roll intercepts, then
+re-roll blanks.</p>
 <h2 id="trophies">Trophies</h2>
 <p>A Battle for trophies is considered favorable if bot has at least 1:1
-ratio of fresh ships or can roll 2 dice vs Blight.</p>
+ratio of fresh ships OR can roll 2 dice per Blight step.</p>
 <p>If bot has multiple actions, first roll all skirmish dice until ratio
 of fresh ships is better than 1:1, or only 1 action left. Then roll
-assault dice up to 2x defending fresh ships, and the rest skirmish dice.
-Prefer target where most possible trophies. Allocate hits prioritizing
-trophies.</p>
+assault dice up to 2x defending fresh ships (up to 2x Blight steps), and
+the rest skirmish dice. Allocate hits prioritizing trophies <em>(hits to
+defender to maximize trophies taken, hits to self to minimize
+them)</em>.</p>
 <h2 id="raid">Raid</h2>
 <p>A raid is considered favorable if bot can roll raid dice equal to 2x
 keys on the target AND bot has better than 1:1 ratio of fresh ships to
 defender OR has 1:1 ratio AND more than one Battle action available
 after moving to the target.</p>
-<p>If favorable, the bot will first spend actions to roll dice like a
-trophies Battle, up to the last action available, when it will roll raid
-dice. Allocate hits like control.</p>
+<p>If favorable, the bot will first spend actions to roll all skirmish
+dice, up to the last action available, when it will roll raid dice.
+Allocate hits like control.</p>
+<h2 id="ransack">Ransack</h2>
+<p>Under certain circumstances, bot will target a Rival city for
+destruction in order to ransack the court, either to take Trophies or
+Secure a card. Check for possible Ransack when evaluating for Trophies
+or <ins>contending</ins> ambitions. A Battle for Ransack is considered
+favorable under these conditions:</p>
+<ul>
+<li>bot has at least 1:1 ratio of fresh ships</li>
+<li>AND can either
+<ul>
+<li>roll 2 assault dice per fresh defending ship, plus 1 assault dice
+per damaged defending ship, plus 2 more assault dice for a fresh
+defending city or 1 more assault dice for a damaged defending city
+<em>(in other words, 1 assault dice per defending “step” including
+target city)</em></li>
+<li>OR roll 2 raid dice against a damaged defending city or 4 raid dice
+against a fresh defending city, regardless of number of defending
+ships</li>
+</ul></li>
+</ul>
 <h2 id="control">Control</h2>
 <p>A Battle for control is favorable is bot can roll at least 1 die per
 fresh defending ship. If favorable, bot will select dice like a trophies
 Battle. Bot will allocate hits to take or neutralize control, then
-allocate hits to take trophies.</p>
+allocate remaining hits to take trophies.</p>
+<h2 id="defense-vs-fresh-blight">Defense vs Fresh Blight</h2>
+<p>A Battle to defend against fresh Blight is favorable if bot can roll
+at least 2 dice. If favorable, bot will select dice like a trophies
+Battle. Bot will allocate hits to damage fresh Blight first, then
+destroy damaged Blight.</p>
 <div class="pagebreak">
 
 </div>
 <h1 id="construction---build-repair">Construction - Build | Repair</h1>
 <p>✦ Does bot have no starport?</p>
 <ul>
-<li>Can bot Build a starport? <span style="font-size: 12px;">[9]</span>
+<li>Can bot Build a starport? <span style="font-size: 12px;">[6]</span>
 Prefer system with (ignore if Flagship):
 <ul>
 <li>bot control</li>
-<li>most loyal ships</li>
+<li>most Loyal ships</li>
 <li>neutral control</li>
-<li>least rival ships</li>
+<li>least Rival ships</li>
 </ul></li>
 </ul>
-<p>✦ Are any loyal buildings controlled by a rival?</p>
+<p>✦ Are any Loyal buildings controlled by a Rival?</p>
 <ul>
 <li>Can bot Build or Repair to change control? <span
-style="font-size: 12px;">[12,13]</span></li>
+style="font-size: 12px;">[9,10]</span></li>
 </ul>
-<p>✦ Can bot Build cities? <span style="font-size: 12px;">[16]</span>
+<p>✦ Is it the last Chapter of Act I or Act II?</p>
+<ul>
+<li>Can bot Repair any buildings or ships? <span
+style="font-size: 12px;">[14]</span> Prefer:
+<ul>
+<li>starport (if bot has only one on map)</li>
+<li>cities</li>
+<li>ships</li>
+<li>other starports</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Build cities? <span style="font-size: 12px;">[17]</span>
 Prefer:</p>
 <ul>
 <li>(ignore if Flagship) only Build <ins>double city</ins> if winning a
@@ -1917,19 +2764,24 @@ declared ambition and uncovering power bonus</li>
 <li>(Flagship only) do not build more cities than starports on Flagship
 board</li>
 </ul>
-<p>✦ Can bot use an ability on a ready Guild or lore card?</p>
-<p>✦ Can bot Build or Repair to take control of a rival building? <span
-style="font-size: 12px;">[29,30]</span></p>
+<p>✦ Can bot use an ability on a <ins>ready</ins> Guild or lore
+card?</p>
+<p>✦ Does bot have more <ins>unbuilt</ins> ships than any Rival?</p>
+<ul>
+<li>Can bot Build ships? <span style="font-size: 12px;">[23]</span></li>
+</ul>
+<p>✦ Can bot Build or Repair to take control of a Rival building? <span
+style="font-size: 12px;">[26,27]</span></p>
 <p>✦ Can bot Build to defend an undefended building? <span
-style="font-size: 12px;">[35]</span></p>
-<p>✦ Can bot Build any ships? <span style="font-size: 12px;">[36]</span>
+style="font-size: 12px;">[32]</span></p>
+<p>✦ Can bot Build any ships? <span style="font-size: 12px;">[33]</span>
 Prefer:</p>
 <ul>
 <li>ships in <ins>task force</ins></li>
 <li>fresh ships</li>
 </ul>
 <p>✦ Can bot Build any other starports? <span
-style="font-size: 12px;">[37]</span> Prefer system with (ignore if
+style="font-size: 12px;">[35]</span> Prefer system with (ignore if
 Flagship):</p>
 <ul>
 <li><ins>
@@ -1937,8 +2789,8 @@ task force
 </ins></li>
 <li>bot control</li>
 </ul>
-<p>✦ Can bot Repair any other ships or buildings? <span
-style="font-size: 12px;">[38]</span> Prefer:</p>
+<p>✦ Can bot Repair any ships or buildings? <span
+style="font-size: 12px;">[40]</span> Prefer:</p>
 <ul>
 <li>ships in <ins>task force</ins></li>
 <li>other ships</li>
@@ -1955,27 +2807,27 @@ guidance in the “Movement Principles” to move ships. This page aims to
 clarify <strong>when</strong> the bot will expand by getting new
 <ins>claims</ins> and building new cities, not explain
 <strong>how</strong> the bot will move. Use “Movement Principles” to
-determine how the moves are carried out.</p>
+determine how the moves are carried out. If the bot has a Flagship,
+ignore references to <ins>claims</ins> but instead refer to the
+guidelines at the bottom of this page.</p>
 <h2 id="getting-new-claims">Getting New <ins>Claims</ins></h2>
 <p>A <ins>claim</ins> is an open building slot on a planet where the bot
 has one or more pieces, i.e. it is a building slot where the bot could
 legally build a city or starport. Count each slot separately: if the bot
-has a ship at a planet with two open slots, count the bot as having two
+has a piece at a planet with two open slots, count the bot as having two
 <ins>claims</ins>.</p>
-<p><em>(Note that in previous versions of SUPERCAT, a <ins>claim</ins>
-was an open building slot <strong>controlled</strong> by the bot. This
-has since been relaxed to deprioritize expansion. If a bot has a ship or
-other building enabling it to build in an open slot, that counts as a
-<ins>claim</ins>, regardless of control of the system)</em></p>
+<p><em>(Note that if a bot has a piece in a system enabling it to build
+in an open slot, that counts as a <ins>claim</ins>, regardless of
+control of the system.)</em></p>
 <p>The procedures evaluate the number of <ins>claims</ins> the bot has
-in relation to the number of <ins>unbuilt cities</ins> (cities on the
+in relation to the number of <ins>unbuilt</ins> cities (cities on the
 bot’s board which it could build, not any cities held by rivals as
-trophies). The bot will seek to gain new <ins>claims</ins> if it has
-fewer <ins>claims</ins> than half the number of <ins>unbuilt
-cities</ins>, rounded down.</p>
+trophies). The bot will seek new <ins>claims</ins> if it has fewer
+<ins>claims</ins> than half the number of <ins>unbuilt</ins> cities,
+rounded down.</p>
 <p><em>(Note that this differs between the campaign game and the base
 game: in the campaign game the bot is satisfied with fewer
-<ins>claims</ins> than in the base game)</em></p>
+<ins>claims</ins> than in the base game.)</em></p>
 <h2 id="limit-on-building-new-cities">Limit on Building New Cities</h2>
 <p>The procedures prioritize building new cities somewhat highly
 relative to other actions. However there is a limit to this which is
@@ -1983,40 +2835,60 @@ building a second city on the same planet where the bot already has a
 city. The bot will only build one of these <ins>double cities</ins> if
 it is winning a declared ambition (not tied for first place) and placing
 the city would uncover a power bonus.</p>
-<p><em>Note that a <ins>claim</ins> counts for the purpose of the
+<p><em>(Note that a <ins>claim</ins> counts for the purpose of the
 expansion priorities described above even if the bot would not build a
-city there due to this limit. For instance, if a bot has 4 <ins>unbuilt
-cities</ins>, and has a ship at a planet with 2 slots, it is considered
-to have 2 <ins>claims</ins> even though when it comes time to build a
-city, the bot would only build 1 city there.</em></p>
+city there due to this limit. For instance, if a bot has 4
+<ins>unbuilt</ins> cities, and has a ship at a planet with 2 slots, it
+is considered to have 2 <ins>claims</ins> even though when it comes time
+to build a city, the bot would only build 1 city there.)</em></p>
+<h2 id="flagships">Flagships</h2>
+<p>If the bot has a Flagship, ignore all references to <ins>claims</ins>
+in the procedures and the above guidelines. Instead, when directed to by
+the procedures, build cities and starports as upgrades and armor on the
+bot’s Flagship board, and move the bot’s Flagship to a planet matching
+<ins>unbuilt</ins> upgrades and armor. When building upgrades or armor,
+do not build more cities than starports. When moving the Flagship to a
+planet matching an <ins>unbuilt</ins> upgrade, if there are multiple
+options use the following priorities to select between them:</p>
+<ul>
+<li>Defense Array</li>
+<li>Ship Crane</li>
+<li>Slipstream Drive</li>
+<li>Tractor Beam</li>
+<li>Control Array</li>
+<li>Hull</li>
+</ul>
 <div class="pagebreak">
 
 </div>
 <h1 id="mobilization---move-influence">Mobilization - Move |
 Influence</h1>
-<p>✦ (ignore for Flagship) Does bot have no starport and no
-<ins>claims</ins>?</p>
+<p>✦ Does bot have no starport and either no <ins>claims</ins> or cannot
+Build upgrades/armor at the Flagship planet?</p>
 <ul>
-<li>Can bot Move to get new <ins>claims</ins>? <span
-style="font-size: 12px;">[10]</span></li>
+<li>Can bot Move to get new <ins>claims</ins>, or get Flagship to a
+planet matching <ins>unbuilt</ins> upgrades/armor? <span
+style="font-size: 12px;">[8]</span></li>
 </ul>
-<p>✦ (Flagship only) Does bot have no starport and cannot Build upgrades
-or armor at the Flagship planet?</p>
-<ul>
-<li>Can bot Move Flagship to planet matching unbuilt upgrades or armor?
-<span style="font-size: 12px;">[11]</span></li>
-</ul>
-<p>✦ Are any loyal buildings controlled by a rival?</p>
+<p>✦ Are any Loyal buildings controlled by a Rival?</p>
 <ul>
 <li>Can bot Move to change control? <span
-style="font-size: 12px;">[14]</span></li>
+style="font-size: 12px;">[11]</span></li>
 </ul>
-<p>✦ (ignore for Flagship) Does bot have <ins>unbuilt cities</ins> and
-fewer <ins>claims</ins> than half number of <ins>unbuilt
-cities</ins>?</p>
+<p>✦ Can bot Influence to defend Loyal agents on a <ins>contested
+card</ins>? <span style="font-size: 12px;">[13]</span></p>
+<p>✦ Is it the last Chapter of Act I or Act II?</p>
 <ul>
-<li>Can bot Move to get at least one new <ins>claim</ins>? <span
-style="font-size: 12px;">[18]</span> Prefer:
+<li>Can bot Move fresh ships to Loyal buildings where Blight and no
+fresh ships? <span style="font-size: 12px;">[15]</span></li>
+</ul>
+<p>✦ Does bot have <ins>unbuilt</ins> cities and either fewer
+<ins>claims</ins> than half the number of <ins>unbuilt</ins> cities or
+cannot Build upgrades/armor at the Flagship planet?</p>
+<ul>
+<li>Can bot Move to get at least one new <ins>claim</ins> or get
+Flagship to planet matching <ins>unbuilt</ins> upgrades/armor ? <span
+style="font-size: 12px;">[20]</span> Prefer:
 <ul>
 <li><ins>
 new resources
@@ -2027,33 +2899,30 @@ unclaimed
 <li>two slot planets</li>
 </ul></li>
 </ul>
-<p>✦ (Flagship only) Does bot have <ins>unbuilt cities</ins> and cannot
-Build upgrades or armor at the Flagship planet?</p>
-<ul>
-<li>Can bot Move Flagship to planet matching unbuilt upgrades or armor?
-<span style="font-size: 12px;">[19]</span></li>
-</ul>
-<p>✦ Can bot use an ability on a ready Guild or lore card?</p>
-<p>✦ Can bot Influence a card? <span
-style="font-size: 12px;">[27]</span></p>
-<p>✦ Would bot <ins>contend</ins> a declared ambition with the Imperial
+<p>✦ Can bot use an ability on a <ins>ready</ins> Guild or lore
+card?</p>
+<p>✦ Can bot Influence a <ins>critical card</ins>? <span
+style="font-size: 12px;">[24]</span></p>
+<p>✦ Could bot <ins>contend</ins> a declared ambition via the Imperial
 Trust?</p>
 <ul>
 <li>Can bot Influence the Imperial Council? <span
-style="font-size: 12px;">[28]</span></li>
+style="font-size: 12px;">[25]</span></li>
 </ul>
-<p>✦ Can bot Move to take control of rival city or Free city? <span
-style="font-size: 12px;">[31]</span></p>
-<p>✦ Can bot Move to change control of a rival-controlled gate? <span
+<p>✦ Can bot Move to take control of Rival city or Free city? <span
+style="font-size: 12px;">[28]</span></p>
+<p>✦ Can bot Influence any other card? <span
+style="font-size: 12px;">[43]</span></p>
+<p>✦ Can bot Move to change control of a Rival-controlled gate? <span
 style="font-size: 12px;">[44]</span> Prefer:</p>
 <ul>
-<li>take control adjacent to rival starport</li>
-<li>take or neutralize control adjacent to loyal starport</li>
+<li>take control adjacent to Rival starport</li>
+<li>take or neutralize control adjacent to Loyal starport</li>
 </ul>
 <p>✦ Are there any ships not controlling gates or <ins>claims</ins> or
-rival buildings?</p>
+Rival buildings?</p>
 <ul>
-<li>Can bot Move to unassigned ships to <ins>task force</ins> (use
+<li>Can bot Move unassigned ships to <ins>task force</ins> (use
 <ins>partial move</ins>)? <span
 style="font-size: 12px;">[45]</span></li>
 </ul>
@@ -2077,7 +2946,7 @@ card. These are called partial moves and the bot will only make moves
 like this if explicitly instructed to. In these circumstances, evaluate
 destinations and goals independently each time the bot plays a card, as
 the priorities may change on a future movement.</p>
-<h2 id="priorities-1">Priorities:</h2>
+<h2 id="priorities">Priorities:</h2>
 <p>Select origin and destination which takes the shortest path
 (i.e. spend fewest action). Move as many ships from the origin while
 following the priorities below, including damaged ships.</p>
@@ -2089,61 +2958,192 @@ retain control of any origin, abandon control of origin.</p>
 priorities:</p>
 <ul>
 <li>if goal is not new <ins>claims</ins>, prefer destinations which
-result in new <ins>claims</ins></li>
-<li>if goal is not control, prefer destinations which result in bot
-control of rival or Free city.</li>
+result in new <ins>claims</ins>.</li>
+<li>if goal is not control of buildings, prefer destinations which
+result in bot taking control of loyal or rival or Free buildings (prefer
+control of cities).</li>
 <li>if otherwise equal options, select <ins>task force</ins> as the
 origin system</li>
 </ul>
 <p>When destination contains Blight and Imperial ships not present at
 destination, bring Imperial ships if possible. Otherwise, leave Imperial
 ships to retain Empire control if including them in the move would give
-rival control of loyal building.</p>
+rival control of loyal building. <!--
+TODO: formalize these priorities
+- origin has rival ships and move would grant rival control of loyal building ? -> leave Imperial Ships for Imperial control
+- destination has Blight ? -> bring Imperial Ships for crisis (1 vs damaged, 2 vs fresh)
+- origin has Blight ? -> leave Imperial Ships for crisis (1 vs damaged, 2 vs fresh)
+--></p>
 <div class="pagebreak">
 
 </div>
 <h1 id="faithful-wisdom---build-repair-secure">Faithful Wisdom - Build |
 Repair | Secure</h1>
-<p>✦ <!-- priority=1 --> Can bot Secure a card to <ins>contend</ins> a
-declared ambition?</p>
-<p>✦ <!-- Build starport priority=3 --> Does bot have no starport and
-can bot build a starport?</p>
-<p>✦ <!-- priority=4 --> Are any loyal buildings controlled by rival,
-and can bot Build or Repair to change control?</p>
-<p>✦ <!-- Build city priority=5 --> Does bot have <ins>unbuilt
-cities</ins> and at least one <ins>claim</ins>?</p>
+<p>✦ Can bot Secure a <ins>critical card</ins>? <span
+style="font-size: 12px;">[2]</span></p>
+<p>✦ Could bot <ins>contend</ins> a declared ambition via the Imperial
+Trust?</p>
 <ul>
-<li>Build cities at <ins>claims</ins></li>
-<li>Only Build <ins>double city</ins> if winning a declared ambition and
-uncovering power bonus</li>
+<li>Can bot Secure the Imperial Council? <span
+style="font-size: 12px;">[3]</span></li>
 </ul>
-<p>✦ <!-- priority=6 --> Can bot Secure a card to <ins>contend</ins> an
-<ins>undeclared ambition</ins>, <!-- priority=7 --> or Secure a card to
-grow a lead in a declared ambition?</p>
+<p>✦ Does bot have no starport?</p>
+<ul>
+<li>Can bot Build a starport? <span style="font-size: 12px;">[6]</span>
+Prefer system with (ignore if Flagship):
+<ul>
+<li>bot control</li>
+<li>most Loyal ships</li>
+<li>neutral control</li>
+<li>least Rival ships</li>
+</ul></li>
+</ul>
+<p>✦ Are any Loyal buildings controlled by a Rival?</p>
+<ul>
+<li>Can bot Build or Repair to change control? <span
+style="font-size: 12px;">[9,10]</span></li>
+</ul>
+<p>✦ Is it the last Chapter of Act I or Act II?</p>
+<ul>
+<li>Can bot Repair any buildings or ships? <span
+style="font-size: 12px;">[14]</span> Prefer:
+<ul>
+<li>starport (if bot has only one on map)</li>
+<li>cities</li>
+<li>ships</li>
+<li>other starports</li>
+</ul></li>
+</ul>
+<p>✦ Can bot Build cities? <span style="font-size: 12px;">[17]</span>
+Prefer:</p>
+<ul>
+<li>(ignore if Flagship) only Build <ins>double city</ins> if winning a
+declared ambition and uncovering power bonus</li>
+<li>(Flagship only) do not build more cities than starports on Flagship
+board</li>
+</ul>
+<p>✦ Can bot use an ability on a <ins>ready</ins> Guild or lore
+card?</p>
+<p>✦ Does bot have more <ins>unbuilt</ins> ships than any Rival?</p>
+<ul>
+<li>Can bot Build ships? <span style="font-size: 12px;">[23]</span></li>
+</ul>
+<p>✦ Can bot Build or Repair to take control of a Rival building? <span
+style="font-size: 12px;">[26,27]</span></p>
+<p>✦ Can bot Build to defend an undefended building? <span
+style="font-size: 12px;">[32]</span></p>
+<p>✦ Can bot Build any ships? <span style="font-size: 12px;">[33]</span>
+Prefer:</p>
+<ul>
+<li>ships in <ins>task force</ins></li>
+<li>fresh ships</li>
+</ul>
+<p>✦ Can bot Build any other starports? <span
+style="font-size: 12px;">[35]</span> Prefer system with (ignore if
+Flagship):</p>
+<ul>
+<li><ins>
+task force
+</ins></li>
+<li>bot control</li>
+</ul>
+<p>✦ Can bot Secure any other card? <span
+style="font-size: 12px;">[36]</span></p>
+<p>✦ Can bot Repair any ships or buildings? <span
+style="font-size: 12px;">[40]</span> Prefer:</p>
+<ul>
+<li>ships in <ins>task force</ins></li>
+<li>other ships</li>
+<li>starport, if only one on map</li>
+<li>cities</li>
+</ul>
+<div class="pagebreak">
+
+</div>
 <h1 id="faithful-zeal---move-influence-battle-tax">Faithful Zeal - Move
 | Influence | Battle | Tax</h1>
-<p>✦ <!-- priority=1 --> Can bot Tax to <ins>contend</ins> a declared
-ambition?</p>
-<p>✦ <!-- priority=2 --> Can bot <ins>favorable combat</ins> to
-<ins>contend</ins> a declared ambition?</p>
-<p>✦ <!-- Expand for starport priority=3 -->If bot have no starport and
-no <ins>claims</ins>, can bot Move to get at least one new
-<ins>claim</ins>?</p>
-<p>✦ Are any systems with a loyal building controlled by a rival?</p>
+<p>✦ Can bot Tax or <ins>favorable combat</ins> to <ins>contend</ins> a
+declared ambition? <span style="font-size: 12px;">[1,4]</span></p>
+<p>✦ Does bot have no starport and either no <ins>claims</ins> or cannot
+Build upgrades/armor at the Flagship planet?</p>
 <ul>
-<li><!-- priority=4 -->
-Can bot Move or <ins>favorable combat</ins> to change control?</li>
+<li>Can bot Move to get new <ins>claims</ins>, or get Flagship to a
+planet matching <ins>unbuilt</ins> upgrades/armor? <span
+style="font-size: 12px;">[8]</span></li>
 </ul>
-<p>✦ <!-- Expand for city priority=5 --> Does bot have <ins>unbuilt
-cities</ins>, fewer <ins>claims</ins> than half number of <ins>unbuilt
-cities</ins>, and can bot Move to get at least one new
-<ins>claim</ins>?</p>
-<p>✦ <!-- priority=6 --> Can bot Tax to <ins>contend</ins> an
-<ins>undeclared ambition</ins> or Tax a rival city and captives?</p>
-<p>✦ Are there any undeclared ambitions and can bot <ins>favorable
-combat</ins> for trophies?</p>
-<p>✦ Can bot Influence any other card? (Check “Influence
-Principles”)</p>
+<p>✦ Are any Loyal buildings controlled by a Rival?</p>
+<ul>
+<li>Can bot Move or <ins>favorable combat</ins> to change control? <span
+style="font-size: 12px;">[11,12]</span></li>
+</ul>
+<p>✦ Can bot Influence to defend Loyal agents on a <ins>contested
+card</ins>? <span style="font-size: 12px;">[13]</span></p>
+<p>✦ Is it the last Chapter of Act I or Act II?</p>
+<ul>
+<li>Can bot Move fresh ships to Loyal buildings where Blight and no
+fresh ships? <span style="font-size: 12px;">[15]</span></li>
+</ul>
+<p>✦ Can bot <ins>favorable combat</ins> vs fresh Blight at Loyal
+building or <ins>claim</ins>? <span
+style="font-size: 12px;">[16]</span></p>
+<p>✦ Does bot have <ins>unbuilt</ins> cities and either fewer
+<ins>claims</ins> than half the number of <ins>unbuilt</ins> cities or
+cannot Build upgrades/armor at the Flagship planet?</p>
+<ul>
+<li>Can bot Move to get at least one new <ins>claim</ins> or get
+Flagship to planet matching <ins>unbuilt</ins> upgrades/armor ? <span
+style="font-size: 12px;">[20]</span> Prefer:
+<ul>
+<li><ins>
+new resources
+</ins></li>
+<li><ins>
+unclaimed
+</ins></li>
+<li>two slot planets</li>
+</ul></li>
+</ul>
+<p>✦ Can bot use an ability on a <ins>ready</ins> Guild or lore
+card?</p>
+<p>✦ Can bot Influence a <ins>critical card</ins>? <span
+style="font-size: 12px;">[24]</span></p>
+<p>✦ Could bot <ins>contend</ins> a declared ambition via the Imperial
+Trust?</p>
+<ul>
+<li>Can bot Influence the Imperial Council? <span
+style="font-size: 12px;">[25]</span></li>
+</ul>
+<p>✦ Can bot Move to take control of Rival city or Free city? <span
+style="font-size: 12px;">[28]</span></p>
+<p>✦ Can bot Tax to <ins>contend</ins> an <ins>undeclared
+ambition</ins>, to take captives, or to grow a lead in a declared
+ambition? <span style="font-size: 12px;">[37,38,39]</span></p>
+<p>✦ Can bot <ins>favorable combat</ins> to <ins>contend</ins> an
+<ins>undeclared ambition</ins>? <span
+style="font-size: 12px;">[42]</span></p>
+<p>✦ Can bot Influence any other card? <span
+style="font-size: 12px;">[43]</span></p>
+<p>✦ Can bot Move to change control of a Rival-controlled gate? <span
+style="font-size: 12px;">[44]</span> Prefer:</p>
+<ul>
+<li>take control adjacent to Rival starport</li>
+<li>take or neutralize control adjacent to Loyal starport</li>
+</ul>
+<p>✦ Are there any ships not controlling gates or <ins>claims</ins> or
+Rival buildings?</p>
+<ul>
+<li>Can bot Move unassigned ships to <ins>task force</ins> (use
+<ins>partial move</ins>)? <span
+style="font-size: 12px;">[45]</span></li>
+</ul>
+<p>✦ Can bot Tax to gain any other resources? <span
+style="font-size: 12px;">[46]</span> Prefer:</p>
+<ul>
+<li><ins>
+new resources
+</ins></li>
+<li>grow a lead in an <ins>undeclared ambition</ins></li>
+</ul>
 <div class="pagebreak">
 
 </div>
@@ -2151,9 +3151,9 @@ Principles”)</p>
 <p>The bot will Secure a Vox card if it is <ins>effective</ins> or if
 Securing the card will take captives. In general, a Vox card is
 <ins>effective</ins> if its <strong>When Secured</strong> text can be
-fully carried out or if the <strong>Crisis</strong> text would impact
-the bot. The following clarifies specific Vox cards and gives
-instructions for how to perform the text for the bot.</p>
+fully carried out or if the <strong>Crisis</strong> text would
+negatively impact the bot. The following clarifies specific Vox cards
+and gives instructions for how to perform the text for the bot.</p>
 <dl>
 <dt>Mass Uprising</dt>
 <dd>
@@ -2186,8 +3186,7 @@ Prefer resource which bot has fewest of
 Effective
 </ins>
 if the bot controls a rival city and it’s possible to seize the
-initiative. If not possible to seize the initiative, secure only for
-captives.
+initiative, or if bot has the most power.
 </dd>
 <dt>Guild Struggle</dt>
 <dd>
@@ -2313,13 +3312,17 @@ place (see “Clarifications”)
 </dd>
 <dt>contested card</dt>
 <dd>
-court card with bot agents and rival agents, and more rival agents than
-bot agents
+card in the court which a Rival could Secure
 </dd>
-<dt>critical</dt>
+<dt>critical card</dt>
 <dd>
-some Fates consider Event cards critical, and will automatically seize
-initiative if an Event is played
+a card in the court which bot will prioritize for Influence and Secure
+(see “Influence Principles”)
+</dd>
+<dt>urgent</dt>
+<dd>
+some Fates consider Event cards urgent in some circumstances, and will
+automatically seize the initiative if an Event is played
 </dd>
 <dt>double city</dt>
 <dd>
@@ -2356,10 +3359,10 @@ the next chapter
 <dd>
 group of bot ships with the most fresh ships
 </dd>
-<dt>unbuilt city</dt>
+<dt>unbuilt</dt>
 <dd>
-a loyal city on bot’s board (not a destroyed city in a rival’s trophy
-area)
+ship, city, or starport which is available to build <em>(not in a
+Rival’s trophy area)</em>
 </dd>
 <dt>unclaimed</dt>
 <dd>
@@ -2367,7 +3370,7 @@ system that is not controlled by a rival
 </dd>
 <dt>uncontested card</dt>
 <dd>
-court card with no agents
+court card with no agents <em>(no Loyal agents and no Rival agents)</em>
 </dd>
 <dt>undeclared ambition</dt>
 <dd>
