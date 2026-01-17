@@ -17,7 +17,7 @@ Parade Fleets
 : If bot has the initiative would not otherwise declare an undeclared ambition *(i.e. bot is not winning or tied for first place)* declare an ambition no rival is winning. Place ships where bot would gain control. If bot is a Regent, become an Outlaw.
 
 Events
-: If bot is a Regent, then Event cards are critical.
+: If bot is a Regent, then Event cards are urgent.
 
 Summits
 : If bot is a Regent, then always call the Summit. During the "Call to Order" phase, **Leave the Empire**.

@@ -13,11 +13,10 @@ contested card
 : card in the court which a Rival could Secure
 
 critical card
-: card in the court which bot will prioritize for Influence and Secure
-(see "Influence Principles")
+: a card in the court which bot will prioritize for Influence and Secure (see "Influence Principles")
 
-critical
-: some Fates consider Event cards critical, and will automatically seize initiative if an Event is played
+urgent
+: some Fates consider Event cards urgent in some circumstances, and will automatically seize the initiative if an Event is played
 
 double city
 : a second loyal city on planet that already has a loyal city

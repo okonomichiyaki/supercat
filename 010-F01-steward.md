@@ -18,7 +18,7 @@
 - Can bot Secure or Influence Council Intrigue?
 
 Events
-: If bot is not First Regent and Imperial Council is "Decided", then Events are critical
+: If bot is not First Regent and Imperial Council is "Decided", then Events are urgent
 
 Summits
 : If bot is not First Regent and the Imperial Council is "Decided", then always call a Summit. During the "Call to Order" phase, **Petition the Council**.

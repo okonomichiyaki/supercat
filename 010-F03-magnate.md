@@ -14,7 +14,7 @@
 - If Secured, call a Summit
 
 Events
-: If objective marker is greater than zero, events are critical.
+: If objective marker is greater than zero, events are urgent.
 
 Summit Negotiations
 : During the negotiation minigame, on the bot's turn it will use 2 negotiation rounds instead of only 1, and the bot will use this second round even if the first round succeeds. The bot will offer according to procedures described in the minigame, however the bot will only accept resources or favors.
@@ -52,7 +52,7 @@ Merchant League
 - Can bot Secure or Influence the Imperial Council?
 
 Events
-: If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered critical.
+: If bot has more than half of any type of resource, and does not have the matching Monopoly, then Events are considered urgent.
 
 Imperial Council Decided
 : If bot would gain a Monopoly, bot will resolve Edicts.
