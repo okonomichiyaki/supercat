@@ -1,5 +1,7 @@
 <#ifdef campaign>
-# Naturalist (Act III)
+# Naturalist
+
+## Act III
 
 <!--
 TODO: should there is some kind of ambition declaration priority here?

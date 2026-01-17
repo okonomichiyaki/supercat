@@ -20,6 +20,11 @@
 010-F15-peacekeeper.md
 010-F16-warden.md
 010-F17-overlord.md
+010-F18-survivalist.md
+010-F19-redeemer.md
+010-F20-guardian.md
+010-F21-naturalist.md
+010-F22-gate-wraith.md
 020-bot-turn-start-here.md
 030-general-priorities.md
 040-prelude.md

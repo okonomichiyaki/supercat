@@ -1,3 +1,6 @@
+<#ifdef campaign>
+# Gate Wraith
+
 ## Act III
 
 ✦ Can bot Catapult move from a planet into the gate of the same cluster to break the gate and place a Passage token? *(Breaking Gates & Placing Passages ability)*
@@ -25,3 +28,6 @@ Twisted Passage should be considered "adjacent" for purpose of over-control of p
 
 Movement Principles
 : Always retain control of the Twisted Passage if possible. *(i.e. if bot currently controls the Twisted Passage, do not abandon control when evaluating Move actions for other reasons)*
+
+<div class="pagebreak"> </div>
+<#endif>

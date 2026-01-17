@@ -1,3 +1,6 @@
+<#ifdef campaign>
+# Guardian
+
 ## Act III
 
 <!--
@@ -21,3 +24,6 @@ TODO: bot could declare other ambition to prevent Tyrant / Edenguard from being 
 
 Green Vault
 : When taking any Material or Fuel, place it in bot's Captives
+
+<div class="pagebreak"> </div>
+<#endif>

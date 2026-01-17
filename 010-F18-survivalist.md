@@ -1,4 +1,7 @@
-# Act III
+<#ifdef campaign>
+# Survivalist
+
+## Act III
 
 ✦ Can bot Build a bunker?
 
@@ -19,3 +22,6 @@
 
 Captive Release
 : Always choose to Provoke Outrage
+
+<div class="pagebreak"> </div>
+<#endif>

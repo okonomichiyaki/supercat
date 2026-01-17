@@ -1,4 +1,7 @@
-# Act III
+<#ifdef campaign>
+# Redeemer
+
+## Act III
 
 If Keeper is not declared, then declare any ambition, even if bot is not winning or tied for first place. Prefer:
 
@@ -15,3 +18,6 @@ If Keeper is not declared, then declare any ambition, even if bot is not winning
 
 - Can bot Build or Repair to get control?
 - Can bot Move or favorable combat to get control?
+
+<div class="pagebreak"> </div>
+<#endif>
