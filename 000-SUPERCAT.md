@@ -1,6 +1,6 @@
 ## a procedural non-player system for solo Arcs
 
-*version 0.10-draft*
+*version 0.10*
 
 This is a non-player system, or "bot", for playing the board game Arcs. It's intended for solitaire play, i.e. one human playing against one or more bots. Although it can also work as the 3rd or 4th opponent in a multiplayer game, using it in this way has not been tested thoroughly.
 
@@ -12,7 +12,7 @@ SUPERCAT is not an "automa" but is instead a simulation-style bot. Rather than s
 
 These rules will always refer to the human player as the "player", and will refer to the non-player system exclusively as the "bot". The word "player" never refers to a bot.
 
-There are two versions of this document; this is the <#ifdef base>base game<#endif><#ifdef campaign>Blighted Reach campaign<#endif> version. <#ifdef campaign>*(note: it currently only supports "A" and "B" Fates through Act II)*<#endif>
+There are two versions of this document; this is the <#ifdef base>base game<#endif><#ifdef campaign>Blighted Reach campaign<#endif> version. <#ifdef campaign>*(note: it currently supports most Fates across all three Acts with some exceptions. see the [BGG thread](https://boardgamegeek.com/thread/3499164/updating-supercat-for-solo-blighted-reach) for details)*<#endif>
 
 <#ifdef campaign>If this is your first time playing Arcs using SUPERCAT, consider playing at least one chapter of the base game with the bot before using it to play the campaign.<#endif>
 
