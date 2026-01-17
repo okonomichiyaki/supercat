@@ -7,12 +7,14 @@
 010-F04-advocate.md
 010-F05-caretaker.md
 010-F06-partisan.md
+010-F06-partisan-informants.md
 010-F07-admiral.md
 010-F08-believer.md
 010-F09-pathfinder.md
 010-F09-pathfinder-portal-cube-bag.md
 010-F09-pathfinder-portal-letter-tiles.md
 010-F10-hegemon.md
+010-F10-hegemon-mind-managers.md
 010-F11-planet-breaker.md
 010-F12-pirate.md
 010-F13-blight-speaker.md
