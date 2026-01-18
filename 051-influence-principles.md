@@ -63,10 +63,16 @@ When procedures direct bot to Influence or Secure any other Court card, select c
 
 When choosing between two or more cards (either Critical or non-Critical) which are otherwise equal in priority, use the following priorities to select a card to influence.
 
-- uncontested card<#ifdef campaign>
+<#ifdef campaign>
+- uncontested card
 - card with attached Faithful, Guild, or lore card
-<#endif>
 - card which would take most captives
 - card with more keys
+<#endif>
+<#ifdef base>
+- uncontested card
+- card which would take most captives
+- card with more keys
+<#endif>
 
 <div class="pagebreak"> </div>
