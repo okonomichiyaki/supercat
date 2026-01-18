@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Faithful Zeal - Move | Influence | Battle | Tax
 
 ✦ Can bot Tax or favorable combat to contend a declared ambition? <span style="font-size: 12px;">[1,4]</span>
@@ -88,3 +89,4 @@
 - grow a lead in an undeclared ambition
 
 <div class="pagebreak"> </div>
+<#endif>

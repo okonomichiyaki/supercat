@@ -1,3 +1,4 @@
+<#ifdef campaign>
 # Faithful Wisdom - Build | Repair | Secure
 
 ✦ Can bot Secure a critical card? <span style="font-size: 12px;">[2]</span>
@@ -95,3 +96,4 @@
 - cities
 
 <div class="pagebreak"> </div>
+<#endif>

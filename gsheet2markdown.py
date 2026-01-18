@@ -22,7 +22,10 @@ SUITS = {
     'Mobilization': {
         "output": "080-mobilization.md",
         "actions": ["Move", "Influence"]
-    },
+    }
+}
+
+FAITHFUL_SUITS = {
     'Faithful Wisdom': {
         "output": "031-faithful-wisdom.md",
         "actions": ["Build", "Repair", "Secure"]
@@ -199,6 +202,37 @@ def general_priorities(args, output, rows):
         outf.write("\n\n".join([ cleanup(s[0]) for s in stmts ]))
         outf.write("\n\n<div class=\"pagebreak\"> </div>\n")
 
+def generate_and_output_suit(args, suit, data, filtered, faithful=False):
+    actions = " | ".join(data["actions"])
+    output = data["output"]
+    idx = 0
+    stmts = []
+    rows = [ row for row in filtered if row[suit] == BULLET ]
+    set_effective_priorities(rows)
+    print(f"got {len(rows)} rows for {suit}")
+    print(f"generating {suit}", end="\n")
+    for row in rows:
+        print(".", end="")
+        if idx > 0 and same_priority_and_action(stmts[idx-1][1][-1], row): # stmts[idx-1][1][-1] -> [-1] -> LAST among merged rows. WILL merge more than two rows
+            rows = stmts[idx-1][1] + [row]
+            stmts[idx-1] = (merge_goals(args, rows), rows)
+        elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][-1], row):
+            rows = stmts[idx-1][1] + [row]
+            stmts[idx-1] = (merge_actions(args, rows), rows)
+        else:
+            stmt = build_statement(args, row)
+            stmts = stmts + [(stmt, [row])]
+            idx = idx + 1
+    with open(output, 'w') as outf:
+        if faithful:
+            outf.write("<#ifdef campaign>\n")
+        outf.write(f"# {suit} - {actions}\n\n")
+        outf.write("\n\n".join([ cleanup(s[0]) for s in stmts ]))
+        outf.write("\n\n<div class=\"pagebreak\"> </div>\n")
+        if faithful:
+            outf.write("<#endif>\n")
+    print(" done.")
+
 def main():
     parser = argparse.ArgumentParser(
         prog='SUPERCAT',
@@ -226,32 +260,14 @@ def main():
     print(f"all rows: {len(all_rows)} filtered rows: {len(filtered)}")
     if args.general:
         general_priorities(args, "030-general-priorities.md", all_rows)
+
     for suit in SUITS:
-        actions = " | ".join(SUITS[suit]["actions"])
-        output = SUITS[suit]["output"]
-        idx = 0
-        stmts = []
-        rows = [ row for row in filtered if row[suit] == BULLET ]
-        set_effective_priorities(rows)
-        print(f"got {len(rows)} rows for {suit}")
-        print(f"generating {suit}", end="\n")
-        for row in rows:
-            print(".", end="")
-            if idx > 0 and same_priority_and_action(stmts[idx-1][1][-1], row): # stmts[idx-1][1][-1] -> [-1] -> LAST among merged rows. WILL merge more than two rows
-                rows = stmts[idx-1][1] + [row]
-                stmts[idx-1] = (merge_goals(args, rows), rows)
-            elif idx > 0 and same_priority_goal_cond(stmts[idx-1][1][-1], row):
-                rows = stmts[idx-1][1] + [row]
-                stmts[idx-1] = (merge_actions(args, rows), rows)
-            else:
-                stmt = build_statement(args, row)
-                stmts = stmts + [(stmt, [row])]
-                idx = idx + 1
-        with open(output, 'w') as outf:
-            outf.write(f"# {suit} - {actions}\n\n")
-            outf.write("\n\n".join([ cleanup(s[0]) for s in stmts ]))
-            outf.write("\n\n<div class=\"pagebreak\"> </div>\n")
-        print(" done.")
+        data = SUITS[suit]
+        generate_and_output_suit(args, suit, data, filtered)
+    if campaign:
+        for suit in FAITHFUL_SUITS:
+            data = FAITHFUL_SUITS[suit]
+            generate_and_output_suit(args, suit, data, filtered, faithful=True)
 
 if __name__ == "__main__":
     main()
