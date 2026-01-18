@@ -94,7 +94,8 @@ Rather than streamline any mechanics, it attempts to interact with all
 of the rules of the original game using conditional procedures which
 mimic a human opponent. The bot deviates from the rules in a few
 important ways, but will follow every other rule in the game apart from
-these changes:</p>
+these changes: <em>(see the section titled “Differences from the
+non-solo game” for more details)</em></p>
 <ul>
 <li>the bot’s hand of cards is abstracted to retain some uncertainty and
 “fog of war”</li>
@@ -108,9 +109,10 @@ and will refer to the non-player system exclusively as the “bot”. The
 word “player” never refers to a bot.</p>
 <p>There are two versions of this document; this is the Blighted Reach
 campaign version. <em>(note: it currently supports most Fates across all
-three Acts with some exceptions. see the <a
-href="https://boardgamegeek.com/thread/3499164/updating-supercat-for-solo-blighted-reach">BGG
-thread</a> for details)</em></p>
+three Acts with some exceptions. the following Fates are NOT supported
+in Act III: Pirate, Peacekeeper, Warden, Conspirator, Judge. playing
+them will require you to use “multi-handed solitaire”
+techniques)</em></p>
 <p>If this is your first time playing Arcs using SUPERCAT, consider
 playing at least one chapter of the base game with the bot before using
 it to play the campaign.</p>
@@ -333,9 +335,7 @@ optional difficulty modifiers and campaign specific rules. If you think
 the bot breaks from the original Arcs rules in any way which is not
 listed here, that is either something accidentally omitted from this
 page, an unintended “bug” in the bot rules, or a misunderstanding.
-Please report it in the <a
-href="https://boardgamegeek.com/thread/3499164/updating-supercat-for-solo-blighted-reach">BGG
-thread</a> for correction or clarification.</p>
+Please report it for correction or clarification.</p>
 <h3 id="base-game">base game</h3>
 <ul>
 <li>changes to the card mechanics:
@@ -1123,7 +1123,7 @@ Bot will use the guidelines from Act I for seizing initiative. Subtract
 <div class="pagebreak">
 
 </div>
-<p>Informants - Spy (Influence)</p>
+<h1 id="informants---spy-influence">Informants - Spy (Influence)</h1>
 <p>If the player is the Partisan:</p>
 <ul>
 <li>Choose any bot to target.</li>
@@ -1150,6 +1150,9 @@ bot’s board.</li>
 <p><em>At the end of these procedures, the bot will have one additional
 card on the bot’s board, the bot’s hand counter will not have changed,
 and the player’s hand count will not have changed.</em></p>
+<div class="pagebreak">
+
+</div>
 <h1 id="admiral">Admiral</h1>
 <dt>
 Setup
@@ -1774,7 +1777,8 @@ Bot will always keep as many Captives as possible.
 <div class="pagebreak">
 
 </div>
-<p>Mind Managers - Manipulate (Influence)</p>
+<h1 id="mind-managers---manipulate-influence">Mind Managers - Manipulate
+(Influence)</h1>
 <p>If the player is the Hegemon:</p>
 <ul>
 <li>Choose a Rival bot that you have a Captive of.</li>
@@ -1795,6 +1799,9 @@ bot’s play area.</li>
 <li>Draw one card from the top of the stack and add it to the player’s
 hand.</li>
 </ul>
+<div class="pagebreak">
+
+</div>
 <h1 id="planet-breaker">Planet Breaker</h1>
 <h2 id="act-ii-9">Act II</h2>
 <!--
